@@ -205,12 +205,15 @@ def check(geo, npts, want_reflex, legacy):
         issues.append("emitted outline SELF-INTERSECTS — winding undefined")
     else:
         a = shoelace(seq)
-        if a <= 0:
-            issues.append("emitted winding is %.1f, expected CCW (positive)" % a)
+        # Jordan's convention: counter-clockwise seen from above is NEGATIVE in
+        # the (x,z) shoelace. The shipping rectangle measures -10000.
+        if a >= 0:
+            issues.append("emitted winding is %.1f, expected CCW-from-above "
+                          "(negative)" % a)
         # trips if: footprint_area reports the INPUT outline rather than the
         # geometry actually produced
         fa = geo.attribValue("footprint_area") if geo.findGlobalAttrib("footprint_area") else None
-        if fa is not None and abs(fa - a) > max(1.0, abs(a) * 0.02):
+        if fa is not None and abs(abs(fa) - abs(a)) > max(1.0, abs(a) * 0.02):
             issues.append("footprint_area %.1f but emitted area %.1f" % (fa, a))
 
     # --- compass aliases, if enabled ----------------------------------------

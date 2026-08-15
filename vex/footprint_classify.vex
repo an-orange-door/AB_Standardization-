@@ -88,18 +88,28 @@ for (int i = 0; i < n; i++) {
 
 // ── enforce winding, then NORMALISE THE START VERTEX (F) ─────────────────────
 // Shoelace on XZ: a footprint lies in the ground plane, not XY.
+//
+// ⚠ SIGN CONVENTION — Jordan, 2026-08-15: "running counter clockwise creates
+// negative winding." In the (x,z) algebra a positive shoelace is
+// counter-clockwise in an ABSTRACT 2D plane, but viewed from above in a Y-up
+// world the Z axis is effectively flipped, so **counter-clockwise from above is
+// NEGATIVE**. The shipping tool's rectangle measures -10000 and is the correct
+// one. An earlier version of this file enforced POSITIVE, which reversed the
+// traversal against the house convention — geometry identical, order backwards,
+// and every corner index running the wrong way round the building.
 float area2 = 0;
 for (int i = 0; i < n; i++) {
     vector a = P[i], b = P[(i + 1) % n];
     area2 += a.x * b.z - b.x * a.z;
 }
-if (area2 < 0) {
+if (area2 > 0) {                    // clockwise from above -> reverse
     vector r[];
     append(r, P[0]);
     for (int i = n - 1; i >= 1; i--) append(r, P[i]);
     P = r;
     area2 = -area2;
 }
+// area2 is now NEGATIVE, i.e. counter-clockwise seen from above.
 
 // Corner_01 must be the same PHYSICAL corner however the input was ordered, or
 // every wall index shuffles and downstream bindings rebind to the wrong wall —
@@ -149,17 +159,20 @@ for (int i = 0; i < n; i++) {
 
     // `turn` is the 2D cross product on the ground plane, in the SAME
     // handedness as the shoelace above. (It is the NEGATION of the 3D cross
-    // product's Y component — the previous name and comment claimed otherwise,
-    // which is a trap for the next person making a sign fix in this file.)
+    // product's Y component — an earlier comment claimed otherwise, which is a
+    // trap for the next person making a sign fix in this file.)
+    // With the outline wound negative (CCW from above), a CONVEX corner turns
+    // NEGATIVE — so the sign test below is inverted relative to the abstract
+    // 2D case. Keep it tied to the shoelace, never to intuition about "CCW".
     float turn = din.x * dout.z - din.z * dout.x;
     float dotv = clamp(dot(-din, dout), -1.0, 1.0);
     float interior = degrees(acos(dotv));
-    if (turn < 0) interior = 360.0 - interior;
+    if (turn > 0) interior = 360.0 - interior;      // reflex
 
     // three-way, not two. A straight-through vertex is COLLINEAR, not reflex:
     // convex and reflex get opposite treatments, so misclassifying it cuts an
     // inner fillet into a flat wall.
-    int cvx = (abs(turn) < EPS) ? 0 : (turn > 0 ? 1 : -1);
+    int cvx = (abs(turn) < EPS) ? 0 : (turn < 0 ? 1 : -1);
     if (cvx == 0) interior = 180.0;
 
     append(angle, interior);
@@ -200,9 +213,15 @@ for (int i = 0; i < n; i++) {
         // interior bisector at t/cos(a/2). The previous version swept a
         // quadratic Bezier through the vertex — a parabola, measured at 80%
         // radius variation where the shipping tool holds 0.005%.
-        float half = radians(angle[i] * 0.5);
-        vector bis = normalize(dout - din);
-        vector ctr = cur + bis * (ext[i] / max(cos(half), EPS));
+        // ⚠ A REFLEX corner fillets on the OTHER SIDE. Using the interior
+        // angle regardless sends cos(half) negative at 270 degrees, putting the
+        // centre on the wrong side and producing a self-intersecting outline —
+        // caught on the filleted L. Use the angle on the side the arc actually
+        // sits, and flip the bisector for reflex.
+        float a_arc = (convex[i] > 0) ? angle[i] : 360.0 - angle[i];
+        float half  = radians(a_arc * 0.5);
+        vector bis  = normalize(dout - din) * (convex[i] > 0 ? 1.0 : -1.0);
+        vector ctr  = cur + bis * (ext[i] / max(cos(half), EPS));
         vector v0 = cstart - ctr, v1 = cend - ctr;
         float r  = length(v0);
         float a0 = atan2(v0.z, v0.x), a1 = atan2(v1.z, v1.x);
@@ -282,7 +301,10 @@ for (int i = 0; i < n; i++) {
     // no "Front" on a 12-gon.
     if (LEGACY && n == 4) {
         vector dir = normalize(wend - wstart);
-        vector nrm = normalize(set(dir.z, 0, -dir.x));   // outward on CCW
+        // outward normal for a wall on a NEGATIVE-wound (CCW from above)
+        // outline. This flipped with the winding fix above; verified against
+        // the shipping tool, whose z=-30 wall is WallBack.
+        vector nrm = normalize(set(-dir.z, 0, dir.x));
         string cname = (abs(nrm.z) > abs(nrm.x))
                      ? (nrm.z > 0 ? "WallFront" : "WallBack")
                      : (nrm.x > 0 ? "WallRight" : "WallLeft");
