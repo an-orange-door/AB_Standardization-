@@ -17,6 +17,7 @@ VEX = "U:/AB_Standardization/vex/footprint_classify.vex"
 OUT = "U:/AB_Standardization/footprint_sheet.svg"
 
 SHAPES = [
+    # (name, points, global style, per-corner overrides)
     ("Rectangle", [(0,0),(100,0),(100,60),(0,60)], 0),
     ("L",         [(0,0),(100,0),(100,40),(40,40),(40,100),(0,100)], 0),
     ("U",         [(0,0),(100,0),(100,100),(70,100),(70,40),(30,40),(30,100),(0,100)], 0),
@@ -25,9 +26,10 @@ SHAPES = [
                    (30,70),(0,70),(0,30),(30,30)], 0),
     ("Octagon",   [(30,0),(70,0),(100,30),(100,70),(70,100),(30,100),(0,70),(0,30)], 0),
     ("Rectangle - chamfered", [(0,0),(100,0),(100,60),(0,60)], 1),
-    ("Rectangle - filleted",  [(0,0),(100,0),(100,60),(0,60)], 2),
-    ("L - chamfered",         [(0,0),(100,0),(100,40),(40,40),(40,100),(0,100)], 1),
-    ("L - filleted",          [(0,0),(100,0),(100,40),(40,40),(40,100),(0,100)], 2),
+    ("Rectangle - all filleted", [(0,0),(100,0),(100,60),(0,60)], 2),
+    # the shipping shape: ONE corner, radius 0.4 x width
+    ("Rounded corner (0.4W)", [(0,0),(100,0),(100,60),(0,60)], 0, {2: (2, 40.0)}),
+    ("L - one big fillet",    [(0,0),(100,0),(100,40),(40,40),(40,100),(0,100)], 0, {1: (2, 30.0)}),
 ]
 
 
@@ -47,18 +49,32 @@ def build(parent):
     return sub, w
 
 
-def feed(sub, pts):
+def feed(sub, pts, per=None):
+    """per: {vertex_index: (style, radius)} — per-corner overrides.
+
+    The shipping "Rounded Corner" shape is ONE big arc on ONE corner at radius
+    0.4 x BuildingWidth, not every corner filleted at the corner size. That is
+    only expressible per corner, which is why style and radius are point
+    attributes on the outline rather than a single global toggle.
+    """
     old = sub.node("outline")
     if old:
         old.destroy()
     py = sub.createNode("python", "outline")
     py.parm("python").set(
-        "import hou\ngeo = hou.pwd().geometry()\npts = %r\n"
-        "ps = [geo.createPoint() for _ in pts]\n"
-        "for p,(x,z) in zip(ps,pts): p.setPosition((x,0.0,z))\n"
+        "import hou\ngeo = hou.pwd().geometry()\npts = %r\nper = %r\n"
+        "st = geo.addAttrib(hou.attribType.Point, 'corner_style', -1)\n"
+        "rd = geo.addAttrib(hou.attribType.Point, 'corner_radius', 0.0)\n"
+        "ps = []\n"
+        "for i,(x,z) in enumerate(pts):\n"
+        "    p = geo.createPoint(); p.setPosition((x,0.0,z))\n"
+        "    sv, rv = per.get(i, (None, 8.0))\n"
+        "    if sv is not None: p.setAttribValue(st, sv)\n"
+        "    p.setAttribValue(rd, rv)\n"
+        "    ps.append(p)\n"
         "poly = geo.createPolygon()\n"
         "for p in ps: poly.addVertex(p)\n"
-        "poly.setIsClosed(True)\n" % (pts,))
+        "poly.setIsClosed(True)\n" % (pts, per or {}))
     sub.node("classify").setInput(0, py)
 
 
@@ -98,9 +114,11 @@ def main():
     holder = hou.node("/obj").createNode("geo", "Draw")
     sub, w = build(holder)
     recs = []
-    for name, pts, style in SHAPES:
+    for entry in SHAPES:
+        name, pts, style = entry[0], entry[1], entry[2]
+        per = entry[3] if len(entry) > 3 else None
         sub.parm("CornerStyle").set(style)
-        feed(sub, pts)
+        feed(sub, pts, per)
         w.cook(force=True)
         geo = w.geometry()
         elems = []

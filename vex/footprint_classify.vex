@@ -149,6 +149,7 @@ float angle[];      // interior angle, degrees
 int   convex[];     // +1 convex, 0 collinear, -1 reflex
 float ext[];        // how far the corner reaches along each adjacent edge
 int   style[];      // per-corner treatment
+float radius[];     // fillet radius, INDEPENDENT of BldCornerSize
 
 for (int i = 0; i < n; i++) {
     vector prev = P[(i - 1 + n) % n];
@@ -180,14 +181,48 @@ for (int i = 0; i < n; i++) {
 
     float lprev = length(cur - prev);
     float lnext = length(next - cur);
-    append(ext, cvx == 0 ? 0.0 : min(CORNER, min(lprev, lnext) * 0.5));
+
+    // ⭐ A FILLET RADIUS IS NOT A CORNER SIZE. Jordan, 2026-08-15, on the
+    // shipping Rounded Corner shape: "this is one big arc on one corner, not
+    // all corners rounded."
+    // MEASURED: that arc's radius is 0.40 x BuildingWidth — 40 on a 100-wide
+    // building, 80 at 200, 24 at 60 — and it is INDEPENDENT of BldCornerSize
+    // (4 and 25 give the same arc). It is a hardcoded ratio with no parameter,
+    // so today a user cannot control it at all.
+    // So radius is its own per-corner value. For a fillet the tangent length is
+    // derived FROM the radius (t = r / tan(interior/2)); for a right angle or
+    // chamfer the corner size is the tangent length directly.
+    float rad = CORNER;
+    if (haspointattrib(0, "corner_radius")) {
+        float rv = point(0, "corner_radius", pts[i]);
+        if (rv > 0) rad = rv;          // 0 or negative means inherit
+    }
+    append(radius, rad);
+
+    // ⚠ A per-point override must be OPT-IN PER POINT. Reading the attribute
+    // whenever it merely EXISTS means anything that creates it — for any one
+    // corner — silently pins every other corner to its default and the global
+    // parm stops working. Negative means inherit.
+    int st0 = STYLE;
+    if (haspointattrib(0, "corner_style")) {
+        int sv = point(0, "corner_style", pts[i]);
+        if (sv >= 0) st0 = sv;
+    }
+
+    float t;
+    if (st0 == 2 && cvx != 0) {
+        float a_arc = (cvx > 0) ? interior : 360.0 - interior;
+        float half  = radians(a_arc * 0.5);
+        t = rad / max(tan(half), EPS);
+    } else {
+        t = CORNER;
+    }
+    append(ext, cvx == 0 ? 0.0 : min(t, min(lprev, lnext) * 0.5));
 
     // per-corner style. A `corner_style` point attribute on the input outline
-    // overrides the global — which is what lets ONE shape mix chamfers and
-    // fillets, as the shipping Rounded shape does.
-    int st = STYLE;
-    if (haspointattrib(0, "corner_style")) st = point(0, "corner_style", pts[i]);
-    append(style, cvx == 0 ? 0 : st);
+    // overrides the global — which is what lets ONE shape mix right angles with
+    // a single large fillet, as the shipping Rounded shape does.
+    append(style, cvx == 0 ? 0 : st0);
 }
 
 // ── emit: Corner k, then Wall k, alternating ─────────────────────────────────
