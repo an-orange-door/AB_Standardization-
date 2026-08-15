@@ -1,0 +1,529 @@
+<title>Architectural Plans</title>
+<style>
+/* Palette: architectural section drawing. Graphite ink on near-white stock, one
+   deep slate for ridges and derived structure, an oxide red reserved for
+   valleys, reflex corners and unverified claims - the things that bite you.
+   Nothing is coloured decoratively; every hue carries a meaning. */
+:root{
+  --paper:#FAFAF8; --surface:#FFFFFF; --sunk:#F1F1EE;
+  --ink:#1A1D21; --muted:#5F656C; --line:#E1E2DE;
+  --ridge:#2F4B7C; --ridge-soft:#E8EDF5;
+  --valley:#9C4A2F; --valley-soft:#F8EAE4;
+  --eave:#6C7B8C;
+  --good:#3B6B4F; --good-soft:#E6F0E9;
+  --warn:#8A6A16; --warn-soft:#F8F0DA;
+  --serif:Charter,"Iowan Old Style",Georgia,"Times New Roman",serif;
+  --sans:ui-sans-serif,system-ui,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0F1113; --surface:#17191C; --sunk:#1E2124;
+  --ink:#E7E8E5; --muted:#969CA3; --line:#2A2E32;
+  --ridge:#82A6DB; --ridge-soft:#18222F;
+  --valley:#D58A6C; --valley-soft:#2B1C16;
+  --eave:#8FA0B3;
+  --good:#69AC85; --good-soft:#152219;
+  --warn:#CBA24E; --warn-soft:#262010;
+}}
+:root[data-theme="dark"]{
+  --paper:#0F1113; --surface:#17191C; --sunk:#1E2124;
+  --ink:#E7E8E5; --muted:#969CA3; --line:#2A2E32;
+  --ridge:#82A6DB; --ridge-soft:#18222F;
+  --valley:#D58A6C; --valley-soft:#2B1C16;
+  --eave:#8FA0B3;
+  --good:#69AC85; --good-soft:#152219;
+  --warn:#CBA24E; --warn-soft:#262010;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+     font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 96px;display:grid;
+      grid-template-columns:1fr;gap:0}
+@media(min-width:1080px){.wrap{grid-template-columns:212px minmax(0,1fr);gap:44px;
+  padding-top:8px}}
+main{max-width:74ch;min-width:0}
+h1{font-family:var(--sans);font-size:34px;line-height:1.14;letter-spacing:-.022em;
+   margin:52px 0 10px;text-wrap:balance;font-weight:700}
+h2{font-family:var(--sans);font-size:12px;text-transform:uppercase;
+   letter-spacing:.1em;color:var(--muted);margin:58px 0 6px;font-weight:700;
+   padding-bottom:7px;border-bottom:1px solid var(--line)}
+h3{font-family:var(--sans);font-size:19px;letter-spacing:-.012em;margin:34px 0 8px;
+   text-wrap:balance}
+h4{font-family:var(--sans);font-size:14.5px;margin:24px 0 5px}
+p{margin:0 0 15px}
+.lede{font-size:19.5px;line-height:1.5;color:var(--muted);margin:0 0 8px;
+      text-wrap:pretty}
+.byline{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin:0 0 34px;
+        padding-bottom:22px;border-bottom:2px solid var(--ink)}
+code{font-family:var(--mono);font-size:.87em;background:var(--sunk);padding:1px 5px;
+     border-radius:3px}
+a{color:var(--ridge)}
+nav{display:none}
+@media(min-width:1080px){nav{display:block;position:sticky;top:0;align-self:start;
+  padding-top:118px;max-height:100vh;overflow-y:auto}}
+nav a{display:block;font-family:var(--sans);font-size:12.5px;color:var(--muted);
+      text-decoration:none;padding:4px 0 4px 11px;border-left:2px solid var(--line);
+      line-height:1.35}
+nav a:hover{color:var(--ink);border-left-color:var(--ridge)}
+nav .grp{font-family:var(--sans);font-size:10px;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--muted);opacity:.65;margin:16px 0 4px;padding-left:11px}
+
+.m{font-family:var(--sans);font-size:10.5px;font-weight:700;text-transform:uppercase;
+   letter-spacing:.05em;padding:1px 6px;border-radius:3px;white-space:nowrap;
+   vertical-align:.09em}
+.m.cited{background:var(--good-soft);color:var(--good)}
+.m.derived{background:var(--ridge-soft);color:var(--ridge)}
+.m.measured{background:var(--ridge-soft);color:var(--ridge)}
+.m.trade{background:var(--warn-soft);color:var(--warn)}
+.m.unver{background:var(--valley-soft);color:var(--valley)}
+.legend{display:flex;gap:8px;flex-wrap:wrap;background:var(--surface);
+  border:1px solid var(--line);border-radius:8px;padding:13px 15px;margin:0 0 26px;
+  font-family:var(--sans);font-size:12.5px}
+.legend div{display:flex;gap:7px;align-items:baseline}
+
+.key{background:var(--surface);border:1px solid var(--line);
+     border-left:3px solid var(--ridge);border-radius:7px;padding:16px 19px;margin:24px 0}
+.key.warn{border-left-color:var(--valley);background:var(--valley-soft)}
+.key h4{margin-top:0}
+.key p:last-child{margin-bottom:0}
+.quote{font-size:17.5px;line-height:1.5;border-left:3px solid var(--ink);
+  padding:2px 0 2px 18px;margin:24px 0;color:var(--ink)}
+.quote cite{display:block;font-family:var(--sans);font-size:12px;font-style:normal;
+  color:var(--muted);margin-top:7px}
+
+figure{margin:30px 0;background:var(--surface);border:1px solid var(--line);
+  border-radius:9px;padding:20px 20px 14px;overflow-x:auto}
+figcaption{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-top:13px;
+  line-height:1.45}
+svg{display:block;max-width:100%;height:auto;margin:0 auto}
+
+.tw{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:8px;
+    background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13px;
+      min-width:540px}
+th{text-align:left;background:var(--sunk);padding:9px 12px;font-size:10.5px;
+   text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+   border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.fp{font-family:var(--sans);font-size:11px;font-weight:700;padding:1px 6px;
+    border-radius:3px;white-space:nowrap}
+.fp.yes{background:var(--good-soft);color:var(--good)}
+.fp.plus{background:var(--ridge-soft);color:var(--ridge)}
+.fp.no{background:var(--valley-soft);color:var(--valley)}
+ul,ol{margin:0 0 15px;padding-left:22px}
+li{margin-bottom:7px}
+.ops{list-style:none;padding:0;margin:22px 0;counter-reset:op}
+.ops li{counter-increment:op;background:var(--surface);border:1px solid var(--line);
+  border-radius:8px;padding:14px 17px 14px 52px;position:relative;margin-bottom:9px}
+.ops li::before{content:counter(op);position:absolute;left:17px;top:14px;
+  font-family:var(--mono);font-size:19px;font-weight:700;color:var(--ridge);opacity:.5}
+.ops b{font-family:var(--mono);font-size:14px}
+.eq{font-family:var(--mono);background:var(--sunk);border-radius:6px;padding:11px 15px;
+    margin:16px 0;font-size:14.5px;overflow-x:auto}
+.foot{margin-top:60px;padding-top:20px;border-top:1px solid var(--line);
+  font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<nav>
+  <div class="grp">Thesis</div>
+  <a href="#thesis">What we are building</a>
+  <a href="#throughline">Classify, don't enumerate</a>
+  <div class="grp">Footprints</div>
+  <a href="#today">What exists today</a>
+  <a href="#corners">The corner problem</a>
+  <a href="#classify">The classification layer</a>
+  <div class="grp">Roofs</div>
+  <a href="#roofvocab">Four operators</a>
+  <a href="#lplan">The same L-plan</a>
+  <a href="#matrix">Which forms come free</a>
+  <a href="#code">Three cities</a>
+  <div class="grp">Plan</div>
+  <a href="#order">Order of work</a>
+  <a href="#cannot">What it cannot do</a>
+  <a href="#caveats">Caveats</a>
+</nav>
+
+<main>
+<h1>Architectural Plans</h1>
+<p class="lede">Footprints and roofs are the same problem. A polygon arrives; the
+tool must work out what its parts are. Solve that once and both subsystems fall
+out — along with facades, and most of what comes after.</p>
+<p class="byline">AssetBash &middot; 15 August 2026 &middot; Sources in
+<code>U:\AB_Standardization\research\</code>, footprint findings measured live
+from <code>/obj/geo1/DowntownBuilding1</code></p>
+
+<div class="legend">
+  <div><span class="m cited">cited</span> read from a primary source</div>
+  <div><span class="m derived">derived</span> computed and reproduced by the check script</div>
+  <div><span class="m measured">measured</span> read from the live scene or library</div>
+  <div><span class="m trade">trade</span> vendor practice, not a spec</div>
+  <div><span class="m unver">unverified</span> recalled — do not build on it</div>
+</div>
+
+<h2 id="thesis">What we are building</h2>
+<blockquote class="quote">Something like KitBash but where you are not
+constrained by baked models with weird proportions.
+<cite>Jordan Halsey, 15 August 2026</cite></blockquote>
+<p>The inverse of a model store: <strong>procedural, standards-based,
+artist-controlled, optimised</strong> — and credible because the tools came out
+of years of production rather than being designed for a storefront.</p>
+<p>Today the strongest tools are <strong>signage</strong>, the more finished
+<strong>city props</strong>, and the <strong>door and window</strong> tool —
+whose framework is cheap to extend, which makes it unusually high return per
+hour. The named gap is that <strong>buildings need to increase in
+complexity</strong>. And the thing KitBash sells that we do not yet do
+systematically is <strong>decorating</strong> — which is exactly what
+<code>RooftopProcessor</code> is to a roof and <code>SidewalkProcessor</code> is
+to a sidewalk. That pattern generalised is what turns a shape into a place.</p>
+
+<h2 id="throughline">The through-line: classify, don't enumerate</h2>
+<p>Every subsystem here reduces to the same move. A shape arrives as a polygon,
+and the tool must <strong>derive</strong> its parts by measurement instead of
+having a human name them one at a time.</p>
+<div class="key">
+<h4>One classification layer, two subsystems</h4>
+<p><strong>Per vertex</strong> — turn angle, and the sign of the cross product
+giving convex versus reflex.<br>
+<strong>Per edge</strong> — length, direction, and its relation to its
+neighbours.</p>
+<p>That is <em>simultaneously</em> the footprint's corner-and-wall
+classification and the roof's per-edge weight vector, because
+<code>w<sub>e</sub> = cot θ<sub>e</sub></code> makes per-edge pitch a per-edge
+weight. <strong>Build it once.</strong></p>
+</div>
+
+<h2 id="today">Footprints — what exists today</h2>
+<p><code>DowntownBuilding</code>'s <code>CreateBldBase</code> holds six footprint
+subnets. Only three are wired. <span class="m measured">measured</span></p>
+
+<div class="tw"><table>
+<thead><tr><th>Subnet</th><th class="n">Nodes</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><code>FootprintSquare</code></td><td class="n">75</td><td>wired</td></tr>
+<tr><td><code>FootprinL</code> <span style="color:var(--muted)">(sic)</span></td><td class="n">110</td><td>wired</td></tr>
+<tr><td><code>FootprintRoundCorner</code></td><td class="n">92</td><td>wired</td></tr>
+<tr><td><code>FootprintU</code></td><td class="n">24</td><td><span class="fp no">dead — no outputs</span></td></tr>
+<tr><td><code>FootprintRound</code></td><td class="n">8</td><td><span class="fp no">dead — no outputs</span></td></tr>
+<tr><td><code>FootprintSquare1</code></td><td class="n">41</td><td><span class="fp no">dead — no outputs</span></td></tr>
+</tbody>
+</table></div>
+
+<p><strong>277 nodes for three shapes</strong>, plus 73 nodes of abandoned work.
+The diagnosis is in how the counts scale:</p>
+
+<div class="tw"><table>
+<thead><tr><th></th><th class="n">Edges</th><th class="n">groupcreate</th>
+<th class="n">color</th><th class="n">attribcreate</th><th class="n">switch</th></tr></thead>
+<tbody>
+<tr><td><code>FootprintSquare</code></td><td class="n">4</td><td class="n">8</td><td class="n">8</td><td class="n">8</td><td class="n">16</td></tr>
+<tr><td><code>FootprinL</code></td><td class="n">6</td><td class="n">12</td><td class="n">12</td><td class="n">12</td><td class="n">24</td></tr>
+</tbody>
+</table></div>
+
+<p>Everything is authored <strong>once per edge, by hand</strong> —
+<code>WallLeft/Front/Right/Back</code> plus <code>Corner_01…Corner_04</code>. So
+adding a U means hand-authoring eight walls and eight corners, which is almost
+certainly why <code>FootprintU</code> was abandoned. Drift has already started:
+<code>FootprintRoundCorner</code> carries <code>Corner_01…Corner_05</code> and a
+stray <code>WallRight1</code>.</p>
+<p>This is the same disease as MetalExtrusionMaker's six Add SOPs, and it has the
+same cure.</p>
+
+<h2 id="corners">The corner problem</h2>
+<p>There are two corner mechanisms in the tool and they cannot meet.</p>
+<p>The hand-built shapes <strong>name</strong> their corners.
+<code>BaseFromCurve</code> cannot, so it does something else: resample the curve
+at <code>BaseModSize</code>, copy a sphere onto each <em>original</em> curve
+point, and group the resampled points falling inside it.
+<span class="m measured">measured</span></p>
+<p>The instinct is right. Four things limit it:</p>
+<ul>
+<li><strong>The sphere is a fixed absolute size</strong> — radius 0.5 × scale
+0.1, about 0.05 units. It does not scale with <code>BldCornerSize</code> (3.0)
+or with the resample length, so corner capture is a constant radius at any
+building size.</li>
+<li><strong>It cannot measure the corner angle.</strong> A 90° corner and a 175°
+near-straight vertex group identically, so treatment can never vary by
+sharpness — which is exactly what real architecture does.</li>
+<li><strong>It cannot detect reflex corners.</strong> An L's inner corner needs
+an inner fillet, not an outer chamfer. Opposite operations.</li>
+<li><strong>It groups points, not edges</strong> — so there is no per-wall
+classification at all.</li>
+</ul>
+<p>That last one is the real ceiling. Downstream modules consume
+<code>MF_walls</code>, <code>BldBase</code>, <code>BldCorners</code> and
+<code>extrudePlane</code> — <strong>those group names are the contract</strong>,
+and a curve input can never produce them.</p>
+
+<h2 id="classify">The classification layer</h2>
+<p>Compute what is currently named. For any closed planar polygon:</p>
+<figure>
+<svg viewBox="0 0 470 330" role="img"
+     aria-label="L-shaped footprint with each wall numbered and each corner marked convex or reflex">
+  <g transform="translate(40,290) scale(8,-8)">
+    <polygon points="0,0 32,0 32,20 16,20 16,44 0,44"
+             fill="none" stroke="var(--ink)" stroke-width="0.32"/>
+    <g fill="var(--good)">
+      <circle cx="0" cy="0" r="0.55"/><circle cx="32" cy="0" r="0.55"/>
+      <circle cx="32" cy="20" r="0.55"/><circle cx="16" cy="44" r="0.55"/>
+      <circle cx="0" cy="44" r="0.55"/>
+    </g>
+    <circle cx="16" cy="20" r="0.75" fill="var(--valley)"/>
+  </g>
+  <g font-family="ui-monospace,Consolas,monospace" font-size="10" fill="var(--ridge)">
+    <text x="150" y="304">wall 0</text><text x="304" y="216">wall 1</text>
+    <text x="200" y="128">wall 2</text><text x="178" y="66">wall 3</text>
+    <text x="60" y="20">wall 4</text><text x="6" y="170">wall 5</text>
+  </g>
+  <g font-family="ui-sans-serif,system-ui,sans-serif" font-size="10.5">
+    <text x="330" y="252" fill="var(--good)">● convex &nbsp;90°&nbsp; ×5</text>
+    <text x="330" y="270" fill="var(--valley)">● reflex &nbsp;270°&nbsp; ×1</text>
+    <text x="330" y="288" fill="var(--muted)">6 walls · 6 corners</text>
+  </g>
+</svg>
+<figcaption>Six walls and six corners, derived — not named. This is precisely
+what <code>FootprinL</code>'s twelve hand-authored <code>groupcreate</code>
+nodes produce today, and the one reflex corner is the one its sphere method
+cannot distinguish.</figcaption>
+</figure>
+
+<p>Emit <code>f@corner_angle</code>, <code>i@corner_convex</code>,
+<code>i@wall_id</code>, and pick the corner treatment from a <strong>catalog
+keyed by angle band</strong> — the same column lookup as SignLibrary's
+SizeClass. That yields U, T, cross, courtyard and arbitrary curves with
+<strong>zero new subnets</strong>, and promotes <code>BaseFromCurve</code> from
+a degraded path to the primary one.</p>
+<div class="key warn">
+<h4>The constraint that governs the build</h4>
+<p><strong>Keep emitting the existing group names.</strong> <code>WallLeft</code>,
+<code>Corner_01</code>, <code>BldCorners</code> — generate them from the
+classification rather than authoring them, or every downstream building tool
+breaks. The verification test writes itself: an N-gon must yield N wall groups
+and N corner groups, and Square and L must reproduce their current groups
+exactly.</p>
+</div>
+
+<h2 id="roofvocab">Roofs — four operators</h2>
+<p>The same classification, lifted. Four operators span the whole typology, and
+the first absorbs fourteen of eighteen named forms with no branching.</p>
+<ol class="ops">
+<li><b>SKELETON</b> — a weighted straight skeleton, lifted by a banded section
+profile. Footprint, per-edge weight vector, ordered bands.</li>
+<li><b>SWEEP</b> — a periodic section along an axis, clipped. Sawtooth, folded
+plate, monitors, vaults.</li>
+<li><b>INSERT</b> — a sub-mass booleaned into a face. Dormers, bulkheads, tanks,
+cupolas.</li>
+<li><b>TRIM</b> — a profile swept along a classified edge: eave, rake, ridge,
+hip, valley, coping. <strong>All of STYLE lives here.</strong></li>
+</ol>
+<div class="key">
+<h4>The hinge identity</h4>
+<div class="eq">w<sub>e</sub> = cot θ<sub>e</sub></div>
+<p>Per-edge pitch <em>is</em> per-edge wavefront speed — which is why the
+footprint's edge classification is already the roof's input. Set two weights to
+zero and a hip becomes a gable; three, a shed. Hip-and-valley and cross-gable
+stop being types at all.</p>
+</div>
+<p>And the band profile in (run, rise) <strong>is a moulding profile</strong> —
+same curve, same authoring problem. The ten composable elements written for the
+WM catalog become the roof section library. Third use of one pattern.</p>
+
+<h2 id="lplan">The same L-plan, lifted</h2>
+<p>Uniform 6:12, drawn to scale from the computed skeleton.
+<span class="m derived">derived</span></p>
+<figure>
+<svg viewBox="0 0 470 330" role="img"
+     aria-label="The same L footprint with its straight skeleton: ridges, hips and one valley">
+  <defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)"
+    patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="6" stroke="var(--line)" stroke-width="1.4"/>
+  </pattern></defs>
+  <g transform="translate(40,290) scale(8,-8)">
+    <polygon points="0,0 32,0 32,20 16,20 16,44 0,44"
+             fill="url(#hatch)" stroke="var(--ink)" stroke-width="0.28"/>
+    <g stroke="var(--eave)" stroke-width="0.2" stroke-dasharray="1.1 0.7">
+      <line x1="0" y1="0" x2="10" y2="10"/><line x1="32" y1="0" x2="22" y2="10"/>
+      <line x1="32" y1="20" x2="22" y2="10"/><line x1="16" y1="44" x2="8" y2="36"/>
+      <line x1="0" y1="44" x2="8" y2="36"/><line x1="8" y1="12" x2="10" y2="10"/>
+    </g>
+    <line x1="16" y1="20" x2="8" y2="12" stroke="var(--valley)" stroke-width="0.42"/>
+    <g stroke="var(--ridge)" stroke-width="0.5">
+      <line x1="8" y1="12" x2="8" y2="36"/><line x1="10" y1="10" x2="22" y2="10"/>
+    </g>
+    <g fill="var(--ridge)">
+      <circle cx="10" cy="10" r="0.42"/><circle cx="22" cy="10" r="0.42"/>
+      <circle cx="8" cy="12" r="0.42"/><circle cx="8" cy="36" r="0.42"/>
+    </g>
+  </g>
+  <g font-family="ui-monospace,Consolas,monospace" font-size="10.5" fill="var(--muted)">
+    <text x="150" y="222">ridge 5.0 ft</text>
+    <text x="20" y="110">ridge</text><text x="20" y="123">4.0 ft</text>
+    <text x="122" y="196" fill="var(--valley)">valley</text>
+  </g>
+  <g font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">
+    <text x="330" y="230" fill="var(--ridge)">— ridge</text>
+    <text x="330" y="248" fill="var(--valley)">— valley</text>
+    <text x="330" y="266" fill="var(--eave)">--- hip</text>
+  </g>
+</svg>
+<figcaption>The reflex corner marked in the footprint diagram is the vertex that
+generates the valley. Six input edges give exactly six roof faces — two of them
+<strong>pentagons</strong>, so any implementation assuming quads breaks on
+precisely the footprints that matter. Plan areas sum to 1024.00 ft², residual
+exactly zero; surface 1144.8668 ft² = 1024 / cos(26.565°).</figcaption>
+</figure>
+<div class="key">
+<h4>The two ridges sit at different heights, and that is correct</h4>
+<p>Wing 4.0 ft, main block 5.0 ft — the deeper mass rides higher at a single
+pitch, and a framer gets the same answer. Matching them needs
+<code>m = 5/8</code> = <strong>7.5:12</strong> on the wing
+<span class="m derived">derived</span>, which is the canonical reason to reach
+for the weighted skeleton and a one-line rule the tool can offer as a button.</p>
+</div>
+<div class="key warn">
+<h4>Rectilinear footprints are the degenerate case, not the general one</h4>
+<p>At <code>t = 8</code> the reflex vertex's split event and an edge collapse
+happen simultaneously — and for <em>any</em> rectilinear L they always do, at
+<code>t = min(w,h)/2</code>. <span class="m derived">derived</span> Building
+footprints are overwhelmingly rectilinear, so the case theory treats as a rare
+coincidence is the normal input. <strong>Deterministic tie-breaking is a
+prerequisite.</strong></p>
+</div>
+
+<h2 id="matrix">Which forms come free from the outline</h2>
+<div class="tw"><table>
+<thead><tr><th>Form</th><th>Generating geometry</th><th>Footprint?</th>
+<th>Minimum extra input</th></tr></thead>
+<tbody>
+<tr><td><strong>Hip</strong></td><td>Plain skeleton, uniform <code>w</code></td><td><span class="fp yes">FP only</span></td><td>—</td></tr>
+<tr><td><strong>Hip-and-valley</strong></td><td><em>Nothing new</em> — hip on a non-convex plan</td><td><span class="fp yes">FP only</span></td><td>—</td></tr>
+<tr><td><strong>Pyramidal</strong></td><td>Hip on a regular polygon</td><td><span class="fp yes">FP only</span></td><td>—</td></tr>
+<tr><td><strong>Gambrel</strong></td><td>Two-band gable, semicircle construction</td><td><span class="fp yes">FP only</span></td><td>— (else FP+2)</td></tr>
+<tr><td><strong>Gable</strong></td><td>Skeleton, <code>w=0</code> on the ends</td><td><span class="fp plus">FP + bits</span></td><td>which edges are gable</td></tr>
+<tr><td><strong>Shed</strong></td><td><code>w=0</code> on all but one edge</td><td><span class="fp plus">FP + 1 bit</span></td><td>which edge is high</td></tr>
+<tr><td><strong>Butterfly</strong></td><td>Skeleton, negative lift</td><td><span class="fp plus">FP + 1 bit</span></td><td>sign of the lift</td></tr>
+<tr><td><strong>Jerkinhead</strong></td><td>Gable to <code>h</code>, hip above</td><td><span class="fp plus">FP + 1</span></td><td>clip height</td></tr>
+<tr><td><strong>Hip-with-gablet</strong></td><td>Hip to <code>h</code>, gable above</td><td><span class="fp plus">FP + 1</span></td><td>gablet height</td></tr>
+<tr><td><strong>Saltbox</strong></td><td>Gable, unequal pitches</td><td><span class="fp plus">FP + 1</span></td><td>ridge plan offset</td></tr>
+<tr><td><strong>Flat + parapet</strong></td><td>All <code>w = 0</code></td><td><span class="fp plus">FP + 1</span></td><td>parapet height</td></tr>
+<tr><td><strong>Mansard</strong></td><td>Two-band hip</td><td><span class="fp plus">FP + 2</span></td><td>break height + upper pitch</td></tr>
+<tr><td><strong>Sawtooth</strong></td><td>Periodic section, clipped</td><td><span class="fp no">not FP</span></td><td>axis + period</td></tr>
+<tr><td><strong>Dormers</strong></td><td><code>INSERT</code> into a face</td><td><span class="fp no">not FP</span></td><td>a room — not in the perimeter</td></tr>
+</tbody>
+</table></div>
+<p><strong>Two naming traps.</strong> "Dutch gable" means a gablet in American
+usage, a shaped gable <em>wall</em> in European usage, and gambrel in some survey
+forms — a three-way collision. Never put the string in a menu; ship
+<code>HipWithGablet</code> and <code>ShapedGable</code>. And "mansard" is a
+typology, not a style: it changes dimensions, so under the project's own rule it
+cannot be style. Second Empire is the style.</p>
+
+<h2 id="code">Three cities, three different roofs</h2>
+<p>The useful finding is not what the codes share — it is that they reward a
+pitched roof in <strong>mutually incompatible</strong> ways, so one line of
+policy each produces three distinguishable skylines.</p>
+<div class="tw"><table>
+<thead><tr><th></th><th>New York</th><th>San Francisco</th><th>Los Angeles</th></tr></thead>
+<tbody>
+<tr><td><strong>Pitch reward</strong></td><td>None — draws an envelope instead</td><td>Continuous, to the midrise, uncapped</td><td>Flat bounty at one gate: slope ≥ 25%</td></tr>
+<tr><td><strong>Distribution</strong></td><td>Pitch follows plan depth</td><td>Smooth spread toward steeper</td><td><strong>A spike at exactly 3:12</strong></td></tr>
+<tr><td><strong>Parapets</strong></td><td>A <strong>6-inch window</strong>: ≥42 in required, ≤4 ft permitted</td><td>Free to 4 ft</td><td>Counted in full</td></tr>
+<tr><td><strong>Rooftop clutter</strong></td><td>Coverage tier + street-wall setback</td><td>By area — 30%, 40% screened</td><td>By feet and setback, no area cap</td></tr>
+</tbody>
+</table></div>
+<div class="key">
+<h4>NYC ZR 23-421 is a straight skeleton written into law</h4>
+<p>Walls to 25 ft, then planes converging on a <strong>35 ft ridge</strong>, max
+face angle 80°. Pitch is not a style choice — it is a consequence of plan depth,
+<code>atan(10/(D/2))</code>. The regulation and the geometry are the same object.</p>
+<p>One caveat: the sky exposure plane that produced Manhattan's stepped ziggurats
+was <strong>demoted to opt-in on 5 December 2024</strong>. It explains what is
+standing, not what gets built now.</p>
+</div>
+<p><strong>IRC R905</strong> gives a citable floor on pitch per covering — slate
+4:12, asphalt 2:12, standing seam ¼:12 <span class="m cited">cited</span>. That
+is the honest way to clamp a pitch slider: not an arbitrary minimum, but the
+slope below which the material is not permitted.</p>
+
+<h2 id="order">Order of work</h2>
+<p><strong>Houdini already ships the core algorithm.</strong>
+<code>polyexpand2d</code> computes the weighted straight skeleton natively — its
+Inside Scale attribute <em>is</em> <code>cot θ<sub>e</sub></code>. Across all 155
+tools it appears exactly <strong>once</strong>, in
+<code>CommercialSignGenerator 4.8</code>. <span class="m measured">measured</span>
+So this is wiring, not implementing.</p>
+<ol>
+<li><strong>The classification layer</strong> — vertex angle, convex/reflex,
+edge id. Serves footprints and roofs both; nothing else can start cleanly
+without it.</li>
+<li><strong><code>AB::BuildingFootprints::1.0</code></strong> — replaces 277
+nodes and three dead subnets, and makes <code>BaseFromCurve</code> primary.</li>
+<li><strong>Doors and windows</strong> — highest-rated tool, cheapest to extend,
+and exercises all three axes.</li>
+<li><strong>Roof <code>SKELETON</code> + <code>TRIM</code></strong> — form, then
+style.</li>
+<li><strong>The processor / decorating family</strong> — the product surface,
+not a tidy-up phase.</li>
+</ol>
+<h3>Catalog versus parameter</h3>
+<ul>
+<li><strong>Catalog CSV</strong> — covering minimum slopes, code height and
+parapet limits per city, standard door and window sizes, corner treatments by
+angle band. Facts, citable, versioned. Same pattern as signs, hardware and
+mouldings.</li>
+<li><strong>Parameter</strong> — pitch, break height, corner size, which edges
+are gable. Per-instance choices.</li>
+<li><strong>TYPOLOGY</strong> sets dimensions; <strong>STYLE</strong> is the
+<code>TRIM</code> operator and must never move the bounding box;
+<strong>VARIATION</strong> is sag, patching and replacement.</li>
+</ul>
+<h3>The verification test</h3>
+<ul>
+<li>N-gon in → <strong>N wall groups and N corner groups</strong>; Square and L
+reproduce their current groups exactly.</li>
+<li><strong>Face count = input edge count.</strong></li>
+<li><strong>Plan areas sum to the footprint</strong>, residual zero.</li>
+<li><strong>Surface = plan / cos θ</strong> at uniform pitch.</li>
+<li><strong>No vertex below grade</strong> — the naive tilted-planes construction
+fails this on an L.</li>
+</ul>
+
+<h2 id="cannot">What this approach cannot do</h2>
+<ul>
+<li><strong>Dormers, sawtooth and folded plate are not footprint problems.</strong>
+Their generators — a room, a direction, a period — are not in the perimeter.</li>
+<li><strong>Curved and freeform roofs</strong> fall outside a straight-skeleton
+construction by definition.</li>
+<li><strong>Structure is not solved by generating the surface.</strong> Spans,
+load paths and truss selection are a separate layer.</li>
+<li><strong>Historical accuracy is not geometric accuracy.</strong> The skeleton
+will happily produce a shape no builder of that period would have framed.</li>
+<li><strong>Set dressing is not worth proceduralising</strong> where it can be
+hard-surface modelled faster by hand. The procedural investment belongs where
+proportion and variation matter.</li>
+</ul>
+
+<h2 id="caveats">Caveats — read before citing any of this</h2>
+<p>The confidence marks are the point, not decoration. Not verified: <strong>ASCE
+7 primary text</strong> (paywalled); <strong>all NYC Building Code text</strong>
+beyond a secondary publisher, and <strong>ZR 33-42 entirely</strong>; the City of
+Yes old→new section mapping, which DCP appears not to publish; truss span ranges,
+which are <span class="m trade">trade</span> and not for anything load-bearing.</p>
+<div class="key warn">
+<h4>One fabricated quotation was caught during the research</h4>
+<p>A "verbatim" NYC code quotation was produced, identified as fabricated, and
+discarded. It is recorded rather than quietly removed, because that is exactly
+the failure the confidence marks exist to catch — and the reason every figure
+here is either cited or reproduced by a script.</p>
+</div>
+
+<p class="foot">Full roof report: <code>roof_typology_and_math.md</code> (2,159
+lines); every <span class="m derived">derived</span> figure is reproduced by
+<code>roof_math_check.py</code>, pure Python, no Houdini. Footprint findings read
+live from the scene via the Houdini MCP. Research agent:
+<code>~/.claude/agents/architect.md</code>.</p>
+</main>
+</div>

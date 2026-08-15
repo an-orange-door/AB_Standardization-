@@ -1,0 +1,15 @@
+code,name,confidence
+x01h25,EvacuationRoute,high
+x01h26,AreaClosed,high
+x01h27,FalloutShelter,high
+x01h28,SchoolCrossing,high
+x01h29,SchoolCrossingWithCrosswalk,high
+x01h30,SchoolBusStopAhead,high
+x01h31,PlaqueSchool,high
+x01h32,PlaqueWhenFlashing,high
+x01h33,SchoolSpeedLimit20WhenFlashing,high
+x01h35,SlowChildrenAtPlay,high
+x01i14,SignalHandDontWalk,high
+x01i15,SignalWalkingPerson,high
+x01i16,SignalDontWalkText,high
+x01i17,SignalWalkText,high

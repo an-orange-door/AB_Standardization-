@@ -1,0 +1,190 @@
+// AB::MetalExtrusionMaker — profile generation, Detail wrangle (Run Over: Detail)
+//
+// Replaces six Add SOPs whose ~70 interdependent hscript channel expressions
+// encoded each profile. Written out as maths so a section can be stated rather
+// than emerge from a dependency chain.
+//
+// ─── THE CONFLATION THIS FIXES ────────────────────────────────────────────────
+// In 2.0 a single `thick` parm did two different jobs on the I-beam:
+//     pt1y = thick                    -> FLANGE thickness
+//     pt2x = width/2 - thick          -> WEB HALF-thickness
+// so the I-beam's web came out at 2 x thick while the T-bar's stem came out at
+// 1 x thick from the same parm. Measured, not inferred: at w=h=1, thick=0.1 the
+// shipped I-beam web spans x 0.40..0.60 (0.2 wide) and the shipped T-bar stem
+// spans 0.45..0.55 (0.1 wide). So the tool is inconsistent with ITSELF, and no
+// real rolled section can be represented (a W8x31 has a 0.288" web and a 0.433"
+// flange - the web is THINNER than the flange, the opposite of what 2.0 makes).
+// Here they are separate and both mean full thickness: web_thick, flange_thick.
+//
+// ─── BACKWARD COMPATIBILITY ───────────────────────────────────────────────────
+// web_thick and flange_thick default to ch("../thick"), which reproduces the
+// C Channel, T Bar, Angle and Square Tube exactly - verified point-for-point by
+// parity_test_extrusions.py across 27 width/height/thickness combinations each.
+// ⚠ THE I-BEAM IS THE ONE EXCEPTION and it needs a decision, because matching
+// it means preserving the inconsistency above. See LEGACY_IBEAM_WEB below.
+//
+// ─── CONVENTIONS ──────────────────────────────────────────────────────────────
+// Profiles span 0..width in X and 0..height in Y, matching 2.0's origin
+// convention. The existing Pivot parm still does the centring, so nothing
+// downstream changes.
+// Vertex order is copied from the shipped Add SOPs: start at the origin, up the
+// left edge, across, back down - which is CLOCKWISE (negative signed area).
+// Ordered parity matters because a sweep seams at the start vertex, so a
+// correct shape with a rotated start still sweeps differently.
+// Built on the XY plane; the existing SwitchAxis subnet still orients it.
+
+int   type   = chi("../ext_type");
+float W      = chf("../width");
+float H      = chf("../height");
+float tw     = chf("../web_thick");      // web / stem / vertical-leg thickness
+float tf     = chf("../flange_thick");   // flange / horizontal-leg thickness
+float wall   = chf("../thick");          // hollow-section wall
+int   segs   = max(chi("../divisions"), 3);
+
+// Set to 1 to reproduce 2.0's I-beam exactly (web = 2 x web_thick).
+// Set to 0 for a web that means what it says, consistent with every other
+// profile in this tool and with AISC.
+int   LEGACY_IBEAM_WEB = chi("../legacy_ibeam_web");
+
+float xc = W * 0.5;        // web centreline
+
+// ── helpers ──────────────────────────────────────────────────────────────────
+//
+// WINDING IS ENFORCED, NOT ASSUMED.
+// These profiles are swept downstream, so the winding decides which way the
+// resulting surface normals face. Rather than depending on the vertex order
+// being typed correctly for ten profiles, every loop is measured with the
+// shoelace formula and reversed if it came out the wrong way.
+// That removes the whole "reverse the curve if the extrude looks wrong" class
+// of bug: it cannot be wrong, because it is checked at build time.
+// The shipped profiles are all CLOCKWISE, so outer loops ask for -1.
+
+float signed_area(vector pts[]) {
+    // Shoelace on the XY plane. > 0 is counter-clockwise, < 0 is clockwise.
+    float a = 0;
+    int n = len(pts);
+    for (int i = 0; i < n; i++) {
+        vector p = pts[i];
+        vector q = pts[(i + 1) % n];
+        a += p.x * q.y - q.x * p.y;
+    }
+    return a * 0.5;
+}
+
+// want: -1 clockwise (outer loops, matching 2.0), +1 counter-clockwise (holes)
+int emit(vector pts[]; int closed; int want) {
+    vector v[] = pts;
+    if (want != 0 && closed) {
+        float a = signed_area(v);
+        if ((want > 0 && a < 0) || (want < 0 && a > 0)) {
+            // reverse in place but KEEP THE FIRST VERTEX FIRST, so the sweep
+            // seam does not move. A plain reversal would rotate the start.
+            vector r[];
+            append(r, v[0]);
+            for (int i = len(v) - 1; i >= 1; i--) append(r, v[i]);
+            v = r;
+        }
+    }
+    int prim = addprim(0, "poly");
+    foreach (vector p; v) addvertex(0, prim, addpoint(0, p));
+    setprimintrinsic(0, "closed", prim, closed);
+    // recorded so a downstream check, or a human, can see the winding without
+    // having to sweep it and look at the result
+    setprimattrib(0, "profile_area", prim, signed_area(v));
+    setprimattrib(0, "profile_loop", prim, want > 0 ? "inner" : "outer");
+    return prim;
+}
+
+// NOTE the `function` keyword: VEX requires it on a function that RETURNS an
+// array. Functions that merely take one (emit, signed_area) do not need it, so
+// this reads as an inconsistency in the file. It is not - it is the language.
+function vector[] ring(vector centre; float rx; float ry; int n; int reverse) {
+    vector out[];
+    for (int i = 0; i < n; i++) {
+        float t = 2.0 * PI * (float)(reverse ? n - i : i) / (float)n;
+        append(out, centre + set(cos(t) * rx, sin(t) * ry, 0));
+    }
+    return out;
+}
+
+// ── profiles ─────────────────────────────────────────────────────────────────
+// Vertex orders 0..4 are transcribed from the shipped Add SOPs, not re-derived.
+if (type == 0) {
+    // I BEAM / WIDE FLANGE — 12 points.
+    float hw = LEGACY_IBEAM_WEB ? tw : tw * 0.5;
+    emit(array(
+        set(0,       0,      0), set(0,       tf,     0),
+        set(xc - hw, tf,     0), set(xc - hw, H - tf, 0),
+        set(0,       H - tf, 0), set(0,       H,      0),
+        set(W,       H,      0), set(W,       H - tf, 0),
+        set(xc + hw, H - tf, 0), set(xc + hw, tf,     0),
+        set(W,       tf,     0), set(W,       0,      0)), 1, -1);
+
+} else if (type == 1) {
+    // C CHANNEL — web on -X, flanges toward +X. 8 points.
+    emit(array(
+        set(0,  0,      0), set(0,  H,      0),
+        set(W,  H,      0), set(W,  H - tf, 0),
+        set(tw, H - tf, 0), set(tw, tf,     0),
+        set(W,  tf,     0), set(W,  0,      0)), 1, -1);
+
+} else if (type == 2) {
+    // T BAR — flange along the BOTTOM, stem rising. 8 points.
+    // (2.0 builds it this way up; the SwitchAxis subnet handles orientation.)
+    float hw = tw * 0.5;
+    emit(array(
+        set(0,       0,  0), set(0,       tf, 0),
+        set(xc - hw, tf, 0), set(xc - hw, H,  0),
+        set(xc + hw, H,  0), set(xc + hw, tf, 0),
+        set(W,       tf, 0), set(W,       0,  0)), 1, -1);
+
+} else if (type == 3) {
+    // ANGLE — 6 points. Unequal LEGS come free from width != height;
+    // unequal leg THICKNESS comes from web_thick != flange_thick.
+    emit(array(
+        set(0,  0,  0), set(0,  H,  0),
+        set(tw, H,  0), set(tw, tf, 0),
+        set(W,  tf, 0), set(W,  0,  0)), 1, -1);
+
+} else if (type == 4) {
+    // SQUARE / RECTANGULAR TUBE — a plain closed square, exactly as 2.0 makes
+    // it. Swept along a curve a closed profile already produces a hollow tube;
+    // an inner loop is only needed when the cut ends are visible, which is what
+    // type 5 offers. Rectangular is just width != height, so it needs no entry.
+    emit(array(set(0, 0, 0), set(0, H, 0), set(W, H, 0), set(W, 0, 0)), 1, -1);
+
+// ── new in 3.0. Menu is APPEND-ONLY: 0..4 above must never be renumbered. ────
+} else if (type == 5) {
+    // ROUND TUBE / PIPE — the profile 2.0 could not make, and the one every
+    // sign post, gantry, handrail and utility pole actually is. Walled, so the
+    // cut ends read as pipe rather than as a solid rod.
+    vector c = set(xc, H * 0.5, 0);
+    emit(ring(c, xc,        H * 0.5,        segs, 0), 1, -1);
+    emit(ring(c, xc - wall, H * 0.5 - wall, segs, 1), 1,  1);
+
+} else if (type == 6) {
+    // ROUND BAR — solid. Also the correct profile for a swept handrail.
+    emit(ring(set(xc, H * 0.5, 0), xc, H * 0.5, segs, 0), 1, -1);
+
+} else if (type == 7) {
+    // FLAT BAR / PLATE — height is the thickness.
+    emit(array(set(0, 0, 0), set(0, H, 0), set(W, H, 0), set(W, 0, 0)), 1, -1);
+
+} else if (type == 8) {
+    // HAT CHANNEL — top hat: two outward flanges, webs, crown. 8 points.
+    float f = tf;                       // flange width
+    emit(array(
+        set(0,     0,      0), set(0,     H,      0),
+        set(W,     H,      0), set(W,     0,      0),
+        set(W - f, 0,      0), set(W - f, H - tw, 0),
+        set(f,     H - tw, 0), set(f,     0,      0)), 1, -1);
+
+} else if (type == 9) {
+    // Z PURLIN — flanges on opposite sides of the web. 8 points.
+    float hw = tw * 0.5;
+    emit(array(
+        set(0,       0,      0), set(0,       tf,     0),
+        set(xc - hw, tf,     0), set(xc - hw, H,      0),
+        set(W,       H,      0), set(W,       H - tf, 0),
+        set(xc + hw, H - tf, 0), set(xc + hw, 0,      0)), 1, -1);
+}

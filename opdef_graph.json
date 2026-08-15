@@ -1,0 +1,1545 @@
+{
+ "assets": {
+  "AB.BalconyGenerator.2.0.hda": {
+   "path": "Sops/BuildingProps/AB.BalconyGenerator.2.0.hda",
+   "size": 48186185,
+   "owns": [
+    "Metal_WornAnvilIron_2k_alb.tga",
+    "Metal_WornAnvilIron_2k_n.tga",
+    "Metal_Galvanized_01_basecolor.png",
+    "Metal_Galvanized_01_normal.png",
+    "Metal_Galvanized_01_roughness.png"
+   ],
+   "refs": [
+    "AB::Sop/BalconyMaker::2.0?Metal_WornAnvilIron_2k_alb.tga",
+    "AB::Sop/BalconyMaker::2.0?Metal_WornAnvilIron_2k_n.tga",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_basecolor.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_normal.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_roughness.png"
+   ]
+  },
+  "AB.DoorGenerator.4.0.hda": {
+   "path": "Sops/BuildingProps/AB.DoorGenerator.4.0.hda",
+   "size": 519713,
+   "owns": [],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Basecolor.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Roughness.tga"
+   ]
+  },
+  "AB.RooftopMechanicals.3.0.hda": {
+   "path": "Sops/BuildingProps/AB.RooftopMechanicals.3.0.hda",
+   "size": 59756465,
+   "owns": [
+    "Aluminum_Brushed_baseColor.png",
+    "Aluminum_Brushed_normal.png",
+    "Aluminum_Brushed_roughness.png",
+    "Metal_Rusty_02_Basecolor.tga",
+    "Metal_Rusty_02_Normal.tga"
+   ],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Aluminum_Brushed_baseColor.png",
+    "AB::Sop/RooftopMechanicals::3.0?Aluminum_Brushed_normal.png",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Normal.tga"
+   ]
+  },
+  "AB.SkylightGenerator.2.0.hda": {
+   "path": "Sops/BuildingProps/AB.SkylightGenerator.2.0.hda",
+   "size": 100720338,
+   "owns": [
+    "Metal_HexGrid_01_Basecolor.tga",
+    "Metal_HexGrid_01_Mask.tga",
+    "Metal_HexGrid_01_Normal.tga",
+    "Metal_HexGrid_01_Roughness.tga",
+    "Metal_Brushed_001_Basecolor.tga",
+    "Metal_Brushed_001_Normal.tga",
+    "Metal_Brushed_001_Roughness.tga",
+    "Metal_HexGrid_01_Trans.tga"
+   ],
+   "refs": [
+    "AB::Sop/SkylightCreator_::2.0?Metal_Brushed_001_Basecolor.tga",
+    "AB::Sop/SkylightCreator_::2.0?Metal_HexGrid_01_Basecolor.tga",
+    "AB::Sop/SkylightCreator_::2.0?Metal_HexGrid_01_Mask.tga",
+    "AB::Sop/SkylightCreator_::2.0?Metal_HexGrid_01_Normal.tga",
+    "AB::Sop/SkylightCreator_::2.0?Metal_HexGrid_01_Roughness.tga",
+    "AB::Sop/SkylightCreator_::2.0?Metal_HexGrid_01_Trans.tga",
+    "AB::Sop/SkylightCreator_::2.0?Metal_HexGrid_01_Trans_02.tga"
+   ]
+  },
+  "AB.StairwayTops.3.0.hda": {
+   "path": "Sops/BuildingProps/AB.StairwayTops.3.0.hda",
+   "size": 177242454,
+   "owns": [
+    "Concrete_Plain_Basecolor.tga",
+    "Concrete_Plain_Normal.tga",
+    "Concrete_Plain_Roughness.tga",
+    "Aluminum_Brushed_baseColor.png",
+    "Aluminum_Brushed_normal.png",
+    "Aluminum_Brushed_roughness.png",
+    "Metal_WornAnvilIron_2k_alb.tga",
+    "Metal_WornAnvilIron_2k_n.tga"
+   ],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Aluminum_Brushed_baseColor.png",
+    "AB::Sop/RooftopMechanicals::3.0?Aluminum_Brushed_normal.png",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Basecolor.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Roughness.tga"
+   ]
+  },
+  "AB.WaterTankGenerator.2.0.hda": {
+   "path": "Sops/BuildingProps/AB.WaterTankGenerator.2.0.hda",
+   "size": 145492,
+   "owns": [],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga"
+   ]
+  },
+  "AB.ApartmentRow.1.0.hda": {
+   "path": "Sops/Buildings/AB.ApartmentRow.1.0.hda",
+   "size": 117845406,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.ApartmentRow.1.1.hda": {
+   "path": "Sops/Buildings/AB.ApartmentRow.1.1.hda",
+   "size": 117844046,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.ApartmentRow.1.2.hda": {
+   "path": "Sops/Buildings/AB.ApartmentRow.1.2.hda",
+   "size": 117838448,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.DestructionBuilding.1.0.hda": {
+   "path": "Sops/Buildings/AB.DestructionBuilding.1.0.hda",
+   "size": 117757227,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.DowntownBuilding.3.2.hda": {
+   "path": "Sops/Buildings/AB.DowntownBuilding.3.2.hda",
+   "size": 118129956,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": [
+    "AB::Sop/DowntownBuilding::3.2?Concrete_Dirty_02_Basecolor.tga"
+   ]
+  },
+  "AB.DowntownBuilding.3.3.hda": {
+   "path": "Sops/Buildings/AB.DowntownBuilding.3.3.hda",
+   "size": 117911499,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.DowntownBuilding.3.4.hda": {
+   "path": "Sops/Buildings/AB.DowntownBuilding.3.4.hda",
+   "size": 117752654,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.DowntownBuilding.3.5.hda": {
+   "path": "Sops/Buildings/AB.DowntownBuilding.3.5.hda",
+   "size": 117794018,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.DowntownBuilding.3.6.hda": {
+   "path": "Sops/Buildings/AB.DowntownBuilding.3.6.hda",
+   "size": 117797386,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.VictorianHouses.1.0.hda": {
+   "path": "Sops/Buildings/AB.VictorianHouses.1.0.hda",
+   "size": 117787476,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.VictorianHouses.1.1.hda": {
+   "path": "Sops/Buildings/AB.VictorianHouses.1.1.hda",
+   "size": 117787438,
+   "owns": [
+    "Concrete_Dirty_02_Normal.tga",
+    "Concrete_Dirty_02_Basecolor.tga",
+    "Concrete_Dirty_02_Roughness.tga"
+   ],
+   "refs": []
+  },
+  "AB.BlocksRGB.1.0.hda": {
+   "path": "Sops/CityGen/AB.BlocksRGB.1.0.hda",
+   "size": 153024,
+   "owns": [
+    "RFX-gen-blocks-base-001.png",
+    "RFX-gen-blocks-neighborhood-001.png"
+   ],
+   "refs": []
+  },
+  "AB.CityGridGenerator.1.0.hda": {
+   "path": "Sops/CityGen/AB.CityGridGenerator.1.0.hda",
+   "size": 81665,
+   "owns": [
+    "RFX-gen-blocks-base-001.png",
+    "RFX-gen-blocks-neighborhood-001.png"
+   ],
+   "refs": []
+  },
+  "AB.CityGridGenerator.1.1.hda": {
+   "path": "Sops/CityGen/AB.CityGridGenerator.1.1.hda",
+   "size": 197767,
+   "owns": [
+    "RFX-gen-blocks-base-001.png",
+    "RFX-gen-blocks-neighborhood-001.png"
+   ],
+   "refs": []
+  },
+  "AB.CityGridGenerator.1.2.hda": {
+   "path": "Sops/CityGen/AB.CityGridGenerator.1.2.hda",
+   "size": 116490,
+   "owns": [
+    "RFX-gen-blocks-base-001.png",
+    "RFX-gen-blocks-neighborhood-001.png"
+   ],
+   "refs": []
+  },
+  "AB.CityGridGenerator.1.3.hda": {
+   "path": "Sops/CityGen/AB.CityGridGenerator.1.3.hda",
+   "size": 116107,
+   "owns": [
+    "RFX-gen-blocks-base-001.png",
+    "RFX-gen-blocks-neighborhood-001.png"
+   ],
+   "refs": []
+  },
+  "AB.CityGridGenerator.1.4.hda": {
+   "path": "Sops/CityGen/AB.CityGridGenerator.1.4.hda",
+   "size": 195127,
+   "owns": [
+    "RFX-gen-blocks-base-001.png",
+    "RFX-gen-blocks-neighborhood-001.png"
+   ],
+   "refs": []
+  },
+  "AB.BillboardGenerator.2.0.hda": {
+   "path": "Sops/CityProps/AB.BillboardGenerator.2.0.hda",
+   "size": 255414,
+   "owns": [],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Basecolor.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Roughness.tga"
+   ]
+  },
+  "AB.BillboardGenerator.2.1.hda": {
+   "path": "Sops/CityProps/AB.BillboardGenerator.2.1.hda",
+   "size": 244119,
+   "owns": [],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga",
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Basecolor.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Normal.tga",
+    "AB::Sop/StairwayTops::3.0?Concrete_Plain_Roughness.tga"
+   ]
+  },
+  "AB.CommercialSignGenerator.4.8.hda": {
+   "path": "Sops/CityProps/AB.CommercialSignGenerator.4.8.hda",
+   "size": 42714312,
+   "owns": [
+    "Metal_RuggedIron_2k_s.tga",
+    "Galvanized_Metal_roughness1.png",
+    "Metal_Galvanized_01_basecolor.png",
+    "Metal_Galvanized_01_normal.png",
+    "Metal_Galvanized_01_roughness.png"
+   ],
+   "refs": [
+    "AB::Sop/CommercialSignMaker::4.8?Galvanized_Metal_roughness1.png",
+    "AB::Sop/CommercialSignMaker::4.8?Metal_Galvanized_01_basecolor.png",
+    "AB::Sop/CommercialSignMaker::4.8?Metal_Galvanized_01_normal.png",
+    "AB::Sop/CommercialSignMaker::4.8?Metal_Galvanized_01_roughness.png"
+   ]
+  },
+  "AB.HighwaySignGenerator.4.8.hda": {
+   "path": "Sops/CityProps/AB.HighwaySignGenerator.4.8.hda",
+   "size": 520772955,
+   "owns": [
+    "AssetBash_StreetSigns_01.png",
+    "AssetBash_StreetSigns_02.png",
+    "AssetBash_StreetSigns_03.png",
+    "AssetBash_StreetSigns_04.png",
+    "AssetBash_StreetSigns_05.png",
+    "AssetBash_StreetSigns_06.png",
+    "AssetBash_StreetSigns_07.png",
+    "AssetBash_StreetSigns_08.png",
+    "AssetBash_StreetSigns_09.png",
+    "AssetBash_StreetSigns_10.png",
+    "Concrete_Plain_baseColor.png",
+    "Concrete_Plain_normal.png",
+    "Concrete_Plain_roughness.png",
+    "Metal_Galvanized_01_basecolor.png",
+    "Metal_Galvanized_01_normal.png",
+    "Metal_Galvanized_01_roughness.png",
+    "Sign_Interstate_01.tga",
+    "Metal_WornAnvilIron_2k_alb.tga",
+    "Metal_WornAnvilIron_2k_n.tga",
+    "Metal_WornAnvilIron_2k_s.tga"
+   ],
+   "refs": [
+    "AB::Sop/CommercialSignMaker::4.8?Galvanized_Metal_roughness1.png",
+    "AB::Sop/CommercialSignMaker::4.8?Metal_Galvanized_01_normal.png",
+    "AB::Sop/HighwaySignMaker::4.8?Concrete_Plain_baseColor.png",
+    "AB::Sop/HighwaySignMaker::4.8?Concrete_Plain_normal.png",
+    "AB::Sop/HighwaySignMaker::4.8?Concrete_Plain_roughness.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_basecolor.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_normal.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_roughness.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_WornAnvilIron_2k_alb.tga",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_WornAnvilIron_2k_n.tga",
+    "AB::Sop/HighwaySignMaker::4.8?Sign_Interstate_01.tga",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_01.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_02.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_03.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_04.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_05.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_06.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_07.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_08.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_09.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_10.png"
+   ]
+  },
+  "AB.HighwaySignGenerator.4.9.hda": {
+   "path": "Sops/CityProps/AB.HighwaySignGenerator.4.9.hda",
+   "size": 520785366,
+   "owns": [
+    "AssetBash_StreetSigns_01.png",
+    "AssetBash_StreetSigns_02.png",
+    "AssetBash_StreetSigns_03.png",
+    "AssetBash_StreetSigns_04.png",
+    "AssetBash_StreetSigns_05.png",
+    "AssetBash_StreetSigns_06.png",
+    "AssetBash_StreetSigns_07.png",
+    "AssetBash_StreetSigns_08.png",
+    "AssetBash_StreetSigns_09.png",
+    "AssetBash_StreetSigns_10.png",
+    "Concrete_Plain_baseColor.png",
+    "Concrete_Plain_normal.png",
+    "Concrete_Plain_roughness.png",
+    "Metal_Galvanized_01_basecolor.png",
+    "Metal_Galvanized_01_normal.png",
+    "Metal_Galvanized_01_roughness.png",
+    "Sign_Interstate_01.tga",
+    "Metal_WornAnvilIron_2k_alb.tga",
+    "Metal_WornAnvilIron_2k_n.tga",
+    "Metal_WornAnvilIron_2k_s.tga"
+   ],
+   "refs": [
+    "AB::Sop/HighwaySignMaker::4.8?Concrete_Plain_baseColor.png",
+    "AB::Sop/HighwaySignMaker::4.8?Concrete_Plain_normal.png",
+    "AB::Sop/HighwaySignMaker::4.8?Concrete_Plain_roughness.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_basecolor.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_normal.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_Galvanized_01_roughness.png",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_WornAnvilIron_2k_alb.tga",
+    "AB::Sop/HighwaySignMaker::4.8?Metal_WornAnvilIron_2k_n.tga",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_01.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_02.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_03.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_04.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_05.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_06.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_07.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_08.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_09.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_10.png"
+   ]
+  },
+  "AB.PoleGenerator.1.0.hda": {
+   "path": "Sops/CityProps/AB.PoleGenerator.1.0.hda",
+   "size": 76999,
+   "owns": [],
+   "refs": [
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_01.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_02.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_03.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_04.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_05.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_06.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_07.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_08.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_09.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_10.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_baseColor.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_normal.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_roughness.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Metal_RuggedIron_2k_s.tga"
+   ]
+  },
+  "AB.RoofTopSignGenerator.4.8.hda": {
+   "path": "Sops/CityProps/AB.RoofTopSignGenerator.4.8.hda",
+   "size": 405503028,
+   "owns": [
+    "Metal_RuggedIron_2k_s.tga",
+    "AssetBash_StreetSigns_01.png",
+    "AssetBash_StreetSigns_02.png",
+    "AssetBash_StreetSigns_03.png",
+    "AssetBash_StreetSigns_04.png",
+    "AssetBash_StreetSigns_05.png",
+    "AssetBash_StreetSigns_06.png",
+    "AssetBash_StreetSigns_07.png",
+    "AssetBash_StreetSigns_08.png",
+    "AssetBash_StreetSigns_09.png",
+    "AssetBash_StreetSigns_10.png",
+    "Concrete_Plain_baseColor.png",
+    "Concrete_Plain_normal.png",
+    "Concrete_Plain_roughness.png"
+   ],
+   "refs": [
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_01.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_02.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_03.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_04.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_05.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_06.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_07.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_08.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_09.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_10.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_baseColor.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_normal.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_roughness.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Metal_RuggedIron_2k_s.tga"
+   ]
+  },
+  "AB.StreetSignGenerator.2.0.hda": {
+   "path": "Sops/CityProps/AB.StreetSignGenerator.2.0.hda",
+   "size": 405445671,
+   "owns": [
+    "Metal_RuggedIron_2k_s.tga",
+    "AssetBash_StreetSigns_01.png",
+    "AssetBash_StreetSigns_02.png",
+    "AssetBash_StreetSigns_03.png",
+    "AssetBash_StreetSigns_04.png",
+    "AssetBash_StreetSigns_05.png",
+    "AssetBash_StreetSigns_06.png",
+    "AssetBash_StreetSigns_07.png",
+    "AssetBash_StreetSigns_08.png",
+    "AssetBash_StreetSigns_09.png",
+    "AssetBash_StreetSigns_10.png",
+    "Concrete_Plain_baseColor.png",
+    "Concrete_Plain_normal.png",
+    "Concrete_Plain_roughness.png"
+   ],
+   "refs": [
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_01.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_02.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_03.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_04.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_05.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_06.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_07.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_08.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_09.png",
+    "AOD::MOD::Sop/SignMaker::4.8?AssetBash_StreetSigns_10.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_baseColor.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_normal.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Concrete_Plain_roughness.png",
+    "AOD::MOD::Sop/SignMaker::4.8?Metal_RuggedIron_2k_s.tga"
+   ]
+  },
+  "AB.TowerGenerator.1.0.hda": {
+   "path": "Sops/CityProps/AB.TowerGenerator.1.0.hda",
+   "size": 78613,
+   "owns": [],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga"
+   ]
+  },
+  "AB.PipeCreator.2.0.hda": {
+   "path": "Sops/Modeling/AB.PipeCreator.2.0.hda",
+   "size": 80156,
+   "owns": [],
+   "refs": [
+    "AB::Sop/RooftopMechanicals::3.0?Metal_Rusty_02_Basecolor.tga"
+   ]
+  }
+ },
+ "owner_of": {
+  "Metal_WornAnvilIron_2k_alb.tga": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.StairwayTops.3.0.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_WornAnvilIron_2k_n.tga": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.StairwayTops.3.0.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_Galvanized_01_basecolor.png": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_Galvanized_01_normal.png": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_Galvanized_01_roughness.png": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Aluminum_Brushed_baseColor.png": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Aluminum_Brushed_normal.png": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Aluminum_Brushed_roughness.png": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Metal_Rusty_02_Basecolor.tga": [
+   "AB.RooftopMechanicals.3.0.hda"
+  ],
+  "Metal_Rusty_02_Normal.tga": [
+   "AB.RooftopMechanicals.3.0.hda"
+  ],
+  "Metal_HexGrid_01_Basecolor.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_HexGrid_01_Mask.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_HexGrid_01_Normal.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_HexGrid_01_Roughness.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_Brushed_001_Basecolor.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_Brushed_001_Normal.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_Brushed_001_Roughness.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Metal_HexGrid_01_Trans.tga": [
+   "AB.SkylightGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_Basecolor.tga": [
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Concrete_Plain_Normal.tga": [
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Concrete_Plain_Roughness.tga": [
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Concrete_Dirty_02_Normal.tga": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ],
+  "Concrete_Dirty_02_Basecolor.tga": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ],
+  "Concrete_Dirty_02_Roughness.tga": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ],
+  "RFX-gen-blocks-base-001.png": [
+   "AB.BlocksRGB.1.0.hda",
+   "AB.CityGridGenerator.1.0.hda",
+   "AB.CityGridGenerator.1.1.hda",
+   "AB.CityGridGenerator.1.2.hda",
+   "AB.CityGridGenerator.1.3.hda",
+   "AB.CityGridGenerator.1.4.hda"
+  ],
+  "RFX-gen-blocks-neighborhood-001.png": [
+   "AB.BlocksRGB.1.0.hda",
+   "AB.CityGridGenerator.1.0.hda",
+   "AB.CityGridGenerator.1.1.hda",
+   "AB.CityGridGenerator.1.2.hda",
+   "AB.CityGridGenerator.1.3.hda",
+   "AB.CityGridGenerator.1.4.hda"
+  ],
+  "Metal_RuggedIron_2k_s.tga": [
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Galvanized_Metal_roughness1.png": [
+   "AB.CommercialSignGenerator.4.8.hda"
+  ],
+  "AssetBash_StreetSigns_01.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_02.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_03.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_04.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_05.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_06.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_07.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_08.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_09.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_10.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_baseColor.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_normal.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_roughness.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Sign_Interstate_01.tga": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_WornAnvilIron_2k_s.tga": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ },
+ "cross_asset_refs": [
+  {
+   "asset": "AB.BalconyGenerator.2.0.hda",
+   "needs_from": "BalconyMaker",
+   "texture": "Metal_WornAnvilIron_2k_alb.tga"
+  },
+  {
+   "asset": "AB.BalconyGenerator.2.0.hda",
+   "needs_from": "BalconyMaker",
+   "texture": "Metal_WornAnvilIron_2k_n.tga"
+  },
+  {
+   "asset": "AB.BalconyGenerator.2.0.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_basecolor.png"
+  },
+  {
+   "asset": "AB.BalconyGenerator.2.0.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_normal.png"
+  },
+  {
+   "asset": "AB.BalconyGenerator.2.0.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_roughness.png"
+  },
+  {
+   "asset": "AB.DoorGenerator.4.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  },
+  {
+   "asset": "AB.DoorGenerator.4.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Normal.tga"
+  },
+  {
+   "asset": "AB.DoorGenerator.4.0.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Basecolor.tga"
+  },
+  {
+   "asset": "AB.DoorGenerator.4.0.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Normal.tga"
+  },
+  {
+   "asset": "AB.DoorGenerator.4.0.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Roughness.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_Brushed_001_Basecolor.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_HexGrid_01_Basecolor.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_HexGrid_01_Mask.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_HexGrid_01_Normal.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_HexGrid_01_Roughness.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_HexGrid_01_Trans.tga"
+  },
+  {
+   "asset": "AB.SkylightGenerator.2.0.hda",
+   "needs_from": "SkylightCreator_",
+   "texture": "Metal_HexGrid_01_Trans_02.tga"
+  },
+  {
+   "asset": "AB.StairwayTops.3.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Aluminum_Brushed_baseColor.png"
+  },
+  {
+   "asset": "AB.StairwayTops.3.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Aluminum_Brushed_normal.png"
+  },
+  {
+   "asset": "AB.StairwayTops.3.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  },
+  {
+   "asset": "AB.StairwayTops.3.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Normal.tga"
+  },
+  {
+   "asset": "AB.WaterTankGenerator.2.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Normal.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.0.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Basecolor.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.0.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Normal.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.0.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Roughness.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.1.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.1.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Normal.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.1.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Basecolor.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.1.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Normal.tga"
+  },
+  {
+   "asset": "AB.BillboardGenerator.2.1.hda",
+   "needs_from": "StairwayTops",
+   "texture": "Concrete_Plain_Roughness.tga"
+  },
+  {
+   "asset": "AB.CommercialSignGenerator.4.8.hda",
+   "needs_from": "CommercialSignMaker",
+   "texture": "Galvanized_Metal_roughness1.png"
+  },
+  {
+   "asset": "AB.CommercialSignGenerator.4.8.hda",
+   "needs_from": "CommercialSignMaker",
+   "texture": "Metal_Galvanized_01_basecolor.png"
+  },
+  {
+   "asset": "AB.CommercialSignGenerator.4.8.hda",
+   "needs_from": "CommercialSignMaker",
+   "texture": "Metal_Galvanized_01_normal.png"
+  },
+  {
+   "asset": "AB.CommercialSignGenerator.4.8.hda",
+   "needs_from": "CommercialSignMaker",
+   "texture": "Metal_Galvanized_01_roughness.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "CommercialSignMaker",
+   "texture": "Galvanized_Metal_roughness1.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "CommercialSignMaker",
+   "texture": "Metal_Galvanized_01_normal.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Concrete_Plain_baseColor.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Concrete_Plain_normal.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Concrete_Plain_roughness.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_basecolor.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_normal.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_roughness.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_WornAnvilIron_2k_alb.tga"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_WornAnvilIron_2k_n.tga"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Sign_Interstate_01.tga"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_01.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_02.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_03.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_04.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_05.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_06.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_07.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_08.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_09.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_10.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Concrete_Plain_baseColor.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Concrete_Plain_normal.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Concrete_Plain_roughness.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_basecolor.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_normal.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_Galvanized_01_roughness.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_WornAnvilIron_2k_alb.tga"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "HighwaySignMaker",
+   "texture": "Metal_WornAnvilIron_2k_n.tga"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_01.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_02.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_03.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_04.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_05.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_06.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_07.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_08.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_09.png"
+  },
+  {
+   "asset": "AB.HighwaySignGenerator.4.9.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_10.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_01.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_02.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_03.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_04.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_05.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_06.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_07.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_08.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_09.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_10.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_baseColor.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_normal.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_roughness.png"
+  },
+  {
+   "asset": "AB.PoleGenerator.1.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Metal_RuggedIron_2k_s.tga"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_01.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_02.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_03.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_04.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_05.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_06.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_07.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_08.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_09.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_10.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_baseColor.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_normal.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_roughness.png"
+  },
+  {
+   "asset": "AB.RoofTopSignGenerator.4.8.hda",
+   "needs_from": "SignMaker",
+   "texture": "Metal_RuggedIron_2k_s.tga"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_01.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_02.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_03.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_04.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_05.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_06.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_07.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_08.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_09.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "AssetBash_StreetSigns_10.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_baseColor.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_normal.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Concrete_Plain_roughness.png"
+  },
+  {
+   "asset": "AB.StreetSignGenerator.2.0.hda",
+   "needs_from": "SignMaker",
+   "texture": "Metal_RuggedIron_2k_s.tga"
+  },
+  {
+   "asset": "AB.TowerGenerator.1.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  },
+  {
+   "asset": "AB.PipeCreator.2.0.hda",
+   "needs_from": "RooftopMechanicals",
+   "texture": "Metal_Rusty_02_Basecolor.tga"
+  }
+ ],
+ "orphan_sections": [
+  "Aluminum_Brushed_roughness.png",
+  "Concrete_Dirty_02_Normal.tga",
+  "Concrete_Dirty_02_Roughness.tga",
+  "Metal_Brushed_001_Normal.tga",
+  "Metal_Brushed_001_Roughness.tga",
+  "Metal_WornAnvilIron_2k_s.tga",
+  "RFX-gen-blocks-base-001.png",
+  "RFX-gen-blocks-neighborhood-001.png"
+ ],
+ "duplicated_sections": {
+  "Metal_WornAnvilIron_2k_alb.tga": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.StairwayTops.3.0.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_WornAnvilIron_2k_n.tga": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.StairwayTops.3.0.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_Galvanized_01_basecolor.png": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_Galvanized_01_normal.png": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_Galvanized_01_roughness.png": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Aluminum_Brushed_baseColor.png": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Aluminum_Brushed_normal.png": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Aluminum_Brushed_roughness.png": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ],
+  "Concrete_Dirty_02_Normal.tga": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ],
+  "Concrete_Dirty_02_Basecolor.tga": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ],
+  "Concrete_Dirty_02_Roughness.tga": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ],
+  "RFX-gen-blocks-base-001.png": [
+   "AB.BlocksRGB.1.0.hda",
+   "AB.CityGridGenerator.1.0.hda",
+   "AB.CityGridGenerator.1.1.hda",
+   "AB.CityGridGenerator.1.2.hda",
+   "AB.CityGridGenerator.1.3.hda",
+   "AB.CityGridGenerator.1.4.hda"
+  ],
+  "RFX-gen-blocks-neighborhood-001.png": [
+   "AB.BlocksRGB.1.0.hda",
+   "AB.CityGridGenerator.1.0.hda",
+   "AB.CityGridGenerator.1.1.hda",
+   "AB.CityGridGenerator.1.2.hda",
+   "AB.CityGridGenerator.1.3.hda",
+   "AB.CityGridGenerator.1.4.hda"
+  ],
+  "Metal_RuggedIron_2k_s.tga": [
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_01.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_02.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_03.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_04.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_05.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_06.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_07.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_08.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_09.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "AssetBash_StreetSigns_10.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_baseColor.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_normal.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Concrete_Plain_roughness.png": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ],
+  "Sign_Interstate_01.tga": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ],
+  "Metal_WornAnvilIron_2k_s.tga": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ }
+}

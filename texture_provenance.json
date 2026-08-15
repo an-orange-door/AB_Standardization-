@@ -1,0 +1,232 @@
+{
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga": [
+  "AB.ApartmentRow.1.0.hda",
+  "AB.ApartmentRow.1.1.hda",
+  "AB.ApartmentRow.1.2.hda",
+  "AB.DestructionBuilding.1.0.hda",
+  "AB.DowntownBuilding.3.2.hda",
+  "AB.DowntownBuilding.3.3.hda",
+  "AB.DowntownBuilding.3.4.hda",
+  "AB.DowntownBuilding.3.5.hda",
+  "AB.DowntownBuilding.3.6.hda",
+  "AB.VictorianHouses.1.0.hda",
+  "AB.VictorianHouses.1.1.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga": [
+  "AB.ApartmentRow.1.0.hda",
+  "AB.ApartmentRow.1.1.hda",
+  "AB.ApartmentRow.1.2.hda",
+  "AB.DestructionBuilding.1.0.hda",
+  "AB.DowntownBuilding.3.2.hda",
+  "AB.DowntownBuilding.3.3.hda",
+  "AB.DowntownBuilding.3.4.hda",
+  "AB.DowntownBuilding.3.5.hda",
+  "AB.DowntownBuilding.3.6.hda",
+  "AB.VictorianHouses.1.0.hda",
+  "AB.VictorianHouses.1.1.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga": [
+  "AB.ApartmentRow.1.0.hda",
+  "AB.ApartmentRow.1.1.hda",
+  "AB.ApartmentRow.1.2.hda",
+  "AB.DestructionBuilding.1.0.hda",
+  "AB.DowntownBuilding.3.2.hda",
+  "AB.DowntownBuilding.3.3.hda",
+  "AB.DowntownBuilding.3.4.hda",
+  "AB.DowntownBuilding.3.5.hda",
+  "AB.DowntownBuilding.3.6.hda",
+  "AB.VictorianHouses.1.0.hda",
+  "AB.VictorianHouses.1.1.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_basecolor.png": [
+  "AB.BalconyGenerator.2.0.hda",
+  "AB.CommercialSignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_normal.png": [
+  "AB.BalconyGenerator.2.0.hda",
+  "AB.CommercialSignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_roughness.png": [
+  "AB.BalconyGenerator.2.0.hda",
+  "AB.CommercialSignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_alb.tga": [
+  "AB.BalconyGenerator.2.0.hda",
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_n.tga": [
+  "AB.BalconyGenerator.2.0.hda",
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png": [
+  "AB.BlocksRGB.1.0.hda",
+  "AB.CityGridGenerator.1.0.hda",
+  "AB.CityGridGenerator.1.1.hda",
+  "AB.CityGridGenerator.1.2.hda",
+  "AB.CityGridGenerator.1.3.hda",
+  "AB.CityGridGenerator.1.4.hda"
+ ],
+ "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png": [
+  "AB.BlocksRGB.1.0.hda",
+  "AB.CityGridGenerator.1.0.hda",
+  "AB.CityGridGenerator.1.1.hda",
+  "AB.CityGridGenerator.1.2.hda",
+  "AB.CityGridGenerator.1.3.hda",
+  "AB.CityGridGenerator.1.4.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Galvanized_Metal_roughness1.png": [
+  "AB.CommercialSignGenerator.4.8.hda"
+ ],
+ "U:/processing/AB_SignTool/Textures/Metal_RuggedIron_2k_s.tga": [
+  "AB.CommercialSignGenerator.4.8.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_01.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_02.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_03.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_04.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_05.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_06.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_07.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_08.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_09.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_10.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_baseColor.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_normal.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_roughness.png": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda",
+  "AB.RoofTopSignGenerator.4.8.hda",
+  "AB.StreetSignGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_s.tga": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Signs/Highway/Sign_Interstate_01.tga": [
+  "AB.HighwaySignGenerator.4.8.hda",
+  "AB.HighwaySignGenerator.4.9.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_baseColor.png": [
+  "AB.RooftopMechanicals.3.0.hda",
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_normal.png": [
+  "AB.RooftopMechanicals.3.0.hda",
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_roughness.png": [
+  "AB.RooftopMechanicals.3.0.hda",
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_02/Metal_Rusty_02_Basecolor.tga": [
+  "AB.RooftopMechanicals.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_02/Metal_Rusty_02_Normal.tga": [
+  "AB.RooftopMechanicals.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Brushed_001/Metal_Brushed_001_Basecolor.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Brushed_001/Metal_Brushed_001_Normal.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Brushed_001/Metal_Brushed_001_Roughness.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Basecolor.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Mask.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Normal.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Roughness.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Trans.tga": [
+  "AB.SkylightGenerator.2.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Clean_01/Concrete_Plain_Basecolor.tga": [
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Clean_01/Concrete_Plain_Normal.tga": [
+  "AB.StairwayTops.3.0.hda"
+ ],
+ "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Clean_01/Concrete_Plain_Roughness.tga": [
+  "AB.StairwayTops.3.0.hda"
+ ]
+}

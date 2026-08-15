@@ -1,0 +1,126 @@
+{
+  "$comment": [
+    "DRAFT — variation layer. Art direction only. It never restates a dimension;",
+    "it says how much of the standard's legal range to exploit, and how far past",
+    "it to let things drift.",
+    "",
+    "This is the half that changes constantly. The standards layer is verified",
+    "once against a manual; this gets art-directed every time a look changes,",
+    "which is exactly why they are separate files.",
+    "",
+    "Every entry REFERENCES a parameter in a typology. It cannot introduce one.",
+    "A reference to a parameter that no longer exists must fail loudly at load —",
+    "silent fallback is how a 'weathered' profile quietly stops weathering.",
+    "",
+    "The point of separating in_spec from out_of_spec: a sign that is merely at",
+    "the low end of its legal mounting height is CORRECT, just short. A sign 4 cm",
+    "below the legal minimum is NEGLECTED. Those read completely differently and",
+    "an artist needs to dial them independently."
+  ],
+
+  "version": "0.1-draft",
+  "namespace": "AB",
+  "label": "Weathered urban",
+  "description": "A street that has been maintained, then not maintained for about fifteen years. Nothing is broken; everything has drifted.",
+  "applies_to_typologies": ["us_roadside_urban", "us_roadside_rural"],
+
+  "seed": {
+    "attribute": "ab_variation_seed",
+    "note": "Read per instance so two signs on the same pole differ, and so a scene is reproducible. Falls back to the tool's own seed parm when absent."
+  },
+
+  "$distributions": {
+    "$comment": [
+      "uniform     — flat across the range. Honest default when nothing is known.",
+      "normal      — clusters at nominal. Right for things a crew tried to get right.",
+      "skew_low    — clusters low. Right for settling, sagging, sinking.",
+      "bimodal     — two clusters. Right for 'replaced recently' vs 'original'."
+    ]
+  },
+
+  "parameters": {
+
+    "mount_height": {
+      "in_spec": {
+        "$comment": "Crews aim for nominal and miss downward; nothing gets installed too high by accident.",
+        "distribution": "skew_low",
+        "range": [0.0, 1.0],
+        "bias": 0.35
+      },
+      "out_of_spec": {
+        "$comment": "Posts settle into soft ground. Below-minimum is a real and common defect.",
+        "probability": 0.18,
+        "distribution": "skew_low",
+        "deviation_max": -0.09,
+        "units": "metres"
+      }
+    },
+
+    "yaw_from_road": {
+      "in_spec": {
+        "distribution": "uniform",
+        "range": [0.0, 1.0]
+      },
+      "out_of_spec": {
+        "$comment": "Knocked by a vehicle or a plough, never straightened. The single most legible sign of neglect, and cheap to produce.",
+        "probability": 0.30,
+        "distribution": "normal",
+        "deviation_max": 14.0,
+        "units": "degrees",
+        "symmetric": true
+      }
+    },
+
+    "lateral_offset": {
+      "in_spec": {
+        "distribution": "normal",
+        "range": [0.0, 1.0]
+      },
+      "out_of_spec": { "probability": 0.05, "deviation_max": 0.15, "units": "metres" }
+    },
+
+    "post_diameter": {
+      "in_spec": {
+        "$comment": "Bimodal, not uniform: posts get replaced individually over decades, so a street carries two or three vintages side by side. This is the parameter that most rewards not being uniform.",
+        "distribution": "bimodal",
+        "range": [0.0, 1.0],
+        "modes": [0.15, 0.8],
+        "mode_weights": [0.7, 0.3]
+      },
+      "out_of_spec": { "probability": 0.0 }
+    }
+  },
+
+  "$correlation_policy": {
+    "$comment": [
+      "Correlations are declared in the STANDARDS layer because they are",
+      "engineering, not taste. This layer only says whether to honour them.",
+      "",
+      "Breaking one is itself a look: a replacement post on an original footing",
+      "is a real thing you see. But it must be deliberate and rare, never the",
+      "accidental result of jittering every parameter independently — that is",
+      "precisely what makes procedural work read as procedural."
+    ],
+    "honour_correlations": true,
+    "break_probability": 0.04
+  },
+
+  "surface": {
+    "$comment": [
+      "Hooks for the Copernicus aging work rather than geometry. Age drives the",
+      "masks; the retroreflective response degrades long before a sign looks",
+      "obviously old, which is why sheeting_retroreflectivity is separate from",
+      "the visible dirt.",
+      "",
+      "Fade is channel-dependent: reds and oranges go first, which is why old",
+      "signs go pink. A single fade scalar gets this wrong."
+    ],
+    "age": { "distribution": "normal", "range": [0.45, 0.85] },
+    "sheeting_retroreflectivity": { "distribution": "skew_low", "range": [0.25, 0.7] },
+    "fade_by_channel": { "red": 1.0, "orange": 0.85, "yellow": 0.5, "green": 0.3, "blue": 0.25 },
+    "dirt_lower_edge": { "distribution": "normal", "range": [0.3, 0.9] },
+    "sticker_probability": 0.22,
+    "graffiti_probability": 0.08,
+    "graffiti_reach_max": 2.2
+  }
+}

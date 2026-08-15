@@ -1,0 +1,187 @@
+{
+  "$comment": [
+    "DRAFT — standards layer. Facts only: nominals, spec-defined ranges, and",
+    "engineering correlations. No art direction lives here; that is the variation",
+    "layer. This file is what backs the claim 'based on accepted engineering and",
+    "architectural standards', so anything in it must be citable.",
+    "",
+    "This covers the sign INSTALLATION. The sign FACE is already handled by",
+    "config/signs_library.csv, which carries width per size class plus a",
+    "size_source provenance column — this file follows the same convention.",
+    "",
+    "⚠ VERIFY BEFORE USE. Values marked \"confidence\": \"unverified\" are from",
+    "recall, not from a copy of the MUTCD. They are placed here so the schema is",
+    "concrete, NOT because they are trustworthy. Jordan: check them against the",
+    "actual manual before any of this ships or drives geometry.",
+    "",
+    "Units are METRES throughout. Houdini is unitless, so the contract is stated",
+    "rather than assumed. Imperial originals are kept alongside because the",
+    "standards are written in feet and inches and the round numbers live there —",
+    "2.1 m is a rounding of 7 ft, and the 7 is the real figure."
+  ],
+
+  "version": "0.1-draft",
+  "namespace": "AB",
+  "domain": "roadway_sign_installation",
+  "units": "metres",
+  "face_data": "config/signs_library.csv",
+
+  "sources": {
+    "MUTCD": {
+      "title": "Manual on Uniform Traffic Control Devices",
+      "edition": "TODO — pin the edition; figures move between them",
+      "jurisdiction": "US (FHWA)",
+      "note": "Chapter 2A covers general sign placement: mounting height, lateral offset, orientation."
+    },
+    "engineering": {
+      "title": "Derived from structural practice, not a single document",
+      "note": "Correlations such as footing size scaling with pole height."
+    }
+  },
+
+  "typologies": {
+
+    "us_roadside_urban": {
+      "label": "US roadside sign, urban",
+      "description": "Post-mounted sign beside a street with kerb, footway and pedestrian movement.",
+      "applies_to": ["AB::StreetSignGenerator", "AB::SignHighway", "AB::PoleGenerator"],
+      "size_class": "conventional",
+
+      "parameters": {
+        "mount_height": {
+          "label": "Bottom of sign above grade",
+          "nominal": 2.134,
+          "spec_min": 2.134,
+          "spec_max": 3.048,
+          "imperial": { "nominal": "7 ft", "spec_min": "7 ft", "spec_max": "10 ft" },
+          "source": "MUTCD",
+          "confidence": "unverified",
+          "rationale": "Raised clear of pedestrians where a footway is present.",
+          "binds_to": { "AB::SignHighway": "MountHeight" }
+        },
+
+        "lateral_offset": {
+          "label": "Face of kerb to near edge of sign",
+          "nominal": 0.6,
+          "spec_min": 0.3,
+          "spec_max": 1.8,
+          "imperial": { "nominal": "2 ft", "spec_min": "1 ft" },
+          "source": "MUTCD",
+          "confidence": "unverified",
+          "binds_to": {}
+        },
+
+        "post_diameter": {
+          "label": "Post outside diameter",
+          "nominal": 0.06,
+          "spec_min": 0.05,
+          "spec_max": 0.089,
+          "source": "engineering",
+          "confidence": "unverified",
+          "rationale": "Typical U-channel or round steel post for a single conventional sign.",
+          "binds_to": { "AB::HighwaySignGenerator": "HwyMainSupportRadius" }
+        },
+
+        "yaw_from_road": {
+          "label": "Face rotation away from perpendicular",
+          "nominal": 0.0,
+          "spec_min": 0.0,
+          "spec_max": 5.0,
+          "units_override": "degrees",
+          "source": "MUTCD",
+          "confidence": "unverified",
+          "rationale": "Slight turn away from square reduces specular headlight glare on retroreflective sheeting.",
+          "binds_to": { "AB::HighwaySignGenerator": "PrimarySignRotateY" }
+        }
+      },
+
+      "correlations": [
+        {
+          "when": "post_diameter",
+          "drives": "footing_depth",
+          "rule": "footing_depth = post_diameter * 12",
+          "source": "engineering",
+          "confidence": "unverified",
+          "rationale": "Embedment scales with post size and exposed sail area. A pole that grows without its footing is the classic tell of independent jitter."
+        },
+        {
+          "when": "sign_area",
+          "drives": "bracket_count",
+          "rule": "bracket_count = clamp(ceil(sign_area / 0.6), 1, 4)",
+          "source": "engineering",
+          "confidence": "unverified"
+        }
+      ]
+    },
+
+    "us_roadside_rural": {
+      "label": "US roadside sign, rural",
+      "description": "Post-mounted sign on a shoulder with no footway.",
+      "applies_to": ["AB::StreetSignGenerator", "AB::SignHighway"],
+      "size_class": "conventional",
+      "inherits": "us_roadside_urban",
+      "parameters": {
+        "mount_height": {
+          "nominal": 1.524,
+          "spec_min": 1.524,
+          "spec_max": 2.134,
+          "imperial": { "nominal": "5 ft", "spec_min": "5 ft" },
+          "source": "MUTCD",
+          "confidence": "unverified",
+          "rationale": "Lower where there is no pedestrian traffic to clear."
+        },
+        "lateral_offset": {
+          "nominal": 3.6,
+          "spec_min": 1.8,
+          "source": "MUTCD",
+          "confidence": "unverified",
+          "rationale": "Measured from the edge of the shoulder rather than a kerb face."
+        }
+      }
+    },
+
+    "us_overhead_freeway": {
+      "label": "US overhead guide sign, freeway gantry",
+      "description": "Guide sign carried over the carriageway on a truss or cantilever.",
+      "applies_to": ["AB::HighwaySignGenerator"],
+      "size_class": "freeway",
+      "parameters": {
+        "vertical_clearance": {
+          "label": "Roadway surface to underside of sign",
+          "nominal": 5.182,
+          "spec_min": 5.182,
+          "imperial": { "nominal": "17 ft", "spec_min": "17 ft" },
+          "source": "MUTCD",
+          "confidence": "unverified",
+          "rationale": "Clearance for legal vehicle height plus tolerance."
+        },
+        "support_height": {
+          "nominal": 8.0,
+          "spec_min": 6.5,
+          "spec_max": 9.5,
+          "source": "engineering",
+          "confidence": "unverified",
+          "binds_to": { "AB::HighwaySignGenerator": "HwyMainSupportHeight" }
+        },
+        "support_radius": {
+          "nominal": 0.4,
+          "spec_min": 0.3,
+          "spec_max": 0.55,
+          "source": "engineering",
+          "confidence": "unverified",
+          "binds_to": { "AB::HighwaySignGenerator": "HwyMainSupportRadius" }
+        }
+      },
+      "correlations": [
+        {
+          "when": "support_height",
+          "drives": "support_radius",
+          "rule": "support_radius = 0.05 * support_height",
+          "source": "engineering",
+          "confidence": "unverified",
+          "rationale": "Slenderness stays roughly constant; a tall thin gantry reads as wrong immediately."
+        }
+      ]
+    }
+  }
+}

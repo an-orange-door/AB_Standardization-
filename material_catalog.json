@@ -1,0 +1,139 @@
+{
+  "generated": "2026-08-13",
+  "purpose": "Phase 09 worklist: what materials the AB library needs, and how each gap is filled.",
+  "policy": "CC0 (PolyHaven) or authored in-house. Megascans is never redistributable.",
+  "summary": {
+    "shading_zones": 172,
+    "canonical_after_alias": 161,
+    "unbound": 137
+  },
+  "metal_backlog": {
+    "zone_count": 61,
+    "cc0_available": 5,
+    "strategy": "Author ~8 base metal looks in Copernicus, vary per zone with wear/edge masks. 61 zones do NOT mean 61 materials.",
+    "proposed_base_looks": [
+      "SteelPainted",
+      "SteelGalvanised",
+      "SteelRusted",
+      "IronCast",
+      "AluminiumBrushed",
+      "CopperWeathered",
+      "ChromePolished",
+      "MetalWorn"
+    ],
+    "groups": {
+      "Fasteners": [
+        "Bolts",
+        "HW_Bolt",
+        "HW_Nut",
+        "HW_Washer"
+      ],
+      "Structure": [
+        "AngleSupports",
+        "BR_SupportsMetal",
+        "BannisterMountPlate",
+        "DoorFrame",
+        "GussetPlate",
+        "HorizontalBackSupports",
+        "HorizontalSupportsMetal",
+        "Ibeam",
+        "MainSupport",
+        "MainVerticalSupport",
+        "MainVerticalSupports",
+        "PlatformSupportMetal",
+        "PlatformSupportsMetal",
+        "RoofSignHorizonatlSupports",
+        "SideMountStructure",
+        "SignFrame",
+        "SupportBracket",
+        "SupportWedge",
+        "UtilityPole/Bracket_002",
+        "VerticalBackSupports",
+        "VerticalSupportsMetal",
+        "WindowFrame"
+      ],
+      "PipeConduit": [
+        "LightPipe",
+        "LightPipeMetal",
+        "MainWaterPipe",
+        "Pipe",
+        "PipeConnectorMetal",
+        "PipeEnds",
+        "Pipes",
+        "Wire",
+        "Wires"
+      ],
+      "PlateSheet": [
+        "BackPlate",
+        "Backplate",
+        "FloorPlate",
+        "LightCasing",
+        "MetalBackPlate",
+        "MetalPlateRound",
+        "MetalPlateSquare",
+        "SignArrowCasing",
+        "VentBody"
+      ],
+      "Railing": [
+        "Barbs",
+        "GuardRail",
+        "PlatformRailing"
+      ],
+      "VentGrille": [
+        "FanGrate",
+        "SkylightMetal",
+        "VentGrill",
+        "VentRound_001"
+      ],
+      "Hardware": [
+        "DoorKnob",
+        "Knob_01",
+        "MetalRing"
+      ],
+      "Other": [
+        "LightMetal",
+        "MeterMetal",
+        "PoleMetalRound",
+        "PullBar",
+        "SignMetal",
+        "SignPlatformMetal",
+        "VertConnector_001/MetalBottom"
+      ]
+    }
+  },
+  "other_gaps": {
+    "Glass": {
+      "zones": 10,
+      "cc0": 0,
+      "fill": "authored shader (parallax windows already proven)"
+    },
+    "Emissive": {
+      "zones": 5,
+      "cc0": 0,
+      "fill": "authored shader + per-instance lit state"
+    },
+    "Signage": {
+      "zones": 3,
+      "cc0": 0,
+      "fill": "authored artwork - check font/artwork licensing"
+    },
+    "Plastic": {
+      "zones": 2,
+      "cc0": 0,
+      "fill": "Copernicus or CC0 substitute"
+    },
+    "Unclassified": {
+      "zones": 31,
+      "cc0": 0,
+      "fill": "review naming first - most are Group A parts"
+    }
+  },
+  "covered_by_cc0": {
+    "Masonry": 103,
+    "Ground": 43,
+    "Wood": 22,
+    "Roofing": 18,
+    "Fabric": 10,
+    "Trim": 7
+  }
+}

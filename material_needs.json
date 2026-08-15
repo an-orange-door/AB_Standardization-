@@ -1,0 +1,353 @@
+{
+  "generated_from": {
+    "name_audit": "W:/HoudiniMCP/data/ab_name_attributes.csv",
+    "polyhaven_index": "G:/SC_UXO_SyntheticData/Assets/Textures/PolyHaven_Derived/PolyHaven_materials.json"
+  },
+  "families": {
+    "Metal": {
+      "zones": [
+        "HW_Bolt",
+        "HW_Nut",
+        "HW_Washer",
+        "DoorFrame",
+        "Backplate",
+        "LightMetal",
+        "PullBar",
+        "WindowFrame",
+        "Pipes",
+        "BackPlate",
+        "DoorKnob",
+        "GussetPlate",
+        "HorizontalSupportsMetal",
+        "LightCasing",
+        "LightPipe",
+        "LightPipeMetal",
+        "MainVerticalSupports",
+        "MetalRing",
+        "MeterMetal",
+        "PipeConnectorMetal",
+        "PlatformSupportsMetal",
+        "PoleMetalRound",
+        "SignFrame",
+        "SignMetal",
+        "SignPlatformMetal",
+        "UtilityPole/Bracket_002",
+        "VertConnector_001/MetalBottom",
+        "VerticalSupportsMetal",
+        "Wires",
+        "AngleSupports",
+        "BR_SupportsMetal",
+        "BannisterMountPlate",
+        "Barbs",
+        "Bolts",
+        "FanGrate",
+        "FloorPlate",
+        "GuardRail",
+        "HorizontalBackSupports",
+        "Ibeam",
+        "Knob_01",
+        "MainSupport",
+        "MainVerticalSupport",
+        "MainWaterPipe",
+        "MetalBackPlate",
+        "MetalPlateRound",
+        "MetalPlateSquare",
+        "Pipe",
+        "PipeEnds",
+        "PlatformRailing",
+        "PlatformSupportMetal",
+        "RoofSignHorizonatlSupports",
+        "SideMountStructure",
+        "SignArrowCasing",
+        "SkylightMetal",
+        "SupportBracket",
+        "SupportWedge",
+        "VentBody",
+        "VentGrill",
+        "VentRound_001",
+        "VerticalBackSupports",
+        "Wire"
+      ],
+      "cc0_candidates": [
+        "blue_metal_plate",
+        "box_profile_metal_sheet",
+        "corrugated_iron",
+        "corrugated_iron_02",
+        "corrugated_iron_03"
+      ],
+      "gap": false,
+      "cc0_count": 5,
+      "zone_count": 61
+    },
+    "Unclassified": {
+      "zones": [
+        "LightBase",
+        "WinCasement",
+        "StreetLightArm",
+        "StreetLightCase",
+        "Transformer_001",
+        "UpperStructure",
+        "WhiteReflective",
+        "surface",
+        "AntiSlipBase",
+        "Bannisters",
+        "DomeCapDetail",
+        "DoorPlane",
+        "FanBezel",
+        "FireHydrantBody",
+        "Flange",
+        "FrontFence",
+        "Kitchen/ButtonPlatsic",
+        "Kitchen/ButtonRim",
+        "Ladder",
+        "LadderMain",
+        "MainBody",
+        "Reflector",
+        "ReflectorBase",
+        "TorsionTube",
+        "Underside",
+        "WatertankBody",
+        "WatertankBodySeams",
+        "WeldLine",
+        "hose",
+        "hose_ring",
+        "hose_ring_glow"
+      ],
+      "cc0_candidates": [],
+      "gap": true,
+      "cc0_count": 0,
+      "zone_count": 31
+    },
+    "Masonry": {
+      "zones": [
+        "Walls",
+        "Corners",
+        "TF_Cornice",
+        "RoofParapet",
+        "WindowWalls",
+        "Arch",
+        "BR_Sidewalk",
+        "Block",
+        "BuildingBlock",
+        "BuildingWalls",
+        "ConcreteStep",
+        "DomeWallLower",
+        "DomeWallLowerTrim",
+        "DomeWallUpper",
+        "FooterConcrete",
+        "InsideWalls",
+        "OutsideWalls",
+        "Parapet",
+        "SidewalkCorner",
+        "SidewalkCornerCurb",
+        "Wall",
+        "WallLowerBand",
+        "WallsSides",
+        "WindowWall"
+      ],
+      "cc0_candidates": [
+        "anti_slip_concrete",
+        "blue_plaster_weathered",
+        "brick_4",
+        "brick_crosswalk",
+        "brick_floor",
+        "brick_floor_003",
+        "brick_floor_02",
+        "brick_moss_001",
+        "brick_pavement",
+        "brick_pavement_02",
+        "brick_villa_floor",
+        "brick_wall_001"
+      ],
+      "gap": false,
+      "cc0_count": 103,
+      "zone_count": 24
+    },
+    "Glass": {
+      "zones": [
+        "WindowGlass",
+        "DoorGlass",
+        "WindowPlanes",
+        "MeterGlass",
+        "SkylightGlass",
+        "WindowGlassLit",
+        "WindowGlowPlane",
+        "WindowSlats",
+        "WindowsLit",
+        "WindowsUnlit"
+      ],
+      "cc0_candidates": [],
+      "gap": true,
+      "cc0_count": 0,
+      "zone_count": 10
+    },
+    "Roofing": {
+      "zones": [
+        "Roof",
+        "RoofPlane",
+        "BuildingRoof",
+        "RoofInside",
+        "RoofSides",
+        "RoofSignFooter",
+        "RoofSignVerticalPosts",
+        "RoofTop",
+        "RoofTrim",
+        "WatertankRoof"
+      ],
+      "cc0_candidates": [
+        "anti_skid_tiles",
+        "blue_floor_tiles_01",
+        "brown_floor_tiles",
+        "ceramic_roof_01",
+        "checkered_pavement_tiles",
+        "clay_roof_tiles",
+        "clay_roof_tiles_02",
+        "clay_roof_tiles_03",
+        "concrete_tile_facade",
+        "concrete_tiles",
+        "concrete_tiles_02",
+        "dirty_tiles"
+      ],
+      "gap": false,
+      "cc0_count": 18,
+      "zone_count": 10
+    },
+    "Trim": {
+      "zones": [
+        "WindowSill",
+        "WindowTrim",
+        "BuildingTrim",
+        "WindowTrimLower",
+        "WindowTrimSides",
+        "WindowTrimTop_01",
+        "DomeTopTrim",
+        "Trim",
+        "VerticalTrimLower",
+        "VerticalTrimUpper"
+      ],
+      "cc0_candidates": [
+        "aerial_wood_snips",
+        "blue_plaster_weathered",
+        "clay_plaster",
+        "damaged_plaster",
+        "dark_wood",
+        "dark_wooden_planks",
+        "fine_grained_wood"
+      ],
+      "gap": false,
+      "cc0_count": 7,
+      "zone_count": 10
+    },
+    "Ground": {
+      "zones": [
+        "BR_Road",
+        "RoadBottom",
+        "RoadCenterLine",
+        "RoadLines",
+        "RoadSides",
+        "RoadTop"
+      ],
+      "cc0_candidates": [
+        "aerial_asphalt_01",
+        "aerial_grass_rock",
+        "aerial_mud_1",
+        "aerial_sand",
+        "asphalt_01",
+        "asphalt_02",
+        "asphalt_03",
+        "asphalt_04",
+        "asphalt_05",
+        "asphalt_06",
+        "asphalt_floor",
+        "asphalt_pit_lane"
+      ],
+      "gap": false,
+      "cc0_count": 43,
+      "zone_count": 6
+    },
+    "Emissive": {
+      "zones": [
+        "LightEmit",
+        "StreetLightEmit",
+        "Neon",
+        "SignArrowNeon",
+        "SignNeon"
+      ],
+      "cc0_candidates": [],
+      "gap": true,
+      "cc0_count": 0,
+      "zone_count": 5
+    },
+    "Wood": {
+      "zones": [
+        "UtilityPole/HorizPoleWood",
+        "UtilityPole/MainPoleWood",
+        "BillboardBack",
+        "BillboardFront",
+        "WoodPlatform"
+      ],
+      "cc0_candidates": [
+        "aerial_wood_snips",
+        "bark_bluegum",
+        "bark_brown_01",
+        "bark_brown_02",
+        "bark_platanus",
+        "bark_willow",
+        "bark_willow_02",
+        "black_painted_planks",
+        "blue_painted_planks",
+        "brown_planks_03",
+        "brown_planks_04",
+        "brown_planks_05"
+      ],
+      "gap": false,
+      "cc0_count": 22,
+      "zone_count": 5
+    },
+    "Fabric": {
+      "zones": [
+        "AwningCloth",
+        "cloth0",
+        "cloth1",
+        "cloth2",
+        "cloth3"
+      ],
+      "cc0_candidates": [
+        "denim_fabric",
+        "denim_fabric_03",
+        "denim_fabric_04",
+        "denim_fabric_05",
+        "denim_fabric_06",
+        "denmin_fabric_02",
+        "fabric_leather_01",
+        "fabric_leather_02",
+        "fabric_pattern_05",
+        "fabric_pattern_07"
+      ],
+      "gap": false,
+      "cc0_count": 10,
+      "zone_count": 5
+    },
+    "Signage": {
+      "zones": [
+        "SignFront",
+        "SignBack",
+        "SignArrows"
+      ],
+      "cc0_candidates": [],
+      "gap": true,
+      "cc0_count": 0,
+      "zone_count": 3
+    },
+    "Plastic": {
+      "zones": [
+        "VertConnector_001/PorclainMiddle",
+        "VertConnector_001/PorclainTop"
+      ],
+      "cc0_candidates": [],
+      "gap": true,
+      "cc0_count": 0,
+      "zone_count": 2
+    }
+  }
+}

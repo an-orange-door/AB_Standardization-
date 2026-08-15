@@ -1,0 +1,705 @@
+[
+ {
+  "asset": "AB.ApartmentRow.1.0.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117845406,
+  "nodes_before": 8026,
+  "after": 403641,
+  "nodes_after": 8026,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.ApartmentRow.1.1.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117844046,
+  "nodes_before": 8011,
+  "after": 402258,
+  "nodes_after": 8011,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.ApartmentRow.1.2.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117838448,
+  "nodes_before": 8011,
+  "after": 396669,
+  "nodes_after": 8011,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.BalconyGenerator.2.0.hda",
+  "rewrites": 5,
+  "stripped": [
+   "Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png",
+   "Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga"
+  ],
+  "provenance": {
+   "Metal_Galvanized_01_basecolor.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_roughness.png",
+   "Metal_WornAnvilIron_2k_alb.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_n.tga"
+  },
+  "before": 48186185,
+  "nodes_before": 820,
+  "after": 106037,
+  "nodes_after": 820,
+  "var_hits": 5
+ },
+ {
+  "asset": "AB.BillboardGenerator.2.0.hda",
+  "rewrites": 10,
+  "stripped": [],
+  "provenance": {},
+  "before": 255414,
+  "nodes_before": 3599,
+  "after": 255044,
+  "nodes_after": 3599,
+  "var_hits": 10
+ },
+ {
+  "asset": "AB.BillboardGenerator.2.1.hda",
+  "rewrites": 10,
+  "stripped": [],
+  "provenance": {},
+  "before": 244119,
+  "nodes_before": 3517,
+  "after": 244073,
+  "nodes_after": 3517,
+  "var_hits": 10
+ },
+ {
+  "asset": "AB.BlocksRGB.1.0.hda",
+  "rewrites": 0,
+  "stripped": [
+   "RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png"
+  ],
+  "provenance": {
+   "RFX-gen-blocks-base-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png"
+  },
+  "before": 153024,
+  "nodes_before": 2212,
+  "after": 140816,
+  "nodes_after": 2212,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.CityGridGenerator.1.0.hda",
+  "rewrites": 0,
+  "stripped": [
+   "RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png"
+  ],
+  "provenance": {
+   "RFX-gen-blocks-base-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png"
+  },
+  "before": 81665,
+  "nodes_before": 816,
+  "after": 64378,
+  "nodes_after": 816,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.CityGridGenerator.1.1.hda",
+  "rewrites": 0,
+  "stripped": [
+   "RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png"
+  ],
+  "provenance": {
+   "RFX-gen-blocks-base-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png"
+  },
+  "before": 197767,
+  "nodes_before": 3199,
+  "after": 180495,
+  "nodes_after": 3199,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.CityGridGenerator.1.2.hda",
+  "rewrites": 0,
+  "stripped": [
+   "RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png"
+  ],
+  "provenance": {
+   "RFX-gen-blocks-base-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png"
+  },
+  "before": 116490,
+  "nodes_before": 1502,
+  "after": 99189,
+  "nodes_after": 1502,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.CityGridGenerator.1.3.hda",
+  "rewrites": 0,
+  "stripped": [
+   "RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png"
+  ],
+  "provenance": {
+   "RFX-gen-blocks-base-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png"
+  },
+  "before": 116107,
+  "nodes_before": 1513,
+  "after": 98821,
+  "nodes_after": 1513,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.CityGridGenerator.1.4.hda",
+  "rewrites": 0,
+  "stripped": [
+   "RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png"
+  ],
+  "provenance": {
+   "RFX-gen-blocks-base-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-base-001.png",
+   "RFX-gen-blocks-neighborhood-001.png": "D:/app_dev/RFX-dev/RFX-project/04_project_files/houdini/sourceimages/RGB_test_grids/RFX-gen-blocks-neighborhood-001.png"
+  },
+  "before": 253580,
+  "nodes_before": 4269,
+  "after": 236323,
+  "nodes_after": 4269,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.CommercialSignGenerator.4.8.hda",
+  "rewrites": 6,
+  "stripped": [
+   "Galvanized_Metal_roughness1.png",
+   "Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png",
+   "Metal_RuggedIron_2k_s.tga"
+  ],
+  "provenance": {
+   "Galvanized_Metal_roughness1.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Galvanized_Metal_roughness1.png",
+   "Metal_Galvanized_01_basecolor.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_roughness.png",
+   "Metal_RuggedIron_2k_s.tga": "U:/processing/AB_SignTool/Textures/Metal_RuggedIron_2k_s.tga"
+  },
+  "before": 42714312,
+  "nodes_before": 6150,
+  "after": 333797,
+  "nodes_after": 6150,
+  "var_hits": 6
+ },
+ {
+  "asset": "AB.DestructionBuilding.1.0.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117757227,
+  "nodes_before": 5745,
+  "after": 314745,
+  "nodes_after": 5745,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.DoorGenerator.4.0.hda",
+  "rewrites": 10,
+  "stripped": [],
+  "provenance": {},
+  "before": 519713,
+  "nodes_before": 4674,
+  "after": 519710,
+  "nodes_after": 4674,
+  "var_hits": 10
+ },
+ {
+  "asset": "AB.DowntownBuilding.3.2.hda",
+  "rewrites": 1,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 118129956,
+  "nodes_before": 13012,
+  "after": 688799,
+  "nodes_after": 13012,
+  "var_hits": 1
+ },
+ {
+  "asset": "AB.DowntownBuilding.3.3.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117911499,
+  "nodes_before": 9277,
+  "after": 469862,
+  "nodes_after": 9277,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.DowntownBuilding.3.4.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117752654,
+  "nodes_before": 5713,
+  "after": 310233,
+  "nodes_after": 5713,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.DowntownBuilding.3.5.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117794018,
+  "nodes_before": 6405,
+  "after": 351563,
+  "nodes_after": 6405,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.DowntownBuilding.3.6.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117797386,
+  "nodes_before": 6446,
+  "after": 354983,
+  "nodes_after": 6446,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.HighwaySignGenerator.4.8.hda",
+  "rewrites": 23,
+  "stripped": [
+   "AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png",
+   "Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png",
+   "Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga",
+   "Metal_WornAnvilIron_2k_s.tga",
+   "Sign_Interstate_01.tga"
+  ],
+  "provenance": {
+   "AssetBash_StreetSigns_01.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_roughness.png",
+   "Metal_Galvanized_01_basecolor.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_roughness.png",
+   "Metal_WornAnvilIron_2k_alb.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_n.tga",
+   "Metal_WornAnvilIron_2k_s.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_s.tga",
+   "Sign_Interstate_01.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Signs/Highway/Sign_Interstate_01.tga"
+  },
+  "before": 520772955,
+  "nodes_before": 5111,
+  "after": 331003,
+  "nodes_after": 5111,
+  "var_hits": 23
+ },
+ {
+  "asset": "AB.HighwaySignGenerator.4.9.hda",
+  "rewrites": 18,
+  "stripped": [
+   "AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png",
+   "Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png",
+   "Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga",
+   "Metal_WornAnvilIron_2k_s.tga",
+   "Sign_Interstate_01.tga"
+  ],
+  "provenance": {
+   "AssetBash_StreetSigns_01.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_roughness.png",
+   "Metal_Galvanized_01_basecolor.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_basecolor.png",
+   "Metal_Galvanized_01_normal.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_normal.png",
+   "Metal_Galvanized_01_roughness.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Galvanized_01/Metal_Galvanized_01_roughness.png",
+   "Metal_WornAnvilIron_2k_alb.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_n.tga",
+   "Metal_WornAnvilIron_2k_s.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_s.tga",
+   "Sign_Interstate_01.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Signs/Highway/Sign_Interstate_01.tga"
+  },
+  "before": 520785366,
+  "nodes_before": 4628,
+  "after": 311609,
+  "nodes_after": 4628,
+  "var_hits": 18
+ },
+ {
+  "asset": "AB.PipeCreator.2.0.hda",
+  "rewrites": 1,
+  "stripped": [],
+  "provenance": {},
+  "before": 80156,
+  "nodes_before": 688,
+  "after": 80150,
+  "nodes_after": 688,
+  "var_hits": 1
+ },
+ {
+  "asset": "AB.PoleGenerator.1.0.hda",
+  "rewrites": 16,
+  "stripped": [],
+  "provenance": {},
+  "before": 76999,
+  "nodes_before": 620,
+  "after": 97156,
+  "nodes_after": 620,
+  "var_hits": 16
+ },
+ {
+  "asset": "AB.RoofTopSignGenerator.4.8.hda",
+  "rewrites": 16,
+  "stripped": [
+   "AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png",
+   "Metal_RuggedIron_2k_s.tga"
+  ],
+  "provenance": {
+   "AssetBash_StreetSigns_01.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_roughness.png",
+   "Metal_RuggedIron_2k_s.tga": "U:/processing/AB_SignTool/Textures/Metal_RuggedIron_2k_s.tga"
+  },
+  "before": 405503028,
+  "nodes_before": 2773,
+  "after": 222881,
+  "nodes_after": 2773,
+  "var_hits": 16
+ },
+ {
+  "asset": "AB.RooftopMechanicals.3.0.hda",
+  "rewrites": 4,
+  "stripped": [
+   "Aluminum_Brushed_baseColor.png",
+   "Aluminum_Brushed_normal.png",
+   "Aluminum_Brushed_roughness.png",
+   "Metal_Rusty_02_Basecolor.tga",
+   "Metal_Rusty_02_Normal.tga"
+  ],
+  "provenance": {
+   "Aluminum_Brushed_baseColor.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_baseColor.png",
+   "Aluminum_Brushed_normal.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_normal.png",
+   "Aluminum_Brushed_roughness.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_roughness.png",
+   "Metal_Rusty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_02/Metal_Rusty_02_Basecolor.tga",
+   "Metal_Rusty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_02/Metal_Rusty_02_Normal.tga"
+  },
+  "before": 59756465,
+  "nodes_before": 1028,
+  "after": 123171,
+  "nodes_after": 1028,
+  "var_hits": 4
+ },
+ {
+  "asset": "AB.SkylightGenerator.2.0.hda",
+  "rewrites": 6,
+  "stripped": [
+   "Metal_Brushed_001_Basecolor.tga",
+   "Metal_Brushed_001_Normal.tga",
+   "Metal_Brushed_001_Roughness.tga",
+   "Metal_HexGrid_01_Basecolor.tga",
+   "Metal_HexGrid_01_Mask.tga",
+   "Metal_HexGrid_01_Normal.tga",
+   "Metal_HexGrid_01_Roughness.tga",
+   "Metal_HexGrid_01_Trans.tga"
+  ],
+  "provenance": {
+   "Metal_Brushed_001_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Brushed_001/Metal_Brushed_001_Basecolor.tga",
+   "Metal_Brushed_001_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Brushed_001/Metal_Brushed_001_Normal.tga",
+   "Metal_Brushed_001_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Brushed_001/Metal_Brushed_001_Roughness.tga",
+   "Metal_HexGrid_01_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Basecolor.tga",
+   "Metal_HexGrid_01_Mask.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Mask.tga",
+   "Metal_HexGrid_01_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Normal.tga",
+   "Metal_HexGrid_01_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Roughness.tga",
+   "Metal_HexGrid_01_Trans.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_HexGrid_01/Metal_HexGrid_01_Trans.tga"
+  },
+  "before": 100720338,
+  "nodes_before": 421,
+  "after": 55039,
+  "nodes_after": 421,
+  "var_hits": 6
+ },
+ {
+  "asset": "AB.StairwayTops.3.0.hda",
+  "rewrites": 11,
+  "stripped": [
+   "Aluminum_Brushed_baseColor.png",
+   "Aluminum_Brushed_normal.png",
+   "Aluminum_Brushed_roughness.png",
+   "Concrete_Plain_Basecolor.tga",
+   "Concrete_Plain_Normal.tga",
+   "Concrete_Plain_Roughness.tga",
+   "Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga"
+  ],
+  "provenance": {
+   "Aluminum_Brushed_baseColor.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_baseColor.png",
+   "Aluminum_Brushed_normal.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_normal.png",
+   "Aluminum_Brushed_roughness.png": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_BrushedAluminum/Aluminum_Brushed_roughness.png",
+   "Concrete_Plain_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Clean_01/Concrete_Plain_Basecolor.tga",
+   "Concrete_Plain_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Clean_01/Concrete_Plain_Normal.tga",
+   "Concrete_Plain_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Clean_01/Concrete_Plain_Roughness.tga",
+   "Metal_WornAnvilIron_2k_alb.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_alb.tga",
+   "Metal_WornAnvilIron_2k_n.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Metal_Rusty_01/Metal_WornAnvilIron_2k_n.tga"
+  },
+  "before": 177242454,
+  "nodes_before": 1691,
+  "after": 171302,
+  "nodes_after": 1691,
+  "var_hits": 11
+ },
+ {
+  "asset": "AB.StreetSignGenerator.2.0.hda",
+  "rewrites": 16,
+  "stripped": [
+   "AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png",
+   "Metal_RuggedIron_2k_s.tga"
+  ],
+  "provenance": {
+   "AssetBash_StreetSigns_01.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_01.png",
+   "AssetBash_StreetSigns_02.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_02.png",
+   "AssetBash_StreetSigns_03.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_03.png",
+   "AssetBash_StreetSigns_04.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_04.png",
+   "AssetBash_StreetSigns_05.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_05.png",
+   "AssetBash_StreetSigns_06.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_06.png",
+   "AssetBash_StreetSigns_07.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_07.png",
+   "AssetBash_StreetSigns_08.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_08.png",
+   "AssetBash_StreetSigns_09.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_09.png",
+   "AssetBash_StreetSigns_10.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/Signs/AssetBash_StreetSigns_10.png",
+   "Concrete_Plain_baseColor.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_baseColor.png",
+   "Concrete_Plain_normal.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_normal.png",
+   "Concrete_Plain_roughness.png": "W:/HDA/AOD/Sops/CityProps/Textures/SignTool/TexturesBase/Concrete_Plain_roughness.png",
+   "Metal_RuggedIron_2k_s.tga": "U:/processing/AB_SignTool/Textures/Metal_RuggedIron_2k_s.tga"
+  },
+  "before": 405445671,
+  "nodes_before": 3080,
+  "after": 183025,
+  "nodes_after": 3080,
+  "var_hits": 16
+ },
+ {
+  "asset": "AB.TowerGenerator.1.0.hda",
+  "rewrites": 1,
+  "stripped": [],
+  "provenance": {},
+  "before": 78613,
+  "nodes_before": 709,
+  "after": 78517,
+  "nodes_after": 709,
+  "var_hits": 1
+ },
+ {
+  "asset": "AB.VictorianHouses.1.0.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117787476,
+  "nodes_before": 6589,
+  "after": 345727,
+  "nodes_after": 6589,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.VictorianHouses.1.1.hda",
+  "rewrites": 0,
+  "stripped": [
+   "Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga"
+  ],
+  "provenance": {
+   "Concrete_Dirty_02_Basecolor.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Basecolor.tga",
+   "Concrete_Dirty_02_Normal.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Normal.tga",
+   "Concrete_Dirty_02_Roughness.tga": "U:/AB-Modular-Kits/04_project_files/houdini/sourceimages/Textures/Concrete_Dirty_02/Concrete_Dirty_02_Roughness.tga"
+  },
+  "before": 117787438,
+  "nodes_before": 6589,
+  "after": 345670,
+  "nodes_after": 6589,
+  "var_hits": 0
+ },
+ {
+  "asset": "AB.WaterTankGenerator.2.0.hda",
+  "rewrites": 2,
+  "stripped": [],
+  "provenance": {},
+  "before": 145492,
+  "nodes_before": 1972,
+  "after": 145443,
+  "nodes_after": 1972,
+  "var_hits": 2
+ }
+]

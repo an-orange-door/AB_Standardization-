@@ -1,0 +1,619 @@
+[
+ {
+  "file": "Aluminum_Brushed_baseColor.png",
+  "original_name": "Aluminum_Brushed_baseColor.png",
+  "sha1": "8d55d68afe25d3d4fae6ddaa2c9f2a7d8d795f7b",
+  "bytes": 2345,
+  "width": 4096,
+  "height": 4096,
+  "copies": 2,
+  "assets": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Aluminum_Brushed_normal.png",
+  "original_name": "Aluminum_Brushed_normal.png",
+  "sha1": "ae89db35f374262c1dc79165f61cf38eb5348f08",
+  "bytes": 3647437,
+  "width": 4096,
+  "height": 4096,
+  "copies": 2,
+  "assets": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Aluminum_Brushed_roughness.png",
+  "original_name": "Aluminum_Brushed_roughness.png",
+  "sha1": "1bf0f8cbd69f653921b0a567d01fc1281aad77fa",
+  "bytes": 30815564,
+  "width": 4096,
+  "height": 4096,
+  "copies": 2,
+  "assets": [
+   "AB.RooftopMechanicals.3.0.hda",
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_01.png",
+  "original_name": "AssetBash_StreetSigns_01.png",
+  "sha1": "af4d8436793c5c5f9df6a31e86542230f6385e56",
+  "bytes": 10736677,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_02.png",
+  "original_name": "AssetBash_StreetSigns_02.png",
+  "sha1": "e07f91f745bae1e89d64c7cb484ac0f3fe34b82b",
+  "bytes": 15736510,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_03.png",
+  "original_name": "AssetBash_StreetSigns_03.png",
+  "sha1": "e07e3404d364d729624c2f601ee9fcb63c89b91a",
+  "bytes": 13936541,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_04.png",
+  "original_name": "AssetBash_StreetSigns_04.png",
+  "sha1": "9faf3abc6e5d1696f1bd540c2acdaa5ea11c04c5",
+  "bytes": 17865966,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_05.png",
+  "original_name": "AssetBash_StreetSigns_05.png",
+  "sha1": "9e8e15671951d6a77584bedea314368dcd1a028f",
+  "bytes": 8266754,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_06.png",
+  "original_name": "AssetBash_StreetSigns_06.png",
+  "sha1": "62ee21fc929660533e73858a77214ac7c2807a30",
+  "bytes": 9389383,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_07.png",
+  "original_name": "AssetBash_StreetSigns_07.png",
+  "sha1": "d654abcafa5d997aa6ff42166d70e4e671cc569e",
+  "bytes": 9389383,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_08.png",
+  "original_name": "AssetBash_StreetSigns_08.png",
+  "sha1": "848da5ff34e981312c5f54b0442cc07ad2a57131",
+  "bytes": 10173016,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_09.png",
+  "original_name": "AssetBash_StreetSigns_09.png",
+  "sha1": "ba113be37d735a04ff166bc825515ea283ceb091",
+  "bytes": 9389383,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "AssetBash_StreetSigns_10.png",
+  "original_name": "AssetBash_StreetSigns_10.png",
+  "sha1": "640a6869e48322f86deab6b43440f562dc1ac5a5",
+  "bytes": 16770920,
+  "width": 8192,
+  "height": 8192,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Dirty_02_Basecolor.tga",
+  "original_name": "Concrete_Dirty_02_Basecolor.tga",
+  "sha1": "a8ec6e2663a0097a8e38ddd610f960dfd5581961",
+  "bytes": 50331666,
+  "width": 4096,
+  "height": 4096,
+  "copies": 11,
+  "assets": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Dirty_02_Normal.tga",
+  "original_name": "Concrete_Dirty_02_Normal.tga",
+  "sha1": "f395080d2e48ab5d9efd99a96dda858b3430ae84",
+  "bytes": 50331666,
+  "width": 4096,
+  "height": 4096,
+  "copies": 11,
+  "assets": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Dirty_02_Roughness.tga",
+  "original_name": "Concrete_Dirty_02_Roughness.tga",
+  "sha1": "dde38afc12b41549c01a14e03e14a1660d7bccd2",
+  "bytes": 16777234,
+  "width": 4096,
+  "height": 4096,
+  "copies": 11,
+  "assets": [
+   "AB.ApartmentRow.1.0.hda",
+   "AB.ApartmentRow.1.1.hda",
+   "AB.ApartmentRow.1.2.hda",
+   "AB.DestructionBuilding.1.0.hda",
+   "AB.DowntownBuilding.3.2.hda",
+   "AB.DowntownBuilding.3.3.hda",
+   "AB.DowntownBuilding.3.4.hda",
+   "AB.DowntownBuilding.3.5.hda",
+   "AB.DowntownBuilding.3.6.hda",
+   "AB.VictorianHouses.1.0.hda",
+   "AB.VictorianHouses.1.1.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Plain_Basecolor.tga",
+  "original_name": "Concrete_Plain_Basecolor.tga",
+  "sha1": "6f4162c629656349c2f93a6c8c4189bc4615f677",
+  "bytes": 16778028,
+  "width": 4096,
+  "height": 4096,
+  "copies": 1,
+  "assets": [
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Plain_Normal.tga",
+  "original_name": "Concrete_Plain_Normal.tga",
+  "sha1": "ef2939b3fd9dd7bedd6a1c71b6c6d4a1fd5e24a5",
+  "bytes": 50331692,
+  "width": 4096,
+  "height": 4096,
+  "copies": 1,
+  "assets": [
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Plain_Roughness.tga",
+  "original_name": "Concrete_Plain_Roughness.tga",
+  "sha1": "3724c44eda51cdca52929fb37a98fcfce718ea76",
+  "bytes": 50331692,
+  "width": 4096,
+  "height": 4096,
+  "copies": 1,
+  "assets": [
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Plain_baseColor.png",
+  "original_name": "Concrete_Plain_baseColor.png",
+  "sha1": "b2cb1eec8d00bd1a65d5388ecfee5011dbd4ae70",
+  "bytes": 62060315,
+  "width": 4096,
+  "height": 4096,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Plain_normal.png",
+  "original_name": "Concrete_Plain_normal.png",
+  "sha1": "da54ce997d4f64371ac72b8b6c59716a3f7a3e70",
+  "bytes": 113147658,
+  "width": 4096,
+  "height": 4096,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Concrete_Plain_roughness.png",
+  "original_name": "Concrete_Plain_roughness.png",
+  "sha1": "01b07f6dedeefc31218ab6d5712f15f654262cea",
+  "bytes": 95830265,
+  "width": 4096,
+  "height": 4096,
+  "copies": 4,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Galvanized_Metal_roughness1.png",
+  "original_name": "Galvanized_Metal_roughness1.png",
+  "sha1": "9821057ccc8c4dd31f14536a67df439e67b58400",
+  "bytes": 6900061,
+  "width": 4096,
+  "height": 4096,
+  "copies": 1,
+  "assets": [
+   "AB.CommercialSignGenerator.4.8.hda"
+  ]
+ },
+ {
+  "file": "Metal_Brushed_001_Basecolor.tga",
+  "original_name": "Metal_Brushed_001_Basecolor.tga",
+  "sha1": "6f8f706eb6fd7c64612013f23140429166a2a3ea",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_Brushed_001_Normal.tga",
+  "original_name": "Metal_Brushed_001_Normal.tga",
+  "sha1": "86e10e6ccf5b48b1f829fd782f04b4393368de13",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_Brushed_001_Roughness.tga",
+  "original_name": "Metal_Brushed_001_Roughness.tga",
+  "sha1": "173fbe7d8a266db9f16bf190752aa5cb5456037b",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_Galvanized_01_basecolor.png",
+  "original_name": "Metal_Galvanized_01_basecolor.png",
+  "sha1": "ed1d8008d49298fde46041b14902d16d175883b4",
+  "bytes": 561005,
+  "width": 4096,
+  "height": 4096,
+  "copies": 4,
+  "assets": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ },
+ {
+  "file": "Metal_Galvanized_01_normal.png",
+  "original_name": "Metal_Galvanized_01_normal.png",
+  "sha1": "6006f357e5f5aa737992edfe398c5cbf00036630",
+  "bytes": 15665124,
+  "width": 4096,
+  "height": 4096,
+  "copies": 4,
+  "assets": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ },
+ {
+  "file": "Metal_Galvanized_01_roughness.png",
+  "original_name": "Metal_Galvanized_01_roughness.png",
+  "sha1": "027bbf251aba595c06405a0513a7cd3d4561f219",
+  "bytes": 6688524,
+  "width": 4096,
+  "height": 4096,
+  "copies": 4,
+  "assets": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ },
+ {
+  "file": "Metal_HexGrid_01_Basecolor.tga",
+  "original_name": "Metal_HexGrid_01_Basecolor.tga",
+  "sha1": "ac066d486c3ed22ac683f97cd52a61d779c7cace",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_HexGrid_01_Mask.tga",
+  "original_name": "Metal_HexGrid_01_Mask.tga",
+  "sha1": "246515a82c2a3b38a2c370e1f0be7a5ea0d316f3",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_HexGrid_01_Normal.tga",
+  "original_name": "Metal_HexGrid_01_Normal.tga",
+  "sha1": "ca45b8aaad53b481fd35155b8aa7d7fd82ee3e44",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_HexGrid_01_Roughness.tga",
+  "original_name": "Metal_HexGrid_01_Roughness.tga",
+  "sha1": "7346ddb69c943f24e7b4076f3dd33c2c6ab29243",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_HexGrid_01_Trans.tga",
+  "original_name": "Metal_HexGrid_01_Trans.tga",
+  "sha1": "b70642a82912ed91dc2e3235c4273b4a2fae9863",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.SkylightGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_RuggedIron_2k_s.tga",
+  "original_name": "Metal_RuggedIron_2k_s.tga",
+  "sha1": "ea8b46ebe9b2f3cd87246592c00df934a2a1e763",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 3,
+  "assets": [
+   "AB.CommercialSignGenerator.4.8.hda",
+   "AB.RoofTopSignGenerator.4.8.hda",
+   "AB.StreetSignGenerator.2.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_Rusty_02_Basecolor.tga",
+  "original_name": "Metal_Rusty_02_Basecolor.tga",
+  "sha1": "0a0eace6eead7fbaea86bf8af7c5aba1f51c087a",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.RooftopMechanicals.3.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_Rusty_02_Normal.tga",
+  "original_name": "Metal_Rusty_02_Normal.tga",
+  "sha1": "020221e91f6bf1856888d0327c992622ff73d26a",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 1,
+  "assets": [
+   "AB.RooftopMechanicals.3.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_WornAnvilIron_2k_alb.tga",
+  "original_name": "Metal_WornAnvilIron_2k_alb.tga",
+  "sha1": "0e9d6d39aafc95c2cca31c5a16679b05e62940f9",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 4,
+  "assets": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_WornAnvilIron_2k_n.tga",
+  "original_name": "Metal_WornAnvilIron_2k_n.tga",
+  "sha1": "88d26562088b2ffea24a78926688ee365f8e7d62",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 4,
+  "assets": [
+   "AB.BalconyGenerator.2.0.hda",
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda",
+   "AB.StairwayTops.3.0.hda"
+  ]
+ },
+ {
+  "file": "Metal_WornAnvilIron_2k_s.tga",
+  "original_name": "Metal_WornAnvilIron_2k_s.tga",
+  "sha1": "421c50342b8b444bf358f86342551f5183fbde61",
+  "bytes": 12582956,
+  "width": 2048,
+  "height": 2048,
+  "copies": 2,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ },
+ {
+  "file": "RFX-gen-blocks-base-001.png",
+  "original_name": "RFX-gen-blocks-base-001.png",
+  "sha1": "6189b0ca98438f35e7c7123c2b1e59a980d4bd89",
+  "bytes": 8251,
+  "width": 1024,
+  "height": 1024,
+  "copies": 6,
+  "assets": [
+   "AB.BlocksRGB.1.0.hda",
+   "AB.CityGridGenerator.1.0.hda",
+   "AB.CityGridGenerator.1.1.hda",
+   "AB.CityGridGenerator.1.2.hda",
+   "AB.CityGridGenerator.1.3.hda",
+   "AB.CityGridGenerator.1.4.hda"
+  ]
+ },
+ {
+  "file": "RFX-gen-blocks-neighborhood-001.png",
+  "original_name": "RFX-gen-blocks-neighborhood-001.png",
+  "sha1": "fc25c00c3a6237d338cbce8b7f0993c4b7c49c1f",
+  "bytes": 8204,
+  "width": 1024,
+  "height": 1024,
+  "copies": 6,
+  "assets": [
+   "AB.BlocksRGB.1.0.hda",
+   "AB.CityGridGenerator.1.0.hda",
+   "AB.CityGridGenerator.1.1.hda",
+   "AB.CityGridGenerator.1.2.hda",
+   "AB.CityGridGenerator.1.3.hda",
+   "AB.CityGridGenerator.1.4.hda"
+  ]
+ },
+ {
+  "file": "Sign_Interstate_01.tga",
+  "original_name": "Sign_Interstate_01.tga",
+  "sha1": "901a86730095b10a555f7cb8fe29ca1b4d7f01a6",
+  "bytes": 67108908,
+  "width": 4096,
+  "height": 4096,
+  "copies": 2,
+  "assets": [
+   "AB.HighwaySignGenerator.4.8.hda",
+   "AB.HighwaySignGenerator.4.9.hda"
+  ]
+ }
+]

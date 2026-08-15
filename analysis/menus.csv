@@ -1,0 +1,1152 @@
+tool,parm,ordinal,token,label
+AB::AirConCondeserGenerator::3.0,MaterialStyle,0,0,Principled
+AB::AirConCondeserGenerator::3.0,MaterialStyle,1,1,Unreal
+AB::AirConCondeserGenerator::3.0,MaterialStyle,2,2,Unity
+AB::AntennaGenerator::3.0,MaterialStyle,0,0,Principled
+AB::AntennaGenerator::3.0,MaterialStyle,1,1,Unreal
+AB::AntennaGenerator::3.0,MaterialStyle,2,2,Unity
+AB::ApartmentRow::1.2,BuildingShape,0,0,Square
+AB::ApartmentRow::1.2,BuildingShape,1,1,L
+AB::ApartmentRow::1.2,BuildingShape,2,2,Arced Corner
+AB::ApartmentRow::1.2,RS_DoorStyle,0,0,Single Light
+AB::ApartmentRow::1.2,RS_DoorStyle,1,1,Multi Light
+AB::ApartmentRow::1.2,RS_DoorStyle,2,3,Paneled
+AB::ApartmentRow::1.2,RS_HandleStyle,0,0,Knob
+AB::ApartmentRow::1.2,RS_HandleStyle,1,1,Lever
+AB::ApartmentRow::1.2,RS_HandleStyle,2,2,Knob Fancy
+AB::ApartmentRow::1.2,RS_HandleStyle,3,,Lever Antique
+AB::ApartmentRow::1.2,handle_side,0,0,Right
+AB::ApartmentRow::1.2,handle_side,1,1,Left
+AB::ApartmentRow::1.2,WindowShape,0,0,Rectangle
+AB::ApartmentRow::1.2,WindowShape,1,1,Round Top
+AB::ApartmentRow::1.2,WindowShape,2,2,Bay
+AB::ApartmentRow::1.2,WindowShape3,0,0,Rectangle
+AB::ApartmentRow::1.2,WindowShape3,1,1,Round Top
+AB::ApartmentRow::1.2,WindowShape3,2,2,Bay
+AB::ApartmentRow::1.2,WindowShape4,0,0,Rectangle
+AB::ApartmentRow::1.2,WindowShape4,1,1,Round Top
+AB::ApartmentRow::1.2,WindowShape4,2,2,Bay
+AB::ApartmentRow::1.2,WindowShape2,0,0,Rectangle
+AB::ApartmentRow::1.2,WindowShape2,1,1,Round Top
+AB::ApartmentRow::1.2,WindowShape2,2,2,Bay
+AB::ApartmentRow::1.2,RoofStyle,0,0,Flat
+AB::ApartmentRow::1.2,RoofStyle,1,1,Peaked
+AB::ArchGenerator::2.0,MaterialStyle,0,0,Principled
+AB::ArchGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::ArchGenerator::2.0,MaterialStyle,2,2,Unity
+AB::ArchitecturalPlantOns::2.0,PlantOnStyle,0,0,Classic
+AB::ArchitecturalPlantOns::2.0,PlantOnStyle,1,1,Rosettes
+AB::ArchitecturalPlantOns::2.0,PlantOnStyle,2,2,Art Deco
+AB::ArchitecturalPlantOns::2.0,PlantOnStyle,3,3,Fireplaces
+AB::AwningGenerator::2.0,MaterialStyle,0,0,Principled
+AB::AwningGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::AwningGenerator::2.0,MaterialStyle,2,2,Unity
+AB::AwningGenerator::2.0,MaterialStyle,3,3,MaterialX
+AB::AwningGenerator::2.0,AwningStyle,0,0,Traditional
+AB::AwningGenerator::2.0,AwningStyle,1,1,Modern
+AB::AwningGenerator::2.0,AwningStyle,2,2,Entry Way
+AB::AwningGenerator::2.0,LowerDecorationShape,0,0,Circular
+AB::AwningGenerator::2.0,LowerDecorationShape,1,1,Diamond
+AB::AwningGenerator::2.0,LowerDecorationShape,2,2,Inset
+AB::BalconyGenerator::2.0,MaterialStyle,0,0,Principled
+AB::BalconyGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::BalconyGenerator::2.0,MaterialStyle,2,2,Unity
+AB::BalconyGenerator::2.0,MaterialStyle,3,3,MaterialX
+AB::BalconyGenerator::2.0,lightmap_style,0,0,Unreal Engine
+AB::BalconyGenerator::2.0,lightmap_style,1,1,Unity
+AB::BalconyGenerator::2.0,filletshape,0,none,None
+AB::BalconyGenerator::2.0,filletshape,1,solid,Solid
+AB::BalconyGenerator::2.0,filletshape,2,crease,Crease
+AB::BalconyGenerator::2.0,filletshape,3,chamfer,Chamfer
+AB::BalconyGenerator::2.0,filletshape,4,round,Round
+AB::BalconyGenerator::2.0,filletshape,5,profile,Profile
+AB::BalconyGenerator::2.0,ptfilletshape,0,none,None
+AB::BalconyGenerator::2.0,ptfilletshape,1,solid,Solid
+AB::BalconyGenerator::2.0,ptfilletshape,2,chamfer,Chamfer
+AB::BalconyGenerator::2.0,ptfilletshape,3,round,Round
+AB::BalconyGenerator::2.0,HardwareStyle,0,0,Bolts Nuts Washers
+AB::BalconyGenerator::2.0,HardwareStyle,1,1,Rivets
+AB::BalconyGenerator::2.0,HardwareStyle,2,2,Locks
+AB::BarbwireGenerator::2.0,PathShape,0,0,Straight
+AB::BarbwireGenerator::2.0,PathShape,1,1,Deformed
+AB::BarbwireGenerator::2.0,basis,0,sine,Sinusoid
+AB::BarbwireGenerator::2.0,basis,1,perlin,Perlin
+AB::BarbwireGenerator::2.0,basis,2,pperlin,Periodic Perlin
+AB::BarbwireGenerator::2.0,basis,3,simplex,Simplex (Improved Perlin)
+AB::BarbwireGenerator::2.0,basis,4,sparse,Sparse Convolution
+AB::BarbwireGenerator::2.0,basis,5,flow,Flow
+AB::BarbwireGenerator::2.0,basis,6,pflow,Periodic Flow
+AB::BarbwireGenerator::2.0,basis,7,worleyFA,Worley (cellular) F1
+AB::BarbwireGenerator::2.0,basis,8,worleyFB,Worley (cellular) F2-F1
+AB::BarbwireGenerator::2.0,basis,9,mworleyFA,Manhattan Worley (cellular) F1
+AB::BarbwireGenerator::2.0,basis,10,mworleyFB,Manhattan Worley (cellular) F2-F1
+AB::BarbwireGenerator::2.0,basis,11,cworleyFA,Chebyshev Worley (cellular) F1
+AB::BarbwireGenerator::2.0,basis,12,cworleyFB,Chebyshev Worley (cellular) F2-F1
+AB::BarbwireGenerator::2.0,basis,13,alligator,Alligator
+AB::BarbwireGenerator::2.0,fractal,0,none,None
+AB::BarbwireGenerator::2.0,fractal,1,fBm,Standard (fBm)
+AB::BarbwireGenerator::2.0,fractal,2,mfT,Terrain
+AB::BarbwireGenerator::2.0,fractal,3,hmfT,Hybrid Terrain
+AB::BillboardGenerator::2.1,MaterialStyle,0,0,Principled
+AB::BillboardGenerator::2.1,MaterialStyle,1,1,Unreal
+AB::BillboardGenerator::2.1,SupportBevelsShape,0,none,None
+AB::BillboardGenerator::2.1,SupportBevelsShape,1,solid,Solid
+AB::BillboardGenerator::2.1,SupportBevelsShape,2,crease,Crease
+AB::BillboardGenerator::2.1,SupportBevelsShape,3,chamfer,Chamfer
+AB::BillboardGenerator::2.1,SupportBevelsShape,4,round,Round
+AB::BillboardGenerator::2.1,PlatformMetalSyle,0,0,I Beams
+AB::BillboardGenerator::2.1,PlatformMetalSyle,1,1,Channel
+AB::BillboardGenerator::2.1,ext_type,0,0,I Beam
+AB::BillboardGenerator::2.1,ext_type,1,1,C Channel
+AB::BillboardGenerator::2.1,ext_type,2,2,T Bar
+AB::BillboardGenerator::2.1,ext_type,3,3,Angle
+AB::BillboardGenerator::2.1,ext_type,4,4,Square Tube
+AB::BillboardGenerator::2.1,ext_type2,0,0,I Beam
+AB::BillboardGenerator::2.1,ext_type2,1,1,C Channel
+AB::BillboardGenerator::2.1,ext_type2,2,2,T Bar
+AB::BillboardGenerator::2.1,ext_type2,3,3,Angle
+AB::BillboardGenerator::2.1,ext_type2,4,4,Square Tube
+AB::BlocksRGB::1.0,work_mode,0,0,Set-Up
+AB::BlocksRGB::1.0,work_mode,1,1,Color Groups
+AB::BlocksRGB::1.0,work_mode,2,2,Process
+AB::BlocksRGB::1.0,work_mode,3,3,Output
+AB::BlocksRGB::1.0,MaterialStyle,0,0,Principled
+AB::BlocksRGB::1.0,MaterialStyle,1,1,Unreal
+AB::BlocksRGB::1.0,MaterialStyle,2,2,Unity
+AB::BlocksRGB::1.0,BL_input_res,0,0,512
+AB::BlocksRGB::1.0,BL_input_res,1,1,1024
+AB::BlocksRGB::1.0,BL_input_res,2,2,2048
+AB::BlocksRGB::1.0,BL_input_res,3,3,4096
+AB::BlocksRGB::1.0,AB_gridRes,0,0,Full
+AB::BlocksRGB::1.0,AB_gridRes,1,1,Half
+AB::BlocksRGB::1.0,AB_gridRes,2,2,Quarter
+AB::BlocksRGB::1.0,AB_gridRes,3,3,Eight
+AB::BlocksRGB::1.0,noisetype,0,noise,Perlin
+AB::BlocksRGB::1.0,noisetype,1,xnoise,Simplex
+AB::BridgeGenerator::2.0,BR_BridgeStyle,0,0,Arched Truss
+AB::BridgeGenerator::2.0,BR_BridgeStyle,1,1,Straight Truss
+AB::BridgeGenerator::2.0,BR_BridgeStyle,2,2,Cabled
+AB::BridgeGenerator::2.0,BR_BridgeStyle,3,3,Tied Arched
+AB::BridgeGenerator::2.0,BR_MaterialStyle,0,0,Principled
+AB::BridgeGenerator::2.0,BR_MaterialStyle,1,1,Unreal
+AB::BridgeGenerator::2.0,BR_MaterialStyle,2,2,Unity
+AB::BridgeGenerator::2.0,BR_UnderSupportSTyle,0,0,Large Arch
+AB::BridgeGenerator::2.0,BR_UnderSupportSTyle,1,1,Small Arch
+AB::BuildingFootprintGenerator::1.0,BuildingShape,0,0,Rectangular
+AB::BuildingFootprintGenerator::1.0,BuildingShape,1,1,L
+AB::BuildingFootprintGenerator::1.0,BuildingShape,2,2,Rounded Corner
+AB::BuildingLightGenerator::2.1,MaterialStyle,0,0,Principled
+AB::BuildingLightGenerator::2.1,MaterialStyle,1,1,Unreal
+AB::BuildingLightGenerator::2.1,MaterialStyle,2,2,Unity
+AB::BuildingLightGenerator::2.1,MasterLightStyle,0,0,Modern
+AB::BuildingLightGenerator::2.1,MasterLightStyle,1,1,Art Deco
+AB::BuildingLightGenerator::2.1,MasterLightStyle,2,2,Classic
+AB::BuildingLightGenerator::2.1,MasterLightStyle,3,3,Industrial
+AB::BuildingLightGenerator::2.1,MN_LightStyle,0,0,001
+AB::BuildingLightGenerator::2.1,MN_LightStyle,1,1,002
+AB::BuildingLightGenerator::2.1,MN_LightStyle,2,3,003
+AB::BuildingLightGenerator::2.1,filletshape,0,none,None
+AB::BuildingLightGenerator::2.1,filletshape,1,solid,Solid
+AB::BuildingLightGenerator::2.1,filletshape,2,crease,Crease
+AB::BuildingLightGenerator::2.1,filletshape,3,chamfer,Chamfer
+AB::BuildingLightGenerator::2.1,filletshape,4,round,Round
+AB::BuildingLightGenerator::2.1,CL_LightStyle,0,0,001
+AB::BuildingLightGenerator::2.1,CL_LightStyle,1,1,002
+AB::BuildingLightGenerator::2.1,CL_LightStyle,2,3,003
+AB::BuildingLightGenerator::2.1,IndustrialLightStyle,0,0,Wall Mount 01
+AB::BuildingLightGenerator::2.1,IndustrialLightStyle,1,1,Large Security
+AB::ButtonPanels::1.1,RampColorType,0,0,Random
+AB::ButtonPanels::1.1,RampColorType,1,1,Vertical Rap
+AB::CameraFrustrum::1.0,pre_xform,0,clean,Clean Transform
+AB::CameraFrustrum::1.0,pre_xform,1,cleantrans,Clean Translates
+AB::CameraFrustrum::1.0,pre_xform,2,cleanrot,Clean Rotates
+AB::CameraFrustrum::1.0,pre_xform,3,cleanscales,Clean Scales
+AB::CameraFrustrum::1.0,pre_xform,4,extract,Extract Pre-transform
+AB::CameraFrustrum::1.0,pre_xform,5,reset,Reset Pre-transform
+AB::CameraFrustrum::1.0,xOrd,0,srt,Scale Rot Trans
+AB::CameraFrustrum::1.0,xOrd,1,str,Scale Trans Rot
+AB::CameraFrustrum::1.0,xOrd,2,rst,Rot Scale Trans
+AB::CameraFrustrum::1.0,xOrd,3,rts,Rot Trans Scale
+AB::CameraFrustrum::1.0,xOrd,4,tsr,Trans Scale Rot
+AB::CameraFrustrum::1.0,xOrd,5,trs,Trans Rot Scale
+AB::CameraFrustrum::1.0,rOrd,0,xyz,Rx Ry Rz
+AB::CameraFrustrum::1.0,rOrd,1,xzy,Rx Rz Ry
+AB::CameraFrustrum::1.0,rOrd,2,yxz,Ry Rx Rz
+AB::CameraFrustrum::1.0,rOrd,3,yzx,Ry Rz Rx
+AB::CameraFrustrum::1.0,rOrd,4,zxy,Rz Rx Ry
+AB::CameraFrustrum::1.0,rOrd,5,zyx,Rz Ry Rx
+AB::CameraFrustrum::1.0,lookup,0,off,Don't Use Up Vector
+AB::CameraFrustrum::1.0,lookup,1,on,Use Up Vector
+AB::CameraFrustrum::1.0,lookup,2,quat,Use Quaternions
+AB::CameraFrustrum::1.0,lookup,3,pos,Use Global Position
+AB::CameraFrustrum::1.0,lookup,4,obj,Use Up Object
+AB::CameraFrustrum::1.0,uparmtype,0,uniform,Uniform
+AB::CameraFrustrum::1.0,uparmtype,1,arc,Arc Length
+AB::CameraFrustrum::1.0,vm_volumefilter,0,box,Box Filter
+AB::CameraFrustrum::1.0,vm_volumefilter,1,gaussian,Gaussian
+AB::CameraFrustrum::1.0,vm_volumefilter,2,bartlett,Bartlett (triangle)
+AB::CameraFrustrum::1.0,vm_volumefilter,3,catrom,Catmull-Rom
+AB::CameraFrustrum::1.0,vm_volumefilter,4,hanning,Hanning
+AB::CameraFrustrum::1.0,vm_volumefilter,5,blackman,Blackman
+AB::CameraFrustrum::1.0,vm_volumefilter,6,sinc,Sinc (sharpening)
+AB::CameraFrustrum::1.0,vm_raypredice,0,off,Disable Predicing
+AB::CameraFrustrum::1.0,vm_raypredice,1,on,Full Predicing
+AB::CameraFrustrum::1.0,vm_raypredice,2,bounds,Precompute Bounds
+AB::CameraFrustrum::1.0,vm_renderpoints,0,0,No Point Rendering
+AB::CameraFrustrum::1.0,vm_renderpoints,1,1,Render Only Points
+AB::CameraFrustrum::1.0,vm_renderpoints,2,2,Render Unconnected Points
+AB::CameraFrustrum::1.0,vm_coving,0,0,Disable Coving
+AB::CameraFrustrum::1.0,vm_coving,1,1,Coving for displacement/sub-d
+AB::CameraFrustrum::1.0,vm_coving,2,2,Coving for all primitives
+AB::CameraFrustrum::1.0,vport_onionskin,0,off,Off
+AB::CameraFrustrum::1.0,vport_onionskin,1,xform,Transform only
+AB::CameraFrustrum::1.0,vport_onionskin,2,on,Full Deformation
+AB::CameraPathToUE::1.0,xOrd,0,srt,Scale Rot Trans
+AB::CameraPathToUE::1.0,xOrd,1,str,Scale Trans Rot
+AB::CameraPathToUE::1.0,xOrd,2,rst,Rot Scale Trans
+AB::CameraPathToUE::1.0,xOrd,3,rts,Rot Trans Scale
+AB::CameraPathToUE::1.0,xOrd,4,tsr,Trans Scale Rot
+AB::CameraPathToUE::1.0,xOrd,5,trs,Trans Rot Scale
+AB::CameraPathToUE::1.0,rOrd,0,xyz,Rx Ry Rz
+AB::CameraPathToUE::1.0,rOrd,1,xzy,Rx Rz Ry
+AB::CameraPathToUE::1.0,rOrd,2,yxz,Ry Rx Rz
+AB::CameraPathToUE::1.0,rOrd,3,yzx,Ry Rz Rx
+AB::CameraPathToUE::1.0,rOrd,4,zxy,Rz Rx Ry
+AB::CameraPathToUE::1.0,rOrd,5,zyx,Rz Ry Rx
+AB::CameraPathToUE::1.0,pre_xform,0,clean,Clean Transform
+AB::CameraPathToUE::1.0,pre_xform,1,cleantrans,Clean Translates
+AB::CameraPathToUE::1.0,pre_xform,2,cleanrot,Clean Rotates
+AB::CameraPathToUE::1.0,pre_xform,3,cleanscales,Clean Scales
+AB::CameraPathToUE::1.0,pre_xform,4,extract,Extract Pre-transform
+AB::CameraPathToUE::1.0,pre_xform,5,reset,Reset Pre-transform
+AB::CameraPathToUE::1.0,lookup,0,off,Don't Use Up Vector
+AB::CameraPathToUE::1.0,lookup,1,on,Use Up Vector
+AB::CameraPathToUE::1.0,lookup,2,quat,Use Quaternions
+AB::CameraPathToUE::1.0,lookup,3,pos,Use Global Position
+AB::CameraPathToUE::1.0,lookup,4,obj,Use Up Object
+AB::CameraPathToUE::1.0,uparmtype,0,uniform,Uniform
+AB::CameraPathToUE::1.0,uparmtype,1,arc,Arc Length
+AB::CameraPathToUE::1.0,trange,0,off,Render Current Frame
+AB::CameraPathToUE::1.0,trange,1,normal,Render Frame Range
+AB::CameraPathToUE::1.0,trange,2,on,Render Frame Range Only (Strict)
+AB::ChainGenerator::3.0,type,0,typepoint,Points
+AB::ChainGenerator::3.0,type,1,typevertex,Vertices
+AB::ChainGenerator::3.0,type,2,typeprim,Primitives
+AB::ChainGenerator::3.0,type,3,typedetail,Detail
+AB::ChainGenerator::3.0,method,0,uniform,Each Vertex Equally
+AB::ChainGenerator::3.0,method,1,angle,By Vertex Angle
+AB::ChainGenerator::3.0,method,2,area,By Face Area
+AB::CityGenerator::2.5,ViewMode,0,0,Proxies
+AB::CityGenerator::2.5,ViewMode,1,1,Color Coded
+AB::CityGenerator::2.5,ViewMode,2,2,Color By Building
+AB::CityGenerator::2.5,ViewMode,3,3,Final
+AB::CityGenerator::2.5,HeightStyle,0,0,Ramp
+AB::CityGenerator::2.5,HeightStyle,1,1,Radial
+AB::CityGenerator::2.5,HeightStyle,2,2,Point
+AB::CityGridGenerator::1.4,VisMode,0,0,Pattern Base
+AB::CityGridGenerator::1.4,VisMode,1,1,Lot Base
+AB::CityGridGenerator::1.4,VisMode,2,2,Final Output
+AB::CityGridGenerator::1.4,CityPattern,0,0,Pattern 01
+AB::CityGridGenerator::1.4,CityPattern,1,1,Pattern 02
+AB::CityGridGenerator::1.4,CityPattern,2,2,Pattern 03
+AB::CityGridGenerator::1.4,GridSize,0,0,512
+AB::CityGridGenerator::1.4,GridSize,1,1,1024
+AB::CityGridGenerator::1.4,GridSize,2,2,2048
+AB::CityGridGenerator::1.4,GridSize,3,3,4096
+AB::CityGridGenerator::1.4,alignment,0,0,Longest Edge
+AB::CityGridGenerator::1.4,alignment,1,1,Bounding Box XZ
+AB::CommercialSignGenerator::4.8,MaterialStyle,0,0,Principled
+AB::CommercialSignGenerator::4.8,MaterialStyle,1,1,Unreal
+AB::CommercialSignGenerator::4.8,MaterialStyle,2,2,Unity
+AB::CommercialSignGenerator::4.8,CreateType,0,0,Sign
+AB::CommercialSignGenerator::4.8,CreateType,1,1,Neon Text
+AB::CommercialSignGenerator::4.8,CreateType,2,2,Arrows
+AB::CommercialSignGenerator::4.8,DCCEngine,0,0,Unreal Engine
+AB::CommercialSignGenerator::4.8,DCCEngine,1,1,Unity
+AB::CommercialSignGenerator::4.8,DCCEngine,2,2,USD
+AB::CommercialSignGenerator::4.8,CommercialSignType,0,0,Side Mounted
+AB::CommercialSignGenerator::4.8,CommercialSignType,1,1,Pole Mounted
+AB::CommercialSignGenerator::4.8,SignShapeStyle,0,0,Rectangle with Circle
+AB::CommercialSignGenerator::4.8,SignShapeStyle,1,1,Circle
+AB::CommercialSignGenerator::4.8,SignShapeStyle,2,2,Chevron
+AB::CommercialSignGenerator::4.8,SignShapeStyle,3,3,Rectangular
+AB::CommercialSignGenerator::4.8,PoleShape,0,0,Circle
+AB::CommercialSignGenerator::4.8,PoleShape,1,1,Square
+AB::CommercialSignGenerator::4.8,PoleShape,2,1,Ibeam
+AB::CommercialSignGenerator::4.8,ArrowStyle,0,0,Elbow
+AB::CommercialSignGenerator::4.8,ArrowStyle,1,1,Straight
+AB::CommercialSignGenerator::4.8,ArrowSide,0,0,left
+AB::CommercialSignGenerator::4.8,ArrowSide,1,1,Right
+AB::CommercialSignGenerator::4.8,CasingBevelShape,0,none,None
+AB::CommercialSignGenerator::4.8,CasingBevelShape,1,solid,Solid
+AB::CommercialSignGenerator::4.8,CasingBevelShape,2,crease,Crease
+AB::CommercialSignGenerator::4.8,CasingBevelShape,3,chamfer,Chamfer
+AB::CommercialSignGenerator::4.8,CasingBevelShape,4,round,Round
+AB::CreateRGBNoise::1.0,method,0,uniform,Uniform
+AB::CreateRGBNoise::1.0,method,1,edgelength,Edge Length
+AB::CreateRGBNoise::1.0,mode,0,laplacian,Laplacian
+AB::CreateRGBNoise::1.0,mode,1,volpreserving,Volume Preserving
+AB::CreateRGBNoise::1.0,mode,2,custom,Custom
+AB::CreateRGBNoise::1.0,influencetype,0,connectivity,Connectivity
+AB::CreateRGBNoise::1.0,influencetype,1,proximity,Proximity
+AB::CycGenerator::1.0,cyc_type,0,0,Straight
+AB::CycGenerator::1.0,cyc_type,1,1,Revolved
+AB::DestructionBuilding::1.0,MaterialStyle,0,0,Principled
+AB::DestructionBuilding::1.0,MaterialStyle,1,1,Unreal
+AB::DestructionBuilding::1.0,BuildingStyle,0,0,Classical
+AB::DestructionBuilding::1.0,BuildingStyle,1,1,Modernsit
+AB::DestructionBuilding::1.0,BuildingShape,0,0,Square
+AB::DestructionBuilding::1.0,BuildingShape,1,1,L
+AB::DestructionBuilding::1.0,BuildingShape,2,2,Arced Corner
+AB::DestructionBuilding::1.0,BuildingShape,3,3,U
+AB::DestructionBuilding::1.0,BuildingShape,4,4,Circular
+AB::DestructionBuilding::1.0,handle_side,0,0,Right
+AB::DestructionBuilding::1.0,handle_side,1,1,Left
+AB::DestructionBuilding::1.0,RS_HandleStyle,0,0,Knob
+AB::DestructionBuilding::1.0,RS_HandleStyle,1,1,Lever
+AB::DestructionBuilding::1.0,RS_HandleStyle,2,2,Knob Fancy
+AB::DestructionBuilding::1.0,RS_HandleStyle,3,,Lever Antique
+AB::DestructionBuilding::1.0,RS_DoorStyle,0,0,Single Light
+AB::DestructionBuilding::1.0,RS_DoorStyle,1,1,Multi Light
+AB::DestructionBuilding::1.0,RS_DoorStyle,2,3,Paneled
+AB::DestructionBuilding::1.0,RectangularWindowType,0,0,Single
+AB::DestructionBuilding::1.0,RectangularWindowType,1,1,Split Vert
+AB::DestructionBuilding::1.0,RectangularWindowType,2,2,Split Horiz
+AB::DestructionBuilding::1.0,RectangularWindowType,3,3,1 left 2 right
+AB::DestructionBuilding::1.0,RectangularWindowType,4,4,2 Left 1 Right
+AB::DestructionBuilding::1.0,RectangularWindowType4,0,0,Single
+AB::DestructionBuilding::1.0,RectangularWindowType4,1,1,Split Vert
+AB::DestructionBuilding::1.0,RectangularWindowType4,2,2,Split Horiz
+AB::DestructionBuilding::1.0,RectangularWindowType4,3,3,1 left 2 right
+AB::DestructionBuilding::1.0,RectangularWindowType4,4,4,2 Left 1 Right
+AB::DestructionBuilding::1.0,RectangularWindowType2,0,0,Single
+AB::DestructionBuilding::1.0,RectangularWindowType2,1,1,Split Vert
+AB::DestructionBuilding::1.0,RectangularWindowType2,2,2,Split Horiz
+AB::DestructionBuilding::1.0,RectangularWindowType2,3,3,1 left 2 right
+AB::DestructionBuilding::1.0,RectangularWindowType2,4,4,2 Left 1 Right
+AB::DestructionBuilding::1.0,RectangularWindowType3,0,0,Single
+AB::DestructionBuilding::1.0,RectangularWindowType3,1,1,Split Vert
+AB::DestructionBuilding::1.0,RectangularWindowType3,2,2,Split Horiz
+AB::DestructionBuilding::1.0,RectangularWindowType3,3,3,1 left 2 right
+AB::DestructionBuilding::1.0,RectangularWindowType3,4,4,2 Left 1 Right
+AB::DestructionBuilding::1.0,CornerDivStyle,0,0,Horizontal
+AB::DestructionBuilding::1.0,CornerDivStyle,1,1,Vertical
+AB::DomeGenerator::1.0,DomeStyle,0,0,Venetian
+AB::DomeGenerator::1.0,DomeStyle,1,1,Middle Eastern
+AB::DomeGenerator::1.0,DomeStyle,2,2,Onion
+AB::DomeGenerator::1.0,DomeStyle,3,3,Classical
+AB::DoorGenerator::4.0,MasterDoorStyle,0,0,Residential
+AB::DoorGenerator::4.0,MasterDoorStyle,1,1,Commercial
+AB::DoorGenerator::4.0,MasterDoorStyle,2,2,Industrial
+AB::DoorGenerator::4.0,MasterDoorStyle,3,3,Roll Up
+AB::DoorGenerator::4.0,MasterDoorStyle,4,4,Specialty
+AB::DoorGenerator::4.0,handle_side,0,0,Right
+AB::DoorGenerator::4.0,handle_side,1,1,Left
+AB::DoorGenerator::4.0,door_bank_sytle,0,0, Single
+AB::DoorGenerator::4.0,door_bank_sytle,1,1,Double
+AB::DoorGenerator::4.0,door_bank_sytle,2,2,Triple
+AB::DoorGenerator::4.0,door_bank_sytle,3,3,Quad
+AB::DoorGenerator::4.0,RS_DoorStyle,0,0,Single Light
+AB::DoorGenerator::4.0,RS_DoorStyle,1,1,Multi Light
+AB::DoorGenerator::4.0,RS_DoorStyle,2,3,Paneled
+AB::DoorGenerator::4.0,RS_HandleStyle,0,0,Knob
+AB::DoorGenerator::4.0,RS_HandleStyle,1,1,Lever
+AB::DoorGenerator::4.0,RS_HandleStyle,2,2,Knob Fancy
+AB::DoorGenerator::4.0,RS_HandleStyle,3,,Lever Antique
+AB::DoorGenerator::4.0,CM_DoorStyle,0,0,Single Light
+AB::DoorGenerator::4.0,HW_PullBarStyle,0,0,01
+AB::DoorGenerator::4.0,HW_PullBarStyle,1,1,02
+AB::DoorGenerator::4.0,HW_PullBarStyle,2,3,02
+AB::DoorGenerator::4.0,IN_DoorStyle,0,0,Single Light
+AB::DoorGenerator::4.0,IN_DoorStyle,1,1,Multi Light
+AB::DoorGenerator::4.0,IN_DoorStyle,2,3,Paneled
+AB::DoorGenerator::4.0,IN_DoorStyle,3,4,Paneled Window
+AB::DoorGenerator::4.0,SpecialityDoorStyle,0,0,Style 01
+AB::DoorGenerator::4.0,SpecialityDoorStyle,1,1,Style 02
+AB::DoorHardware::2.0,HW_DoorHandleStyle,0,0,Residential
+AB::DoorHardware::2.0,HW_DoorHandleStyle,1,1,Pull Bars
+AB::DoorHardware::2.0,RS_HandlePos,0,0,Left
+AB::DoorHardware::2.0,RS_HandlePos,1,1,Right
+AB::DoorHardware::2.0,RS_HandleStyle,0,0,Knob
+AB::DoorHardware::2.0,RS_HandleStyle,1,1,Lever
+AB::DoorHardware::2.0,RS_HandleStyle,2,2,Knob Fancy
+AB::DoorHardware::2.0,RS_HandleStyle,3,3,Lever Antique
+AB::DoorHardware::2.0,RS_01_FrontBevelShape,0,none,None
+AB::DoorHardware::2.0,RS_01_FrontBevelShape,1,solid,Solid
+AB::DoorHardware::2.0,RS_01_FrontBevelShape,2,crease,Crease
+AB::DoorHardware::2.0,RS_01_FrontBevelShape,3,chamfer,Chamfer
+AB::DoorHardware::2.0,RS_01_FrontBevelShape,4,round,Round
+AB::DoorHardware::2.0,RS_01_BackBevelShape,0,none,None
+AB::DoorHardware::2.0,RS_01_BackBevelShape,1,solid,Solid
+AB::DoorHardware::2.0,RS_01_BackBevelShape,2,crease,Crease
+AB::DoorHardware::2.0,RS_01_BackBevelShape,3,chamfer,Chamfer
+AB::DoorHardware::2.0,RS_01_BackBevelShape,4,round,Round
+AB::DoorHardware::2.0,HW_PullBarStyle,0,0,01
+AB::DoorHardware::2.0,HW_PullBarStyle,1,1,02
+AB::DoorHardware::2.0,HW_PullBarStyle,2,3,02
+AB::DoorHardware::2.0,PB_01_Orientation,0,0,Horiz
+AB::DoorHardware::2.0,PB_01_Orientation,1,1,Vert
+AB::DoorHardware::2.0,PB_01_filletshape,0,none,None
+AB::DoorHardware::2.0,PB_01_filletshape,1,solid,Solid
+AB::DoorHardware::2.0,PB_01_filletshape,2,crease,Crease
+AB::DoorHardware::2.0,PB_01_filletshape,3,chamfer,Chamfer
+AB::DoorHardware::2.0,PB_01_filletshape,4,round,Round
+AB::DoorHardware::2.0,PB_01_filletshape2,0,none,None
+AB::DoorHardware::2.0,PB_01_filletshape2,1,solid,Solid
+AB::DoorHardware::2.0,PB_01_filletshape2,2,crease,Crease
+AB::DoorHardware::2.0,PB_01_filletshape2,3,chamfer,Chamfer
+AB::DoorHardware::2.0,PB_01_filletshape2,4,round,Round
+AB::DoorsCreateCopies::1.2,door_bank_sytle,0,0, Single
+AB::DoorsCreateCopies::1.2,door_bank_sytle,1,1,Double
+AB::DoorsCreateCopies::1.2,door_bank_sytle,2,2,Triple
+AB::DoorsCreateCopies::1.2,door_bank_sytle,3,3,Quad
+AB::DoorsCreateCopies::1.2,MasterDoorStyle,0,0,Residential
+AB::DoorsCreateCopies::1.2,MasterDoorStyle,1,1,Commercial
+AB::DoorsCreateCopies::1.2,MasterDoorStyle,2,2,Industrial
+AB::DoorsCreateCopies::1.2,MasterDoorStyle,3,3,Roll Up
+AB::DoorsCreateCopies::1.2,MasterDoorStyle,4,4,Specialty
+AB::DoorsCreateCopies::1.2,handle_side,0,0,Right
+AB::DoorsCreateCopies::1.2,handle_side,1,1,Left
+AB::DoorsCreateCopies::1.2,CM_DoorStyle,0,0,Single Light
+AB::DoorsCreateCopies::1.2,HW_PullBarStyle,0,0,01
+AB::DoorsCreateCopies::1.2,HW_PullBarStyle,1,1,02
+AB::DoorsCreateCopies::1.2,HW_PullBarStyle,2,3,02
+AB::DowntownBuilding::3.6,MaterialStyle,0,0,Principled
+AB::DowntownBuilding::3.6,MaterialStyle,1,1,Unreal
+AB::DowntownBuilding::3.6,BuildingStyle,0,0,Classical
+AB::DowntownBuilding::3.6,BuildingStyle,1,1,Modernsit
+AB::DowntownBuilding::3.6,BuildingShape,0,0,Square
+AB::DowntownBuilding::3.6,BuildingShape,1,1,L
+AB::DowntownBuilding::3.6,BuildingShape,2,2,Arced Corner
+AB::DowntownBuilding::3.6,BuildingShape,3,3,U
+AB::DowntownBuilding::3.6,BuildingShape,4,4,Circular
+AB::DowntownBuilding::3.6,handle_side,0,0,Right
+AB::DowntownBuilding::3.6,handle_side,1,1,Left
+AB::DowntownBuilding::3.6,RS_HandleStyle,0,0,Knob
+AB::DowntownBuilding::3.6,RS_HandleStyle,1,1,Lever
+AB::DowntownBuilding::3.6,RS_HandleStyle,2,2,Knob Fancy
+AB::DowntownBuilding::3.6,RS_HandleStyle,3,,Lever Antique
+AB::DowntownBuilding::3.6,RS_DoorStyle,0,0,Single Light
+AB::DowntownBuilding::3.6,RS_DoorStyle,1,1,Multi Light
+AB::DowntownBuilding::3.6,RS_DoorStyle,2,3,Paneled
+AB::DowntownBuilding::3.6,RectangularWindowType,0,0,Single
+AB::DowntownBuilding::3.6,RectangularWindowType,1,1,Split Vert
+AB::DowntownBuilding::3.6,RectangularWindowType,2,2,Split Horiz
+AB::DowntownBuilding::3.6,RectangularWindowType,3,3,1 left 2 right
+AB::DowntownBuilding::3.6,RectangularWindowType,4,4,2 Left 1 Right
+AB::DowntownBuilding::3.6,RectangularWindowType4,0,0,Single
+AB::DowntownBuilding::3.6,RectangularWindowType4,1,1,Split Vert
+AB::DowntownBuilding::3.6,RectangularWindowType4,2,2,Split Horiz
+AB::DowntownBuilding::3.6,RectangularWindowType4,3,3,1 left 2 right
+AB::DowntownBuilding::3.6,RectangularWindowType4,4,4,2 Left 1 Right
+AB::DowntownBuilding::3.6,RectangularWindowType2,0,0,Single
+AB::DowntownBuilding::3.6,RectangularWindowType2,1,1,Split Vert
+AB::DowntownBuilding::3.6,RectangularWindowType2,2,2,Split Horiz
+AB::DowntownBuilding::3.6,RectangularWindowType2,3,3,1 left 2 right
+AB::DowntownBuilding::3.6,RectangularWindowType2,4,4,2 Left 1 Right
+AB::DowntownBuilding::3.6,RectangularWindowType3,0,0,Single
+AB::DowntownBuilding::3.6,RectangularWindowType3,1,1,Split Vert
+AB::DowntownBuilding::3.6,RectangularWindowType3,2,2,Split Horiz
+AB::DowntownBuilding::3.6,RectangularWindowType3,3,3,1 left 2 right
+AB::DowntownBuilding::3.6,RectangularWindowType3,4,4,2 Left 1 Right
+AB::DowntownBuilding::3.6,CornerDivStyle,0,0,Horizontal
+AB::DowntownBuilding::3.6,CornerDivStyle,1,1,Vertical
+AB::DroopyWires::1.0,WireCreationStyle,0,0,Two Objects
+AB::DroopyWires::1.0,WireCreationStyle,1,1,Two Grids
+AB::DroopyWires::1.0,MaterialStyle,0,0,Principled
+AB::DroopyWires::1.0,MaterialStyle,1,1,Unreal
+AB::DroopyWires::1.0,MaterialStyle,2,2,Unity
+AB::ElectricBoxGenerator::2.0,filletshape,0,none,None
+AB::ElectricBoxGenerator::2.0,filletshape,1,solid,Solid
+AB::ElectricBoxGenerator::2.0,filletshape,2,crease,Crease
+AB::ElectricBoxGenerator::2.0,filletshape,3,chamfer,Chamfer
+AB::ElectricBoxGenerator::2.0,filletshape,4,round,Round
+AB::ElectricalParts::2.0,PartType,0,0,Bracket
+AB::ElectricalParts::2.0,PartType,1,1,Connectors
+AB::ElectricalParts::2.0,PartType,2,2,Lights
+AB::ElectricalParts::2.0,PartType,3,3,Transformers
+AB::ElectricalPropGenerator::2.0,MaterialStyle,0,0,Principled
+AB::ElectricalPropGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::ElectricalPropGenerator::2.0,MaterialStyle,2,2,Unity
+AB::ElectricalPropGenerator::2.0,MaterialStyle,3,3,MaterialX
+AB::ElectricalPropGenerator::2.0,lightmap_style,0,0,Unreal Engine
+AB::ElectricalPropGenerator::2.0,lightmap_style,1,1,Unity
+AB::ElectricalPropGenerator::2.0,h_attach_1,0,0,Electric Meter
+AB::ElectricalPropGenerator::2.0,h_attach_1,1,1,Elbow
+AB::ElectricalPropGenerator::2.0,h_attach_1,2,2,Wall Inlet
+AB::ElectronicComponentGenerator::1.0,PartChoice,0,0,Knobs
+AB::ElectronicComponentGenerator::1.0,PartChoice,1,1,Dials
+AB::ElectronicComponentGenerator::1.0,PartChoice,2,2,Switches & Toggles
+AB::ElectronicComponentGenerator::1.0,PartChoice,3,3,Brackets
+AB::ElectronicComponentGenerator::1.0,PartChoice,4,4,Inputs
+AB::ElectronicComponentGenerator::1.0,PartChoice,5,5,PowerLights
+AB::EngineAttributes::1.0,backend,0,vertexcolor,Vertex Color
+AB::EngineAttributes::1.0,backend,1,principled,Principled
+AB::EngineAttributes::1.0,backend,2,unreal,Unreal
+AB::EngineAttributes::1.0,backend,3,usd,MaterialX / USD
+AB::ExportPack::1.0,granularity,0,whole,Whole Asset (1 packed prim)
+AB::ExportPack::1.0,granularity,1,zone,Per Material Zone
+AB::ExportPack::1.0,granularity,2,element,Per Element (by attribute)
+AB::ExtendedSweep::2.0,nameType,0,0,Profile Name
+AB::ExtendedSweep::2.0,nameType,1,1,Custom Name
+AB::ExtendedSweep::2.0,nameType,2,2,No Name
+AB::ExtendedSweep::2.0,type,0,typepoint,Points
+AB::ExtendedSweep::2.0,type,1,typevertex,Vertices
+AB::ExtendedSweep::2.0,type,2,typeprim,Primitives
+AB::ExtendedSweep::2.0,type,3,typedetail,Detail
+AB::ExtendedSweep::2.0,method,0,uniform,Each Vertex Equally
+AB::ExtendedSweep::2.0,method,1,angle,By Vertex Angle
+AB::ExtendedSweep::2.0,method,2,area,By Face Area
+AB::FancyCurves::2.0,CurveStyle,0,0 ,Molding
+AB::FancyCurves::2.0,CurveStyle,1,1,Column
+AB::FancyCurves::2.0,CurveStyle,2,2,Crown
+AB::FancyCurves::2.0,CurveStyle,3,3,Cornice
+AB::FancyCurves::2.0,CurveStyle,4,4,Base
+AB::FancyCurves::2.0,CurveStyle,5,5,Mid Flr Trim
+AB::FancyCurves::2.0,planeSet,0,0,XY
+AB::FancyCurves::2.0,planeSet,1,1,XZ
+AB::FancyCurves::2.0,planeSet,2,2,YZ
+AB::FancyCurves::2.0,MoldingStyle,0,0,Style 01
+AB::FancyCurves::2.0,MoldingStyle,1,1,Style 02
+AB::FancyCurves::2.0,colStyle,0,0,Column 01
+AB::FancyCurves::2.0,colStyle,1,1,Column 02
+AB::FancyCurves::2.0,filletshape,0,none,None
+AB::FancyCurves::2.0,filletshape,1,solid,Solid
+AB::FancyCurves::2.0,filletshape,2,crease,Crease
+AB::FancyCurves::2.0,filletshape,3,chamfer,Chamfer
+AB::FancyCurves::2.0,filletshape,4,round,Round
+AB::FancyCurves::2.0,baseStyle2,0,0,Base 01
+AB::FancyCurves::2.0,baseStyle2,1,1,Base 02
+AB::FireHydrantGenerator::2.0,HydrantStyle,0,0,Style 01
+AB::FireHydrantGenerator::2.0,HydrantStyle,1,1,Style 02
+AB::FireHydrantGenerator::2.0,HydrantStyle,2,2,Style 03
+AB::FireHydrantGenerator::2.0,MaterialStyle,0,0,Principled
+AB::FireHydrantGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::FireHydrantGenerator::2.0,MaterialStyle,2,2,Unity
+AB::FlangeGenerator::2.0,beveltype,0,flat,Flat
+AB::FlangeGenerator::2.0,beveltype,1,lowround,Low Density Round
+AB::FlangeGenerator::2.0,beveltype,2,highround,High Density Round
+AB::FlangeGenerator::2.0,beveltype,3,corner,Corner
+AB::FlangeGenerator::2.0,entitytype,0,points,All Points
+AB::FlangeGenerator::2.0,entitytype,1,edges,All Edges
+AB::FloatingIslands::1.0,view_mode,0,0,Construct
+AB::FloatingIslands::1.0,view_mode,1,1,Final
+AB::FloatingIslands::1.0,view_style,0,opdef:/bake.svg,Initial
+AB::FloatingIslands::1.0,view_style,1,1,High Res
+AB::FloatingIslands::1.0,view_style,2,2,Low Res
+AB::FloatingIslands::1.0,view_style,3,3,Density
+AB::FloatingIslands::1.0,noisetype,0,noise,Perlin
+AB::FloatingIslands::1.0,noisetype,1,xnoise,Simplex
+AB::FloatingIslands::1.0,noisetype2,0,noise,Perlin
+AB::FloatingIslands::1.0,noisetype2,1,xnoise,Simplex
+AB::FloatingIslands::1.0,noisetype3,0,noise,Perlin
+AB::FloatingIslands::1.0,noisetype3,1,xnoise,Simplex
+AB::FloatingIslands::1.0,parm2,0,0,Ramp
+AB::FloatingIslands::1.0,parm2,1,1,Ramp + Group
+AB::FloatingIslands::1.0,parm2,2,2,Group
+AB::FloatingIslands::1.0,trange,0,off,Render Current Frame
+AB::FloatingIslands::1.0,trange,1,normal,Render Frame Range
+AB::FloatingIslands::1.0,trange,2,on,Render Frame Range Only (Strict)
+AB::Flocking::1.0,outputType,0,0,Points
+AB::Flocking::1.0,outputType,1,1,Boid
+AB::FlowerDesigner::1.0,DevMode,0,0,Petals
+AB::FlowerDesigner::1.0,DevMode,1,1,Flowers
+AB::FlowerDesigner::1.0,DevMode,2,2,Sim
+AB::FuturisticBuildings::2.2,FT_BuildingStyle,0,0,FT 01
+AB::FuturisticBuildings::2.2,FT_BuildingStyle,1,1,FT 02
+AB::GraphicSigns::2.0,sign_type,0,0,Info Graphics
+AB::GraphicSigns::2.0,sign_type,1,1,Street Light
+AB::GraphicSigns::2.0,sign_type,2,2,Roof
+AB::GraphicSigns::2.0,sign_type,3,,Store Front
+AB::GraphicSigns::2.0,info_graphic_style,0,0,Lines
+AB::GraphicSigns::2.0,info_graphic_style,1,1,Shapes
+AB::GraphicSigns::2.0,info_graphic_style,2,2,Custom
+AB::GraphicSigns::2.0,filletshape,0,none,None
+AB::GraphicSigns::2.0,filletshape,1,solid,Solid
+AB::GraphicSigns::2.0,filletshape,2,crease,Crease
+AB::GraphicSigns::2.0,filletshape,3,chamfer,Chamfer
+AB::GraphicSigns::2.0,filletshape,4,round,Round
+AB::GrowthFromPoints::1.0,GeoType,0,0,Surface
+AB::GrowthFromPoints::1.0,GeoType,1,1,Volume
+AB::GrowthFromPoints::1.0,noisetype,0,noise,Perlin
+AB::GrowthFromPoints::1.0,noisetype,1,xnoise,Simplex
+AB::HardwareMaker::2.0,HardwareStyle,0,0,Bolts Nuts Washers
+AB::HardwareMaker::2.0,HardwareStyle,1,1,Rivets
+AB::HardwareMaker::2.0,HardwareStyle,2,2,Locks
+AB::HardwareMaker::2.0,HardwareStyle,3,3,Hinges
+AB::HardwareMaker::2.0,ForwardAxis,0,0,X Axis
+AB::HardwareMaker::2.0,ForwardAxis,1,1,Y Axis
+AB::HardwareMaker::2.0,ForwardAxis,2,2,Z Axis
+AB::HardwareMaker::2.0,SupportPlateShape,0,none,None
+AB::HardwareMaker::2.0,SupportPlateShape,1,solid,Solid
+AB::HardwareMaker::2.0,SupportPlateShape,2,crease,Crease
+AB::HardwareMaker::2.0,SupportPlateShape,3,chamfer,Chamfer
+AB::HardwareMaker::2.0,SupportPlateShape,4,round,Round
+AB::HighwaySignGenerator::5.0,SignStyle,0,0,Side Supports
+AB::HighwaySignGenerator::5.0,SignStyle,1,1,Single Support
+AB::HighwaySignGenerator::5.0,SingleSignPosition,0,0,Centered
+AB::HighwaySignGenerator::5.0,SingleSignPosition,1,1,Right
+AB::HighwaySignGenerator::5.0,SingleSignPosition,2,2,Left
+AB::HighwaySignGenerator::5.0,MaterialStyle,0,0,Principled
+AB::HighwaySignGenerator::5.0,MaterialStyle,1,1,Unreal
+AB::HighwaySignGenerator::5.0,MaterialStyle,2,2,USD
+AB::HighwaySignGenerator::5.0,DCCEngine,0,0,Unreal Engine
+AB::HighwaySignGenerator::5.0,DCCEngine,1,1,Unity
+AB::HighwaySignGenerator::5.0,DCCEngine,2,2,USD
+AB::HighwaySignGenerator::5.0,MetalPlateBevelShape,0,none,None
+AB::HighwaySignGenerator::5.0,MetalPlateBevelShape,1,solid,Solid
+AB::HighwaySignGenerator::5.0,MetalPlateBevelShape,2,crease,Crease
+AB::HighwaySignGenerator::5.0,MetalPlateBevelShape,3,chamfer,Chamfer
+AB::HighwaySignGenerator::5.0,MetalPlateBevelShape,4,round,Round
+AB::HighwaySignGenerator::5.0,SignSide,0,0,Left
+AB::HighwaySignGenerator::5.0,SignSide,1,1,Right
+AB::HighwaySignGenerator::5.0,PrimarySet,0,Any,Any set
+AB::HighwaySignGenerator::5.0,PrimarySet,1,Highway_Signs_US,US Highway
+AB::HighwaySignGenerator::5.0,PrimarySet,2,Highway_Signs_International,Intl Highway
+AB::HighwaySignGenerator::5.0,PrimarySet,3,Symbol_Signs_Recreational,Recreational
+AB::HighwaySignGenerator::5.0,PrimarySet,4,Symbol_Signs_Transportation_01,Transportation 1
+AB::HighwaySignGenerator::5.0,PrimarySet,5,Symbol_Signs_Transportation_02,Transportation 2
+AB::HighwaySignGenerator::5.0,PrimarySet,6,International_Icons_Electronic_Labeling,Electronic
+AB::HighwaySignGenerator::5.0,PrimaryShape,0,Any,Any
+AB::HighwaySignGenerator::5.0,PrimaryShape,1,Rectangle,Rectangle
+AB::HighwaySignGenerator::5.0,PrimaryShape,2,Circle,Circle
+AB::HighwaySignGenerator::5.0,PrimaryShape,3,Ellipse,Ellipse
+AB::HighwaySignGenerator::5.0,PrimaryShape,4,Diamond,Diamond
+AB::HighwaySignGenerator::5.0,PrimaryShape,5,Triangle,Triangle
+AB::HighwaySignGenerator::5.0,PrimaryShape,6,Octagon,Octagon
+AB::HighwaySignGenerator::5.0,PrimaryShape,7,Traced,Traced
+AB::HighwaySignGenerator::5.0,PrimaryShape,8,Pictogram,Pictogram
+AB::HighwaySignGenerator::5.0,SecondarySet,0,Any,Any set
+AB::HighwaySignGenerator::5.0,SecondarySet,1,Highway_Signs_US,US Highway
+AB::HighwaySignGenerator::5.0,SecondarySet,2,Highway_Signs_International,Intl Highway
+AB::HighwaySignGenerator::5.0,SecondarySet,3,Symbol_Signs_Recreational,Recreational
+AB::HighwaySignGenerator::5.0,SecondarySet,4,Symbol_Signs_Transportation_01,Transportation 1
+AB::HighwaySignGenerator::5.0,SecondarySet,5,Symbol_Signs_Transportation_02,Transportation 2
+AB::HighwaySignGenerator::5.0,SecondarySet,6,International_Icons_Electronic_Labeling,Electronic
+AB::HighwaySignGenerator::5.0,SecondaryShape,0,Any,Any
+AB::HighwaySignGenerator::5.0,SecondaryShape,1,Rectangle,Rectangle
+AB::HighwaySignGenerator::5.0,SecondaryShape,2,Circle,Circle
+AB::HighwaySignGenerator::5.0,SecondaryShape,3,Ellipse,Ellipse
+AB::HighwaySignGenerator::5.0,SecondaryShape,4,Diamond,Diamond
+AB::HighwaySignGenerator::5.0,SecondaryShape,5,Triangle,Triangle
+AB::HighwaySignGenerator::5.0,SecondaryShape,6,Octagon,Octagon
+AB::HighwaySignGenerator::5.0,SecondaryShape,7,Traced,Traced
+AB::HighwaySignGenerator::5.0,SecondaryShape,8,Pictogram,Pictogram
+AB::HighwaySignGenerator::5.0,SignSizeClass,0,minimum,Minimum
+AB::HighwaySignGenerator::5.0,SignSizeClass,1,conventional,Conventional road
+AB::HighwaySignGenerator::5.0,SignSizeClass,2,expressway,Expressway
+AB::HighwaySignGenerator::5.0,SignSizeClass,3,freeway,Freeway
+AB::HighwaySignGenerator::5.0,SignSizeClass,4,oversized,Oversized
+AB::HudMaker::2.0,geo_typ,0,0,2D Grid
+AB::HudMaker::2.0,geo_typ,1,1,Carved Circles
+AB::HudMaker::2.0,geo_typ,2,2,Hex Patterns
+AB::HudMaker::2.0,geo_typ,3,3,Orbit
+AB::HudMaker::2.0,geo_typ,4,4,3D Grid
+AB::HudMaker::2.0,primsort,0,none,No change
+AB::HudMaker::2.0,primsort,1,byx,By X
+AB::HudMaker::2.0,primsort,2,byy,By Y
+AB::HudMaker::2.0,primsort,3,byz,By Z
+AB::HudMaker::2.0,primsort,4,rev,Reverse
+AB::HudMaker::2.0,primsort,5,seed,Random
+AB::HudMaker::2.0,primsort,6,shif,Shift
+AB::HudMaker::2.0,primsort,7,prox,Proximity to Point
+AB::HudMaker::2.0,primsort,8,vector,Along Vector
+AB::HudMaker::2.0,primsort,9,expression,By Expression
+AB::HudMaker::2.0,primsort,10,spatial,Spatial Locality
+AB::HudMaker::2.0,primsort,11,attribute,By Attribute
+AB::IndustrialBuildings::2.1,MainRes,0,0,Low Res
+AB::IndustrialBuildings::2.1,MainRes,1,1,Med Res
+AB::IndustrialBuildings::2.1,MainRes,2,2,High Res
+AB::IndustrialBuildings::2.1,BuildingStyle,0,0,Clearstory
+AB::IndustrialBuildings::2.1,BuildingStyle,1,1,Peaked
+AB::IndustrialBuildings::2.1,BuildingStyle,2,2,Loft
+AB::IndustrialBuildings::2.1,BuildingStyle,3,3,Warehouse
+AB::IndustrialBuildings::2.1,window_type,0,0,Single
+AB::IndustrialBuildings::2.1,window_type,1,1,Double 
+AB::IndustrialBuildings::2.1,window_type,2,2,Double & Top Awning
+AB::IndustrialBuildings::2.1,window_type2,0,0,Single
+AB::IndustrialBuildings::2.1,window_type2,1,1,Double 
+AB::IndustrialBuildings::2.1,window_type2,2,2,Double & Top Awning
+AB::LadderGenerator::2.0,LadderStyle,0,0,Metal Simple
+AB::LadderGenerator::2.0,LadderStyle,1,1,Wood Basic
+AB::LightningMaker::1.5,xOrd,0,srt,Scale Rot Trans
+AB::LightningMaker::1.5,xOrd,1,str,Scale Trans Rot
+AB::LightningMaker::1.5,xOrd,2,rst,Rot Scale Trans
+AB::LightningMaker::1.5,xOrd,3,rts,Rot Trans Scale
+AB::LightningMaker::1.5,xOrd,4,tsr,Trans Scale Rot
+AB::LightningMaker::1.5,xOrd,5,trs,Trans Rot Scale
+AB::LightningMaker::1.5,rOrd,0,xyz,Rx Ry Rz
+AB::LightningMaker::1.5,rOrd,1,xzy,Rx Rz Ry
+AB::LightningMaker::1.5,rOrd,2,yxz,Ry Rx Rz
+AB::LightningMaker::1.5,rOrd,3,yzx,Ry Rz Rx
+AB::LightningMaker::1.5,rOrd,4,zxy,Rz Rx Ry
+AB::LightningMaker::1.5,rOrd,5,zyx,Rz Ry Rx
+AB::LightningMaker::1.5,pre_xform,0,clean,Clean Transform
+AB::LightningMaker::1.5,pre_xform,1,cleantrans,Clean Translates
+AB::LightningMaker::1.5,pre_xform,2,cleanrot,Clean Rotates
+AB::LightningMaker::1.5,pre_xform,3,cleanscales,Clean Scales
+AB::LightningMaker::1.5,pre_xform,4,extract,Extract Pre-transform
+AB::LightningMaker::1.5,pre_xform,5,reset,Reset Pre-transform
+AB::LightningMaker::1.5,lookup,0,off,Don't Use Up Vector
+AB::LightningMaker::1.5,lookup,1,on,Use Up Vector
+AB::LightningMaker::1.5,lookup,2,quat,Use Quaternions
+AB::LightningMaker::1.5,lookup,3,pos,Use Global Position
+AB::LightningMaker::1.5,lookup,4,obj,Use Up Object
+AB::LightningMaker::1.5,uparmtype,0,uniform,Uniform
+AB::LightningMaker::1.5,uparmtype,1,arc,Arc Length
+AB::LowWalls::1.1,WallStyle,0,0,Flat Top
+AB::LowWalls::1.1,WallStyle,1,1,Curved Top
+AB::MaterialBinding::1.0,backend,0,vertexcolor,Vertex Color
+AB::MaterialBinding::1.0,backend,1,principled,Principled
+AB::MaterialBinding::1.0,backend,2,unreal,Unreal
+AB::MaterialBinding::1.0,backend,3,usd,MaterialX / USD
+AB::MetalExtrusionMaker::2.0,ext_type,0,0,I Beam
+AB::MetalExtrusionMaker::2.0,ext_type,1,1,C Channel
+AB::MetalExtrusionMaker::2.0,ext_type,2,2,T Bar
+AB::MetalExtrusionMaker::2.0,ext_type,3,3,Angle
+AB::MetalExtrusionMaker::2.0,ext_type,4,4,Square Tube
+AB::MetalExtrusionMaker::2.0,axis,0,0,XY
+AB::MetalExtrusionMaker::2.0,axis,1,1,XZ
+AB::MetalExtrusionMaker::2.0,axis,2,2,YZ
+AB::MetalExtrusionMaker::2.0,pivot,0,0,Centered
+AB::MetalExtrusionMaker::2.0,pivot,1,1,X Min
+AB::MetalExtrusionMaker::2.0,pivot,2,2,X Max
+AB::MetalExtrusionMaker::2.0,pivot,3,2,Z Min
+AB::MetalExtrusionMaker::2.0,pivot,4,3,Z Max
+AB::MetalExtrusionMaker::2.0,ptfilletshape,0,none,None
+AB::MetalExtrusionMaker::2.0,ptfilletshape,1,solid,Solid
+AB::MetalExtrusionMaker::2.0,ptfilletshape,2,chamfer,Chamfer
+AB::MetalExtrusionMaker::2.0,ptfilletshape,3,round,Round
+AB::ModernLightGenerator::1.0,LightStyle,0,0,Table Lights
+AB::ModernLightGenerator::1.0,MaterialStyle,0,0,Principled
+AB::ModernLightGenerator::1.0,MaterialStyle,1,1,Unreal
+AB::ModulesGothic::2.0,ModuleType,0,0,Walls
+AB::ModulesGothic::2.0,ModuleType,1,1,Doors
+AB::ModulesGothic::2.0,ModuleType,2,2,Roofs Exterior
+AB::ModulesGothic::2.0,ModuleType,3,3,Roofs Interior
+AB::ModulesGothic::2.0,ModuleType,4,4,Trim
+AB::ModulesGothic::2.0,ModuleType,5,5,Plant Ons
+AB::ModulesGothic::2.0,ModuleType,6,6,Set Dressing
+AB::ModulesGothic::2.0,ModuleType,7,7,Towers
+AB::ModulesGothic::2.0,SetDressingMenu2,0,0 ,Fountains
+AB::ModulesGothic::2.0,SetDressingMenu2,1,1,Wall Decorations
+AB::ModulesGothic::2.0,SetDressingMenu2,2,2,Wood Paneling
+AB::ModulesGothic::2.0,SetDressingMenu2,3,3,Fireplaces
+AB::ModulesGothic::2.0,PlantOnsMenu,0,0 ,Rectangular
+AB::ModulesGothic::2.0,PlantOnsMenu,1,1,Square
+AB::ModulesGothic::2.0,PlantOnsMenu,2,2,Round
+AB::ModulesGothic::2.0,WallModStyle,0,0,Style 01
+AB::ModulesGothic::2.0,WallModStyle,1,1,Style 02
+AB::ModulesGothic::2.0,WallModStyle,2,2,Style 03
+AB::NeonRainbows::1.0,ext_type,0,0,Line
+AB::NeonRainbows::1.0,ext_type,1,1,Polywire
+AB::NoisyGrid::1.0,noisetype,0,noise,Perlin
+AB::NoisyGrid::1.0,noisetype,1,xnoise,Simplex
+AB::NoisyGrid::1.0,type,0,typepoint,Points
+AB::NoisyGrid::1.0,type,1,typevertex,Vertices
+AB::NoisyGrid::1.0,type,2,typeprim,Primitives
+AB::NoisyGrid::1.0,type,3,typedetail,Detail
+AB::PanelGenerator::2.0,xOrd,0,srt,Scale Rot Trans
+AB::PanelGenerator::2.0,xOrd,1,str,Scale Trans Rot
+AB::PanelGenerator::2.0,xOrd,2,rst,Rot Scale Trans
+AB::PanelGenerator::2.0,xOrd,3,rts,Rot Trans Scale
+AB::PanelGenerator::2.0,xOrd,4,tsr,Trans Scale Rot
+AB::PanelGenerator::2.0,xOrd,5,trs,Trans Rot Scale
+AB::PipeCreator::2.0,MaterialStyle,0,0,Principled
+AB::PipeCreator::2.0,MaterialStyle,1,1,Unreal
+AB::PipeCreator::2.0,MaterialStyle,2,2,Unity
+AB::PlantOnsFuturistic::2.0,PlantOnType,0,0,Architectural
+AB::PlantOnsFuturistic::2.0,PlantOnType,1,1,Vertical
+AB::PlantOnsFuturistic::2.0,PlantOnType,2,2,Side Mounted
+AB::PlantOnsFuturistic::2.0,PlantOnType,3,3,Round
+AB::PoleGenerator::1.0,MaterialStyle,0,0,Principled
+AB::PoleGenerator::1.0,MaterialStyle,1,1,Unreal
+AB::PoleGenerator::1.0,MaterialStyle,2,2,Unity
+AB::PoleGenerator::1.0,DCCEngine,0,0,Unreal Engine
+AB::PoleGenerator::1.0,DCCEngine,1,1,Unity
+AB::PoleGenerator::1.0,DCCEngine,2,2,USD
+AB::PoleGenerator::1.0,PoleShape,0,0,Circle
+AB::PoleGenerator::1.0,PoleShape,1,1,Square
+AB::RadialScatterVex::1.0,vex_precision,0,auto,Auto
+AB::RadialScatterVex::1.0,vex_precision,1,32,32 Bit
+AB::RadialScatterVex::1.0,vex_precision,2,64,64 Bit (Experimental)
+AB::ResortGenerator::3.0,work_mode,0,0,Process
+AB::ResortGenerator::3.0,work_mode,1,1,Output
+AB::ResortGenerator::3.0,building_footprint_style,0,0,Rectilinear
+AB::ResortGenerator::3.0,building_footprint_style,1,1,Circular
+AB::ResortGenerator::3.0,building_footprint_style,2,2,Profile Base
+AB::ResortGenerator::3.0,building_footprint_style,3,3,Modular Based
+AB::ResortGenerator::3.0,bld_typ,0,0,Rectangular
+AB::ResortGenerator::3.0,bld_typ,1,1,Arc
+AB::ResortGenerator::3.0,bld_vis_mode,0,0,Low Res
+AB::ResortGenerator::3.0,bld_vis_mode,1,1,High Res
+AB::ResortGenerator::3.0,file_option,0,0,Alembic
+AB::ResortGenerator::3.0,file_option,1,1,FBX
+AB::RetailBuildings::3.2,work_mode,0,0,Processing
+AB::RetailBuildings::3.2,work_mode,1,1,Output
+AB::RetailBuildings::3.2,decorative_style,0,0,Wood Slats
+AB::RetailBuildings::3.2,decorative_style,1,1,Steel Slats
+AB::RetailBuildings::3.2,above_door_decor,0,0,Middle Sign
+AB::RetailBuildings::3.2,door_style,0,0,Retail
+AB::RetailBuildings::3.2,door_style,1,1,Commercial
+AB::RetailBuildings::3.2,door_style,2,2,Residential
+AB::RetailBuildings::3.2,handle_side,0,0,Left
+AB::RetailBuildings::3.2,handle_side,1,1,Right
+AB::RetailBuildings::3.2,return_wall_options,0,0,Wood Slats
+AB::RetailBuildings::3.2,return_wall_options,1,1,Window
+AB::RoadSimpleGenerator::3.4,MaterialStyle,0,0,Principled
+AB::RoadSimpleGenerator::3.4,MaterialStyle,1,1,Unreal
+AB::RoadSimpleGenerator::3.4,RoadType,0,0,Roadway
+AB::RoadSimpleGenerator::3.4,RoadType,1,1,Highway
+AB::RoadSimpleGenerator::3.4,RoadType,2,2,Freeway
+AB::RoadSimpleGenerator::3.4,RoadType,3,3,City Rail
+AB::RoadSimpleGenerator::3.4,RoadType,4,4,Train Track
+AB::RockMaker::2.0,RockStyle,0,0,Boulder
+AB::RockMaker::2.0,RockStyle,1,1,Agate
+AB::RockMaker::2.0,RockRes,0,0,High Res
+AB::RockMaker::2.0,RockRes,1,1,Low Res
+AB::RocksArched::2.0,WorkMode,0,0,Arch Curve
+AB::RocksArched::2.0,WorkMode,1,1,High Res
+AB::RocksArched::2.0,WorkMode,2,2,LOD 0
+AB::RocksArched::2.0,WorkMode,3,3,Final Output
+AB::RoofTopSignGenerator::4.8,MaterialStyle,0,0,Principled
+AB::RoofTopSignGenerator::4.8,MaterialStyle,1,1,Unreal
+AB::RoofTopSignGenerator::4.8,MaterialStyle,2,2,Unity
+AB::RoofTopSignGenerator::4.8,DCCEngine,0,0,Unreal Engine
+AB::RoofTopSignGenerator::4.8,DCCEngine,1,1,Unity
+AB::RoofTopSignGenerator::4.8,DCCEngine,2,2,USD
+AB::RoofTopSignGenerator::4.8,PostType,0,0,I Beam
+AB::RoofTopSignGenerator::4.8,PostType,1,1,C Channel
+AB::RoofTopSignGenerator::4.8,PostType,2,2,T Bar
+AB::RoofTopSignGenerator::4.8,PostType,3,3,Angle
+AB::RoofTopSignGenerator::4.8,PostType,4,4,Square Tube
+AB::RoofTopSignGenerator::4.8,HorizSupportsType,0,0,I Beam
+AB::RoofTopSignGenerator::4.8,HorizSupportsType,1,1,C Channel
+AB::RoofTopSignGenerator::4.8,HorizSupportsType,2,2,T Bar
+AB::RoofTopSignGenerator::4.8,HorizSupportsType,3,3,Angle
+AB::RoofTopSignGenerator::4.8,HorizSupportsType,4,4,Square Tube
+AB::RoofTopSignGenerator::4.8,CasingLightStyle,0,0,Neon
+AB::RoofTopSignGenerator::4.8,CasingLightStyle,1,1,Lightbulbs
+AB::RoofVentGenerator::3.0,MaterialStyle,0,0,Principled
+AB::RoofVentGenerator::3.0,MaterialStyle,1,1,Unreal
+AB::RoofVentGenerator::3.0,MaterialStyle,2,2,Unity
+AB::RoofVentGenerator::3.0,vent_style,0,0,Style 01
+AB::RoofVentGenerator::3.0,vent_style,1,1,Style 02
+AB::RoofVentGenerator::3.0,vent_style,2,2,Style 03
+AB::RoofVentGenerator::3.0,filletshape,0,none,None
+AB::RoofVentGenerator::3.0,filletshape,1,solid,Solid
+AB::RoofVentGenerator::3.0,filletshape,2,crease,Crease
+AB::RoofVentGenerator::3.0,filletshape,3,chamfer,Chamfer
+AB::RoofVentGenerator::3.0,filletshape,4,round,Round
+AB::RoofVentGenerator::3.0,filletshape2,0,none,None
+AB::RoofVentGenerator::3.0,filletshape2,1,solid,Solid
+AB::RoofVentGenerator::3.0,filletshape2,2,crease,Crease
+AB::RoofVentGenerator::3.0,filletshape2,3,chamfer,Chamfer
+AB::RoofVentGenerator::3.0,filletshape2,4,round,Round
+AB::SateliteDishGenerator::3.0,MaterialStyle,0,0,Principled
+AB::SateliteDishGenerator::3.0,MaterialStyle,1,1,Unreal
+AB::SateliteDishGenerator::3.0,MaterialStyle,2,2,Unity
+AB::SignHighway::2.0,MaterialStyle,0,0,Principled
+AB::SignHighway::2.0,MaterialStyle,1,1,Unreal
+AB::SignHighway::2.0,MaterialStyle,2,2,Unity
+AB::SignLibrary::1.0,SetFilter,0,Any,Any set
+AB::SignLibrary::1.0,SetFilter,1,Highway_Signs_US,US Highway
+AB::SignLibrary::1.0,SetFilter,2,Highway_Signs_International,Intl Highway
+AB::SignLibrary::1.0,SetFilter,3,Symbol_Signs_Recreational,Recreational
+AB::SignLibrary::1.0,SetFilter,4,Symbol_Signs_Transportation_01,Transportation 1
+AB::SignLibrary::1.0,SetFilter,5,Symbol_Signs_Transportation_02,Transportation 2
+AB::SignLibrary::1.0,SetFilter,6,International_Icons_Electronic_Labeling,Electronic
+AB::SignLibrary::1.0,ShapeFilter,0,Any,Any
+AB::SignLibrary::1.0,ShapeFilter,1,Rectangle,Rectangle
+AB::SignLibrary::1.0,ShapeFilter,2,Circle,Circle
+AB::SignLibrary::1.0,ShapeFilter,3,Ellipse,Ellipse
+AB::SignLibrary::1.0,ShapeFilter,4,Diamond,Diamond
+AB::SignLibrary::1.0,ShapeFilter,5,Triangle,Triangle
+AB::SignLibrary::1.0,ShapeFilter,6,Octagon,Octagon
+AB::SignLibrary::1.0,ShapeFilter,7,Traced,Traced
+AB::SignLibrary::1.0,ShapeFilter,8,Pictogram,Pictogram
+AB::SignLibrary::1.0,SizeClass,0,minimum,Minimum
+AB::SignLibrary::1.0,SizeClass,1,conventional,Conventional road
+AB::SignLibrary::1.0,SizeClass,2,expressway,Expressway
+AB::SignLibrary::1.0,SizeClass,3,freeway,Freeway
+AB::SignLibrary::1.0,SizeClass,4,oversized,Oversized
+AB::SignPlate::1.0,Shape,0,Rectangle,Rectangle
+AB::SignPlate::1.0,Shape,1,Circle,Circle
+AB::SignPlate::1.0,Shape,2,Ellipse,Ellipse
+AB::SignPlate::1.0,Shape,3,Diamond,Diamond
+AB::SignPlate::1.0,Shape,4,Triangle,Triangle
+AB::SignPlate::1.0,Shape,5,Octagon,Octagon
+AB::SignPlate::1.0,Shape,6,Traced,Traced (cached profile)
+AB::SimplePipe::2.0,main_shape,0,0,Round
+AB::SimplePipe::2.0,main_shape,1,1,Square
+AB::SingleBlockGenerator::2.0,MaterialStyle,0,0,Principled
+AB::SingleBlockGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::SingleBlockGenerator::2.0,MaterialStyle,2,2,Unity
+AB::SkylightGenerator::2.0,MaterialStyle,0,0,Principled
+AB::SkylightGenerator::2.0,MaterialStyle,1,1,Unreal
+AB::SkylightGenerator::2.0,MaterialStyle,2,2,Unity
+AB::SkylightGenerator::2.0,work_mode,0,0,Process
+AB::SkylightGenerator::2.0,work_mode,1,1,Output
+AB::SkylightGenerator::2.0,filletshape,0,none,None
+AB::SkylightGenerator::2.0,filletshape,1,solid,Solid
+AB::SkylightGenerator::2.0,filletshape,2,crease,Crease
+AB::SkylightGenerator::2.0,filletshape,3,chamfer,Chamfer
+AB::SkylightGenerator::2.0,filletshape,4,round,Round
+AB::SkylightGenerator::2.0,filletshape,5,profile,Profile
+AB::SkyscraperGenerator::2.1,FT_BuildingStyle,0,0,Style 01
+AB::SkyscraperGenerator::2.1,FT_BuildingStyle,1,1,Style 02
+AB::SkyscraperGenerator::2.1,FT_BuildingStyle,2,2,Style 03
+AB::SkyscraperGenerator::2.1,FT_BuildingStyle,3,3,Style 04
+AB::SkyscraperGenerator::2.1,MaterialStyle,0,0,Principled
+AB::SkyscraperGenerator::2.1,MaterialStyle,1,1,Unreal
+AB::SkyscraperGenerator::2.1,MaterialStyle,2,2,Unity
+AB::SkyscraperGenerator::2.1,UVStyleMenu,0, 0,Normal
+AB::SkyscraperGenerator::2.1,UVStyleMenu,1,1,Unreal
+AB::SkyscraperGenerator::2.1,UVStyleMenu,2,2,Unity
+AB::SkyscraperGenerator::2.1,RoofStyle,0,0,Flat
+AB::SkyscraperGenerator::2.1,RoofStyle,1,1,Multi-Extrude
+AB::SkyscraperGenerator::2.1,RoofStyle,2,2,Barrel Vault
+AB::SkyscraperGenerator::2.1,tapermode,0,linear,Linear
+AB::SkyscraperGenerator::2.1,tapermode,1,smooth,Smooth
+AB::SkyscraperGenerator::2.1,tapermode2,0,linear,Linear
+AB::SkyscraperGenerator::2.1,tapermode2,1,smooth,Smooth
+AB::SkyscraperGenerator::2.1,tapermode3,0,linear,Linear
+AB::SkyscraperGenerator::2.1,tapermode3,1,smooth,Smooth
+AB::SmallBridgeGenerator::1.0,offsetmode,0,fixeddist,Fixed Distance
+AB::SmallBridgeGenerator::1.0,offsetmode,1,fixedwidth,Fixed Width
+AB::SolarPanelGenerator::3.0,MaterialStyle,0,0,Principled
+AB::SolarPanelGenerator::3.0,MaterialStyle,1,1,Unreal
+AB::SolarPanelGenerator::3.0,MaterialStyle,2,2,Unity
+AB::StairGenerator::1.0,stairType,0,0,Straight Single
+AB::StairGenerator::1.0,stairType,1,1,Straight Multi
+AB::StairGenerator::1.0,stairType,2,2,Spiral
+AB::StairwayTops::3.0,MaterialStyle,0,0,Principled
+AB::StairwayTops::3.0,MaterialStyle,1,1,Unreal
+AB::StairwayTops::3.0,MaterialStyle,2,2,Unity
+AB::StairwayTops::3.0,handle_side,0,0,Left
+AB::StairwayTops::3.0,handle_side,1,1,Right
+AB::StairwayTops::3.0,win_wall_choice,0,0,Left
+AB::StairwayTops::3.0,win_wall_choice,1,1,Back
+AB::StairwayTops::3.0,win_wall_choice,2,2,Right
+AB::StreetLightGenerator::2.2,WorkMode,0,0,Processing
+AB::StreetLightGenerator::2.2,WorkMode,1,1,Output
+AB::StreetLightGenerator::2.2,MaterialStyle,0,0,Principled
+AB::StreetLightGenerator::2.2,MaterialStyle,1,1,Unreal
+AB::StreetLightGenerator::2.2,LightStyle,0,0,Traffic Light
+AB::StreetLightGenerator::2.2,LightStyle,1,1,Street Light
+AB::StreetLightGenerator::2.2,TrafficLightStyle,0,0,Style 01
+AB::StreetLightGenerator::2.2,TrafficLightStyle,1,1,Style 02
+AB::StreetLightGenerator::2.2,TrafficLightStyle,2,2,Style 03
+AB::StreetLightGenerator::2.2,light_b_pole_shape2,0,0,Round
+AB::StreetLightGenerator::2.2,light_b_pole_shape2,1,1,Square
+AB::StreetLightGenerator::2.2,light_c_pole_shape,0,0,Round
+AB::StreetLightGenerator::2.2,light_c_pole_shape,1,1,Square
+AB::StreetLightGenerator::2.2,street_light_style,0,0,Street Light A
+AB::StreetLightGenerator::2.2,street_light_style,1,1,Street Light B
+AB::StreetLightGenerator::2.2,street_light_style,2,2,Street Light 3
+AB::StreetLightGenerator::2.2,liight_stem_style,0,0,Round
+AB::StreetLightGenerator::2.2,liight_stem_style,1,1,Square
+AB::StreetLightGenerator::2.2,sign1_filletshape,0,none,None
+AB::StreetLightGenerator::2.2,sign1_filletshape,1,solid,Solid
+AB::StreetLightGenerator::2.2,sign1_filletshape,2,crease,Crease
+AB::StreetLightGenerator::2.2,sign1_filletshape,3,chamfer,Chamfer
+AB::StreetLightGenerator::2.2,sign1_filletshape,4,round,Round
+AB::StreetLightGenerator::2.2,sign1_filletshape2,0,none,None
+AB::StreetLightGenerator::2.2,sign1_filletshape2,1,solid,Solid
+AB::StreetLightGenerator::2.2,sign1_filletshape2,2,crease,Crease
+AB::StreetLightGenerator::2.2,sign1_filletshape2,3,chamfer,Chamfer
+AB::StreetLightGenerator::2.2,sign1_filletshape2,4,round,Round
+AB::StreetLightGenerator::2.2,sign1_filletshape3,0,none,None
+AB::StreetLightGenerator::2.2,sign1_filletshape3,1,solid,Solid
+AB::StreetLightGenerator::2.2,sign1_filletshape3,2,crease,Crease
+AB::StreetLightGenerator::2.2,sign1_filletshape3,3,chamfer,Chamfer
+AB::StreetLightGenerator::2.2,sign1_filletshape3,4,round,Round
+AB::StreetSignGenerator::3.0,MaterialStyle,0,0,Principled
+AB::StreetSignGenerator::3.0,MaterialStyle,1,1,Unreal
+AB::StreetSignGenerator::3.0,MaterialStyle,2,2,USD
+AB::StreetSignGenerator::3.0,DCCEngine,0,0,Unreal Engine
+AB::StreetSignGenerator::3.0,DCCEngine,1,1,Unity
+AB::StreetSignGenerator::3.0,DCCEngine,2,2,USD
+AB::StreetSignGenerator::3.0,st_pole_shape,0,0,Round Pole
+AB::StreetSignGenerator::3.0,st_pole_shape,1,1,Square Pole
+AB::StreetSignGenerator::3.0,st_pole_shape,2,2,Square Pole Holes
+AB::StreetSignGenerator::3.0,PrimarySet,0,Any,Any set
+AB::StreetSignGenerator::3.0,PrimarySet,1,Highway_Signs_US,US Highway
+AB::StreetSignGenerator::3.0,PrimarySet,2,Highway_Signs_International,Intl Highway
+AB::StreetSignGenerator::3.0,PrimarySet,3,Symbol_Signs_Recreational,Recreational
+AB::StreetSignGenerator::3.0,PrimarySet,4,Symbol_Signs_Transportation_01,Transportation 1
+AB::StreetSignGenerator::3.0,PrimarySet,5,Symbol_Signs_Transportation_02,Transportation 2
+AB::StreetSignGenerator::3.0,PrimarySet,6,International_Icons_Electronic_Labeling,Electronic
+AB::StreetSignGenerator::3.0,PrimaryShape,0,Any,Any
+AB::StreetSignGenerator::3.0,PrimaryShape,1,Rectangle,Rectangle
+AB::StreetSignGenerator::3.0,PrimaryShape,2,Circle,Circle
+AB::StreetSignGenerator::3.0,PrimaryShape,3,Ellipse,Ellipse
+AB::StreetSignGenerator::3.0,PrimaryShape,4,Diamond,Diamond
+AB::StreetSignGenerator::3.0,PrimaryShape,5,Triangle,Triangle
+AB::StreetSignGenerator::3.0,PrimaryShape,6,Octagon,Octagon
+AB::StreetSignGenerator::3.0,PrimaryShape,7,Traced,Traced
+AB::StreetSignGenerator::3.0,PrimaryShape,8,Pictogram,Pictogram
+AB::StreetSignGenerator::3.0,SecondarySet,0,Any,Any set
+AB::StreetSignGenerator::3.0,SecondarySet,1,Highway_Signs_US,US Highway
+AB::StreetSignGenerator::3.0,SecondarySet,2,Highway_Signs_International,Intl Highway
+AB::StreetSignGenerator::3.0,SecondarySet,3,Symbol_Signs_Recreational,Recreational
+AB::StreetSignGenerator::3.0,SecondarySet,4,Symbol_Signs_Transportation_01,Transportation 1
+AB::StreetSignGenerator::3.0,SecondarySet,5,Symbol_Signs_Transportation_02,Transportation 2
+AB::StreetSignGenerator::3.0,SecondarySet,6,International_Icons_Electronic_Labeling,Electronic
+AB::StreetSignGenerator::3.0,SecondaryShape,0,Any,Any
+AB::StreetSignGenerator::3.0,SecondaryShape,1,Rectangle,Rectangle
+AB::StreetSignGenerator::3.0,SecondaryShape,2,Circle,Circle
+AB::StreetSignGenerator::3.0,SecondaryShape,3,Ellipse,Ellipse
+AB::StreetSignGenerator::3.0,SecondaryShape,4,Diamond,Diamond
+AB::StreetSignGenerator::3.0,SecondaryShape,5,Triangle,Triangle
+AB::StreetSignGenerator::3.0,SecondaryShape,6,Octagon,Octagon
+AB::StreetSignGenerator::3.0,SecondaryShape,7,Traced,Traced
+AB::StreetSignGenerator::3.0,SecondaryShape,8,Pictogram,Pictogram
+AB::SubdivideLots::2.0,MethodChoice,0,0,Method 01
+AB::SubdivideLots::2.0,MethodChoice,1,1,Method 02
+AB::SubdivideLots::2.0,alignment,0,0,Longest Edge
+AB::SubdivideLots::2.0,alignment,1,1,Bounding Box XZ
+AB::TowerGenerator::1.0,GussetBevelsShape,0,none,None
+AB::TowerGenerator::1.0,GussetBevelsShape,1,solid,Solid
+AB::TowerGenerator::1.0,GussetBevelsShape,2,crease,Crease
+AB::TowerGenerator::1.0,GussetBevelsShape,3,chamfer,Chamfer
+AB::TowerGenerator::1.0,GussetBevelsShape,4,round,Round
+AB::TrashCanGenerator::2.0,work_mode,0,0,Processing
+AB::TrashCanGenerator::2.0,work_mode,1,1,Output
+AB::UtilityPoleGenerator::3.0,WorkMode,0,0,Manual
+AB::UtilityPoleGenerator::3.0,WorkMode,1,1,Script
+AB::UtilityPoleGenerator::3.0,main_shape,0,0,Round
+AB::UtilityPoleGenerator::3.0,main_shape,1,1,Square
+AB::ValveGenerator::2.0,ValveType,0,0,Wall Mounted
+AB::VentGenerator::2.0,VentStyle,0,0,Round
+AB::VentGenerator::2.0,VentStyle,1,1,Square
+AB::VentGenerator::2.0,VentStyle,2,2,Designed
+AB::VentGenerator::2.0,filletshape,0,none,None
+AB::VentGenerator::2.0,filletshape,1,solid,Solid
+AB::VentGenerator::2.0,filletshape,2,crease,Crease
+AB::VentGenerator::2.0,filletshape,3,chamfer,Chamfer
+AB::VentGenerator::2.0,filletshape,4,round,Round
+AB::VentGenerator::2.0,filletshape2,0,none,None
+AB::VentGenerator::2.0,filletshape2,1,solid,Solid
+AB::VentGenerator::2.0,filletshape2,2,crease,Crease
+AB::VentGenerator::2.0,filletshape2,3,chamfer,Chamfer
+AB::VentGenerator::2.0,filletshape2,4,round,Round
+AB::VictorianHouses::1.1,RS_DoorStyle,0,0,Single Light
+AB::VictorianHouses::1.1,RS_DoorStyle,1,1,Multi Light
+AB::VictorianHouses::1.1,RS_DoorStyle,2,3,Paneled
+AB::VictorianHouses::1.1,RS_HandleStyle,0,0,Knob
+AB::VictorianHouses::1.1,RS_HandleStyle,1,1,Lever
+AB::VictorianHouses::1.1,RS_HandleStyle,2,2,Knob Fancy
+AB::VictorianHouses::1.1,RS_HandleStyle,3,,Lever Antique
+AB::VictorianHouses::1.1,handle_side,0,0,Right
+AB::VictorianHouses::1.1,handle_side,1,1,Left
+AB::VictorianHouses::1.1,WindowShape4,0,0,Rectangle
+AB::VictorianHouses::1.1,WindowShape4,1,1,Round Top
+AB::VictorianHouses::1.1,WindowShape4,2,2,Bay
+AB::VictorianHouses::1.1,WindowShape2,0,0,Rectangle
+AB::VictorianHouses::1.1,WindowShape2,1,1,Round Top
+AB::VictorianHouses::1.1,WindowShape2,2,2,Bay
+AB::VictorianHouses::1.1,RoofStyle,0,0,Flat
+AB::VictorianHouses::1.1,RoofStyle,1,1,Peaked
+AB::WallDestructionSystem::1.0,xOrd,0,srt,Scale Rot Trans
+AB::WallDestructionSystem::1.0,xOrd,1,str,Scale Trans Rot
+AB::WallDestructionSystem::1.0,xOrd,2,rst,Rot Scale Trans
+AB::WallDestructionSystem::1.0,xOrd,3,rts,Rot Trans Scale
+AB::WallDestructionSystem::1.0,xOrd,4,tsr,Trans Scale Rot
+AB::WallDestructionSystem::1.0,xOrd,5,trs,Trans Rot Scale
+AB::WallDestructionSystem::1.0,rOrd,0,xyz,Rx Ry Rz
+AB::WallDestructionSystem::1.0,rOrd,1,xzy,Rx Rz Ry
+AB::WallDestructionSystem::1.0,rOrd,2,yxz,Ry Rx Rz
+AB::WallDestructionSystem::1.0,rOrd,3,yzx,Ry Rz Rx
+AB::WallDestructionSystem::1.0,rOrd,4,zxy,Rz Rx Ry
+AB::WallDestructionSystem::1.0,rOrd,5,zyx,Rz Ry Rx
+AB::WallDestructionSystem::1.0,pre_xform,0,clean,Clean Transform
+AB::WallDestructionSystem::1.0,pre_xform,1,cleantrans,Clean Translates
+AB::WallDestructionSystem::1.0,pre_xform,2,cleanrot,Clean Rotates
+AB::WallDestructionSystem::1.0,pre_xform,3,cleanscales,Clean Scales
+AB::WallDestructionSystem::1.0,pre_xform,4,extract,Extract Pre-transform
+AB::WallDestructionSystem::1.0,pre_xform,5,reset,Reset Pre-transform
+AB::WallDestructionSystem::1.0,lookup,0,off,Don't Use Up Vector
+AB::WallDestructionSystem::1.0,lookup,1,on,Use Up Vector
+AB::WallDestructionSystem::1.0,lookup,2,quat,Use Quaternions
+AB::WallDestructionSystem::1.0,lookup,3,pos,Use Global Position
+AB::WallDestructionSystem::1.0,lookup,4,obj,Use Up Object
+AB::WallDestructionSystem::1.0,uparmtype,0,uniform,Uniform
+AB::WallDestructionSystem::1.0,uparmtype,1,arc,Arc Length
+AB::WaterTankGenerator::2.0,MaterialStyle,0,0,None
+AB::WaterTankGenerator::2.0,MaterialStyle,1,1,Principled
+AB::WaterTankGenerator::2.0,MaterialStyle,2,2,Unreal
+AB::WaterTankGenerator::2.0,WaterTankStyle,0,0,Style One
+AB::WaterTankGenerator::2.0,WaterTankStyle,1,1,Style Two
+AB::WaterTankGenerator::2.0,GussetBevelsShape,0,none,None
+AB::WaterTankGenerator::2.0,GussetBevelsShape,1,solid,Solid
+AB::WaterTankGenerator::2.0,GussetBevelsShape,2,crease,Crease
+AB::WaterTankGenerator::2.0,GussetBevelsShape,3,chamfer,Chamfer
+AB::WaterTankGenerator::2.0,GussetBevelsShape,4,round,Round
+AB::WindowGenerator::3.1,WindowShape,0,0,Rectangle
+AB::WindowGenerator::3.1,WindowShape,1,1,Round Top
+AB::WindowGenerator::3.1,WindowShape,2,2,Bay
+AB::WindowGenerator::3.1,WIN_MaterialStyle,0,0,Pricipled
+AB::WindowGenerator::3.1,WIN_MaterialStyle,1,1,Unreal
+AB::WindowGenerator::3.1,WIN_MaterialStyle,2,2,Unity
+AB::WindowGenerator::3.1,RectangularWindowType,0,0,Single
+AB::WindowGenerator::3.1,RectangularWindowType,1,1,Split Vert
+AB::WindowGenerator::3.1,RectangularWindowType,2,2,Split Horiz
+AB::WindowGenerator::3.1,RectangularWindowType,3,3,1 left 2 right
+AB::WindowGenerator::3.1,RectangularWindowType,4,4,2 Left 1 Right
+AB::WindowGenerator::3.1,WindowStyleSingle,0,0,Casement
+AB::WindowGenerator::3.1,WindowStyleSingle,1,1,Mullioned
+AB::WindowGenerator::3.1,WindowStyleSingle,2,2,Awning
+AB::WindowGenerator::3.1,WindowStyleSingle,3,3,Jalousie
+AB::WindowGenerator::3.1,MulliuonStyle,0,0,Even
+AB::WindowGenerator::3.1,MulliuonStyle,1,1,Edge
+AB::WindowGenerator::3.1,filletshape,0,none,None
+AB::WindowGenerator::3.1,filletshape,1,solid,Solid
+AB::WindowGenerator::3.1,filletshape,2,crease,Crease
+AB::WindowGenerator::3.1,filletshape,3,chamfer,Chamfer
+AB::WindowGenerator::3.1,filletshape,4,round,Round
+AB::WindowGenerator::3.1,WindowStyleSplitV,0,0,Gliding
+AB::WindowGenerator::3.1,WindowStyleSplitV,1,1,Passthrough
+AB::WindowGenerator::3.1,WindowStyleSplitH,0,0,Double Hung
+AB::WindowGenerator::3.1,WindowStyleSplitH,1,1,Awning Top 
+AB::WindowGenerator::3.1,WindowStyleSplitH,2,2,Awning Bottom
+AB::WindowGenerator::3.1,SK_WinStyleSkyscraperRound,0,0,Single
+AB::WindowGenerator::3.1,SK_WinStyleSkyscraperRound,1,1,Double
+AB::WindowGenerator::3.1,RndWallfilletshape,0,none,None
+AB::WindowGenerator::3.1,RndWallfilletshape,1,solid,Solid
+AB::WindowGenerator::3.1,RndWallfilletshape,2,crease,Crease
+AB::WindowGenerator::3.1,RndWallfilletshape,3,chamfer,Chamfer
+AB::WindowGenerator::3.1,RndWallfilletshape,4,round,Round
+AB::WindowGenerator::3.1,RndFrameFilletshape,0,none,None
+AB::WindowGenerator::3.1,RndFrameFilletshape,1,solid,Solid
+AB::WindowGenerator::3.1,RndFrameFilletshape,2,crease,Crease
+AB::WindowGenerator::3.1,RndFrameFilletshape,3,chamfer,Chamfer
+AB::WindowGenerator::3.1,RndFrameFilletshape,4,round,Round
+AB::WoodFractue::1.0,xOrd,0,srt,Scale Rot Trans
+AB::WoodFractue::1.0,xOrd,1,str,Scale Trans Rot
+AB::WoodFractue::1.0,xOrd,2,rst,Rot Scale Trans
+AB::WoodFractue::1.0,xOrd,3,rts,Rot Trans Scale
+AB::WoodFractue::1.0,xOrd,4,tsr,Trans Scale Rot
+AB::WoodFractue::1.0,xOrd,5,trs,Trans Rot Scale
+AB::WoodFractue::1.0,rOrd,0,xyz,Rx Ry Rz
+AB::WoodFractue::1.0,rOrd,1,xzy,Rx Rz Ry
+AB::WoodFractue::1.0,rOrd,2,yxz,Ry Rx Rz
+AB::WoodFractue::1.0,rOrd,3,yzx,Ry Rz Rx
+AB::WoodFractue::1.0,rOrd,4,zxy,Rz Rx Ry
+AB::WoodFractue::1.0,rOrd,5,zyx,Rz Ry Rx
+AB::WoodFractue::1.0,pre_xform,0,clean,Clean Transform
+AB::WoodFractue::1.0,pre_xform,1,cleantrans,Clean Translates
+AB::WoodFractue::1.0,pre_xform,2,cleanrot,Clean Rotates
+AB::WoodFractue::1.0,pre_xform,3,cleanscales,Clean Scales
+AB::WoodFractue::1.0,pre_xform,4,extract,Extract Pre-transform
+AB::WoodFractue::1.0,pre_xform,5,reset,Reset Pre-transform
+AB::WoodFractue::1.0,lookup,0,off,Don't Use Up Vector
+AB::WoodFractue::1.0,lookup,1,on,Use Up Vector
+AB::WoodFractue::1.0,lookup,2,quat,Use Quaternions
+AB::WoodFractue::1.0,lookup,3,pos,Use Global Position
+AB::WoodFractue::1.0,lookup,4,obj,Use Up Object
+AB::WoodFractue::1.0,uparmtype,0,uniform,Uniform
+AB::WoodFractue::1.0,uparmtype,1,arc,Arc Length
+AB::WoodPlankGenerator::1.0,UVStyle,0,0,Normal
+AB::WoodPlankGenerator::1.0,UVStyle,1,1,Unity
+AB::WoodPlankGenerator::1.0,UVStyle,2,2,Unreal

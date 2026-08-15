@@ -1,0 +1,337 @@
+File,TypeName,ScriptName,Match,Note
+Obj/Utilities/AB.CameraFrustrum.1.0.hda,AB::CameraFrustrum::1.0,AB::CameraFrustrum::1.0,ok,
+Obj/Utilities/AB.CameraPathToUE.1.0.hda,AB::CameraPathToUE::1.0,AB::CameraPathToUE::1.0,ok,
+Obj/VFX/AB.LightningMaker.1.5.hda,AB::LightningMaker::1.5,AB::LightningMaker::1.5,ok,
+Obj/VFX/AB.WallDestructionSystem.1.0.hda,AB::WallDestructionSystem::1.0,AB::WallDestructionSystem::1.0,ok,
+Obj/VFX/AB.WoodFractue.1.0.hda,AB::WoodFractue::1.0,AB::WoodFractue::1.0,ok,
+Sops/BuildingHelpers/AB.DoorsCreateCopies.1.0.hda,AB::DoorsCreateCopies::1.0,AOD::MD_WindowsCreateCopies::1.0,MISMATCH,legacy AOD lineage
+Sops/BuildingHelpers/AB.DoorsCreateCopies.1.1.hda,AB::DoorsCreateCopies::1.1,AOD::MD_WindowsCreateCopies::1.0,MISMATCH,legacy AOD lineage
+Sops/BuildingHelpers/AB.DoorsCreateCopies.1.2.hda,AB::DoorsCreateCopies::1.2,AOD::MD_WindowsCreateCopies::1.0,MISMATCH,legacy AOD lineage
+Sops/BuildingHelpers/AB.GroupWalls.2.0.hda,AB::GroupWalls::2.0,RFX::UT_group_walls::1.1,MISMATCH,
+Sops/BuildingHelpers/AB.RooftopProcessor.1.0.hda,AB::RooftopProcessor::1.0,AB::RooftopProcessor::1.0,ok,
+Sops/BuildingHelpers/AB.WindowsCreateCopies.2.0.hda,AB::WindowsCreateCopies::2.0,AOD::MD_WindowsCreateCopies::1.0,MISMATCH,legacy AOD lineage
+Sops/BuildingProps/AB.AirConCondeserGenerator.1.0.hda,AB::AirConCondeserGenerator::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.AntennaGenerator.1.0.hda,AB::AntennaGenerator::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.AwningGenerator.2.0.hda,AB::AwningGenerator::2.0,RFX::MD_awning_maker::1.0,MISMATCH,
+Sops/BuildingProps/AB.BalconyGenerator.2.0.hda,AB::BalconyGenerator::2.0,AB::BalconyGenerator::2.0,ok,
+Sops/BuildingProps/AB.BuildingLightGenerator.2.0.hda,AB::BuildingLightGenerator::2.0,AB::BuildingLightGenerator::2.0,ok,
+Sops/BuildingProps/AB.BuildingLightGenerator.2.1.hda,AB::BuildingLightGenerator::2.1,AB::BuildingLightGenerator::2.0,MISMATCH,
+Sops/BuildingProps/AB.DomeGenerator.1.0.hda,AB::DomeGenerator::1.0,RFX::create_domes::1.0,MISMATCH,
+Sops/BuildingProps/AB.DoorGenerator.4.0.hda,AB::DoorGenerator::4.0,RFX::md_door_maker::1.0,MISMATCH,
+Sops/BuildingProps/AB.ElectricalPropGenerator.2.0.hda,AB::ElectricalPropGenerator::2.0,AB::ElectricalPropGenerator::2.0,ok,
+Sops/BuildingProps/AB.FireEscapeGenerator.2.0.hda,AB::FireEscapeGenerator::2.0,RFX::fire_escape_maker::1.0,MISMATCH,
+Sops/BuildingProps/AB.LadderGenerator.2.0.hda,AB::LadderGenerator::2.0,AB::LadderGenerator::2.0,ok,
+Sops/BuildingProps/AB.LargeWalls.1.0.hda,AB::LargeWalls::1.0,AB::LargeWalls::1.0,ok,
+Sops/BuildingProps/AB.LowWalls.1.0.hda,AB::LowWalls::1.0,AB::LowWalls::1.0,ok,
+Sops/BuildingProps/AB.LowWalls.1.1.hda,AB::LowWalls::1.1,AB::LowWalls::1.0,MISMATCH,
+Sops/BuildingProps/AB.ModernLightGenerator.1.0.hda,AOD::ModernLightGenerator::1.0,AOD::ModernLightGenerator::1.0,ok,legacy AOD lineage
+Sops/BuildingProps/AB.RoofVentGenerator.3.0.hda,AB::RoofVentGenerator::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.RooftopMechanicals.3.0.hda,AB::RooftopMechanicals::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.SateliteDishGenerator.1.0.hda,AB::SateliteDishGenerator::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.SkylightGenerator.2.0.hda,AB::SkylightGenerator::2.0,RFX::MD_simple_roof_skylight::2.0,MISMATCH,
+Sops/BuildingProps/AB.SolarPanelGenerator.3.0.hda,AB::SolarPanelGenerator::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.StairGenerator.1.0.hda,AB::StairGenerator::1.0,AB::StairGenerator::1.0,ok,
+Sops/BuildingProps/AB.StairwayTops.3.0.hda,AB::StairwayTops::3.0,RFX::MD_rooftop_props::1.0,MISMATCH,
+Sops/BuildingProps/AB.WaterTankGenerator.2.0.hda,AB::WaterTankGenerator::2.0,AOD::MD::WaterTankMaker::1.5,MISMATCH,legacy AOD lineage
+Sops/BuildingProps/AB.WindowGenerator.3.1.hda,AB::WindowGenerator::3.1,RFX::MD_window_maker::1.5,MISMATCH,
+Sops/Buildings/AB.ApartmentRow.1.0.hda,AB::ApartmentRow::1.0,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.ApartmentRow.1.1.hda,AB::ApartmentRow::1.1,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.ApartmentRow.1.2.hda,AB::ApartmentRow::1.2,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.BuildingFootprintGenerator.1.0.hda,AB::BuildingFootprintGenerator::1.0,AB::BuildingFootprintGenerator::1.0,ok,
+Sops/Buildings/AB.DestructionBuilding.1.0.hda,AB::DestructionBuilding::1.0,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.0.hda,AB::DowntownBuilding::3.0,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.1.hda,AB::DowntownBuilding::3.1,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.2.hda,AB::DowntownBuilding::3.2,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.3.hda,AB::DowntownBuilding::3.3,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.4.hda,AB::DowntownBuilding::3.4,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.5.hda,AB::DowntownBuilding::3.5,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.DowntownBuilding.3.6.hda,AB::DowntownBuilding::3.6,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.FuturisticBuildings.2.0.hda,AB::FuturisticBuildings::2.0,AOD::BD_shanty_sci_fi_buildings::1.0,MISMATCH,legacy AOD lineage
+Sops/Buildings/AB.FuturisticBuildings.2.1.hda,AB::FuturisticBuildings::2.1,AOD::BD_shanty_sci_fi_buildings::1.0,MISMATCH,legacy AOD lineage
+Sops/Buildings/AB.FuturisticBuildings.2.2.hda,AB::FuturisticBuildings::2.2,AOD::BD_shanty_sci_fi_buildings::1.0,MISMATCH,legacy AOD lineage
+Sops/Buildings/AB.IndustrialBuildings.2.0.hda,AB::IndustrialBuildings::2.0,RFX::BD_industrial_buildings::1.0,MISMATCH,
+Sops/Buildings/AB.IndustrialBuildings.2.1.hda,AB::IndustrialBuildings::2.1,RFX::BD_industrial_buildings::1.0,MISMATCH,
+Sops/Buildings/AB.ResortGenerator.3.0.hda,AB::ResortGenerator::3.0,RFX.BD_resort_building.1.0,MISMATCH,
+Sops/Buildings/AB.RetailBuildings.3.1.hda,AB::RetailBuildings::3.1,RFX::BD_retail_buildings::1.0,MISMATCH,
+Sops/Buildings/AB.RetailBuildings.3.2.hda,AB::RetailBuildings::3.2,RFX::BD_retail_buildings::1.0,MISMATCH,
+Sops/Buildings/AB.SkyscraperGenerator.2.0.hda,AB::SkyscraperGenerator::2.0,AOD::ModernBuildings::1.0,MISMATCH,legacy AOD lineage
+Sops/Buildings/AB.SkyscraperGenerator.2.1.hda,AB::SkyscraperGenerator::2.1,AOD::ModernBuildings::1.0,MISMATCH,legacy AOD lineage
+Sops/Buildings/AB.VictorianHouses.1.0.hda,AB::VictorianHouses::1.0,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/AB.VictorianHouses.1.1.hda,AB::VictorianHouses::1.1,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/backup/AB.DowntownBuilding.3.6_bak1.hda,AB::DowntownBuilding::3.6,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/backup/AB.DowntownBuilding.3.6_bak2.hda,AB::DowntownBuilding::3.6,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/Buildings/backup/AB.DowntownBuilding.3.6_bak3.hda,AB::DowntownBuilding::3.6,RFX::BD_downtown_building::3.0,MISMATCH,
+Sops/CityGen/AB.BlocksRGB.1.0.hda,AB::BlocksRGB::1.0,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityGen/AB.CityGenerator.2.0.hda,AB::CityGenerator::2.0,RFX::industrial_from_blocks::1.0,MISMATCH,
+Sops/CityGen/AB.CityGenerator.2.1.hda,AB::CityGenerator::2.1,RFX::industrial_from_blocks::1.0,MISMATCH,
+Sops/CityGen/AB.CityGenerator.2.2.hda,AB::CityGenerator::2.2,RFX::industrial_from_blocks::1.0,MISMATCH,
+Sops/CityGen/AB.CityGenerator.2.3.hda,AB::CityGenerator::2.3,RFX::industrial_from_blocks::1.0,MISMATCH,
+Sops/CityGen/AB.CityGenerator.2.4.hda,AB::CityGenerator::2.4,RFX::industrial_from_blocks::1.0,MISMATCH,
+Sops/CityGen/AB.CityGenerator.2.5.hda,AB::CityGenerator::2.5,RFX::industrial_from_blocks::1.0,MISMATCH,
+Sops/CityGen/AB.CityGridGenerator.1.0.hda,AB::CityGridGenerator::1.0,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityGen/AB.CityGridGenerator.1.1.hda,AB::CityGridGenerator::1.1,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityGen/AB.CityGridGenerator.1.2.hda,AB::CityGridGenerator::1.2,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityGen/AB.CityGridGenerator.1.3.hda,AB::CityGridGenerator::1.3,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityGen/AB.CityGridGenerator.1.4.hda,AB::CityGridGenerator::1.4,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityGen/AB.SingleBlockGenerator.2.0.hda,AB::SingleBlockGenerator::2.0,AOD::BlockSingle::1.0,MISMATCH,legacy AOD lineage
+Sops/CityGen/AB.SubdivideLots.2.0.hda,AB::SubdivideLots::2.0,gamedev::sop_lot_subdivision,MISMATCH,
+Sops/CityGen/backup/AB.CityGridGenerator.1.4_bak1.hda,AB::CityGridGenerator::1.4,RFX::CG_assemble_blocks_rgb::4.0,MISMATCH,
+Sops/CityHelpers/AB.SidewalkProcessor.1.0.hda,AB::SidewalkProcessor::1.0,AB::SidewalkProcessor::1.0,ok,
+Sops/CityProps/AB.BillboardGenerator.2.0.hda,AB::BillboardGenerator::2.0,AB::CreateBillboard::1.0,MISMATCH,
+Sops/CityProps/AB.BillboardGenerator.2.1.hda,AB::BillboardGenerator::2.1,AB::CreateBillboard::1.0,MISMATCH,
+Sops/CityProps/AB.BridgeGenerator.2.0.hda,AB::BridgeGenerator::2.0,RFX::MD_GenerateBridge::1.0,MISMATCH,
+Sops/CityProps/AB.BusStopGenerator.2.0.hda,AB::BusStopGenerator::2.0,RFX::MD_city_props::1.0,MISMATCH,
+Sops/CityProps/AB.CommercialSignGenerator.4.8.hda,AB::CommercialSignGenerator::4.8,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.ElectricBoxGenerator.2.0.hda,AB::ElectricBoxGenerator::2.0,RFX::MD_city_props::1.0,MISMATCH,
+Sops/CityProps/AB.FireHydrantGenerator.2.0.hda,AB::FireHydrantGenerator::2.0,AB::FireHydrantGenerator::2.0,ok,
+Sops/CityProps/AB.GraphicSigns.2.0.hda,AB::GraphicSigns::2.0,RFX::MD_graphic_signs::1.0,MISMATCH,
+Sops/CityProps/AB.HandrailGenerator.3.0.hda,AB::HandrailGenerator::3.0,AOD::handrail_maker::1.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.HighwaySignGenerator.4.8.hda,AB::HighwaySignGenerator::4.8,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.HighwaySignGenerator.4.9.hda,AB::HighwaySignGenerator::4.9,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.HighwaySignGenerator.5.0.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.MailBoxGenerator.2.0.hda,AB::MailBoxGenerator::2.0,RFX::MD_city_props::1.0,MISMATCH,
+Sops/CityProps/AB.PlanterGenerator.2.0.hda,AB::PlanterGenerator::2.0,RFX::MD_city_props::1.0,MISMATCH,
+Sops/CityProps/AB.PoleGenerator.1.0.hda,AB::PoleGenerator::1.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.RoofTopSignGenerator.4.8.hda,AB::RoofTopSignGenerator::4.8,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.ShippingContainers.4.0.hda,AB::ShippingContainers::4.0,AB::ShippingContainers::4.0,ok,
+Sops/CityProps/AB.SignHighway.1.0.hda,AB::SignHighway::1.0,AB::SignHighway::1.0,ok,
+Sops/CityProps/AB.SignHighway.2.0.hda,AB::SignHighway::1.0,AB::SignHighway::1.0,ok,
+Sops/CityProps/AB.SignHighway.2.0.hda,AB::SignHighway::2.0,AB::SignHighway::1.0,MISMATCH,
+Sops/CityProps/AB.SignLibrary.1.0.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/AB.SignPlate.1.0.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/AB.StreetLightGenerator.2.0.hda,AB::StreetLightGenerator::2.0,RFX::MD_street_lights::1.5,MISMATCH,
+Sops/CityProps/AB.StreetLightGenerator.2.1.hda,AB::StreetLightGenerator::2.1,RFX::MD_street_lights::1.5,MISMATCH,
+Sops/CityProps/AB.StreetLightGenerator.2.2.hda,AB::StreetLightGenerator::2.2,RFX::MD_street_lights::1.5,MISMATCH,
+Sops/CityProps/AB.StreetSignGenerator.2.0.hda,AB::StreetSignGenerator::2.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.StreetSignGenerator.3.0.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/AB.TowerGenerator.1.0.hda,AB::TowerGenerator::1.0,AB::TowerGenerator::1.0,ok,
+Sops/CityProps/AB.TrashCanGenerator.2.0.hda,AB::TrashCanGenerator::2.0,RFX::MD_city_props::1.0,MISMATCH,
+Sops/CityProps/AB.UtilityPoleGenerator.3.0.hda,AB::UtilityPoleGenerator::3.0,AOD::utility_pole_maker::2.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak1.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak10.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak11.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak12.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak13.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak14.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak15.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak16.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak17.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak18.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak19.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak2.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak20.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak21.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak22.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak23.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak24.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak25.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak26.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak27.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak28.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak29.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak3.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak30.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak31.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak32.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak33.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak34.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak35.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak36.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak37.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak38.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak39.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak4.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak5.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak6.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak7.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak8.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.HighwaySignGenerator.5.0_bak9.hda,AB::HighwaySignGenerator::5.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.SignHighway.2.0_bak1.hda,AB::SignHighway::1.0,AB::SignHighway::1.0,ok,
+Sops/CityProps/backup/AB.SignHighway.2.0_bak2.hda,AB::SignHighway::1.0,AB::SignHighway::1.0,ok,
+Sops/CityProps/backup/AB.SignHighway.2.0_bak2.hda,AB::SignHighway::2.0,AB::SignHighway::1.0,MISMATCH,
+Sops/CityProps/backup/AB.SignHighway.2.0_bak3.hda,AB::SignHighway::1.0,AB::SignHighway::1.0,ok,
+Sops/CityProps/backup/AB.SignHighway.2.0_bak3.hda,AB::SignHighway::2.0,AB::SignHighway::1.0,MISMATCH,
+Sops/CityProps/backup/AB.SignHighway.2.0_bak4.hda,AB::SignHighway::1.0,AB::SignHighway::1.0,ok,
+Sops/CityProps/backup/AB.SignHighway.2.0_bak4.hda,AB::SignHighway::2.0,AB::SignHighway::1.0,MISMATCH,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak1.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak10.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak11.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak12.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak13.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak14.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak15.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak16.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak17.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak18.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak19.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak2.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak3.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak4.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak5.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak6.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak7.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak8.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignLibrary.1.0_bak9.hda,AB::SignLibrary::1.0,AB::SignLibrary::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak1.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak10.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak11.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak12.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak13.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak14.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak15.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak16.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak17.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak18.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak19.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak2.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak20.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak21.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak22.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak23.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak24.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak25.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak3.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak4.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak5.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak6.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak7.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak8.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.SignPlate.1.0_bak9.hda,AB::SignPlate::1.0,AB::SignPlate::1.0,ok,
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak1.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak2.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak3.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak4.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak5.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak6.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak7.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CityProps/backup/AB.StreetSignGenerator.3.0_bak8.hda,AB::StreetSignGenerator::3.0,AOD::sign_maker::3.0,MISMATCH,legacy AOD lineage
+Sops/CopyTools/AB.CopyByDensity.1_0.hda,AB::CopyByDensity::1.0,AB::CopyByDensity::1.0,ok,
+Sops/CopyTools/AB.CopyWithRotation.1.0.hda,AB::CopyWithRotation::1.0,AB::CopyWithRotation::1.0,ok,
+Sops/Curves/AB.CreateCircuitCurves.2.0.hda,AB::CreateCircuitCurves::2.0,AB::CreateCircuitCurves::2.0,ok,
+Sops/Curves/AB.FancyCurves.2.0.hda,AB::FancyCurves::2.0,AB::FancyCurves::2.0,ok,
+Sops/Curves/AB.MetalExtrusionMaker.2.0.hda,AB::MetalExtrusionMaker::2.0,AB::MetalExtrusionMaker::2.0,ok,
+Sops/Modeling/AB.ArchGenerator.2.0.hda,AB::ArchGenerator::2.0,AB::ArchGenerator::2.0,ok,
+Sops/Modeling/AB.BarbwireGenerator.2.0.hda,AB::BarbwireGenerator::2.0,AOD::MD_create_barbwire::1.0,MISMATCH,legacy AOD lineage
+Sops/Modeling/AB.ButtonPanels.1.0.hda,AB::ButtonPanels::1.0,AB::ButtonPanels::1.0,ok,
+Sops/Modeling/AB.ButtonPanels.1.1.hda,AB::ButtonPanels::1.1,AB::ButtonPanels::1.0,MISMATCH,
+Sops/Modeling/AB.ChainGenerator.3.0.hda,AB::ChainGenerator::3.0,AB::ChainGenerator::3.0,ok,
+Sops/Modeling/AB.CycGenerator.1.0.hda,AB::CycGenerator::1.0,AB::CycGenerator::1.0,ok,
+Sops/Modeling/AB.DroopyWires.1.0.hda,AB::DroopyWires::1.0,AB::DroopyWires::1.0,ok,
+Sops/Modeling/AB.ExtendedSweep.2.0.hda,AB::ExtendedSweep::2.0,AOD::extended_sweep::2.0,MISMATCH,legacy AOD lineage
+Sops/Modeling/AB.NoisyGrid.1.0.hda,AB::NoisyGrid::1.0,jordan_noisy_grid,MISMATCH,
+Sops/Modeling/AB.PipeCreator.2.0.hda,AB::PipeCreator::2.0,AB::PipeCreator::2.0,ok,
+Sops/Modeling/AB.RockClumps.2.0.hda,AB::RockClumps::2.0,AB::RockClumps::2.0,ok,
+Sops/Modeling/AB.SuperFormula.1.0.hda,AB::SuperFormula::1.0,AB::SuperFormula::1.0,ok,
+Sops/Modeling/AB.VexBrancher.1.0.hda,AB::VexBrancher::1.0,AB::VexBrancher::1.0,ok,
+Sops/Modeling/AB.WiresWithRings.1.0.1.0.hda,AB::WiresWithRings::1.0,AB::WiresWithRings::1.0,ok,
+Sops/Modeling/AB.WoodPlankGenerator.1.0.1.0.hda,AB::WoodPlankGenerator::1.0,AB::WoodPlankGenerator::1.0,ok,
+Sops/Modeling/OLD/AB.ButtonPanels.1.0.hda,AB::ButtonPanels::1.0,AB::ButtonPanels::1.0,ok,
+Sops/Modeling/OLD/sop_AB.ButtonPanels.1.1.hda,AB::ButtonPanels::1.1,AB::ButtonPanels::1.0,MISMATCH,
+Sops/Modeling/OLD/sop_AB.DoorsCreateCopies.1.2.hda,AB::DoorsCreateCopies::1.2,AOD::MD_WindowsCreateCopies::1.0,MISMATCH,legacy AOD lineage
+Sops/Modules/AB..ModulesModernist.1.0.hda,AB::ModulesModernist::1.0,AOD::MOD::ModulesArtDeco::1.0,MISMATCH,legacy AOD lineage
+Sops/Modules/AB.ModuleAssembler.1.0.hda,AB::ModuleAssembler::1.0,AB::ModuleAssembler::1.0,ok,
+Sops/Modules/AB.ModulesArtDeco.2.0.hda,AB::MModulesArtDeco::2.0,AB::MModulesArtDeco::2.0,ok,
+Sops/Modules/AB.ModulesBrutalist.1.0.hda,AB::ModulesBrutalist::1.0,AOD::MOD::ModulesArtDeco::1.0,MISMATCH,legacy AOD lineage
+Sops/Modules/AB.ModulesClassical.2.0.hda,AB::ModulesClassical::1.0,AOD::MOD::ModulesArtDeco::1.0,MISMATCH,legacy AOD lineage
+Sops/Modules/AB.ModulesCyberPunk.2.0.hda,AB::ModulesCyberPunk::2.0,AB::ModulesCyberPunk::2.0,ok,
+Sops/Modules/AB.ModulesGothic.2.0.hda,AB::ModulesGothic::2.0,AOD::MOD::ModulesGothic::1.0,MISMATCH,legacy AOD lineage
+Sops/Modules/AB.ModulesSkyscrapers.2.0.hda,AB::ModulesSkyscrapers::2.0,AB::ModulesSkyscrapers::2.0,ok,
+Sops/MotionGraphics/AB.EqualizerGraph.1.0.hda,AB::EqualizerGraph::1.0,AB::EqualizerGraph::1.0,ok,
+Sops/MotionGraphics/AB.GrowthFromPoints.1.0.hda,AB::GrowthFromPoints::1.0,AB::GrowthFromPoints::1.0,ok,
+Sops/MotionGraphics/AB.HudMaker.2.0.hda,AB::HudMaker::2.0,AB::HudMaker::2.0,ok,
+Sops/MotionGraphics/AB.NeonRainbows.1.0.hda,AB::NeonRainbows::1.0,AB::NeonRainbows::1.0,ok,
+Sops/MotionGraphics/AB.PointBlends.1.0.hda,AB::PointBlends::1.0,AB::PointBlends::1.0,ok,
+Sops/MotionGraphics/AB.RandomArcs.1.0.hda,AB::RandomArcs::1.0,AB::RandomArcs::1.0,ok,
+Sops/MotionGraphics/AB.SpaceFillingCircuit.1.0.hda,AB::SpaceFillingCircuit::1.0,AB::SpaceFillingCircuit::1.0,ok,
+Sops/Natural/AB.CrystalGenerator.1.0.hda,AB::CrystalGenerator::1.0,AB::CrystalGenerator::1.0,ok,
+Sops/Natural/AB.FloatingIslands.1.0.hda,AB::FloatingIslands::1.0,AB::FloatingIslands::1.0,ok,
+Sops/Natural/AB.FlowerDesigner.1.0.hda,AB::FlowerDesigner::1.0,AOD::flower_designer::1.0,MISMATCH,legacy AOD lineage
+Sops/Natural/AB.FlowerGenerator.1.0.hda,AB::FlowerGenerator::1.0,AB::FlowerGenerator::1.0,ok,
+Sops/Natural/AB.LowPolyTrees.2.0.hda,AB::LowPolyTrees::2.0,AB::LowPolyTrees::2.0,ok,
+Sops/Natural/AB.RockMaker.2.0.hda,AB::RockMaker::2.0,AOD::MOD::RockMaker::1.0,MISMATCH,legacy AOD lineage
+Sops/Natural/AB.RocksArched.2.0.hda,AB::RocksArched::2.0,AB::RocksArched::2.0,ok,
+Sops/Panels/AB.ManhattenDistance.2.0.hda,AB::ManhattenDistance::2.0,AB::ManhattenDistance::2.0,ok,
+Sops/Panels/AB.PanelGenerator.2.0.hda,AB::PanelGenerator::2.0,AB::PanelGenerator::2.0,ok,
+Sops/Parts/AB.DoorHardware.2.0.hda,AB::DoorHardware::2.0,AB::DoorHardware::2.0,ok,
+Sops/Parts/AB.ElectricalParts.2.0.hda,AB::ElectricalParts::2.0,AB::ElectricalParts::2.0,ok,
+Sops/Parts/AB.ElectronicComponentGenerator.1.0.hda,AB::ElectronicComponentGenerator::1.0,AB::ElectronicComponentGenerator::1.0,ok,
+Sops/Parts/AB.FlangeGenerator.2.0.hda,AB::FlangeGenerator::2.0,boxx1_flange_v01,MISMATCH,
+Sops/Parts/AB.HardwareMaker.2.0.hda,AB::HardwareMaker::2.0,AOD::MOD.HardwareMaker::1.0,MISMATCH,legacy AOD lineage
+Sops/Parts/AB.PipesAndEnds.1.0.hda,AB::PipesAndEnds::1.0,AOD::hoses_and_ends::1.0,MISMATCH,legacy AOD lineage
+Sops/Parts/AB.SimplePipe.2.0.hda,AB::SimplePipe::2.0,AB::SimplePipe::2.0,ok,
+Sops/Parts/AB.ValveGenerator.2.0.hda,AB::ValveGenerator::2.0,AOD::MD_Valves::1.1,MISMATCH,legacy AOD lineage
+Sops/Parts/AB.VentGenerator.2.0.hda,AB::VentGenerator::2.0,AB::VentGenerator::2.0,ok,
+Sops/PlantOns/AB.ArchitecturalPlantOns.2.0.hda,AB::ArchitecturalPlantOns::2.0,AB::ArchitecturalPlantOns::2.0,ok,
+Sops/PlantOns/AB.PlantOnsFuturistic.2.0.hda,AB::PlantOnsFuturistic::2.0,AB::PlantOnsFuturistic::2.0,ok,
+Sops/Scatters/AB..PhylotaxisScatter.1.0.hda,AB::PhylotaxisScatter::1.0,AB::PhylotaxisScatter::1.0,ok,
+Sops/Scatters/AB.CliffordAttractor.1.0.hda,AB::CliffordAttractor::1.0,AB::CliffordAttractor::1.0,ok,
+Sops/Scatters/AB.Flocking.1.0.hda,AB::Flocking::1.0,AB::Flocking::1.0,ok,
+Sops/Scatters/AB.MultiAxisPointScatter.1.0.hda,AB::MultiAxisPointScatter::1.0,AB::MultiAxisPointScatter::1.0,ok,
+Sops/Scatters/AB.RadialScatterVex.1.0.hda,AB::RadialScatterVex::1.0,AB::RadialScatterVex::1.0,ok,
+Sops/SetDressing/AB.CeramicPotGenerator.1.0.hda,AB::CeramicPotGenerator::1.0,AB::CeramicPotGenerator::1.0,ok,
+Sops/SetDressing/AB.HangingClothGenerator.1.5.hda,AB::HangingClothGenerator::1.5,AB::HangingClothGenerator::1.5,ok,
+Sops/SetDressing/AB.HayBaleGenerator.1.0.hda,AB::HayBaleGenerator::1.0,AB::HayBaleGenerator::1.0,ok,
+Sops/SetDressing/AB.SmallBridgeGenerator.0.5.hda,AB::SmallBridgeGenerator::1.0,AB::SmallBridgeGenerator::1.0,ok,
+Sops/SetDressing/AB.WoodenPierGenerator.1.0.hda,AB::WoodenPierGenerator::1.0,AB::WoodenPierGenerator::1.0,ok,
+Sops/Utilities/AB.CircularNoise.1.0.hda,AB::CircularNoise::1.0,AB::CircularNoise::1.0,ok,
+Sops/Utilities/AB.ColorByVelocity.1.0.hda,AB::ColorByVelocity::1.0,AB::ColorByVelocity::1.0,ok,
+Sops/Utilities/AB.CreateLODs.2.0.hda,AB::CreateLODs::2.0,AB::CreateLODs::2.0,ok,
+Sops/Utilities/AB.CreateRGBNoise.1.0.hda,AB::CreateRGBNoise::1.0,AB::CreateRGBNoise::1.0,ok,
+Sops/Utilities/AB.EngineAttributes.1.0.hda,AB::EngineAttributes::1.0,AB::EngineAttributes::1.0,ok,
+Sops/Utilities/AB.ExportPack.1.0.hda,AB::ExportPack::1.0,AB::ExportPack::1.0,ok,
+Sops/Utilities/AB.MaterialBinding.1.0.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/AB.MaterialLibrary.1.0.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/AB.PythonScripter.1.0.hda,AB::PythonScripter::1.0,AB::PythonScripter::1.0,ok,
+Sops/Utilities/AB.RadialFalloff.1.0.hda,AB::RadialFalloff::1.0,AB::RadialFalloff::1.0,ok,
+Sops/Utilities/AB.RadialPointSort.1.0.hda,AB::RadialPointSort::1.0,AB::RadialPointSort::1.0,ok,
+Sops/Utilities/AB.RadialScatter.1.5.hda,AB::RadialScatter::1.5,AB::RadialScatter::1.5,ok,
+Sops/Utilities/AB.RadialSmoothNoise.1.0.hda,AB::RadialSmoothNoise::1.0,AB::RadialSmoothNoise::1.0,ok,
+Sops/Utilities/AB.UnrealTerrainWrite.1.0.hda,AB::UnrealTerrainWrite::1.0,AB::UnrealTerrainWrite::1.0,ok,
+Sops/Utilities/AB.VisTools.1.0.hda,AB::VisTools::1.0,AB::VisTools::1.0,ok,
+Sops/Utilities/AB.ZoneAudit.1.0.hda,AB::ZoneAudit::1.0,AB::ZoneAudit::1.0,ok,
+Sops/Utilities/backup/AB.EngineAttributes.1.0_bak1.hda,AB::EngineAttributes::1.0,AB::EngineAttributes::1.0,ok,
+Sops/Utilities/backup/AB.EngineAttributes.1.0_bak2.hda,AB::EngineAttributes::1.0,AB::EngineAttributes::1.0,ok,
+Sops/Utilities/backup/AB.EngineAttributes.1.0_bak3.hda,AB::EngineAttributes::1.0,AB::EngineAttributes::1.0,ok,
+Sops/Utilities/backup/AB.EngineAttributes.1.0_bak4.hda,AB::EngineAttributes::1.0,AB::EngineAttributes::1.0,ok,
+Sops/Utilities/backup/AB.ExportPack.1.0_bak1.hda,AB::ExportPack::1.0,AB::ExportPack::1.0,ok,
+Sops/Utilities/backup/AB.ExportPack.1.0_bak2.hda,AB::ExportPack::1.0,AB::ExportPack::1.0,ok,
+Sops/Utilities/backup/AB.ExportPack.1.0_bak3.hda,AB::ExportPack::1.0,AB::ExportPack::1.0,ok,
+Sops/Utilities/backup/AB.ExportPack.1.0_bak4.hda,AB::ExportPack::1.0,AB::ExportPack::1.0,ok,
+Sops/Utilities/backup/AB.ExportPack.1.0_bak5.hda,AB::ExportPack::1.0,AB::ExportPack::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak1.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak2.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak3.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak4.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak5.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak6.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialBinding.1.0_bak7.hda,AB::MaterialBinding::1.0,AB::MaterialBinding::1.0,ok,
+Sops/Utilities/backup/AB.MaterialLibrary.1.0_bak1.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/backup/AB.MaterialLibrary.1.0_bak2.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/backup/AB.MaterialLibrary.1.0_bak3.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/backup/AB.MaterialLibrary.1.0_bak4.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/backup/AB.MaterialLibrary.1.0_bak5.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/backup/AB.MaterialLibrary.1.0_bak6.hda,AB::MaterialLibrary::1.0,AB::MaterialLibrary::1.0,ok,
+Sops/Utilities/backup/AB.ZoneAudit.1.0_bak1.hda,AB::ZoneAudit::1.0,AB::ZoneAudit::1.0,ok,
+Sops/Utilities/backup/AB.ZoneAudit.1.0_bak2.hda,AB::ZoneAudit::1.0,AB::ZoneAudit::1.0,ok,
+Sops/Utilities/backup/AB.ZoneAudit.1.0_bak3.hda,AB::ZoneAudit::1.0,AB::ZoneAudit::1.0,ok,
+Sops/Utilities/backup/AB.ZoneAudit.1.0_bak4.hda,AB::ZoneAudit::1.0,AB::ZoneAudit::1.0,ok,
+Sops/VFX/AB.SplashTool.1.0.hda,AB::SplashTool::1.0,AB::SplashTool::1.0,ok,
+Sops/Volume/AB.VDBBooleans.1.0.hda,AB::VDBooleans::1.0,AB::VDBooleans::1.0,ok,
+Sops/WorldBuilding/AB.GrassGenerator.1.0.hda,AB::GrassGenerator::1.0,AB::GrassGenerator::1.0,ok,
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.0.hda,AB::RoadSimpleGenerator::2.0,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.1.hda,AB::RoadSimpleGenerator::2.1,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.2.hda,AB::RoadSimpleGenerator::2.2,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.3.hda,AB::RoadSimpleGenerator::2.3,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.4.hda,AB::RoadSimpleGenerator::2.4,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.5.hda,AB::RoadSimpleGenerator::2.5,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.6.hda,AB::RoadSimpleGenerator::2.6,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.7.hda,AB::RoadSimpleGenerator::2.7,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.8.hda,AB::RoadSimpleGenerator::2.8,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.2.9.hda,AB::RoadSimpleGenerator::2.9,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.3.0.hda,AB::RoadSimpleGenerator::3.0,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.3.1.hda,AB::RoadSimpleGenerator::3.1,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.3.2.hda,AB::RoadSimpleGenerator::3.2,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.3.3.hda,AB::RoadSimpleGenerator::3.3,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadSimpleGenerator.3.4.hda,AB::RoadSimpleGenerator::3.4,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/AB.RoadTerrainGenerator.2.9.hda,AB::RoadTerrainGenerator::2.9,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage
+Sops/WorldBuilding/backup/AB.RoadSimpleGenerator.3.4_bak1.hda,AB::RoadSimpleGenerator::3.4,AOD::road_creator::1.0,MISMATCH,legacy AOD lineage

@@ -1,0 +1,27 @@
+wm_code,category,sub,thickness,width,grammar,confidence
+WM104,Floor,Quarter Round,1,1,"ovolo(1,1)",measured
+WM105,Floor,Quarter Round,3/4,3/4,"ovolo(1,1)",measured
+WM108,Floor,Quarter Round,1/2,1/2,"ovolo(1,1)",measured
+WM110,Floor,Quarter Round,1/4,1/4,"ovolo(1,1)",measured
+WM126,Floor,Shoe,1/2,3/4,"line(0,.18) ovolo(1,.82)",measured
+WM127,Floor,Shoe,7/16,3/4,"line(0,.15) ovolo(1,.85)",measured
+WM130,Floor,Shoe,1/2,1,"line(0,.2) ovolo(1,.8)",measured
+WM120,Panel,Half Round,1/2,1,"bead(1,1)",measured
+WM122,Panel,Half Round,3/8,1,"bead(1,1)",measured
+WM124,Panel,Half Round,1/4,1/2,"bead(1,1)",measured
+WM232,Misc,Full Round,1-9/16,1-9/16,"bead(1,1)",measured
+WM100,Ceiling,Cove,11/16,11/16,"cove(1,1)",measured
+WM101,Ceiling,Cove,1/2,1/2,"cove(1,1)",measured
+WM995,Misc,Chamfer,3/4,3/4,"chamfer(1,1)",measured
+WM996,Misc,Chamfer,1,1,"chamfer(1,1)",measured
+WM254,Misc,Parting Bead,1/2,3/4,"line(1,0) line(0,1) line(-1,0)",measured
+WM265W,Misc,Lattice,1/4,1-3/4,"line(1,0) line(0,1) line(-1,0)",measured
+WM246,Misc,S4S,11/16,2-5/8,"line(1,0) line(0,1) line(-1,0)",measured
+WM138,Panel,Screen Bead,5/16,5/8,"bead(1,1)",measured
+WM142,Panel,Screen Bead,1/4,3/4,"line(1,.15) line(0,.7) line(-1,.15)",measured
+WM202,Misc,Corner Guard,11/16,1-1/16,"line(1,0) line(0,1) line(-1,0)",measured
+WM70,Ceiling,Bed,9/16,1-5/8,"line(0,.12) cove(.55,.5) line(.45,.1) ovolo(0,.28)",approximate
+WM426,Floor,Base Cap,11/16,1-1/8,"line(0,.1) cyma_reversa(.8,.62) line(.2,.1) ovolo(0,.18)",approximate
+WM77,Wall,Chair Rail,11/16,2-1/4,"line(0,.08) ovolo(.35,.14) quirk(.08,.05) cyma_reversa(.5,.4) line(.15,.08) cove(-.4,.16) line(-.6,.09)",approximate
+WM163E,Floor,Base,11/16,5-1/4,"line(0,.72) cyma_reversa(.62,.14) quirk(.06,.02) ovolo(.32,.06) line(.06,.04) cove(-1,.02)",approximate
+WM49,Ceiling,Crown,9/16,3-5/8,"line(0,.08) cove(.42,.34) line(.1,.06) cyma_recta(.48,.44) line(0,.08)",approximate

@@ -1,0 +1,407 @@
+zone	tools	kind	reason	confidence	family
+HW_Bolt	11	SHADING	shared across 11 tools	0.8	Metal
+HW_Nut	11	SHADING	shared across 11 tools	0.8	Metal
+HW_Washer	11	SHADING	shared across 11 tools	0.8	Metal
+LightEmit	7	SHADING	verified in cooked output	1.0	Emissive
+WindowGlass	7	SHADING	verified in cooked output	1.0	Glass
+DoorFrame	6	SHADING	verified in cooked output	1.0	Metal
+DoorGlass	6	SHADING	verified in cooked output	1.0	Glass
+Backplate	5	SHADING	verified in cooked output	1.0	Metal
+LightBase	5	SHADING	verified in cooked output	1.0	
+LightMetal	5	SHADING	verified in cooked output	1.0	Metal
+PullBar	5	SHADING	verified in cooked output	1.0	Metal
+SignFront	5	SHADING	shared across 5 tools	0.8	Signage
+Walls	5	SHADING	verified in cooked output	1.0	Masonry
+WindowFrame	5	SHADING	verified in cooked output	1.0	Metal
+Corners	4	SHADING	verified in cooked output	1.0	Masonry
+SignBack	4	SHADING	shared across 4 tools	0.8	Signage
+WinCasement	4	SHADING	shared across 4 tools	0.8	
+Pipes	3	SHADING	shared across 3 tools	0.8	Metal
+Roof	3	SHADING	verified in cooked output	1.0	Roofing
+RoofPlane	3	SHADING	shared across 3 tools	0.8	Roofing
+TF_Cornice	3	SHADING	verified in cooked output	1.0	Masonry
+WindowPlanes	3	SHADING	shared across 3 tools	0.8	Glass
+WindowSill	3	SHADING	verified in cooked output	1.0	Trim
+WindowTrim	3	SHADING	verified in cooked output	1.0	Trim
+BackPlate	2	SHADING	shared across 2 tools	0.8	Metal
+BuildingTrim	2	SHADING	verified in cooked output	1.0	Trim
+DoorKnob	2	SHADING	shared across 2 tools	0.8	Metal
+GussetPlate	2	SHADING	shared across 2 tools	0.8	Metal
+HorizontalSupportsMetal	2	SHADING	shared across 2 tools	0.8	Metal
+LightCasing	2	SHADING	shared across 2 tools	0.8	Metal
+LightPipe	2	SHADING	shared across 2 tools	0.8	Metal
+LightPipeMetal	2	SHADING	shared across 2 tools	0.8	Metal
+MainVerticalSupports	2	SHADING	shared across 2 tools	0.8	Metal
+MetalRing	2	SHADING	shared across 2 tools	0.8	Metal
+MeterGlass	2	SHADING	shared across 2 tools	0.8	Glass
+MeterMetal	2	SHADING	shared across 2 tools	0.8	Metal
+PipeConnectorMetal	2	SHADING	shared across 2 tools	0.8	Metal
+PlatformSupportsMetal	2	SHADING	shared across 2 tools	0.8	Metal
+PoleMetalRound	2	SHADING	shared across 2 tools	0.8	Metal
+RoofParapet	2	SHADING	shared across 2 tools	0.8	Masonry
+SignFrame	2	SHADING	shared across 2 tools	0.8	Metal
+SignMetal	2	SHADING	shared across 2 tools	0.8	Metal
+SignPlatformMetal	2	SHADING	shared across 2 tools	0.8	Metal
+StreetLightArm	2	SHADING	shared across 2 tools	0.8	
+StreetLightCase	2	SHADING	shared across 2 tools	0.8	
+StreetLightEmit	2	SHADING	shared across 2 tools	0.8	Emissive
+Transformer_001	2	SHADING	shared across 2 tools	0.8	
+UpperStructure	2	SHADING	shared across 2 tools	0.8	
+UtilityPole/Bracket_002	2	SHADING	shared across 2 tools	0.8	Metal
+UtilityPole/HorizPoleWood	2	SHADING	shared across 2 tools	0.8	Wood
+UtilityPole/MainPoleWood	2	SHADING	shared across 2 tools	0.8	Wood
+VertConnector_001/MetalBottom	2	SHADING	shared across 2 tools	0.8	Metal
+VertConnector_001/PorclainMiddle	2	SHADING	shared across 2 tools	0.8	Plastic
+VertConnector_001/PorclainTop	2	SHADING	shared across 2 tools	0.8	Plastic
+VerticalSupportsMetal	2	SHADING	shared across 2 tools	0.8	Metal
+WhiteReflective	2	SHADING	shared across 2 tools	0.8	
+WindowTrimLower	2	SHADING	verified in cooked output	1.0	Trim
+WindowTrimSides	2	SHADING	verified in cooked output	1.0	Trim
+WindowTrimTop_01	2	SHADING	verified in cooked output	1.0	Trim
+WindowWalls	2	SHADING	verified in cooked output	1.0	Masonry
+Wires	2	SHADING	shared across 2 tools	0.8	Metal
+surface	2	SHADING	shared across 2 tools	0.8	
+AngleSupports	1	SHADING	names a Metal material	0.7	Metal
+AntiSlipBase	1	SHADING	ruled by Jordan	1.0	
+Arch	1	SHADING	names a Masonry material	0.7	Masonry
+AwningCloth	1	SHADING	names a Fabric material	0.7	Fabric
+BR_Road	1	SHADING	names a Ground material	0.7	Ground
+BR_Sidewalk	1	SHADING	names a Masonry material	0.7	Masonry
+BR_SupportsMetal	1	SHADING	names a Metal material	0.7	Metal
+BannisterMountPlate	1	SHADING	names a Metal material	0.7	Metal
+Bannisters	1	SHADING	ruled by Jordan	1.0	
+Barbs	1	SHADING	names a Metal material	0.7	Metal
+BillboardBack	1	SHADING	names a Wood material	0.7	Wood
+BillboardFront	1	SHADING	names a Wood material	0.7	Wood
+Block	1	SHADING	names a Masonry material	0.7	Masonry
+Bolts	1	SHADING	names a Metal material	0.7	Metal
+BuildingBlock	1	SHADING	names a Masonry material	0.7	Masonry
+BuildingRoof	1	SHADING	names a Roofing material	0.7	Roofing
+BuildingWalls	1	SHADING	names a Masonry material	0.7	Masonry
+CP_WallBase_001	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_002	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_003	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_004	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_005	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_006	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_007	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_008	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_009	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_010	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_011	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_012	1	PACKING	numbered series	0.9	Masonry
+CP_WallBase_013	1	PACKING	numbered series	0.9	Masonry
+ConcreteStep	1	SHADING	names a Masonry material	0.7	Masonry
+DomeCapDetail	1	SHADING	ruled by Jordan	1.0	
+DomeTopTrim	1	SHADING	names a Trim material	0.7	Trim
+DomeWallLower	1	SHADING	names a Masonry material	0.7	Masonry
+DomeWallLowerTrim	1	SHADING	names a Masonry material	0.7	Masonry
+DomeWallUpper	1	SHADING	names a Masonry material	0.7	Masonry
+DoorPlane	1	SHADING	ruled by Jordan	1.0	
+ExteriorBlocks_01	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_02	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_03	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_04	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_05	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_06	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_07	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_08	1	PACKING	numbered series	0.9	Masonry
+ExteriorBlocks_09	1	PACKING	numbered series	0.9	Masonry
+FanBezel	1	SHADING	ruled by Jordan	1.0	
+FanGrate	1	SHADING	names a Metal material	0.7	Metal
+FireHydrantBody	1	SHADING	ruled by Jordan	1.0	
+Flange	1	SHADING	ruled by Jordan	1.0	
+FloorPlate	1	SHADING	names a Metal material	0.7	Metal
+FooterConcrete	1	SHADING	names a Masonry material	0.7	Masonry
+FrontFence	1	SHADING	ruled by Jordan	1.0	
+GuardRail	1	SHADING	names a Metal material	0.7	Metal
+HorizontalBackSupports	1	SHADING	names a Metal material	0.7	Metal
+Ibeam	1	SHADING	names a Metal material	0.7	Metal
+InsideWalls	1	SHADING	names a Masonry material	0.7	Masonry
+Kitchen/ButtonPlatsic	1	SHADING	ruled by Jordan	1.0	
+Kitchen/ButtonRim	1	SHADING	ruled by Jordan	1.0	
+Knob_01	1	SHADING	names a Metal material	0.7	Metal
+Ladder	1	SHADING	ruled by Jordan	1.0	
+LadderMain	1	SHADING	ruled by Jordan	1.0	
+MainBody	1	SHADING	ruled by Jordan	1.0	
+MainSupport	1	SHADING	names a Metal material	0.7	Metal
+MainVerticalSupport	1	SHADING	names a Metal material	0.7	Metal
+MainWaterPipe	1	SHADING	names a Metal material	0.7	Metal
+MetalBackPlate	1	SHADING	names a Metal material	0.7	Metal
+MetalPlateRound	1	SHADING	names a Metal material	0.7	Metal
+MetalPlateSquare	1	SHADING	names a Metal material	0.7	Metal
+Neon	1	SHADING	names a Emissive material	0.7	Emissive
+OutsideWalls	1	SHADING	names a Masonry material	0.7	Masonry
+Parapet	1	SHADING	verified in cooked output	1.0	Masonry
+Pipe	1	SHADING	names a Metal material	0.7	Metal
+PipeEnds	1	SHADING	names a Metal material	0.7	Metal
+PlatformRailing	1	SHADING	names a Metal material	0.7	Metal
+PlatformSupportMetal	1	SHADING	names a Metal material	0.7	Metal
+Reflector	1	SHADING	ruled by Jordan	1.0	
+Reflector1	1	PACKING	merge-collision suffix	0.85	
+ReflectorBase	1	SHADING	ruled by Jordan	1.0	
+ReflectorBase1	1	PACKING	merge-collision suffix	0.85	
+RoadBottom	1	SHADING	names a Ground material	0.7	Ground
+RoadCenterLine	1	SHADING	names a Ground material	0.7	Ground
+RoadLines	1	SHADING	names a Ground material	0.7	Ground
+RoadLines1	1	PACKING	merge-collision suffix	0.85	Ground
+RoadSides	1	SHADING	names a Ground material	0.7	Ground
+RoadTop	1	SHADING	names a Ground material	0.7	Ground
+RoofInside	1	SHADING	names a Roofing material	0.7	Roofing
+RoofSides	1	SHADING	names a Roofing material	0.7	Roofing
+RoofSignFooter	1	SHADING	names a Roofing material	0.7	Roofing
+RoofSignHorizonatlSupports	1	SHADING	names a Metal material	0.7	Metal
+RoofSignVerticalPosts	1	SHADING	names a Roofing material	0.7	Roofing
+RoofTop	1	SHADING	names a Roofing material	0.7	Roofing
+RoofTrim	1	SHADING	names a Roofing material	0.7	Roofing
+SideMountStructure	1	SHADING	names a Metal material	0.7	Metal
+SidewalkCorner	1	SHADING	names a Masonry material	0.7	Masonry
+SidewalkCornerCurb	1	SHADING	names a Masonry material	0.7	Masonry
+SignArrowCasing	1	SHADING	names a Metal material	0.7	Metal
+SignArrowNeon	1	SHADING	names a Emissive material	0.7	Emissive
+SignArrows	1	SHADING	names a Signage material	0.7	Signage
+SignNeon	1	SHADING	names a Emissive material	0.7	Emissive
+SkylightGlass	1	SHADING	names a Glass material	0.7	Glass
+SkylightMetal	1	SHADING	names a Metal material	0.7	Metal
+SupportBracket	1	SHADING	names a Metal material	0.7	Metal
+SupportWedge	1	SHADING	names a Metal material	0.7	Metal
+TorsionTube	1	SHADING	ruled by Jordan	1.0	
+Trim	1	SHADING	verified in cooked output	1.0	Trim
+Underside	1	SHADING	verified in cooked output	1.0	
+VentBody	1	SHADING	names a Metal material	0.7	Metal
+VentGrill	1	SHADING	names a Metal material	0.7	Metal
+VentRound_001	1	SHADING	names a Metal material	0.7	Metal
+VerticalBackSupports	1	SHADING	names a Metal material	0.7	Metal
+VerticalTrimLower	1	SHADING	names a Trim material	0.7	Trim
+VerticalTrimUpper	1	SHADING	names a Trim material	0.7	Trim
+Wall	1	SHADING	names a Masonry material	0.7	Masonry
+WallLowerBand	1	SHADING	names a Masonry material	0.7	Masonry
+WallsSides	1	SHADING	names a Masonry material	0.7	Masonry
+WatertankBody	1	SHADING	ruled by Jordan	1.0	
+WatertankBodySeams	1	SHADING	ruled by Jordan	1.0	
+WatertankRoof	1	SHADING	names a Roofing material	0.7	Roofing
+WeldLine	1	SHADING	ruled by Jordan	1.0	
+WindowGlassLit	1	SHADING	names a Glass material	0.7	Glass
+WindowGlowPlane	1	SHADING	names a Glass material	0.7	Glass
+WindowSlats	1	SHADING	names a Glass material	0.7	Glass
+WindowWall	1	SHADING	names a Masonry material	0.7	Masonry
+WindowsLit	1	SHADING	names a Glass material	0.7	Glass
+WindowsUnlit	1	SHADING	names a Glass material	0.7	Glass
+Wire	1	SHADING	names a Metal material	0.7	Metal
+WoodPlatform	1	SHADING	names a Wood material	0.7	Wood
+cloth0	1	SHADING	names a Fabric material	0.7	Fabric
+cloth1	1	SHADING	names a Fabric material	0.7	Fabric
+cloth2	1	SHADING	names a Fabric material	0.7	Fabric
+cloth3	1	SHADING	names a Fabric material	0.7	Fabric
+crystal2	1	PACKING	ruled by Jordan	1.0	
+hose	1	SHADING	ruled by Jordan	1.0	
+hose_ring	1	SHADING	ruled by Jordan	1.0	
+hose_ring_glow	1	SHADING	ruled by Jordan	1.0	
+inside_vs_1	1	PACKING	ruled by Jordan	1.0	
+inside_vs_2	1	PACKING	ruled by Jordan	1.0	
+inside_vs_3	1	PACKING	ruled by Jordan	1.0	
+inside_vs_4	1	PACKING	ruled by Jordan	1.0	
+outside_vs_1	1	PACKING	ruled by Jordan	1.0	
+outside_vs_2	1	PACKING	ruled by Jordan	1.0	
+outside_vs_3	1	PACKING	ruled by Jordan	1.0	
+outside_vs_4	1	PACKING	ruled by Jordan	1.0	
+piece0	1	PACKING	piece index	1.0	
+piece1	1	PACKING	piece index	1.0	
+piece10	1	PACKING	piece index	1.0	
+piece100	1	PACKING	piece index	1.0	
+piece101	1	PACKING	piece index	1.0	
+piece102	1	PACKING	piece index	1.0	
+piece103	1	PACKING	piece index	1.0	
+piece104	1	PACKING	piece index	1.0	
+piece105	1	PACKING	piece index	1.0	
+piece106	1	PACKING	piece index	1.0	
+piece107	1	PACKING	piece index	1.0	
+piece108	1	PACKING	piece index	1.0	
+piece109	1	PACKING	piece index	1.0	
+piece11	1	PACKING	piece index	1.0	
+piece110	1	PACKING	piece index	1.0	
+piece111	1	PACKING	piece index	1.0	
+piece112	1	PACKING	piece index	1.0	
+piece113	1	PACKING	piece index	1.0	
+piece114	1	PACKING	piece index	1.0	
+piece115	1	PACKING	piece index	1.0	
+piece116	1	PACKING	piece index	1.0	
+piece117	1	PACKING	piece index	1.0	
+piece118	1	PACKING	piece index	1.0	
+piece119	1	PACKING	piece index	1.0	
+piece12	1	PACKING	piece index	1.0	
+piece120	1	PACKING	piece index	1.0	
+piece121	1	PACKING	piece index	1.0	
+piece122	1	PACKING	piece index	1.0	
+piece123	1	PACKING	piece index	1.0	
+piece124	1	PACKING	piece index	1.0	
+piece125	1	PACKING	piece index	1.0	
+piece126	1	PACKING	piece index	1.0	
+piece127	1	PACKING	piece index	1.0	
+piece128	1	PACKING	piece index	1.0	
+piece129	1	PACKING	piece index	1.0	
+piece13	1	PACKING	piece index	1.0	
+piece130	1	PACKING	piece index	1.0	
+piece131	1	PACKING	piece index	1.0	
+piece132	1	PACKING	piece index	1.0	
+piece133	1	PACKING	piece index	1.0	
+piece134	1	PACKING	piece index	1.0	
+piece135	1	PACKING	piece index	1.0	
+piece136	1	PACKING	piece index	1.0	
+piece137	1	PACKING	piece index	1.0	
+piece138	1	PACKING	piece index	1.0	
+piece139	1	PACKING	piece index	1.0	
+piece14	1	PACKING	piece index	1.0	
+piece140	1	PACKING	piece index	1.0	
+piece141	1	PACKING	piece index	1.0	
+piece142	1	PACKING	piece index	1.0	
+piece143	1	PACKING	piece index	1.0	
+piece144	1	PACKING	piece index	1.0	
+piece145	1	PACKING	piece index	1.0	
+piece146	1	PACKING	piece index	1.0	
+piece147	1	PACKING	piece index	1.0	
+piece148	1	PACKING	piece index	1.0	
+piece149	1	PACKING	piece index	1.0	
+piece15	1	PACKING	piece index	1.0	
+piece150	1	PACKING	piece index	1.0	
+piece151	1	PACKING	piece index	1.0	
+piece152	1	PACKING	piece index	1.0	
+piece153	1	PACKING	piece index	1.0	
+piece154	1	PACKING	piece index	1.0	
+piece155	1	PACKING	piece index	1.0	
+piece156	1	PACKING	piece index	1.0	
+piece157	1	PACKING	piece index	1.0	
+piece158	1	PACKING	piece index	1.0	
+piece159	1	PACKING	piece index	1.0	
+piece16	1	PACKING	piece index	1.0	
+piece160	1	PACKING	piece index	1.0	
+piece161	1	PACKING	piece index	1.0	
+piece162	1	PACKING	piece index	1.0	
+piece163	1	PACKING	piece index	1.0	
+piece164	1	PACKING	piece index	1.0	
+piece165	1	PACKING	piece index	1.0	
+piece166	1	PACKING	piece index	1.0	
+piece167	1	PACKING	piece index	1.0	
+piece168	1	PACKING	piece index	1.0	
+piece169	1	PACKING	piece index	1.0	
+piece17	1	PACKING	piece index	1.0	
+piece170	1	PACKING	piece index	1.0	
+piece171	1	PACKING	piece index	1.0	
+piece172	1	PACKING	piece index	1.0	
+piece173	1	PACKING	piece index	1.0	
+piece174	1	PACKING	piece index	1.0	
+piece175	1	PACKING	piece index	1.0	
+piece176	1	PACKING	piece index	1.0	
+piece177	1	PACKING	piece index	1.0	
+piece178	1	PACKING	piece index	1.0	
+piece179	1	PACKING	piece index	1.0	
+piece18	1	PACKING	piece index	1.0	
+piece180	1	PACKING	piece index	1.0	
+piece181	1	PACKING	piece index	1.0	
+piece182	1	PACKING	piece index	1.0	
+piece183	1	PACKING	piece index	1.0	
+piece184	1	PACKING	piece index	1.0	
+piece185	1	PACKING	piece index	1.0	
+piece186	1	PACKING	piece index	1.0	
+piece187	1	PACKING	piece index	1.0	
+piece188	1	PACKING	piece index	1.0	
+piece189	1	PACKING	piece index	1.0	
+piece19	1	PACKING	piece index	1.0	
+piece190	1	PACKING	piece index	1.0	
+piece191	1	PACKING	piece index	1.0	
+piece192	1	PACKING	piece index	1.0	
+piece193	1	PACKING	piece index	1.0	
+piece194	1	PACKING	piece index	1.0	
+piece195	1	PACKING	piece index	1.0	
+piece196	1	PACKING	piece index	1.0	
+piece197	1	PACKING	piece index	1.0	
+piece198	1	PACKING	piece index	1.0	
+piece199	1	PACKING	piece index	1.0	
+piece2	1	PACKING	piece index	1.0	
+piece20	1	PACKING	piece index	1.0	
+piece21	1	PACKING	piece index	1.0	
+piece22	1	PACKING	piece index	1.0	
+piece23	1	PACKING	piece index	1.0	
+piece24	1	PACKING	piece index	1.0	
+piece25	1	PACKING	piece index	1.0	
+piece26	1	PACKING	piece index	1.0	
+piece27	1	PACKING	piece index	1.0	
+piece28	1	PACKING	piece index	1.0	
+piece29	1	PACKING	piece index	1.0	
+piece3	1	PACKING	piece index	1.0	
+piece30	1	PACKING	piece index	1.0	
+piece31	1	PACKING	piece index	1.0	
+piece32	1	PACKING	piece index	1.0	
+piece33	1	PACKING	piece index	1.0	
+piece34	1	PACKING	piece index	1.0	
+piece35	1	PACKING	piece index	1.0	
+piece36	1	PACKING	piece index	1.0	
+piece37	1	PACKING	piece index	1.0	
+piece38	1	PACKING	piece index	1.0	
+piece39	1	PACKING	piece index	1.0	
+piece4	1	PACKING	piece index	1.0	
+piece40	1	PACKING	piece index	1.0	
+piece41	1	PACKING	piece index	1.0	
+piece42	1	PACKING	piece index	1.0	
+piece43	1	PACKING	piece index	1.0	
+piece44	1	PACKING	piece index	1.0	
+piece45	1	PACKING	piece index	1.0	
+piece46	1	PACKING	piece index	1.0	
+piece47	1	PACKING	piece index	1.0	
+piece48	1	PACKING	piece index	1.0	
+piece49	1	PACKING	piece index	1.0	
+piece5	1	PACKING	piece index	1.0	
+piece50	1	PACKING	piece index	1.0	
+piece51	1	PACKING	piece index	1.0	
+piece52	1	PACKING	piece index	1.0	
+piece53	1	PACKING	piece index	1.0	
+piece54	1	PACKING	piece index	1.0	
+piece55	1	PACKING	piece index	1.0	
+piece56	1	PACKING	piece index	1.0	
+piece57	1	PACKING	piece index	1.0	
+piece58	1	PACKING	piece index	1.0	
+piece59	1	PACKING	piece index	1.0	
+piece6	1	PACKING	piece index	1.0	
+piece60	1	PACKING	piece index	1.0	
+piece61	1	PACKING	piece index	1.0	
+piece62	1	PACKING	piece index	1.0	
+piece63	1	PACKING	piece index	1.0	
+piece64	1	PACKING	piece index	1.0	
+piece65	1	PACKING	piece index	1.0	
+piece66	1	PACKING	piece index	1.0	
+piece67	1	PACKING	piece index	1.0	
+piece68	1	PACKING	piece index	1.0	
+piece69	1	PACKING	piece index	1.0	
+piece7	1	PACKING	piece index	1.0	
+piece70	1	PACKING	piece index	1.0	
+piece71	1	PACKING	piece index	1.0	
+piece72	1	PACKING	piece index	1.0	
+piece73	1	PACKING	piece index	1.0	
+piece74	1	PACKING	piece index	1.0	
+piece75	1	PACKING	piece index	1.0	
+piece76	1	PACKING	piece index	1.0	
+piece77	1	PACKING	piece index	1.0	
+piece78	1	PACKING	piece index	1.0	
+piece79	1	PACKING	piece index	1.0	
+piece8	1	PACKING	piece index	1.0	
+piece80	1	PACKING	piece index	1.0	
+piece81	1	PACKING	piece index	1.0	
+piece82	1	PACKING	piece index	1.0	
+piece83	1	PACKING	piece index	1.0	
+piece84	1	PACKING	piece index	1.0	
+piece85	1	PACKING	piece index	1.0	
+piece86	1	PACKING	piece index	1.0	
+piece87	1	PACKING	piece index	1.0	
+piece88	1	PACKING	piece index	1.0	
+piece89	1	PACKING	piece index	1.0	
+piece9	1	PACKING	piece index	1.0	
+piece90	1	PACKING	piece index	1.0	
+piece91	1	PACKING	piece index	1.0	
+piece92	1	PACKING	piece index	1.0	
+piece93	1	PACKING	piece index	1.0	
+piece94	1	PACKING	piece index	1.0	
+piece95	1	PACKING	piece index	1.0	
+piece96	1	PACKING	piece index	1.0	
+piece97	1	PACKING	piece index	1.0	
+piece98	1	PACKING	piece index	1.0	
+piece99	1	PACKING	piece index	1.0	

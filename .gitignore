@@ -1,0 +1,16 @@
+# Copies of library assets. The real ones are versioned in AssetBashTools;
+# duplicating them here would double the payload for no history value.
+repoint_staged/
+_backup_20260815/
+*.hda
+*.otl
+
+# Run output, regenerable
+*.log
+analysis_run.log
+polyexpand_scan.log
+
+# OS junk — standing rule
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,5 @@
+# Everything here is text. Normalise to LF in the repo so diffs stay clean
+# across the PC, the Mac and the USC box.
+* text=auto eol=lf
+*.xlsx binary
+*.svg text
