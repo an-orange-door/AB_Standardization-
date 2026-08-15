@@ -1,0 +1,186 @@
+// AB::BuildingFootprintGenerator — footprint classification. Detail wrangle.
+//
+// Takes ONE closed polygon (the outline) and emits the alternating
+// Corner / Wall structure the building tools consume, for ANY vertex count.
+//
+// ─── WHY THIS REPLACES THREE HAND-BUILT SUBNETS ──────────────────────────────
+// Today Rectangular, L and Rounded Corner are separate networks totalling 277
+// nodes, and the node count scales with EDGE COUNT: a 4-edge rectangle has 8
+// groupcreate / 8 color / 8 attribcreate, a 6-edge L has 12 of each. Adding a U
+// meant hand-authoring 8 walls and 8 corners, which is why FootprintU was
+// abandoned half-built. Here the shape is data and the structure is computed,
+// so a new outline costs nothing.
+//
+// ─── THE INVARIANT THIS PRESERVES ────────────────────────────────────────────
+// MEASURED across all 162 baseline cases, without exception:
+//     prim 2k     = corner k        prim 2k+1   = wall k
+//     N corners == N walls, alternating, covering every prim
+// The existing tools already satisfy it — they just name the pieces
+// inconsistently (WallRight1 vs WallRight_01, a lowercase `arc`, and compass
+// names that cannot survive past four walls). So this is a RENAME onto a
+// structure that already holds, not a restructure.
+// `arc` is not a stray group: it is the 5th WALL of the rounded-corner shape.
+//
+// ─── NAMING ──────────────────────────────────────────────────────────────────
+//     Corner_01 … Corner_NN        Wall_01 … Wall_NN      zero-padded
+// Wall_k FOLLOWS Corner_k around the perimeter, so a consumer can find the
+// walls adjoining any corner arithmetically. No such relation exists today.
+// Compass names (WallLeft/Front/Right/Back) are emitted ADDITIONALLY when the
+// outline has exactly 4 corners and LegacyNames is on — they are meaningless on
+// a U, a courtyard or a curve, so they cannot be the primary scheme.
+//
+// ─── WINDING ─────────────────────────────────────────────────────────────────
+// MEASURED: the shipping Rectangular shape winds CLOCKWISE while L and Rounded
+// Corner wind COUNTER-CLOCKWISE. A footprint is extruded, so winding decides
+// which way the wall normals face — there is no "existing behaviour" to
+// preserve here because the three shapes disagree. Enforced to CCW, measured
+// with the shoelace formula rather than assumed.
+
+int   LEGACY   = chi("../LegacyNames");
+float CORNER   = chf("../BldCornerSize");
+int   ROUNDED  = chi("../RoundCorners");     // 0 = chamfer, 1 = arc
+int   ARCDIV   = max(chi("../CornerDivs"), 1);
+
+// ── read the outline from input 0 ────────────────────────────────────────────
+int inprim = 0;
+int pts[] = primpoints(0, inprim);
+int n = len(pts);
+if (n < 3) {
+    error("Footprint needs a closed polygon with at least 3 points, got %d.", n);
+}
+
+vector P[];
+for (int i = 0; i < n; i++) {
+    // assign to a typed temp first: append() cannot resolve its overload from a
+    // bare point() call, and the error names both candidates rather than the
+    // cause. Same trap as prim() inside append().
+    vector p = point(0, "P", pts[i]);
+    append(P, p);
+}
+
+// ── enforce winding ──────────────────────────────────────────────────────────
+// Shoelace on XZ: a footprint lies in the ground plane, not XY.
+float area2 = 0;
+for (int i = 0; i < n; i++) {
+    vector a = P[i], b = P[(i + 1) % n];
+    area2 += a.x * b.z - b.x * a.z;
+}
+if (area2 < 0) {                       // clockwise -> reverse, keeping P[0] first
+    vector r[];
+    append(r, P[0]);
+    for (int i = n - 1; i >= 1; i--) append(r, P[i]);
+    P = r;
+    area2 = -area2;
+}
+
+// ── per-vertex classification ────────────────────────────────────────────────
+// Computed, not named. This is the whole fix: it works identically on a menu
+// shape and on an arbitrary input curve, so one code path serves both.
+float angle[];      // interior angle, degrees
+int   convex[];     // +1 convex, -1 reflex
+float ext[];        // how far the corner reaches along each adjacent edge
+
+for (int i = 0; i < n; i++) {
+    vector prev = P[(i - 1 + n) % n];
+    vector cur  = P[i];
+    vector next = P[(i + 1) % n];
+
+    vector din  = normalize(cur - prev);
+    vector dout = normalize(next - cur);
+
+    // cross product's Y component gives the turn direction on the ground plane.
+    // CCW winding: positive = convex, negative = reflex. An L has exactly one
+    // reflex vertex, and it needs an inner fillet where a convex corner needs
+    // an outer chamfer - opposite operations, which is why the shipping
+    // sphere-bounding method cannot serve both.
+    // MUST match the shoelace handedness above: (x,z) treated as (x,y).
+    // Flipping these two terms makes every convex corner read as reflex —
+    // a rectangle came back with 4 reflex corners before this was corrected.
+    float crossy = din.x * dout.z - din.z * dout.x;
+    float dotv   = clamp(dot(-din, dout), -1.0, 1.0);
+    float interior = degrees(acos(dotv));
+    if (crossy < 0) interior = 360.0 - interior;
+
+    append(angle, interior);
+    append(convex, crossy > 0 ? 1 : -1);
+
+    // clamp the corner so it can never eat more than half of either adjacent
+    // edge. Without this a large BldCornerSize on a short wall produces
+    // overlapping corners and a wall of negative length - silently.
+    float lprev = length(cur - prev);
+    float lnext = length(next - cur);
+    append(ext, min(CORNER, min(lprev, lnext) * 0.5));
+}
+
+// ── emit: Corner k, then Wall k, alternating ─────────────────────────────────
+string COMPASS[] = {"WallFront", "WallRight", "WallBack", "WallLeft"};
+
+for (int i = 0; i < n; i++) {
+    vector prev = P[(i - 1 + n) % n];
+    vector cur  = P[i];
+    vector next = P[(i + 1) % n];
+    vector din  = normalize(cur - prev);
+    vector dout = normalize(next - cur);
+
+    vector cstart = cur - din * ext[i];        // where the corner begins
+    vector cend   = cur + dout * ext[i];       // where it ends
+
+    // --- corner prim (even slot) ---
+    int cp = addprim(0, "polyline");
+    if (ROUNDED && ext[i] > 1e-6) {
+        // quadratic arc through the vertex: cheap, and tangent to both walls
+        for (int s = 0; s <= ARCDIV; s++) {
+            float t = (float)s / (float)ARCDIV;
+            vector a = lerp(cstart, cur, t);
+            vector b = lerp(cur, cend, t);
+            addvertex(0, cp, addpoint(0, lerp(a, b, t)));
+        }
+    } else {
+        addvertex(0, cp, addpoint(0, cstart));
+        addvertex(0, cp, addpoint(0, cend));
+    }
+    setprimattrib(0, "name",          cp, sprintf("Corner_%02d", i + 1));
+    setprimattrib(0, "corner_index",  cp, i + 1);
+    setprimattrib(0, "corner_angle",  cp, angle[i]);
+    setprimattrib(0, "corner_convex", cp, convex[i]);
+    setprimattrib(0, "element",       cp, "corner");
+
+    // --- wall prim (odd slot) ---
+    int j = (i + 1) % n;
+    vector nprev = P[i];
+    vector ncur  = P[j];
+    vector ndin  = normalize(ncur - nprev);
+    vector wstart = cend;
+    vector wend   = ncur - ndin * ext[j];
+
+    int wp = addprim(0, "polyline");
+    addvertex(0, wp, addpoint(0, wstart));
+    addvertex(0, wp, addpoint(0, wend));
+    setprimattrib(0, "name",         wp, sprintf("Wall_%02d", i + 1));
+    setprimattrib(0, "wall_index",   wp, i + 1);
+    setprimattrib(0, "wall_length",  wp, length(wend - wstart));
+    setprimattrib(0, "element",      wp, "wall");
+
+    // Compass aliases exist ONLY for the 4-corner case, and only as a
+    // migration aid. They are emitted as groups, never as the name, because
+    // there is no "Front" on a 12-gon.
+    if (LEGACY && n == 4) {
+        setprimgroup(0, COMPASS[i % 4], wp, 1);
+        setprimgroup(0, sprintf("Corner_%02d", i + 1), cp, 1);
+    }
+    setprimgroup(0, sprintf("Wall_%02d", i + 1), wp, 1);
+    setprimgroup(0, sprintf("Corner_%02d", i + 1), cp, 1);
+}
+
+// detail attributes so a downstream tool can size its loops without recounting
+setdetailattrib(0, "footprint_corners", n, "set");
+setdetailattrib(0, "footprint_walls",   n, "set");
+setdetailattrib(0, "footprint_area",    area2 * 0.5, "set");
+
+// ── drop the source outline ──────────────────────────────────────────────────
+// A Detail wrangle passes its input through, so the original closed polygon
+// would survive alongside the emitted pieces — shifting every prim index by one
+// and breaking the "prim 2k is a corner" invariant the building tools rely on.
+// Its points are already read into P[], so removing it here is safe.
+// The 1 also deletes the points it leaves behind.
+removeprim(0, inprim, 1);
