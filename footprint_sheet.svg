@@ -1,0 +1,332 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1132" height="922"
+ viewBox="0 0 1132 922" font-family="ui-sans-serif,system-ui,Segoe UI,sans-serif">
+<style>
+  .bg{fill:#FAFAF8}
+  .wall{fill:none;stroke:#2F4B7C;stroke-width:2.6;stroke-linecap:round}
+  .corner{fill:none;stroke:#8A6A16;stroke-width:2.6;stroke-linecap:round}
+  .corner.reflex{stroke:#9C4A2F}
+  .cdot{fill:#8A6A16}
+  .cdot.reflexdot{fill:#9C4A2F}
+  .lbl{font-size:8.5px;fill:#2F4B7C;text-anchor:middle;font-weight:700}
+  .cmp{font-size:7.5px;fill:#5F656C;text-anchor:middle}
+  .origin{font-size:8.5px;fill:#1A1D21;font-weight:700}
+  .title{font-size:13px;font-weight:700;fill:#1A1D21}
+  .meta{font-size:10.5px;fill:#5F656C;font-family:ui-monospace,Consolas,monospace}
+  .h1{font-size:19px;font-weight:700;fill:#1A1D21}
+  .h2{font-size:12px;fill:#5F656C}
+  .key{font-size:11px}
+</style>
+<rect width="100%" height="100%" class="bg"/>
+<text x="30" y="38" class="h1">Footprint classification</text>
+<text x="30" y="58" class="h2">Emitted by footprint_classify.vex. +Z is up, as in a Houdini top view.
+Corner size 8. Default corners are true right angles; chamfer and fillet are opt-in.</text>
+<text x="30" y="86" class="key" fill="#2F4B7C">&#9644; wall</text>
+<text x="95" y="86" class="key" fill="#8A6A16">&#9644; convex corner</text>
+<text x="210" y="86" class="key" fill="#9C4A2F">&#9644; reflex corner</text>
+<text x="325" y="86" class="key" fill="#1A1D21">C01 = index origin (bbox minimum)</text>
+<polyline points="86.50,290.60 86.50,303.00 98.90,303.00" class="corner"/>
+<circle cx="86.5" cy="303.0" r="2.4" class="cdot"/>
+<text x="92.5" y="298.0" class="origin">C01</text>
+<polyline points="98.90,303.00 229.10,303.00" class="wall"/>
+<text x="164.0" y="299.0" class="lbl">W01</text>
+<text x="164.0" y="312.0" class="cmp">Back</text>
+<polyline points="229.10,303.00 241.50,303.00 241.50,290.60" class="corner"/>
+<circle cx="241.5" cy="303.0" r="2.4" class="cdot"/>
+<polyline points="241.50,290.60 241.50,222.40" class="wall"/>
+<text x="241.5" y="252.5" class="lbl">W02</text>
+<text x="241.5" y="265.5" class="cmp">Right</text>
+<polyline points="241.50,222.40 241.50,210.00 229.10,210.00" class="corner"/>
+<circle cx="241.5" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="229.10,210.00 98.90,210.00" class="wall"/>
+<text x="164.0" y="206.0" class="lbl">W03</text>
+<text x="164.0" y="219.0" class="cmp">Front</text>
+<polyline points="98.90,210.00 86.50,210.00 86.50,222.40" class="corner"/>
+<circle cx="86.5" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="86.50,222.40 86.50,290.60" class="wall"/>
+<text x="86.5" y="252.5" class="lbl">W04</text>
+<text x="86.5" y="265.5" class="cmp">Left</text>
+<text x="38" y="360" class="title">Rectangle</text>
+<text x="38" y="374" class="meta">4 corners · 4 walls · area 6000</text>
+<polyline points="354.50,352.60 354.50,365.00 366.90,365.00" class="corner"/>
+<circle cx="354.5" cy="365.0" r="2.4" class="cdot"/>
+<text x="360.5" y="360.0" class="origin">C01</text>
+<polyline points="366.90,365.00 497.10,365.00" class="wall"/>
+<text x="432.0" y="361.0" class="lbl">W01</text>
+<polyline points="497.10,365.00 509.50,365.00 509.50,352.60" class="corner"/>
+<circle cx="509.5" cy="365.0" r="2.4" class="cdot"/>
+<polyline points="509.50,352.60 509.50,315.40" class="wall"/>
+<text x="509.5" y="330.0" class="lbl">W02</text>
+<polyline points="509.50,315.40 509.50,303.00 497.10,303.00" class="corner"/>
+<circle cx="509.5" cy="303.0" r="2.4" class="cdot"/>
+<polyline points="497.10,303.00 428.90,303.00" class="wall"/>
+<text x="463.0" y="299.0" class="lbl">W03</text>
+<polyline points="428.90,303.00 416.50,303.00 416.50,290.60" class="corner reflex"/>
+<circle cx="416.5" cy="303.0" r="3.4" class="cdot reflexdot"/>
+<polyline points="416.50,290.60 416.50,222.40" class="wall"/>
+<text x="416.5" y="252.5" class="lbl">W04</text>
+<polyline points="416.50,222.40 416.50,210.00 404.10,210.00" class="corner"/>
+<circle cx="416.5" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="404.10,210.00 366.90,210.00" class="wall"/>
+<text x="385.5" y="206.0" class="lbl">W05</text>
+<polyline points="366.90,210.00 354.50,210.00 354.50,222.40" class="corner"/>
+<circle cx="354.5" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="354.50,222.40 354.50,352.60" class="wall"/>
+<text x="354.5" y="283.5" class="lbl">W06</text>
+<text x="306" y="360" class="title">L</text>
+<text x="306" y="374" class="meta">6 corners · 6 walls · area 6400</text>
+<polyline points="622.50,352.60 622.50,365.00 634.90,365.00" class="corner"/>
+<circle cx="622.5" cy="365.0" r="2.4" class="cdot"/>
+<text x="628.5" y="360.0" class="origin">C01</text>
+<polyline points="634.90,365.00 765.10,365.00" class="wall"/>
+<text x="700.0" y="361.0" class="lbl">W01</text>
+<polyline points="765.10,365.00 777.50,365.00 777.50,352.60" class="corner"/>
+<circle cx="777.5" cy="365.0" r="2.4" class="cdot"/>
+<polyline points="777.50,352.60 777.50,222.40" class="wall"/>
+<text x="777.5" y="283.5" class="lbl">W02</text>
+<polyline points="777.50,222.40 777.50,210.00 765.10,210.00" class="corner"/>
+<circle cx="777.5" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="765.10,210.00 743.40,210.00" class="wall"/>
+<text x="754.2" y="206.0" class="lbl">W03</text>
+<polyline points="743.40,210.00 731.00,210.00 731.00,222.40" class="corner"/>
+<circle cx="731.0" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="731.00,222.40 731.00,290.60" class="wall"/>
+<text x="731.0" y="252.5" class="lbl">W04</text>
+<polyline points="731.00,290.60 731.00,303.00 718.60,303.00" class="corner reflex"/>
+<circle cx="731.0" cy="303.0" r="3.4" class="cdot reflexdot"/>
+<polyline points="718.60,303.00 681.40,303.00" class="wall"/>
+<text x="700.0" y="299.0" class="lbl">W05</text>
+<polyline points="681.40,303.00 669.00,303.00 669.00,290.60" class="corner reflex"/>
+<circle cx="669.0" cy="303.0" r="3.4" class="cdot reflexdot"/>
+<polyline points="669.00,290.60 669.00,222.40" class="wall"/>
+<text x="669.0" y="252.5" class="lbl">W06</text>
+<polyline points="669.00,222.40 669.00,210.00 656.60,210.00" class="corner"/>
+<circle cx="669.0" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="656.60,210.00 634.90,210.00" class="wall"/>
+<text x="645.8" y="206.0" class="lbl">W07</text>
+<polyline points="634.90,210.00 622.50,210.00 622.50,222.40" class="corner"/>
+<circle cx="622.5" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="622.50,222.40 622.50,352.60" class="wall"/>
+<text x="622.5" y="283.5" class="lbl">W08</text>
+<text x="574" y="360" class="title">U</text>
+<text x="574" y="374" class="meta">8 corners · 8 walls · area 7600</text>
+<polyline points="890.50,352.60 890.50,365.00 902.90,365.00" class="corner"/>
+<circle cx="890.5" cy="365.0" r="2.4" class="cdot"/>
+<text x="896.5" y="360.0" class="origin">C01</text>
+<polyline points="902.90,365.00 1033.10,365.00" class="wall"/>
+<text x="968.0" y="361.0" class="lbl">W01</text>
+<polyline points="1033.10,365.00 1045.50,365.00 1045.50,352.60" class="corner"/>
+<circle cx="1045.5" cy="365.0" r="2.4" class="cdot"/>
+<polyline points="1045.50,352.60 1045.50,330.90" class="wall"/>
+<text x="1045.5" y="337.8" class="lbl">W02</text>
+<polyline points="1045.50,330.90 1045.50,318.50 1033.10,318.50" class="corner"/>
+<circle cx="1045.5" cy="318.5" r="2.4" class="cdot"/>
+<polyline points="1033.10,318.50 1003.65,318.50" class="wall"/>
+<text x="1018.4" y="314.5" class="lbl">W03</text>
+<polyline points="1003.65,318.50 991.25,318.50 991.25,306.10" class="corner reflex"/>
+<circle cx="991.2" cy="318.5" r="3.4" class="cdot reflexdot"/>
+<polyline points="991.25,306.10 991.25,222.40" class="wall"/>
+<text x="991.2" y="260.2" class="lbl">W04</text>
+<polyline points="991.25,222.40 991.25,210.00 978.85,210.00" class="corner"/>
+<circle cx="991.2" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="978.85,210.00 957.15,210.00" class="wall"/>
+<text x="968.0" y="206.0" class="lbl">W05</text>
+<polyline points="957.15,210.00 944.75,210.00 944.75,222.40" class="corner"/>
+<circle cx="944.8" cy="210.0" r="2.4" class="cdot"/>
+<polyline points="944.75,222.40 944.75,306.10" class="wall"/>
+<text x="944.8" y="260.2" class="lbl">W06</text>
+<polyline points="944.75,306.10 944.75,318.50 932.35,318.50" class="corner reflex"/>
+<circle cx="944.8" cy="318.5" r="3.4" class="cdot reflexdot"/>
+<polyline points="932.35,318.50 902.90,318.50" class="wall"/>
+<text x="917.6" y="314.5" class="lbl">W07</text>
+<polyline points="902.90,318.50 890.50,318.50 890.50,330.90" class="corner"/>
+<circle cx="890.5" cy="318.5" r="2.4" class="cdot"/>
+<polyline points="890.50,330.90 890.50,352.60" class="wall"/>
+<text x="890.5" y="337.8" class="lbl">W08</text>
+<text x="842" y="360" class="title">T</text>
+<text x="842" y="374" class="meta">8 corners · 8 walls · area 5100</text>
+<polyline points="133.00,620.60 133.00,633.00 145.40,633.00" class="corner"/>
+<circle cx="133.0" cy="633.0" r="2.4" class="cdot"/>
+<text x="139.0" y="628.0" class="origin">C01</text>
+<polyline points="145.40,633.00 182.60,633.00" class="wall"/>
+<text x="164.0" y="629.0" class="lbl">W01</text>
+<polyline points="182.60,633.00 195.00,633.00 195.00,620.60" class="corner"/>
+<circle cx="195.0" cy="633.0" r="2.4" class="cdot"/>
+<polyline points="195.00,620.60 195.00,598.90" class="wall"/>
+<text x="195.0" y="605.8" class="lbl">W02</text>
+<polyline points="195.00,598.90 195.00,586.50 207.40,586.50" class="corner reflex"/>
+<circle cx="195.0" cy="586.5" r="3.4" class="cdot reflexdot"/>
+<polyline points="207.40,586.50 229.10,586.50" class="wall"/>
+<text x="218.2" y="582.5" class="lbl">W03</text>
+<polyline points="229.10,586.50 241.50,586.50 241.50,574.10" class="corner"/>
+<circle cx="241.5" cy="586.5" r="2.4" class="cdot"/>
+<polyline points="241.50,574.10 241.50,536.90" class="wall"/>
+<text x="241.5" y="551.5" class="lbl">W04</text>
+<polyline points="241.50,536.90 241.50,524.50 229.10,524.50" class="corner"/>
+<circle cx="241.5" cy="524.5" r="2.4" class="cdot"/>
+<polyline points="229.10,524.50 207.40,524.50" class="wall"/>
+<text x="218.2" y="520.5" class="lbl">W05</text>
+<polyline points="207.40,524.50 195.00,524.50 195.00,512.10" class="corner reflex"/>
+<circle cx="195.0" cy="524.5" r="3.4" class="cdot reflexdot"/>
+<polyline points="195.00,512.10 195.00,490.40" class="wall"/>
+<text x="195.0" y="497.2" class="lbl">W06</text>
+<polyline points="195.00,490.40 195.00,478.00 182.60,478.00" class="corner"/>
+<circle cx="195.0" cy="478.0" r="2.4" class="cdot"/>
+<polyline points="182.60,478.00 145.40,478.00" class="wall"/>
+<text x="164.0" y="474.0" class="lbl">W07</text>
+<polyline points="145.40,478.00 133.00,478.00 133.00,490.40" class="corner"/>
+<circle cx="133.0" cy="478.0" r="2.4" class="cdot"/>
+<polyline points="133.00,490.40 133.00,512.10" class="wall"/>
+<text x="133.0" y="497.2" class="lbl">W08</text>
+<polyline points="133.00,512.10 133.00,524.50 120.60,524.50" class="corner reflex"/>
+<circle cx="133.0" cy="524.5" r="3.4" class="cdot reflexdot"/>
+<polyline points="120.60,524.50 98.90,524.50" class="wall"/>
+<text x="109.8" y="520.5" class="lbl">W09</text>
+<polyline points="98.90,524.50 86.50,524.50 86.50,536.90" class="corner"/>
+<circle cx="86.5" cy="524.5" r="2.4" class="cdot"/>
+<polyline points="86.50,536.90 86.50,574.10" class="wall"/>
+<text x="86.5" y="551.5" class="lbl">W10</text>
+<polyline points="86.50,574.10 86.50,586.50 98.90,586.50" class="corner"/>
+<circle cx="86.5" cy="586.5" r="2.4" class="cdot"/>
+<polyline points="98.90,586.50 120.60,586.50" class="wall"/>
+<text x="109.8" y="582.5" class="lbl">W11</text>
+<polyline points="120.60,586.50 133.00,586.50 133.00,598.90" class="corner reflex"/>
+<circle cx="133.0" cy="586.5" r="3.4" class="cdot reflexdot"/>
+<polyline points="133.00,598.90 133.00,620.60" class="wall"/>
+<text x="133.0" y="605.8" class="lbl">W12</text>
+<text x="38" y="628" class="title">Cross</text>
+<text x="38" y="642" class="meta">12 corners · 12 walls · area 6400</text>
+<polyline points="392.23,624.23 401.00,633.00 413.40,633.00" class="corner"/>
+<circle cx="401.0" cy="633.0" r="2.4" class="cdot"/>
+<text x="407.0" y="628.0" class="origin">C01</text>
+<polyline points="413.40,633.00 450.60,633.00" class="wall"/>
+<text x="432.0" y="629.0" class="lbl">W01</text>
+<polyline points="450.60,633.00 463.00,633.00 471.77,624.23" class="corner"/>
+<circle cx="463.0" cy="633.0" r="2.4" class="cdot"/>
+<polyline points="471.77,624.23 500.73,595.27" class="wall"/>
+<text x="486.2" y="605.8" class="lbl">W02</text>
+<polyline points="500.73,595.27 509.50,586.50 509.50,574.10" class="corner"/>
+<circle cx="509.5" cy="586.5" r="2.4" class="cdot"/>
+<polyline points="509.50,574.10 509.50,536.90" class="wall"/>
+<text x="509.5" y="551.5" class="lbl">W03</text>
+<polyline points="509.50,536.90 509.50,524.50 500.73,515.73" class="corner"/>
+<circle cx="509.5" cy="524.5" r="2.4" class="cdot"/>
+<polyline points="500.73,515.73 471.77,486.77" class="wall"/>
+<text x="486.2" y="497.2" class="lbl">W04</text>
+<polyline points="471.77,486.77 463.00,478.00 450.60,478.00" class="corner"/>
+<circle cx="463.0" cy="478.0" r="2.4" class="cdot"/>
+<polyline points="450.60,478.00 413.40,478.00" class="wall"/>
+<text x="432.0" y="474.0" class="lbl">W05</text>
+<polyline points="413.40,478.00 401.00,478.00 392.23,486.77" class="corner"/>
+<circle cx="401.0" cy="478.0" r="2.4" class="cdot"/>
+<polyline points="392.23,486.77 363.27,515.73" class="wall"/>
+<text x="377.7" y="497.2" class="lbl">W06</text>
+<polyline points="363.27,515.73 354.50,524.50 354.50,536.90" class="corner"/>
+<circle cx="354.5" cy="524.5" r="2.4" class="cdot"/>
+<polyline points="354.50,536.90 354.50,574.10" class="wall"/>
+<text x="354.5" y="551.5" class="lbl">W07</text>
+<polyline points="354.50,574.10 354.50,586.50 363.27,595.27" class="corner"/>
+<circle cx="354.5" cy="586.5" r="2.4" class="cdot"/>
+<polyline points="363.27,595.27 392.23,624.23" class="wall"/>
+<text x="377.7" y="605.8" class="lbl">W08</text>
+<text x="306" y="628" class="title">Octagon</text>
+<text x="306" y="642" class="meta">8 corners · 8 walls · area 8200</text>
+<polyline points="622.50,558.60 634.90,571.00" class="corner"/>
+<circle cx="628.7" cy="564.8" r="2.4" class="cdot"/>
+<text x="634.7" y="559.8" class="origin">C01</text>
+<polyline points="634.90,571.00 765.10,571.00" class="wall"/>
+<text x="700.0" y="567.0" class="lbl">W01</text>
+<text x="700.0" y="580.0" class="cmp">Back</text>
+<polyline points="765.10,571.00 777.50,558.60" class="corner"/>
+<circle cx="771.3" cy="564.8" r="2.4" class="cdot"/>
+<polyline points="777.50,558.60 777.50,490.40" class="wall"/>
+<text x="777.5" y="520.5" class="lbl">W02</text>
+<text x="777.5" y="533.5" class="cmp">Right</text>
+<polyline points="777.50,490.40 765.10,478.00" class="corner"/>
+<circle cx="771.3" cy="484.2" r="2.4" class="cdot"/>
+<polyline points="765.10,478.00 634.90,478.00" class="wall"/>
+<text x="700.0" y="474.0" class="lbl">W03</text>
+<text x="700.0" y="487.0" class="cmp">Front</text>
+<polyline points="634.90,478.00 622.50,490.40" class="corner"/>
+<circle cx="628.7" cy="484.2" r="2.4" class="cdot"/>
+<polyline points="622.50,490.40 622.50,558.60" class="wall"/>
+<text x="622.5" y="520.5" class="lbl">W04</text>
+<text x="622.5" y="533.5" class="cmp">Left</text>
+<text x="574" y="628" class="title">Rectangle - chamfered</text>
+<text x="574" y="642" class="meta">4 corners · 4 walls · area 5872</text>
+<polyline points="890.50,558.60 890.56,559.82 890.74,561.02 891.03,562.20 891.44,563.35 891.96,564.45 892.59,565.49 893.31,566.47 894.13,567.37 895.03,568.19 896.01,568.91 897.05,569.54 898.15,570.06 899.30,570.47 900.48,570.76 901.68,570.94 902.90,571.00" class="corner"/>
+<circle cx="894.1" cy="567.4" r="2.4" class="cdot"/>
+<text x="900.1" y="562.4" class="origin">C01</text>
+<polyline points="902.90,571.00 1033.10,571.00" class="wall"/>
+<text x="968.0" y="567.0" class="lbl">W01</text>
+<text x="968.0" y="580.0" class="cmp">Back</text>
+<polyline points="1033.10,571.00 1034.32,570.94 1035.52,570.76 1036.70,570.47 1037.85,570.06 1038.95,569.54 1039.99,568.91 1040.97,568.19 1041.87,567.37 1042.69,566.47 1043.41,565.49 1044.04,564.45 1044.56,563.35 1044.97,562.20 1045.26,561.02 1045.44,559.82 1045.50,558.60" class="corner"/>
+<circle cx="1041.9" cy="567.4" r="2.4" class="cdot"/>
+<polyline points="1045.50,558.60 1045.50,490.40" class="wall"/>
+<text x="1045.5" y="520.5" class="lbl">W02</text>
+<text x="1045.5" y="533.5" class="cmp">Right</text>
+<polyline points="1045.50,490.40 1045.44,489.18 1045.26,487.98 1044.97,486.80 1044.56,485.65 1044.04,484.55 1043.41,483.51 1042.69,482.53 1041.87,481.63 1040.97,480.81 1039.99,480.09 1038.95,479.46 1037.85,478.94 1036.70,478.53 1035.52,478.24 1034.32,478.06 1033.10,478.00" class="corner"/>
+<circle cx="1041.9" cy="481.6" r="2.4" class="cdot"/>
+<polyline points="1033.10,478.00 902.90,478.00" class="wall"/>
+<text x="968.0" y="474.0" class="lbl">W03</text>
+<text x="968.0" y="487.0" class="cmp">Front</text>
+<polyline points="902.90,478.00 901.68,478.06 900.48,478.24 899.30,478.53 898.15,478.94 897.05,479.46 896.01,480.09 895.03,480.81 894.13,481.63 893.31,482.53 892.59,483.51 891.96,484.55 891.44,485.65 891.03,486.80 890.74,487.98 890.56,489.18 890.50,490.40" class="corner"/>
+<circle cx="894.1" cy="481.6" r="2.4" class="cdot"/>
+<polyline points="890.50,490.40 890.50,558.60" class="wall"/>
+<text x="890.5" y="520.5" class="lbl">W04</text>
+<text x="890.5" y="533.5" class="cmp">Left</text>
+<text x="842" y="628" class="title">Rectangle - filleted</text>
+<text x="842" y="642" class="meta">4 corners · 4 walls · area 5945</text>
+<polyline points="86.50,888.60 98.90,901.00" class="corner"/>
+<circle cx="92.7" cy="894.8" r="2.4" class="cdot"/>
+<text x="98.7" y="889.8" class="origin">C01</text>
+<polyline points="98.90,901.00 229.10,901.00" class="wall"/>
+<text x="164.0" y="897.0" class="lbl">W01</text>
+<polyline points="229.10,901.00 241.50,888.60" class="corner"/>
+<circle cx="235.3" cy="894.8" r="2.4" class="cdot"/>
+<polyline points="241.50,888.60 241.50,851.40" class="wall"/>
+<text x="241.5" y="866.0" class="lbl">W02</text>
+<polyline points="241.50,851.40 229.10,839.00" class="corner"/>
+<circle cx="235.3" cy="845.2" r="2.4" class="cdot"/>
+<polyline points="229.10,839.00 160.90,839.00" class="wall"/>
+<text x="195.0" y="835.0" class="lbl">W03</text>
+<polyline points="160.90,839.00 148.50,826.60" class="corner reflex"/>
+<circle cx="154.7" cy="832.8" r="3.4" class="cdot reflexdot"/>
+<polyline points="148.50,826.60 148.50,758.40" class="wall"/>
+<text x="148.5" y="788.5" class="lbl">W04</text>
+<polyline points="148.50,758.40 136.10,746.00" class="corner"/>
+<circle cx="142.3" cy="752.2" r="2.4" class="cdot"/>
+<polyline points="136.10,746.00 98.90,746.00" class="wall"/>
+<text x="117.5" y="742.0" class="lbl">W05</text>
+<polyline points="98.90,746.00 86.50,758.40" class="corner"/>
+<circle cx="92.7" cy="752.2" r="2.4" class="cdot"/>
+<polyline points="86.50,758.40 86.50,888.60" class="wall"/>
+<text x="86.5" y="819.5" class="lbl">W06</text>
+<text x="38" y="896" class="title">L - chamfered</text>
+<text x="38" y="910" class="meta">6 corners · 6 walls · area 6272</text>
+<polyline points="354.50,888.60 354.56,889.82 354.74,891.02 355.03,892.20 355.44,893.35 355.96,894.45 356.59,895.49 357.31,896.47 358.13,897.37 359.03,898.19 360.01,898.91 361.05,899.54 362.15,900.06 363.30,900.47 364.48,900.76 365.68,900.94 366.90,901.00" class="corner"/>
+<circle cx="358.1" cy="897.4" r="2.4" class="cdot"/>
+<text x="364.1" y="892.4" class="origin">C01</text>
+<polyline points="366.90,901.00 497.10,901.00" class="wall"/>
+<text x="432.0" y="897.0" class="lbl">W01</text>
+<polyline points="497.10,901.00 498.32,900.94 499.52,900.76 500.70,900.47 501.85,900.06 502.95,899.54 503.99,898.91 504.97,898.19 505.87,897.37 506.69,896.47 507.41,895.49 508.04,894.45 508.56,893.35 508.97,892.20 509.26,891.02 509.44,889.82 509.50,888.60" class="corner"/>
+<circle cx="505.9" cy="897.4" r="2.4" class="cdot"/>
+<polyline points="509.50,888.60 509.50,851.40" class="wall"/>
+<text x="509.5" y="866.0" class="lbl">W02</text>
+<polyline points="509.50,851.40 509.44,850.18 509.26,848.98 508.97,847.80 508.56,846.65 508.04,845.55 507.41,844.51 506.69,843.53 505.87,842.63 504.97,841.81 503.99,841.09 502.95,840.46 501.85,839.94 500.70,839.53 499.52,839.24 498.32,839.06 497.10,839.00" class="corner"/>
+<circle cx="505.9" cy="842.6" r="2.4" class="cdot"/>
+<polyline points="497.10,839.00 428.90,839.00" class="wall"/>
+<text x="463.0" y="835.0" class="lbl">W03</text>
+<polyline points="429.00,839.10 428.13,838.23 427.25,837.35 426.58,836.77 425.80,836.00 425.03,835.12 424.35,834.54 423.48,833.58 422.70,832.80 421.83,832.02 420.96,831.15 420.38,830.48 419.50,829.70 418.73,828.83 418.15,828.25 417.28,827.38 416.40,826.50" class="corner reflex"/>
+<circle cx="422.7" cy="832.8" r="3.4" class="cdot reflexdot"/>
+<polyline points="416.50,826.60 416.50,758.40" class="wall"/>
+<text x="416.5" y="788.5" class="lbl">W04</text>
+<polyline points="416.50,758.40 416.44,757.18 416.26,755.98 415.97,754.80 415.56,753.65 415.04,752.55 414.41,751.51 413.69,750.53 412.87,749.63 411.97,748.81 410.99,748.09 409.95,747.46 408.85,746.94 407.70,746.53 406.52,746.24 405.32,746.06 404.10,746.00" class="corner"/>
+<circle cx="412.9" cy="749.6" r="2.4" class="cdot"/>
+<polyline points="404.10,746.00 366.90,746.00" class="wall"/>
+<text x="385.5" y="742.0" class="lbl">W05</text>
+<polyline points="366.90,746.00 365.68,746.06 364.48,746.24 363.30,746.53 362.15,746.94 361.05,747.46 360.01,748.09 359.03,748.81 358.13,749.63 357.31,750.53 356.59,751.51 355.96,752.55 355.44,753.65 355.03,754.80 354.74,755.98 354.56,757.18 354.50,758.40" class="corner"/>
+<circle cx="358.1" cy="749.6" r="2.4" class="cdot"/>
+<polyline points="354.50,758.40 354.50,888.60" class="wall"/>
+<text x="354.5" y="819.5" class="lbl">W06</text>
+<text x="306" y="896" class="title">L - filleted</text>
+<text x="306" y="910" class="meta">6 corners · 6 walls · area 6363</text></svg>

@@ -220,6 +220,39 @@ Corner_01 … Corner_NN    one per vertex
 - With `LegacyGroupNames` on, the three shipping shapes produce a **superset** of today's
   groups with identical membership.
 
+## 6c. PHASE 2 FINDINGS — measured 2026-08-15, and they correct earlier claims
+
+Ground truth read per-prim from the shipping tool at W=D=100, `BldCornerSize` 0.5:
+
+| Shape | Prims that chain end→start | Malformed pieces |
+|---|---|---|
+| Rectangular | **8 of 8 chain** | none — every corner spans 0.71 |
+| L | **0 of 12 chain** | **`Corner_01` spans 140.71**, a diagonal across the footprint |
+| Rounded Corner | **0 of 10 chain** | `arc` spans 56.57 = 40·√2 — a quarter arc |
+
+### ⛔ Three corrections to earlier claims in this document
+1. **"`arc` is the 5th WALL" — WRONG.** Its chord is 40·√2, i.e. a quarter arc of
+   radius 40 across the north-east corner. It is geometrically a **corner** occupying a wall
+   slot. The claim was inferred from prim parity alone without checking geometry.
+2. **"A rename onto a structure that already holds" — OVERSTATED.** The alternation holds
+   *positionally*; geometrically the L and Rounded shapes are partly malformed. So parity
+   against the baseline must fail in enumerated places, and each failure has to be classified
+   **preserve** or **fix** deliberately.
+3. **"The rectangle winds CW while L and Rounded wind CCW" — only supported for Rounded.**
+   The baseline's `signed_area_xz` walks points in point order, which is a perimeter walk only
+   if the prims chain. Measured: the rectangle's 56 steps are all 9.20 (a clean walk, area
+   valid) but the L's 84 steps include **two jumps of 96.0**, so its area figure — and the
+   winding conclusion drawn from it — is unfounded. ⚠ **Fix `footprint_baseline.py` to compute
+   area per chained run, not over raw point order.**
+
+### ⭐ NEW DEFECTS FOUND IN THE SHIPPING TOOL
+- **`Corner_01` of the L is malformed** — 140.71 units instead of 0.71.
+- **`BuildingWidth` / `BuildingDepth` mean different things per shape.** At W=D=100 the
+  rectangle measures 100×100 but **the L measures 149.5×149.5**. Switching shape silently
+  changes the building's size for identical parameters.
+- **Only the rectangle is a connected walk.** The L and Rounded emit disconnected prims in
+  arbitrary order, so anything downstream that assumes perimeter order is already wrong.
+
 ## 7. Honest risks
 
 - ✅ **DECIDED (Jordan, 8/15): fix the names and standardise.** See §6b. The risk moves from
