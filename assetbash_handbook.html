@@ -161,6 +161,7 @@ td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
   <a href="#system">The design system</a>
   <a href="#board">Where we are</a>
   <a href="#work">Workstreams</a>
+  <a href="#research">Research</a>
   <a href="#decisions">Open decisions</a>
   <a href="#method">How we work</a>
   <a href="#docs">The documents</a>
@@ -411,6 +412,102 @@ pieces</em>. Of 406 distinct values, 234 are packing keys. Hence
 <dt>Note</dt><dd>Zone names become USD prim names and Unreal component names, so
 renaming one is a breaking change.</dd>
 </dl>
+</div>
+
+<h2 id="research">Research</h2>
+<p class="lede">The tools are only as good as what they know. These are the
+standing research efforts — each one exists to turn something architects know
+into something a system can compute.</p>
+
+<p>All three run as <strong>persistent agents</strong> with their own briefs, so
+a question asked twice gets answered the same way. Every one is held to the same
+rule: <strong>a figure that was recalled rather than read from a source is marked
+unverified.</strong> That is not caution for its own sake — a fabricated
+"verbatim" code quotation was produced and caught during the roof work, and the
+marking is what caught it.</p>
+
+<div class="ws">
+<div class="hd"><h4>Roof typology, geometry and code</h4><span class="pill done">delivered</span></div>
+<p>2,159 lines, with a companion script that reproduces every derived figure —
+so the numbers can be re-run rather than trusted.</p>
+<dl>
+<dt>Question</dt><dd>Which roofs can be generated from a plan outline alone, and
+what does each of the others need?</dd>
+<dt>Answer</dt><dd>Four operators span eighteen named forms;
+<code>SKELETON</code> absorbs fourteen with no branching. Eight forms come from
+the outline alone, six need one scalar, and three — sawtooth, folded plate and
+every dormer — are not footprint problems at all.</dd>
+<dt>Also found</dt><dd><strong>NYC ZR 23-421 is a straight-skeleton envelope
+written into law.</strong> And the three cities reward pitch in mutually
+incompatible ways, which yields three distinguishable skylines from one line of
+policy each.</dd>
+<dt>⚠ Unverified</dt><dd>ASCE 7 primary text (paywalled), all NYC Building Code
+text beyond a secondary publisher, and ZR 33-42 entirely.</dd>
+<dt>Where</dt><dd><code>research/roof_typology_and_math.md</code> ·
+<code>roof_math_check.py</code> · summarised in <a
+href="https://claude.ai/code/artifact/690225b0-0e91-4cf9-a6bd-f11e766934c9">Architectural
+Plans</a></dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Building plans — houses, commercial, towers</h4><span class="pill active">in progress</span></div>
+<p>The most ambitious brief so far, and the one that decides whether this becomes
+a building generator or an architectural simulator.</p>
+<dl>
+<dt>Question</dt><dd>What actually organises a plan — and what would it take to
+generate one that reads as designed rather than extruded?</dd>
+<dt>Two halves</dt><dd><strong>The regularities</strong> — column grids and why
+parking so often sets the grid for everything above, core-to-perimeter lease
+span, floor plate efficiency, and egress as plan topology. <strong>And the
+architects who break them knowingly</strong> — MAD, OMA/Koolhaas, Morphosis, and
+Le Corbusier's Five Points.</dd>
+<dt>⭐ The key idea</dt><dd><strong>The free plan.</strong> Once structure is
+separated from enclosure, partitions are no longer bound to the structural grid
+— which is exactly the separation a procedural system needs between
+<em>frame</em> and <em>infill</em>.</dd>
+<dt>The classical root</dt><dd>Vitruvius, the Roman domus and the basilica. Not
+history: the Palladian shape grammar is Palladio formalised and Palladio is
+Vitruvius received, so the oldest material connects directly to the most
+computational. <em>Symmetria</em> sizes a building from one module by ratio — a
+parametric system written in the first century BC, and the same move Corbusier
+makes with the Modulor.</dd>
+<dt>Where</dt><dd><code>research/building_plans.md</code></dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Footprints and the classification layer</h4><span class="pill done">delivered</span></div>
+<dl>
+<dt>Question</dt><dd>Why does adding one footprint shape cost a whole network?</dd>
+<dt>Answer</dt><dd>Because corners and walls were named by hand, so the node
+count scaled with edge count. Measuring turn angle and convexity per vertex
+produces the same structure for any polygon — and the same layer feeds the roof
+work, since <code>w = cot θ</code> makes per-edge pitch a per-edge weight.</dd>
+<dt>Where</dt><dd><code>research/footprint_plan.md</code></dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Moulding profiles — the WM chart</h4><span class="pill active">catalog pending</span></div>
+<dl>
+<dt>Finding</dt><dd><strong>130 distinct profiles carrying roughly 200 codes</strong>
+— several codes share a silhouette at different sizes, so shape and dimensions
+are separate columns. That is the catalog pattern in miniature.</dd>
+<dt>Status</dt><dd>Jordan vectorised the chart, which replaced approximations
+read off a printed picture. The traced paths are all closed single subpaths with
+their curves intact, so each is directly usable as a sweep profile.</dd>
+<dt>Open</dt><dd>Mapping the 130 shapes to their WM codes, and deciding the split
+between traced profiles and parametric ones — the same split as the sign
+library: mostly parametric, a few traced.</dd>
+</dl>
+</div>
+
+<div class="card brass">
+<h4>Papers worth requesting</h4>
+<p>The plan research is assembling a citation list for anything paywalled, so it
+can be pulled through USC. Shape grammars, space syntax, and the learned
+plan-generation literature are the three seams most likely to need it.</p>
 </div>
 
 <h2 id="decisions">Open decisions</h2>
