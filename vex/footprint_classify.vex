@@ -217,7 +217,21 @@ for (int i = 0; i < n; i++) {
     } else {
         t = CORNER;
     }
-    append(ext, cvx == 0 ? 0.0 : min(t, min(lprev, lnext) * 0.5));
+    // ⚠ CLAMP SO A WALL ALWAYS SURVIVES, and warn rather than error.
+    // 18 of the 162 baseline cases are degenerate — e.g. width 40 with corner
+    // size 25 gives a nominal wall of -10 — and the shipping tool emits a wall
+    // running BACKWARDS along the perimeter there. Erroring instead would be a
+    // regression from the artist's side: a red node where the old tool made
+    // something. Clamping to leave MINWALL on every edge means the geometry is
+    // always valid, and the warning says why the corner stopped growing.
+    // Each vertex clamps to half of (its shortest edge - MINWALL), so the two
+    // corners sharing an edge can never together exceed it.
+    float room = 0.5 * (min(lprev, lnext) - MINWALL);
+    float e = cvx == 0 ? 0.0 : min(t, max(room, 0.0));
+    if (cvx != 0 && t > room + EPS) {
+        warning("Corner %d clamped from %g to %g: the corner cannot consume more than half its shortest adjoining wall (%g).", i + 1, t, e, min(lprev, lnext));
+    }
+    append(ext, e);
 
     // per-corner style. A `corner_style` point attribute on the input outline
     // overrides the global — which is what lets ONE shape mix right angles with
@@ -308,8 +322,9 @@ for (int i = 0; i < n; i++) {
     vector wstart = (ext[i] > EPS) ? cend : cur;
     vector wend   = (ext[j] > EPS) ? P[j] - ndin * ext[j] : P[j];
     float  wlen   = length(wend - wstart);
-    if (wlen < MINWALL) {
-        error("Wall %d collapses to zero length: Building Corner Size (%g) consumes the whole wall. Reduce it, or the corner count and the Corner_k/Wall_k relation stop matching.", i + 1, CORNER);
+    if (wlen < MINWALL * 0.5) {
+        // should be unreachable given the clamp above; kept as a tripwire
+        error("Wall %d collapsed to %g despite the corner clamp — the clamp is wrong, not the input.", i + 1, wlen);
     }
 
     int wp = addprim(0, "polyline");

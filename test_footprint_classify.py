@@ -322,11 +322,8 @@ def main():
         ("non-planar",   dict(pts=SHAPES["Rectangle"][0], y_of={2: 40.0})),
         ("two prims",    dict(pts=SHAPES["Rectangle"][0], twice=True)),
         ("open polyline",dict(pts=SHAPES["Rectangle"][0], closed=False)),
-        ("corner>wall",  dict(pts=SHAPES["Rectangle"][0])),
     ]
     for label, kw in cases:
-        if label == "corner>wall":
-            sub.parm("BldCornerSize").set(1000.0)
         feed(sub, kw.pop("pts"), **kw)
         geo, err = run(label)
         if err:
@@ -336,6 +333,24 @@ def main():
             print("%-14s ACCEPTED SILENTLY — %d prims emitted   <-- defect" % (label, n))
             fails += 1
         sub.parm("BldCornerSize").set(4.0)
+
+    # an oversized corner must be CLAMPED, not rejected: the shipping tool
+    # produces (broken) geometry there, so erroring would be a regression.
+    print("")
+    print("── oversized corner: clamps, warns, still valid " + "─" * 18)
+    sub.parm("BldCornerSize").set(1000.0)
+    feed(sub, SHAPES["Rectangle"][0])
+    geo, err = run("corner>wall")
+    if err:
+        print("corner>wall   REJECTED (should clamp): %s" % err[:44]); fails += 1
+    else:
+        walls = [p for p in geo.prims() if p.attribValue("element") == "wall"]
+        short = min(p.attribValue("wall_length") for p in walls) if walls else 0
+        ok = len(geo.prims()) == 8 and short > 0
+        print("corner>wall   %d prims, shortest wall %.4f  %s"
+              % (len(geo.prims()), short, "ok" if ok else "FAIL"))
+        fails += 0 if ok else 1
+    sub.parm("BldCornerSize").set(4.0)
 
     # collinear is ACCEPTED and must be classified as collinear — a straight
     # vertex is legal input from any resampled curve, so erroring would be
