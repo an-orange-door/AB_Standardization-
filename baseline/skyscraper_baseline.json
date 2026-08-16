@@ -1,0 +1,325 @@
+{
+ "target": "AB::SkyscraperGenerator::2.1",
+ "cases": {
+  "None|100.0|100.0|4.0": {
+   "npoints": 85212,
+   "nprims": 39588,
+   "nverts": 158212,
+   "bbox": [
+    -50.0,
+    -0.0,
+    -50.0,
+    50.0,
+    301.05,
+    50.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 5716,
+    "WinWallBase": 4287,
+    "WinWallSideL": 4287,
+    "WinWallSideR": 4287,
+    "WinWallTop": 4287,
+    "WindowsLitBase": 236
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "eb585edadbb715f9d07404205978ad335e683787"
+  },
+  "None|100.0|100.0|12.0": {
+   "npoints": 85212,
+   "nprims": 39588,
+   "nverts": 158212,
+   "bbox": [
+    -50.0,
+    -0.0,
+    -50.0,
+    50.0,
+    301.05,
+    50.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 5716,
+    "WinWallBase": 4287,
+    "WinWallSideL": 4287,
+    "WinWallSideR": 4287,
+    "WinWallTop": 4287,
+    "WindowsLitBase": 236
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "eb585edadbb715f9d07404205978ad335e683787"
+  },
+  "None|100.0|140.0|4.0": {
+   "npoints": 103180,
+   "nprims": 46269,
+   "nverts": 184928,
+   "bbox": [
+    -50.0,
+    -0.0,
+    -70.0,
+    50.0,
+    301.05,
+    70.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 7152,
+    "WinWallBase": 5364,
+    "WinWallSideL": 5364,
+    "WinWallSideR": 5364,
+    "WinWallTop": 5364,
+    "WindowsLitBase": 294
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "7ba67137b7597e9b4fbc61226135abbeba150d00"
+  },
+  "None|100.0|140.0|12.0": {
+   "npoints": 103180,
+   "nprims": 46269,
+   "nverts": 184928,
+   "bbox": [
+    -50.0,
+    -0.0,
+    -70.0,
+    50.0,
+    301.05,
+    70.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 7152,
+    "WinWallBase": 5364,
+    "WinWallSideL": 5364,
+    "WinWallSideR": 5364,
+    "WinWallTop": 5364,
+    "WindowsLitBase": 294
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "7ba67137b7597e9b4fbc61226135abbeba150d00"
+  },
+  "None|60.0|100.0|4.0": {
+   "npoints": 60108,
+   "nprims": 25895,
+   "nverts": 103512,
+   "bbox": [
+    -30.0,
+    -0.0,
+    -50.0,
+    30.0,
+    301.05,
+    50.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 4296,
+    "WinWallBase": 3222,
+    "WinWallSideL": 3222,
+    "WinWallSideR": 3222,
+    "WinWallTop": 3222,
+    "WindowsLitBase": 176
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "65ca4dd23c078fa564bc1665a95a1c3eb92e237e"
+  },
+  "None|60.0|100.0|12.0": {
+   "npoints": 60108,
+   "nprims": 25895,
+   "nverts": 103512,
+   "bbox": [
+    -30.0,
+    -0.0,
+    -50.0,
+    30.0,
+    301.05,
+    50.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 4296,
+    "WinWallBase": 3222,
+    "WinWallSideL": 3222,
+    "WinWallSideR": 3222,
+    "WinWallTop": 3222,
+    "WindowsLitBase": 176
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "65ca4dd23c078fa564bc1665a95a1c3eb92e237e"
+  },
+  "None|60.0|140.0|4.0": {
+   "npoints": 78076,
+   "nprims": 32576,
+   "nverts": 130228,
+   "bbox": [
+    -30.0,
+    -0.0,
+    -70.0,
+    30.0,
+    301.05,
+    70.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 5732,
+    "WinWallBase": 4299,
+    "WinWallSideL": 4299,
+    "WinWallSideR": 4299,
+    "WinWallTop": 4299,
+    "WindowsLitBase": 236
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "018a170bb689985dfc1954e9c02f7ccd829344b6"
+  },
+  "None|60.0|140.0|12.0": {
+   "npoints": 78076,
+   "nprims": 32576,
+   "nverts": 130228,
+   "bbox": [
+    -30.0,
+    -0.0,
+    -70.0,
+    30.0,
+    301.05,
+    70.0
+   ],
+   "prim_groups": {
+    "WinInsetSides": 5732,
+    "WinWallBase": 4299,
+    "WinWallSideL": 4299,
+    "WinWallSideR": 4299,
+    "WinWallTop": 4299,
+    "WindowsLitBase": 236
+   },
+   "point_groups": {},
+   "attribs": {
+    "point": [
+     "P",
+     "height",
+     "width"
+    ],
+    "prim": [
+     "name"
+    ],
+    "detail": [],
+    "vertex": [
+     "Cd",
+     "N",
+     "uv",
+     "uv1"
+    ]
+   },
+   "pos_sha1": "018a170bb689985dfc1954e9c02f7ccd829344b6"
+  }
+ }
+}

@@ -1,0 +1,78 @@
+// AB::BuildingFootprintGenerator — outline generation. Detail wrangle.
+//
+// Emits ONE closed polygon: the building outline, plus the per-corner
+// `corner_style` / `corner_radius` point attributes. It feeds
+// footprint_classify.vex, which turns the outline into the alternating
+// Corner_k / Wall_k structure.
+//
+// ─── WHY THE SPLIT ───────────────────────────────────────────────────────────
+// Shape is DATA; structure is COMPUTED. Today each shape is its own subnet
+// (75 / 110 / 92 nodes) because the corners and walls are hand-authored per
+// shape, so a new shape costs a new network. Here a shape is a point list and
+// classification is shared, so adding one costs a menu entry and a few lines.
+//
+// ─── THE OUTLINES ────────────────────────────────────────────────────────────
+// Derived by measuring the shipping tool, not invented — see
+// parity_l_rounded.py. All are centred on the origin.
+//   0 Rectangular    W x D
+//   1 L              W x D with a W/2 x D/2 notch in the +X/+Z quadrant
+//   2 Rounded Corner W x D with the +X/+Z corner filleted
+//
+// ⚠ MENU ORDER IS APPEND-ONLY. The ordinal is stored in every saved scene, so
+// reordering silently repoints existing nodes at a different shape. New entries
+// go after 2, never before.
+
+int   SHAPE = chi("../BuildingShape");
+float W     = chf("../BuildingWidth");
+float D     = chf("../BuildingDepth");
+
+// ⚠ MEASURED: the shipping Rounded Corner arc is 0.40 x BuildingWidth, every
+// time, and is independent of BldCornerSize. That ratio was hardcoded with no
+// parameter — a user could not control the arc at all. It is a parm now, and
+// this default preserves the existing look.
+float RRATIO = ch("../RoundCornerRatio");
+
+float hw = W * 0.5;
+float hd = D * 0.5;
+
+vector P[];
+float  style[];
+float  radius[];
+
+// -1 style means "inherit the global", so a shape that sets no per-corner
+// override does not silently pin every corner. Radius 0 likewise.
+if (SHAPE == 1) {
+    // L — the reflex vertex first is deliberate only for readability; the
+    // classifier normalises the start vertex to the bounding-box minimum, so
+    // the order written here does not decide Corner_01.
+    P = array(set(0, 0, 0),
+              set(0, 0, hd),
+              set(-hw, 0, hd),
+              set(-hw, 0, -hd),
+              set(hw, 0, -hd),
+              set(hw, 0, 0));
+    for (int i = 0; i < 6; i++) { append(style, -1); append(radius, 0.0); }
+
+} else {
+    // 0 Rectangular and 2 Rounded Corner share the outline; 2 only differs by
+    // filleting ONE corner. That is the whole difference, and it is why the
+    // shipping tool needed a separate 92-node subnet for it.
+    P = array(set(-hw, 0, -hd),
+              set(-hw, 0,  hd),
+              set( hw, 0,  hd),
+              set( hw, 0, -hd));
+    for (int i = 0; i < 4; i++) { append(style, -1); append(radius, 0.0); }
+    if (SHAPE == 2) {
+        style[2]  = 2;                 // the +X/+Z corner
+        radius[2] = W * RRATIO;
+    }
+}
+
+int poly = addprim(0, "poly");
+for (int i = 0; i < len(P); i++) {
+    int pt = addpoint(0, P[i]);
+    setpointattrib(0, "corner_style",  pt, style[i]);
+    setpointattrib(0, "corner_radius", pt, radius[i]);
+    addvertex(0, poly, pt);
+}
+setprimintrinsic(0, "closed", poly, 1);
