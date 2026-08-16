@@ -451,7 +451,7 @@ Plans</a></dd>
 </div>
 
 <div class="ws">
-<div class="hd"><h4>Building plans — houses, commercial, towers</h4><span class="pill active">in progress</span></div>
+<div class="hd"><h4>Building plans — houses, commercial, towers</h4><span class="pill done">delivered</span></div>
 <p>The most ambitious brief so far, and the one that decides whether this becomes
 a building generator or an architectural simulator.</p>
 <dl>
@@ -472,8 +472,24 @@ Vitruvius received, so the oldest material connects directly to the most
 computational. <em>Symmetria</em> sizes a building from one module by ratio — a
 parametric system written in the first century BC, and the same move Corbusier
 makes with the Modulor.</dd>
-<dt>Where</dt><dd><code>research/building_plans.md</code></dd>
+<dt>⭐ The taxonomy</dt><dd><strong>Three layers that compose in a fixed order and never the reverse: GRID → CORE → PARTITION</strong>, each constraining the next. Across them six plan types — house, bar/row, commercial plate, tower, top-lit hall, and Koolhaas's "Big".</dd>
+<dt>The distinction</dt><dd><em>In a house the plan is the design; in a commercial plate the plan is deliberately not designed.</em> An office floor that arrives full of authored rooms is wrong — a rule a naive generator gets backwards.</dd>
+<dt>Derivable</dt><dd><strong>Eleven inputs</strong> yield the column grid, plate depth, core size and position, stair count and separation, corridor topology, wet-wall positions, taper and roof form. <strong>Not derivable:</strong> the room adjacency graph, room proportions, the programme, and all irregularity. Those are catalog, always.</dd>
+<dt>⭐ Scoring</dt><dd>Space syntax integration turns "is this plan any good" into a computable question — and <strong>the evaluator contains no learning</strong>. Every stage is a SOP network, so plans can be scored without training anything.</dd>
+<dt>⚠ Datasets</dt><dd><strong>RPLAN is ~70% near-duplicates and its licence restricts <em>use</em>, not just redistribution</strong> — unusable for anything shippable. LIFULL refuses company applicants. ResPlan (CC BY 4.0) is the one to use: mine it for the catalog, generate with rules, train nothing.</dd>
+<dt>Where</dt><dd><code>research/building_plans.md</code> — 2,680 lines, 66 cited figures, 48 marked second-hand, 8 unverified and deliberately unused</dd>
 </dl>
+</div>
+
+<div class="card brass">
+<h4>Two findings that reframe work already planned</h4>
+<p><strong>Vitruvius's proportions are a graduated band table, not constants.</strong> The atrium wings are 1/3 of the length at 30–40 ft but 1/5 at 80–100 ft — <em>literally the same lookup shape</em> as SignLibrary's SizeClass and corner-treatment-by-angle-band. He solved "one ratio does not scale" by tabulating it, in the first century BC. And he breaks his own rule in his own worked example: at Fano the columns are 50 ft where the rule gives 20, and he omits two for a sightline to a neighbouring temple. The canonical source is less rigid than a naive generator would be.</p>
+<p><strong>The atrium office building is a basilica.</strong> One operator with three parameters generates the Roman basilica, the church, the market hall, the sawtooth already in our roof work, and the atrium tower.</p>
+</div>
+
+<div class="card brass">
+<h4>Two gaps we are positioned to fill</h4>
+<p>Rectangular dualisation makes plans from adjacency graphs; code checking evaluates finished plans. <strong>Nobody has published dualisation constrained by egress.</strong> Nor has anyone joined straight-skeleton navigation graphs to conformant travel-distance checking — <strong>and we already own the skeleton machinery from the roof work.</strong> Both are publishable, not merely buildable.</p>
 </div>
 
 <div class="ws">
@@ -503,12 +519,18 @@ library: mostly parametric, a few traced.</dd>
 </dl>
 </div>
 
-<div class="card brass">
-<h4>Papers worth requesting</h4>
-<p>The plan research is assembling a citation list for anything paywalled, so it
-can be pulled through USC. Shape grammars, space syntax, and the learned
-plan-generation literature are the three seams most likely to need it.</p>
-</div>
+<h3>Papers to pull through USC</h3>
+<p>Twenty-five citations with Crossref-verified DOIs, tiered by why they are worth the request. <strong>Nothing in the research paraphrases a paper marked unread.</strong> The four to request first:</p>
+<div class="tw"><table>
+<thead><tr><th>Citation</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td><strong>Park, Ergan &amp; Feng (2024)</strong><br><em>Automation in Construction</em> 158, 105243</td><td>An empirical audit of House-GAN-lineage output against 80,000+ architect-made plans. The most on-point paper nobody could read.</td></tr>
+<tr><td><strong>Solihin &amp; Eastman (2015)</strong><br><em>AiC</em> 53, 69–82<br>DOI 10.1016/j.autcon.<strong>2015.03</strong>.003</td><td>The rule-complexity taxonomy — the gate on what is machine-checkable at all. ⚠ The widely-cited DOI ending 2015.01.003 is wrong and 404s.</td></tr>
+<tr><td><strong>Koźmiński &amp; Kinnen (1985)</strong><br><em>Networks</em> 15(2)</td><td>The rectangular-dual theorem itself. Only free restatements were read, and a later paper claims a counterexample to its separable case.</td></tr>
+<tr><td><strong>Bhasker &amp; Sahni (1988)</strong><br><em>Algorithmica</em> 3</td><td>The O(n) construction.</td></tr>
+</tbody>
+</table></div>
+<p>Free and worth reading now: <strong>Stiny &amp; Mitchell's Palladian grammar</strong> (1978, read in full — 72 rules in 8 stages, and its termination condition doubles as validation: only a correctly generated plan can have all its labels erased), plus the Shekhawat dimensioned-floorplan line, which has free preprints.</p>
 
 <h2 id="decisions">Open decisions</h2>
 <ul>
