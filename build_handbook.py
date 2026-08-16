@@ -263,7 +263,10 @@ def main():
         # the skeleton belongs with the roof workstream, where the claim is made
         ('<dt>Key</dt><dd><code>w = cot', fig_skeleton()),
         ('<div class="card">\n<h4>2 · Grammar', fig_embed(
-            BASE + "/moulding/wm_profile_sheet.svg", 4,
+            # ⚠ Jordan traced the real chart. These are the ACTUAL silhouettes;
+            # the earlier figure showed my approximations read off a
+            # printed picture, five of them explicitly unverified.
+            BASE + "/moulding/chart_outline.svg", 4,
             "<b>Figure 4 — The WM Standard Moulding chart, vectorised.</b> 130 "
             "distinct profiles carrying roughly 200 codes: several codes share a "
             "silhouette at different sizes, which is the catalog pattern in "
