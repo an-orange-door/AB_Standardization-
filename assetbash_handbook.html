@@ -1,0 +1,520 @@
+<title>AssetBash Handbook</title>
+<style>
+/* Palette: instrument brass on ink. AssetBash is measuring tools and standards
+   tables, so the accent is brass — the colour of a rule and a set square —
+   against a green-shifted charcoal rather than a neutral grey. Deliberately
+   distinct from the drafting blue of the Tool Register and the section-drawing
+   palette of Architectural Plans: this is their parent, not another sibling. */
+:root{
+  --paper:#FBFAF7; --surface:#FFFFFF; --sunk:#F2F1EC;
+  --ink:#161A18; --muted:#5C6360; --line:#E2E0D9;
+  --deep:#1C2321; --deep-ink:#F3F2ED;
+  --brass:#8A6A1F; --brass-soft:#F6EFDC;
+  --slate:#3A5A6B; --slate-soft:#E8EFF2;
+  --good:#3A6349; --good-soft:#E5EFE8;
+  --warn:#8A5A16; --warn-soft:#F8EEDC;
+  --bad:#8E3A2B; --bad-soft:#F7E8E4;
+  --serif:Charter,"Iowan Old Style",Georgia,"Times New Roman",serif;
+  --sans:ui-sans-serif,system-ui,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#101312; --surface:#181C1A; --sunk:#1F2422;
+  --ink:#E9EAE5; --muted:#98A09C; --line:#2A302D;
+  --deep:#0A0D0C; --deep-ink:#EDEEE9;
+  --brass:#D4A94F; --brass-soft:#241E10;
+  --slate:#7FA6BA; --slate-soft:#14212733;
+  --good:#69A882; --good-soft:#15241B;
+  --warn:#CFA05A; --warn-soft:#251C10;
+  --bad:#D07C68; --bad-soft:#2A1714;
+}}
+:root[data-theme="dark"]{
+  --paper:#101312; --surface:#181C1A; --sunk:#1F2422;
+  --ink:#E9EAE5; --muted:#98A09C; --line:#2A302D;
+  --deep:#0A0D0C; --deep-ink:#EDEEE9;
+  --brass:#D4A94F; --brass-soft:#241E10;
+  --slate:#7FA6BA; --slate-soft:#142127;
+  --good:#69A882; --good-soft:#15241B;
+  --warn:#CFA05A; --warn-soft:#251C10;
+  --bad:#D07C68; --bad-soft:#2A1714;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+     font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+
+/* hero */
+.hero{background:var(--deep);color:var(--deep-ink);padding:64px 22px 54px}
+.hero .in{max-width:1180px;margin:0 auto}
+.eyebrow{font-family:var(--sans);font-size:11px;text-transform:uppercase;
+  letter-spacing:.16em;color:var(--brass);margin:0 0 16px;font-weight:700}
+.hero h1{font-family:var(--sans);font-size:clamp(34px,5vw,54px);line-height:1.04;
+  letter-spacing:-.028em;margin:0 0 20px;font-weight:700;text-wrap:balance;
+  max-width:16ch}
+.hero .thesis{font-size:clamp(18px,2.2vw,22px);line-height:1.45;max-width:52ch;
+  margin:0 0 8px;opacity:.92}
+.hero cite{display:block;font-family:var(--sans);font-size:12px;font-style:normal;
+  opacity:.55;margin-top:12px}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 100px;display:grid;
+  grid-template-columns:1fr;gap:0}
+@media(min-width:1060px){.wrap{grid-template-columns:206px minmax(0,1fr);gap:46px}}
+main{max-width:76ch;min-width:0}
+nav{display:none}
+@media(min-width:1060px){nav{display:block;position:sticky;top:0;align-self:start;
+  padding-top:44px;max-height:100vh;overflow-y:auto}}
+nav a{display:block;font-family:var(--sans);font-size:12.5px;color:var(--muted);
+  text-decoration:none;padding:4px 0 4px 11px;border-left:2px solid var(--line);
+  line-height:1.35}
+nav a:hover{color:var(--ink);border-left-color:var(--brass)}
+
+h2{font-family:var(--sans);font-size:12px;text-transform:uppercase;
+  letter-spacing:.12em;color:var(--muted);margin:62px 0 8px;font-weight:700;
+  padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-family:var(--sans);font-size:20px;letter-spacing:-.014em;margin:36px 0 8px;
+  text-wrap:balance}
+h4{font-family:var(--sans);font-size:14.5px;margin:22px 0 5px}
+p{margin:0 0 15px}
+.lede{font-size:18.5px;line-height:1.5;color:var(--muted);margin:22px 0 6px;
+  text-wrap:pretty}
+code{font-family:var(--mono);font-size:.86em;background:var(--sunk);padding:1px 5px;
+  border-radius:3px}
+a{color:var(--slate)}
+ul,ol{margin:0 0 15px;padding-left:22px}
+li{margin-bottom:7px}
+blockquote{margin:22px 0;padding:2px 0 2px 18px;border-left:3px solid var(--brass);
+  font-size:17.5px;line-height:1.5}
+blockquote cite{display:block;font-family:var(--sans);font-size:12px;
+  font-style:normal;color:var(--muted);margin-top:7px}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));
+  gap:10px;margin:26px 0}
+.metric{background:var(--surface);border:1px solid var(--line);border-radius:8px;
+  padding:13px 15px}
+.metric .n{font-family:var(--mono);font-size:24px;letter-spacing:-.02em;
+  font-variant-numeric:tabular-nums;color:var(--brass)}
+.metric .k{font-family:var(--sans);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--muted);margin-top:3px;line-height:1.3}
+.metric .was{font-family:var(--sans);font-size:10.5px;color:var(--muted);
+  opacity:.75;margin-top:3px}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:9px;
+  padding:18px 20px;margin:16px 0}
+.card.brass{border-left:3px solid var(--brass)}
+.card.warnb{border-left:3px solid var(--warn);background:var(--warn-soft)}
+.card.badb{border-left:3px solid var(--bad);background:var(--bad-soft)}
+.card h4{margin-top:0}
+.card p:last-child,.card ul:last-child{margin-bottom:0}
+
+.pill{display:inline-block;font-family:var(--sans);font-size:10.5px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:20px;
+  white-space:nowrap;vertical-align:.1em}
+.pill.done{background:var(--good-soft);color:var(--good)}
+.pill.active{background:var(--brass-soft);color:var(--brass)}
+.pill.open{background:var(--slate-soft);color:var(--slate)}
+.pill.block{background:var(--bad-soft);color:var(--bad)}
+
+.tw{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-family:var(--sans);font-size:13px;
+  min-width:520px}
+th{text-align:left;background:var(--sunk);padding:9px 12px;font-size:10.5px;
+  text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+  border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+
+/* workstreams */
+.ws{border:1px solid var(--line);border-radius:9px;background:var(--surface);
+  padding:18px 20px;margin:14px 0}
+.ws .hd{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+.ws .hd h4{margin:0;font-size:16px}
+.ws dl{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:10px 0 0;
+  font-size:14.5px}
+.ws dt{font-family:var(--sans);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--muted);padding-top:5px}
+.ws dd{margin:0}
+
+.docs a{display:block;background:var(--surface);border:1px solid var(--line);
+  border-radius:8px;padding:14px 17px;margin-bottom:9px;text-decoration:none;
+  color:var(--ink)}
+.docs a:hover{border-color:var(--brass)}
+.docs .t{font-family:var(--sans);font-weight:700;font-size:15px;color:var(--slate)}
+.docs .d{font-size:14px;color:var(--muted);margin-top:2px}
+.foot{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);
+  font-family:var(--sans);font-size:12.5px;color:var(--muted)}
+</style>
+
+<div class="hero"><div class="in">
+  <p class="eyebrow">Handbook &middot; 16 August 2026</p>
+  <h1>AssetBash</h1>
+  <p class="thesis">Something like KitBash, but where you are not constrained by
+  baked models with weird proportions.</p>
+  <cite>Jordan Halsey — the whole project in one sentence</cite>
+</div></div>
+
+<div class="wrap">
+<nav>
+  <a href="#what">What this is</a>
+  <a href="#today">The library today</a>
+  <a href="#system">The design system</a>
+  <a href="#board">Where we are</a>
+  <a href="#work">Workstreams</a>
+  <a href="#decisions">Open decisions</a>
+  <a href="#method">How we work</a>
+  <a href="#docs">The documents</a>
+  <a href="#problems">Known problems</a>
+</nav>
+
+<main>
+
+<h2 id="what">What this is</h2>
+<p class="lede">A Houdini toolkit for procedural architecture and city
+generation — 155 tools built over years of production work, heading for
+commercial release with a companion Unreal project.</p>
+
+<p>The differentiator is not breadth. It is that <strong>nothing here is
+baked</strong>. A kit of models gives you a building; change its proportions and
+the windows stretch, the mouldings smear and the brick scales wrong. A generator
+gives you a building that is <em>correct at any size</em>, because the geometry
+is derived from parameters and real-world standards rather than frozen at
+authoring time.</p>
+
+<blockquote>Their assets are baked and hardcoded, have crappy textures and do
+not look like real architecture for the most part. They also give an artist very
+little control and are not very well optimized.
+<cite>On kitbash3d.com — and the inverse of that list is the product spec</cite></blockquote>
+
+<p>So the four claims the whole project has to earn are: <strong>procedural,
+standards-based, artist-controlled, optimised.</strong> Everything in this
+handbook is in service of one of those, and the credibility comes from the tools
+having survived real production rather than having been designed for a
+storefront.</p>
+
+<h2 id="today">The library today</h2>
+
+<div class="metrics">
+  <div class="metric"><div class="n">155</div><div class="k">Tools</div>
+    <div class="was">24 categories</div></div>
+  <div class="metric"><div class="n">53 MB</div><div class="k">Library size</div>
+    <div class="was">was ~973 MB</div></div>
+  <div class="metric"><div class="n">154</div><div class="k">Tools with icons</div>
+    <div class="was">was 2</div></div>
+  <div class="metric"><div class="n">6</div><div class="k">Unresolved types</div>
+    <div class="was">was 9</div></div>
+  <div class="metric"><div class="n">87</div><div class="k">Tools needing zones</div>
+    <div class="was">of 155</div></div>
+  <div class="metric"><div class="n">108</div><div class="k">Places worth looking</div>
+    <div class="was">orphan triage</div></div>
+</div>
+
+<p>Every number above is measured rather than estimated, and the sweep that
+produces them is repeatable — <code>analyze_hda_library.py</code> writes five
+CSVs covering parms, menus, nesting, orphaned literals and health.</p>
+
+<h3>What the size collapse actually was</h3>
+<p><code>AB.CrystalGenerator.1.0.hda</code> was <strong>236 MB — 84% of the
+library</strong> — and none of it was needed. No embedded images at all: 227 MB
+sat in one node's stashed geometry, on a node that was <em>bypassed</em>. The
+tool now weighs 0.07 MB, all 417 inner nodes intact.</p>
+<p>That is worth stating because the diagnosis generalises: <strong>look at
+whether the weight is in <code>Contents.gz</code> or in image sections before
+assuming it is textures.</strong> Those need completely different fixes.</p>
+
+<div class="card brass">
+<h4>File size is not a defect signal on every tool</h4>
+<p><code>ModulesGothic</code> (21 MB) and <code>PlantOnsFuturistic</code>
+(3.5 MB) also carry heavy embedded geometry — and there it is <strong>the
+product</strong>. They are Library-class tools whose baked models are the
+content. The real question is never "is the file big" but <strong>"is the
+payload content or leftover"</strong>.</p>
+</div>
+
+<h3>The dependency graph, which should set work order</h3>
+<div class="tw"><table>
+<thead><tr><th>Tool</th><th class="n">Used by</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td><strong>HardwareMaker</strong></td><td class="n">17</td><td>Library — the biggest hub</td></tr>
+<tr><td><strong>GroupWalls</strong></td><td class="n">15</td><td>Utility — nothing wrong with it</td></tr>
+<tr><td>FancyCurves</td><td class="n">8</td><td>⚠ 8 dependents <em>and</em> 3 geometry-defining orphan flags</td></tr>
+<tr><td>MetalExtrusionMaker</td><td class="n">8</td><td>where the steel catalog attaches</td></tr>
+<tr><td>Door / Window Generator + CreateCopies</td><td class="n">5 each</td><td>highest-rated, cheapest to extend</td></tr>
+</tbody>
+</table></div>
+<p>The earlier figure of "11 tools nest MetalExtrusionMaker" was inflated by
+superseded versions counted alongside their replacements. Latest-version-only,
+it is 8 — and <strong>HardwareMaker and GroupWalls are the real hubs</strong>.</p>
+
+<h2 id="system">The design system</h2>
+
+<h3>Three orthogonal axes</h3>
+<p>The distinction that keeps the whole catalog coherent:</p>
+<div class="tw"><table>
+<thead><tr><th>Axis</th><th>What it answers</th><th>What it drives</th></tr></thead>
+<tbody>
+<tr><td><strong>Typology</strong></td><td>What the thing <em>is</em>, functionally</td><td><strong>Dimensions</strong>, from standards</td></tr>
+<tr><td><strong>Style</strong></td><td>How it is <em>articulated</em></td><td><strong>Ornament and subdivision</strong> — never dimensions</td></tr>
+<tr><td><strong>Variation</strong></td><td>Its <em>condition</em></td><td>Wear, sag, patching, replacement</td></tr>
+</tbody>
+</table></div>
+<p><strong>The test that keeps them clean: changing style must not change the
+dimensions.</strong> A six-panel and a single-light residential door are both
+36 × 80 — which is exactly why a builder can swap them. It follows that
+<em>mansard is a typology, not a style</em>: it changes the break height and the
+two pitches. Second Empire is the style.</p>
+
+<h3>Four patterns that keep recurring</h3>
+<p>These were not planned. Each was discovered solving one problem and then
+turned out to solve the next three, which is the strongest signal available that
+they are right.</p>
+
+<div class="card">
+<h4>1 · Catalog — a CSV of real specifications plus a lookup</h4>
+<p>Used four times now: <code>SignLibrary</code> (1,383 signs), <code>HardwareMaker</code>,
+the WM moulding chart, and steel sections. <strong>The class selects a column,
+not a scale factor</strong> — MUTCD gives a different absolute size per sign per
+class, so a stop sign at freeway size is not a conventional one multiplied. A
+system built on scaling gets this wrong; a lookup table cannot.</p>
+</div>
+
+<div class="card">
+<h4>2 · Grammar — composable elements instead of enumerated shapes</h4>
+<p>Every moulding on the WM chart is a stack from a ten-element vocabulary:
+fillet, bead, ovolo, cove, scotia, cyma recta, cyma reversa, quirk, chamfer,
+round. So a profile is <em>one editable string</em>, not a hand-built network.
+The same insight applies to roof sections, because a roof section drawn in
+(run, rise) <strong>is a moulding profile</strong>.</p>
+</div>
+
+<div class="card">
+<h4>3 · Classification — compute the parts, never name them</h4>
+<p>The footprint tools hand-authored a group per wall and per corner, so the
+node count scaled with edge count: a 4-edge rectangle needed 8 groups, a 6-edge
+L needed 12, and adding a U meant hand-authoring 16. Measuring turn angle and
+convexity per vertex produces the same structure for <em>any</em> polygon.</p>
+<p>⭐ The same layer serves roofs: <code>w = cot θ</code> makes per-edge pitch a
+per-edge weight, so a footprint's edge classification <em>is</em> a roof's
+input.</p>
+</div>
+
+<div class="card">
+<h4>4 · Processor — take a surface and dress it</h4>
+<p><code>RooftopProcessor</code> is to a roof what <code>SidewalkProcessor</code>
+is to a sidewalk. Generalised, this is <strong>the decorating product</strong> —
+the thing KitBash sells that AssetBash does not yet do systematically, and the
+step that turns a shape into a place.</p>
+</div>
+
+<h2 id="board">Where we are</h2>
+<div class="tw"><table>
+<thead><tr><th>Stage</th><th>State</th><th>Gate</th></tr></thead>
+<tbody>
+<tr><td>Licensing &amp; texture extraction</td><td><span class="pill done">done</span></td><td>3,580 MB → 8 MB; CC0 only, audited</td></tr>
+<tr><td>Namespace &amp; duplicate definitions</td><td><span class="pill done">done</span></td><td>100% <code>AB::</code>, one type per file</td></tr>
+<tr><td>Version collapse</td><td><span class="pill done">done</span></td><td>35 superseded files archived, zero LFS cost</td></tr>
+<tr><td>Icons</td><td><span class="pill done">done</span></td><td>154 of 155; only ModulesGothic remains</td></tr>
+<tr><td>Sign toolchain</td><td><span class="pill done">done</span></td><td>SignPlate, SignLibrary, StreetSign 3.0, HighwaySign 5.0</td></tr>
+<tr><td>Metal extrusions</td><td><span class="pill done">done</span></td><td>parity 135/135, 5 new profiles</td></tr>
+<tr><td>Footprints</td><td><span class="pill block">issues</span></td><td>installed and numerically clean — but Jordan reports problems</td></tr>
+<tr><td>Mouldings</td><td><span class="pill active">prototype</span></td><td>26 profiles from 10 elements; 5 silhouettes need review</td></tr>
+<tr><td>Roofs</td><td><span class="pill open">designed</span></td><td>four operators; not built</td></tr>
+<tr><td>Doors &amp; windows</td><td><span class="pill open">next</span></td><td>highest-rated, cheapest to extend</td></tr>
+<tr><td>Zones &amp; materials</td><td><span class="pill open">open</span></td><td>87 tools need zones; 171 unbound</td></tr>
+<tr><td>Copernicus / texturing</td><td><span class="pill open">open</span></td><td>the named gap</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="work">Workstreams</h2>
+
+<div class="ws">
+<div class="hd"><h4>Metal extrusions</h4><span class="pill done">shipped</span></div>
+<p>Six Add SOPs and ~70 interdependent channel expressions replaced by one
+Detail wrangle. Menu appended 5–9: Round Tube, Round Bar, Flat Bar, Hat Channel,
+Z Purlin.</p>
+<dl>
+<dt>Found</dt><dd>The <code>thick</code> parm meant two different things — flange
+thickness <em>and</em> half the web thickness — so no real rolled section could
+be represented. And the <strong>Square Tube had been broken for years</strong>:
+correct only at exactly 1 × 1.</dd>
+<dt>Proven</dt><dd>135 comparisons, 0 failures, ordered and sorted separately.</dd>
+<dt>Next</dt><dd><code>steel_sections.csv</code> — AISC W/C/L/HSS as a catalog.</dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Mouldings</h4><span class="pill active">prototype</span></div>
+<p>Ten composable elements generate the WM Standard Moulding chart. A profile is
+a string: <code>line(0,.18) ovolo(1,.82)</code>.</p>
+<dl>
+<dt>Design</dt><dd>Elements take a <em>box</em>, not a radius — so the catalog
+dimension becomes a mechanical check rather than a claim.</dd>
+<dt>Status</dt><dd>26 profiles, 21 measured and 5 approximated from the printed
+chart. All 26 pass the dimension check.</dd>
+<dt>Needs</dt><dd>Jordan's eye on the five marked approximate.</dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Building footprints</h4><span class="pill block">issues reported</span></div>
+<p>Three hand-built subnets (277 nodes) replaced by outline + classification
+wrangles. Handles U, T, cross, courtyard and arbitrary curves, which the old
+system could not make at all.</p>
+<dl>
+<dt>Found</dt><dd>The L's <code>Corner_01</code> spans 136 units where every
+other corner spans 5.66 — one wrong expression corrupting three prims. Only the
+rectangle's prims actually chained.</dd>
+<dt>Proven</dt><dd>Rectangle 8 of 8 pieces identical in geometry <em>and</em>
+order; L 9 of 12; zero unexplained differences. 81 of 81 parameter combinations
+valid. SkyscraperGenerator 8 of 8 identical after the swap.</dd>
+<dt>⚠ But</dt><dd><strong>Jordan reports issues not yet explained.</strong> Every
+numeric check passed, which means the checks did not catch what he saw.</dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Roofs</h4><span class="pill open">designed, not built</span></div>
+<p>Four operators span eighteen named forms. <code>SKELETON</code> absorbs
+fourteen of them with no branching.</p>
+<dl>
+<dt>Key</dt><dd><code>w = cot θ</code> — per-edge pitch <em>is</em> per-edge
+wavefront speed. Set two weights to zero and a hip becomes a gable.</dd>
+<dt>Leverage</dt><dd><code>polyexpand2d</code> already computes the weighted
+straight skeleton natively, and appears in exactly <strong>one</strong> of 155
+tools. So this is wiring, not implementing.</dd>
+<dt>Watch</dt><dd>Rectilinear footprints are the <em>degenerate</em> case, not
+the general one — deterministic tie-breaking is a prerequisite.</dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Doors, windows &amp; wall modules</h4><span class="pill open">next</span></div>
+<p>Jordan's highest-rated tools and, by his own account, the cheapest to extend.</p>
+<dl>
+<dt>Measured</dt><dd>The module rule is <code>ceil(length / ModuleWidth)</code> —
+so <strong>ModuleWidth is a maximum, not a target</strong>. Units are metres.</dd>
+<dt>⚠ Defaults</dt><dd>The default door cooks to <strong>1.0 × 2.5 m</strong>
+against a real 0.9 × 2.0. A 2.5 m door is roughly 8'2".</dd>
+<dt>Architecture</dt><dd><code>*CreateCopies</code> is the placement and
+instancing layer — where the packed-prim / Unreal ISM contract applies.</dd>
+</dl>
+</div>
+
+<div class="ws">
+<div class="hd"><h4>Zones, materials &amp; Copernicus</h4><span class="pill open">the named gap</span></div>
+<dl>
+<dt>Scope</dt><dd>87 tools need <code>s@name</code> zones; 171 zones unbound.</dd>
+<dt>⚠ Trap</dt><dd><code>s@name</code> does two conflicting jobs. A packing key
+must be <em>unique per piece</em>; a shading zone must be <em>shared across
+pieces</em>. Of 406 distinct values, 234 are packing keys. Hence
+<code>ab_zone</code>.</dd>
+<dt>Note</dt><dd>Zone names become USD prim names and Unreal component names, so
+renaming one is a breaking change.</dd>
+</dl>
+</div>
+
+<h2 id="decisions">Open decisions</h2>
+<ul>
+<li><strong>The footprint issues</strong> — waiting on Jordan's explanation. Everything else here is downstream of understanding what the tests missed.</li>
+<li><strong>Compass group aliases</strong> — keep <code>WallFront</code> etc. as a deprecated migration aid, or drop them now while only one tool consumes the HDA?</li>
+<li><strong>Default sizes</strong> — Jordan: <em>"we can fix all the default sizes and should standardize them."</em> Doors and windows first.</li>
+<li><strong>ModulesGothic</strong> — six types exist only as definitions embedded in a session, with no file in the repo. Works on one machine; breaks everywhere else.</li>
+<li><strong>Third-party dependencies</strong> — resolved for qLib, but worth a standing rule before release.</li>
+<li><strong>RoadSimpleGenerator split</strong> — into Road / Highways / Freeways / CityRail / TrainTracks. Set the repoint rule <em>first</em>.</li>
+</ul>
+
+<h2 id="method">How we work</h2>
+<p>This section is part of the product, not process overhead. "Standards-based"
+is only credible if the standards are actually checked, and the discipline below
+is what makes that claim defensible.</p>
+
+<div class="card brass">
+<h4>Measure the before state, then change</h4>
+<p>A materials migration was once reverted because 31 apparent failures turned
+out to be pre-existing breakage nobody had baselined — the rewrite could not be
+judged, because there was no <em>before</em>. Every rewrite since carries an
+oracle captured first: 135 cases for the extrusions, 162 for the footprints,
+8 for the Skyscraper repoint.</p>
+</div>
+
+<div class="card brass">
+<h4>An assertion must be able to fail</h4>
+<p>A footprint test reported 8 of 8 passing while nine real defects sat in the
+code. It asserted winding by reading a value the code had just forced positive —
+so it could not fail for any valid input. Every check now names the defect that
+would trip it; a check whose defect cannot be named is decoration.</p>
+</div>
+
+<div class="card brass">
+<h4>Measuring the wrong thing is the most common failure</h4>
+<p>Three times in one day: a normal test using a centroid dot-product on a
+concave shape; arc radius measured from the centroid of the arc points rather
+than the circumcentre, making a perfect arc look 83% out; a zero-length closing
+edge reporting a self-intersection on every shape. <strong>Check the method
+before believing the number.</strong></p>
+</div>
+
+<div class="card brass">
+<h4>Adversarial review before anything ships</h4>
+<p>A dedicated reviewer whose job is to <em>refute</em> — hunting tests that
+cannot fail, measurements that do not measure what they claim, and numbers
+stated as fact that were never read from a source. It found nine real defects in
+work that looked finished, and one fabricated "verbatim" code quotation that had
+been caught and discarded mid-research.</p>
+</div>
+
+<h2 id="docs">The documents</h2>
+<div class="docs">
+<a href="https://claude.ai/code/artifact/51fa4ff1-4fba-413d-9f95-ba3fd86e0595">
+  <div class="t">Tool Register</div>
+  <div class="d">All 155 tools with health, dependency counts and editable Priority/Class.
+  The live one — regenerated from the library. Open this to decide what to work on.</div></a>
+<a href="https://claude.ai/code/artifact/2b6dda6d-477d-4dac-b6e6-1cf028493fce">
+  <div class="t">Release Readiness</div>
+  <div class="d">Plan v005 — eight stages, each with a gate that must hold before the
+  next starts. Open this to check whether a stage is actually finished.</div></a>
+<a href="https://claude.ai/code/artifact/690225b0-0e91-4cf9-a6bd-f11e766934c9">
+  <div class="t">Architectural Plans</div>
+  <div class="d">Footprints and roofs as one problem, the classification layer, and the
+  NYC / SF / LA code findings. Open this before building either.</div></a>
+<a href="https://claude.ai/code/artifact/a4e5fdb2-67cf-4353-9533-3bcdc76b9447">
+  <div class="t">Zone Coverage</div>
+  <div class="d">Which tools emit <code>s@name</code> and which do not. The material
+  binding work starts here.</div></a>
+</div>
+<p style="margin-top:14px">Working files live in two repos:
+<code>AssetBashTools</code> (the library) and <code>AB_Standardization</code>
+(analysis, plans, rewrites and every verification oracle). The library carries a
+rollback tag, <code>pre-footprint-rewrite</code>.</p>
+
+<h2 id="problems">Known problems</h2>
+<div class="card badb">
+<h4>The footprint generator has issues Jordan has seen and I have not</h4>
+<p>It is installed and every numeric check passes — parity, sweep, and the
+Skyscraper canary all clean. That is precisely what makes it interesting:
+<strong>the checks did not catch it.</strong> Rollback is one wire inside the
+HDA, or the tag.</p>
+</div>
+<div class="card warnb">
+<h4>Six tools depend on types that exist only in a session</h4>
+<p><code>ModulesGothic</code>, <code>RoadTerrainGenerator</code>,
+<code>ModulesClassical</code>, <code>BlocksRGB</code>, <code>CrystalGenerator</code>,
+<code>StairGenerator</code>. A clean session reports six unresolved types where a
+session carrying them reports zero — so <strong>health checks must run in a
+clean session or they lie</strong>.</p>
+</div>
+<div class="card warnb">
+<h4>The orphan triage is 108 places to look, not 108 bugs</h4>
+<p>A parm family that is part channel-referenced and part typed-literal is the
+fingerprint that made the Square Tube broken for years. But spot-checking finds
+real false positives — a <code>grid.sizex</code> of 4096/2048/1024/512 is a
+deliberate resolution ladder. The number narrows 12,000+ nodes to ~108 worth
+opening.</p>
+</div>
+
+<p class="foot">Measured 15–16 August 2026. Every figure here comes from a
+repeatable sweep or a committed verification script — nothing is estimated. Where
+a claim could not be verified it says so.</p>
+
+</main>
+</div>
