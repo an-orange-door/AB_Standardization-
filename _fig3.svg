@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714 324" style="max-width:720px;margin:0 auto"
+     font-family="ui-sans-serif,system-ui,sans-serif"><polygon points="38.00,84.00 38.00,77.10 80.55,77.10 80.55,44.90 38.00,44.90 38.00,38.00 130.00,38.00 130.00,44.90 87.45,44.90 87.45,77.10 130.00,77.10 130.00,84.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="84.0" y="104.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">I Beam</text>
+<text x="84.0" y="117.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">0</text>
+<polygon points="178.00,84.00 178.00,38.00 270.00,38.00 270.00,44.90 184.90,44.90 184.90,77.10 270.00,77.10 270.00,84.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="224.0" y="104.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">C Channel</text>
+<text x="224.0" y="117.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">1</text>
+<polygon points="318.00,84.00 318.00,77.10 360.55,77.10 360.55,38.00 367.45,38.00 367.45,77.10 410.00,77.10 410.00,84.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="364.0" y="104.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">T Bar</text>
+<text x="364.0" y="117.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">2</text>
+<polygon points="458.00,84.00 458.00,38.00 464.90,38.00 464.90,77.10 550.00,77.10 550.00,84.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="504.0" y="104.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Angle</text>
+<text x="504.0" y="117.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">3</text>
+<polygon points="598.00,84.00 598.00,38.00 690.00,38.00 690.00,84.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="644.0" y="104.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Square Tube</text>
+<text x="644.0" y="117.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">4</text>
+<polygon points="130.00,201.00 128.85,195.88 125.44,191.02 119.96,186.66 112.68,183.02 103.96,180.28 94.24,178.58 84.00,178.00 73.76,178.58 64.04,180.28 55.32,183.02 48.04,186.66 42.56,191.02 39.15,195.88 38.00,201.00 39.15,206.12 42.56,210.98 48.04,215.34 55.32,218.98 64.04,221.72 73.76,223.42 84.00,224.00 94.24,223.42 103.96,221.72 112.68,218.98 119.96,215.34 125.44,210.98 128.85,206.12" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="124.48,201.00 123.47,204.89 120.47,208.58 115.65,211.90 109.24,214.67 101.56,216.75 93.01,218.04 84.00,218.48 74.99,218.04 66.44,216.75 58.76,214.67 52.35,211.90 47.53,208.58 44.53,204.89 43.52,201.00 44.53,197.11 47.53,193.42 52.35,190.10 58.76,187.33 66.44,185.25 74.99,183.96 84.00,183.52 93.01,183.96 101.56,185.25 109.24,187.33 115.65,190.10 120.47,193.42 123.47,197.11" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="84.0" y="244.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Round Tube</text>
+<text x="84.0" y="257.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">5</text>
+<polygon points="270.00,201.00 268.85,195.88 265.44,191.02 259.96,186.66 252.68,183.02 243.96,180.28 234.24,178.58 224.00,178.00 213.76,178.58 204.04,180.28 195.32,183.02 188.04,186.66 182.56,191.02 179.15,195.88 178.00,201.00 179.15,206.12 182.56,210.98 188.04,215.34 195.32,218.98 204.04,221.72 213.76,223.42 224.00,224.00 234.24,223.42 243.96,221.72 252.68,218.98 259.96,215.34 265.44,210.98 268.85,206.12" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="224.0" y="244.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Round Bar</text>
+<text x="224.0" y="257.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">6</text>
+<polygon points="318.00,224.00 318.00,178.00 410.00,178.00 410.00,224.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="364.0" y="244.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Flat Bar</text>
+<text x="364.0" y="257.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">7</text>
+<polygon points="458.00,224.00 458.00,178.00 550.00,178.00 550.00,224.00 543.10,224.00 543.10,184.90 464.90,184.90 464.90,224.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="504.0" y="244.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Hat Channel</text>
+<text x="504.0" y="257.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">8</text>
+<polygon points="598.00,224.00 598.00,217.10 640.55,217.10 640.55,178.00 690.00,178.00 690.00,184.90 647.45,184.90 647.45,224.00" fill="none" stroke="#EDEDE8" stroke-width="1.4" stroke-linejoin="round"/>
+<text x="644.0" y="244.0" font-size="10.5" fill="#EDEDE8" text-anchor="middle" font-weight="700">Z Purlin</text>
+<text x="644.0" y="257.0" font-size="9" fill="#9AA09B" text-anchor="middle" font-family="ui-monospace,Consolas,monospace">9</text></svg>

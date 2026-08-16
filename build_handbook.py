@@ -34,7 +34,9 @@ FIGCSS = """
    so an embedded SVG with its own light background looks deliberate rather
    than like a hole in the page. */
 figure{margin:26px 0;padding:0}
-figure .plate{background:#FAFAF8;border:1px solid var(--line);border-radius:9px;
+/* Jordan, 2026-08-16: figures on BLACK, objects light. Drawings read better
+   inverted and it distinguishes a figure from the page at a glance. */
+figure .plate{background:#0B0D0C;border:1px solid #262B28;border-radius:9px;
   padding:16px;overflow-x:auto}
 figure .plate img{display:block;width:100%;height:auto}
 figcaption{font-family:var(--sans);font-size:12.5px;color:var(--muted);
@@ -100,36 +102,36 @@ def fig_skeleton():
      font-family="ui-sans-serif,system-ui,sans-serif">
   <defs><pattern id="hb" width="6" height="6" patternTransform="rotate(45)"
     patternUnits="userSpaceOnUse">
-    <line x1="0" y1="0" x2="0" y2="6" stroke="#E1E2DE" stroke-width="1.4"/>
+    <line x1="0" y1="0" x2="0" y2="6" stroke="#2E3431" stroke-width="1.4"/>
   </pattern></defs>
   <g transform="translate(46,292) scale(7.6,-7.6)">
     <polygon points="0,0 32,0 32,20 16,20 16,44 0,44" fill="url(#hb)"
-             stroke="#161A18" stroke-width="0.3"/>
-    <g stroke="#6C7B8C" stroke-width="0.22" stroke-dasharray="1.2 0.8">
+             stroke="#EDEDE8" stroke-width="0.3"/>
+    <g stroke="#7FA6BA" stroke-width="0.22" stroke-dasharray="1.2 0.8">
       <line x1="0" y1="0" x2="10" y2="10"/><line x1="32" y1="0" x2="22" y2="10"/>
       <line x1="32" y1="20" x2="22" y2="10"/><line x1="16" y1="44" x2="8" y2="36"/>
       <line x1="0" y1="44" x2="8" y2="36"/><line x1="8" y1="12" x2="10" y2="10"/>
     </g>
-    <line x1="16" y1="20" x2="8" y2="12" stroke="#8E3A2B" stroke-width="0.46"/>
-    <g stroke="#8A6A1F" stroke-width="0.54">
+    <line x1="16" y1="20" x2="8" y2="12" stroke="#D07C68" stroke-width="0.46"/>
+    <g stroke="#D4A94F" stroke-width="0.54">
       <line x1="8" y1="12" x2="8" y2="36"/><line x1="10" y1="10" x2="22" y2="10"/>
     </g>
-    <g fill="#8A6A1F">
+    <g fill="#D4A94F">
       <circle cx="10" cy="10" r="0.45"/><circle cx="22" cy="10" r="0.45"/>
       <circle cx="8" cy="12" r="0.45"/><circle cx="8" cy="36" r="0.45"/>
     </g>
-    <circle cx="16" cy="20" r="0.7" fill="#8E3A2B"/>
+    <circle cx="16" cy="20" r="0.7" fill="#D07C68"/>
   </g>
-  <g font-family="ui-monospace,Consolas,monospace" font-size="10.5" fill="#5C6360">
+  <g font-family="ui-monospace,Consolas,monospace" font-size="10.5" fill="#9AA09B">
     <text x="150" y="228">ridge 5.0 ft</text>
     <text x="24" y="112">ridge</text><text x="24" y="125">4.0 ft</text>
-    <text x="122" y="200" fill="#8E3A2B">valley</text>
-    <text x="150" y="150" fill="#8E3A2B">reflex</text>
+    <text x="122" y="200" fill="#D07C68">valley</text>
+    <text x="150" y="150" fill="#D07C68">reflex</text>
   </g>
   <g font-size="11">
-    <text x="360" y="232" fill="#8A6A1F">&#9644; ridge</text>
-    <text x="360" y="250" fill="#8E3A2B">&#9644; valley</text>
-    <text x="360" y="268" fill="#6C7B8C">&#9644; hip</text>
+    <text x="360" y="232" fill="#D4A94F">&#9644; ridge</text>
+    <text x="360" y="250" fill="#D07C68">&#9644; valley</text>
+    <text x="360" y="268" fill="#7FA6BA">&#9644; hip</text>
   </g>
 </svg>
 </div>
@@ -162,8 +164,13 @@ def fig_extrusions():
         "T Bar": [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H),(xc+hw,H),(xc+hw,tf),(W,tf),(W,0)]],
         "Angle": [[(0,0),(0,H),(tw,H),(tw,tf),(W,tf),(W,0)]],
         "Square Tube": [[(0,0),(0,H),(W,H),(W,0)]],
-        "Round Tube": [ring(xc,H/2,xc,H/2,segs), ring(xc,H/2,xc-wall,H/2-wall,segs,True)],
-        "Round Bar": [ring(xc,H/2,xc,H/2,segs)],
+        # ⚠ drawn CIRCULAR here (radius = H/2) rather than at the figure's
+        # W:H of 2:1. The VEX maps width and height to the two radii
+        # independently, so a Round Tube at W != H is an ELLIPSE — faithful to
+        # the tool, but it raises a real question: should a round section take
+        # width as a diameter and ignore height? Flagged, not silently changed.
+        "Round Tube": [ring(xc,H/2,H/2,H/2,segs), ring(xc,H/2,H/2-wall,H/2-wall,segs,True)],
+        "Round Bar": [ring(xc,H/2,H/2,H/2,segs)],
         "Flat Bar": [[(0,0),(0,H),(W,H),(W,0)]],
         "Hat Channel": [[(0,0),(0,H),(W,H),(W,0),(W-tf,0),(W-tf,H-tw),(tf,H-tw),(tf,0)]],
         "Z Purlin": [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H),(W,H),(W,H-tf),(xc+hw,H-tf),(xc+hw,0)]],
@@ -176,13 +183,17 @@ def fig_extrusions():
         oy = 24 + (i // cols) * cell + H * S + 14
         for j, loop in enumerate(loops):
             pts = " ".join("%.2f,%.2f" % (ox + x*S, oy - y*S) for x, y in loop)
-            fill = "#FAFAF8" if j else "#1C2321"
-            out.append('<polygon points="%s" fill="%s" stroke="#1C2321" '
-                       'stroke-width="0.8"/>' % (pts, fill))
-        out.append('<text x="%.1f" y="%.1f" font-size="10.5" fill="#161A18" '
+            # BLUEPRINT CONVENTION (Jordan, 2026-08-16): white outlines on
+            # black, never filled. A filled silhouette hides the interior — on
+            # a hollow section you cannot see the wall at all — and reads as a
+            # logo rather than a drawing.
+            out.append('<polygon points="%s" fill="none" stroke="%s" '
+                       'stroke-width="1.4" stroke-linejoin="round"/>'
+                       % (pts, "#EDEDE8"))
+        out.append('<text x="%.1f" y="%.1f" font-size="10.5" fill="#EDEDE8" '
                    'text-anchor="middle" font-weight="700">%s</text>'
                    % (14 + (i % cols) * cell + cell/2, oy + 20, name))
-        out.append('<text x="%.1f" y="%.1f" font-size="9" fill="#5C6360" '
+        out.append('<text x="%.1f" y="%.1f" font-size="9" fill="#9AA09B" '
                    'text-anchor="middle" font-family="ui-monospace,Consolas,monospace">'
                    '%d</text>' % (14 + (i % cols) * cell + cell/2, oy + 33, i))
     h = 24 + rows * cell + 20

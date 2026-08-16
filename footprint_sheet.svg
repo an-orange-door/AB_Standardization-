@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1132" height="922"
  viewBox="0 0 1132 922" font-family="ui-sans-serif,system-ui,Segoe UI,sans-serif">
 <style>
-  .bg{fill:#FAFAF8}
-  .wall{fill:none;stroke:#2F4B7C;stroke-width:2.6;stroke-linecap:round}
-  .corner{fill:none;stroke:#8A6A16;stroke-width:2.6;stroke-linecap:round}
-  .corner.reflex{stroke:#9C4A2F}
-  .cdot{fill:#8A6A16}
-  .cdot.reflexdot{fill:#9C4A2F}
-  .lbl{font-size:8.5px;fill:#2F4B7C;text-anchor:middle;font-weight:700}
-  .cmp{font-size:7.5px;fill:#5F656C;text-anchor:middle}
-  .origin{font-size:8.5px;fill:#1A1D21;font-weight:700}
-  .title{font-size:13px;font-weight:700;fill:#1A1D21}
-  .meta{font-size:10.5px;fill:#5F656C;font-family:ui-monospace,Consolas,monospace}
-  .h1{font-size:19px;font-weight:700;fill:#1A1D21}
-  .h2{font-size:12px;fill:#5F656C}
+  .bg{fill:#0B0D0C}
+  .wall{fill:none;stroke:#7FA6BA;stroke-width:2.6;stroke-linecap:round}
+  .corner{fill:none;stroke:#D4A94F;stroke-width:2.6;stroke-linecap:round}
+  .corner.reflex{stroke:#D07C68}
+  .cdot{fill:#D4A94F}
+  .cdot.reflexdot{fill:#D07C68}
+  .lbl{font-size:8.5px;fill:#7FA6BA;text-anchor:middle;font-weight:700}
+  .cmp{font-size:7.5px;fill:#8A9088;text-anchor:middle}
+  .origin{font-size:8.5px;fill:#EDEDE8;font-weight:700}
+  .title{font-size:13px;font-weight:700;fill:#EDEDE8}
+  .meta{font-size:10.5px;fill:#8A9088;font-family:ui-monospace,Consolas,monospace}
+  .h1{font-size:19px;font-weight:700;fill:#EDEDE8}
+  .h2{font-size:12px;fill:#8A9088}
   .key{font-size:11px}
 </style>
 <rect width="100%" height="100%" class="bg"/>
