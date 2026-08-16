@@ -149,38 +149,69 @@ higher.</figcaption>
 
 # ── Figure: metal extrusion profiles, computed ───────────────────────────────
 def fig_extrusions():
-    W, H, tw, tf, wall, segs = 2.0, 1.0, 0.15, 0.15, 0.12, 28
-    xc, hw = W / 2, tw / 2
+    # ⚠ A SINGLE W:H FOR EVERY PROFILE IS WRONG. Jordan, 2026-08-16: "the
+    # I-Beams look weird, the horizontal parts are too long, most I beams don't
+    # look like this. Same thing as the Angle - both sides should be equal."
+    # Real sections have characteristic proportions: a W-section is DEEPER than
+    # it is wide (W12x26 is 12.2 x 6.5), an angle is usually EQUAL-LEG (L4x4),
+    # a flat bar is wide and thin. Drawing them all at 2:1 made the I-beam look
+    # like a girder nobody rolls and the angle unequal for no reason.
+    tw, tf, wall, segs = 0.15, 0.15, 0.12, 28
+    PROP = {                      # width, height — representative, not arbitrary
+        "I Beam":      (1.15, 1.9),   # deeper than wide, like a W-section
+        "C Channel":   (0.9,  1.9),   # tall and narrow
+        "T Bar":       (1.5,  1.4),
+        "Angle":       (1.5,  1.5),   # EQUAL LEG
+        "Square Tube": (1.5,  1.5),
+        "Round Tube":  (1.5,  1.5),
+        "Round Bar":   (1.5,  1.5),
+        "Flat Bar":    (2.0,  0.5),   # wide and thin
+        "Hat Channel": (2.0,  1.0),
+        "Z Purlin":    (1.2,  1.9),
+    }
 
     def ring(cx, cz, rx, rz, n, rev=False):
         return [(cx + math.cos(2*math.pi*(n-i if rev else i)/n) * rx,
                  cz + math.sin(2*math.pi*(n-i if rev else i)/n) * rz)
                 for i in range(n)]
 
-    P = {
-        "I Beam": [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H-tf),(0,H-tf),(0,H),
-                    (W,H),(W,H-tf),(xc+hw,H-tf),(xc+hw,tf),(W,tf),(W,0)]],
-        "C Channel": [[(0,0),(0,H),(W,H),(W,H-tf),(tw,H-tf),(tw,tf),(W,tf),(W,0)]],
-        "T Bar": [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H),(xc+hw,H),(xc+hw,tf),(W,tf),(W,0)]],
-        "Angle": [[(0,0),(0,H),(tw,H),(tw,tf),(W,tf),(W,0)]],
-        "Square Tube": [[(0,0),(0,H),(W,H),(W,0)]],
+    def geom(name):
+        W, H = PROP[name]
+        xc, hw = W / 2, tw / 2
+        if name == "I Beam":
+            return [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H-tf),(0,H-tf),(0,H),
+                     (W,H),(W,H-tf),(xc+hw,H-tf),(xc+hw,tf),(W,tf),(W,0)]]
+        if name == "C Channel":
+            return [[(0,0),(0,H),(W,H),(W,H-tf),(tw,H-tf),(tw,tf),(W,tf),(W,0)]]
+        if name == "T Bar":
+            return [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H),(xc+hw,H),(xc+hw,tf),(W,tf),(W,0)]]
+        if name == "Angle":
+            return [[(0,0),(0,H),(tw,H),(tw,tf),(W,tf),(W,0)]]
+        if name in ("Square Tube", "Flat Bar"):
+            return [[(0,0),(0,H),(W,H),(W,0)]]
+        if name == "Round Tube":
+            return [ring(xc,H/2,H/2,H/2,segs), ring(xc,H/2,H/2-wall,H/2-wall,segs,True)]
+        if name == "Round Bar":
+            return [ring(xc,H/2,H/2,H/2,segs)]
+        if name == "Hat Channel":
+            return [[(0,0),(0,H),(W,H),(W,0),(W-tf,0),(W-tf,H-tw),(tf,H-tw),(tf,0)]]
+        return [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H),(W,H),(W,H-tf),(xc+hw,H-tf),(xc+hw,0)]]
+
+    P = {n: geom(n) for n in PROP}
+    _unused = {
         # ⚠ drawn CIRCULAR here (radius = H/2) rather than at the figure's
         # W:H of 2:1. The VEX maps width and height to the two radii
         # independently, so a Round Tube at W != H is an ELLIPSE — faithful to
         # the tool, but it raises a real question: should a round section take
         # width as a diameter and ignore height? Flagged, not silently changed.
-        "Round Tube": [ring(xc,H/2,H/2,H/2,segs), ring(xc,H/2,H/2-wall,H/2-wall,segs,True)],
-        "Round Bar": [ring(xc,H/2,H/2,H/2,segs)],
-        "Flat Bar": [[(0,0),(0,H),(W,H),(W,0)]],
-        "Hat Channel": [[(0,0),(0,H),(W,H),(W,0),(W-tf,0),(W-tf,H-tw),(tf,H-tw),(tf,0)]],
-        "Z Purlin": [[(0,0),(0,tf),(xc-hw,tf),(xc-hw,H),(W,H),(W,H-tf),(xc+hw,H-tf),(xc+hw,0)]],
     }
     cell, cols, S = 140, 5, 46
     rows = (len(P) + cols - 1) // cols
     out = []
     for i, (name, loops) in enumerate(P.items()):
-        ox = 14 + (i % cols) * cell + (cell - W * S) / 2
-        oy = 24 + (i // cols) * cell + H * S + 14
+        pw, ph = PROP[name]
+        ox = 14 + (i % cols) * cell + (cell - pw * S) / 2
+        oy = 24 + (i // cols) * cell + ph * S + 14
         for j, loop in enumerate(loops):
             pts = " ".join("%.2f,%.2f" % (ox + x*S, oy - y*S) for x, y in loop)
             # BLUEPRINT CONVENTION (Jordan, 2026-08-16): white outlines on
@@ -233,14 +264,15 @@ def main():
         ('<dt>Key</dt><dd><code>w = cot', fig_skeleton()),
         ('<div class="card">\n<h4>2 · Grammar', fig_embed(
             BASE + "/moulding/wm_profile_sheet.svg", 4,
-            "<b>Figure 4 — Twenty-six moulding profiles from ten composable "
-            "elements.</b> Every profile on the WM Standard Moulding chart is a "
-            "stack of fillet, bead, ovolo, cove, scotia, cyma and chamfer — which "
-            "is not a modelling trick but how they are milled, one shaper knife "
-            "per element. Elements take a <em>box</em> rather than a radius, so "
-            "the catalog dimension becomes a mechanical check instead of a claim. "
-            "Marked <span style='color:#8A5A16'>~</span> are silhouettes read from "
-            "the printed chart and not yet verified against a profile drawing.")),
+            "<b>Figure 4 — The WM Standard Moulding chart, vectorised.</b> 130 "
+            "distinct profiles carrying roughly 200 codes: several codes share a "
+            "silhouette at different sizes, which is the catalog pattern in "
+            "miniature — shape and dimensions are separate columns. Every one of "
+            "these is a stack from a small classical vocabulary (fillet, bead, "
+            "ovolo, cove, scotia, cyma, quirk, chamfer), which is not a modelling "
+            "trick but how they are milled: one shaper knife per element. Traced "
+            "by Jordan from the Wholesale Millwork chart; the layout is preserved "
+            "so position identifies the section.")),
         ('<div class="card">\n<h4>3 · Classification', fig_embed(
             BASE + "/footprint_sheet.svg", 5,
             "<b>Figure 5 — Footprint classification for arbitrary polygons.</b> "
